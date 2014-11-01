@@ -20,11 +20,12 @@ alias lr='ll -R'           #  Recursive ls.
 alias la='ll -A'           #  Show hidden files.
 
 # Favored applications and app specific customizations
-alias tm='open /Applications/TextMate.app'
 alias macvim='open /Applications/MacVim.app'
 
 export EDITOR=vim
-export VISUAL=/Applications/TextMate.app
+export VISUAL='mate -w'
+
+alias dev='pushd ~/Development'
 
 #
 # Handy command line utilities
@@ -50,7 +51,6 @@ function extract()      # Handy Extract Program
         echo "'$1' is not a valid file!"
     fi
 }
-
 
 # Creates an archive (*.tar.gz) from given directory.
 function maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
