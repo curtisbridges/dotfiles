@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files="bash_profile bashrc vimrc gitconfig gitignore gitignore_global gitattributes"
+files="profile bashrc vimrc gitconfig gitignore gitignore_global gitattributes"
 dir=~/Developer/DotFiles
 
 # Make symlinks
