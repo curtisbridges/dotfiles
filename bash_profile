@@ -14,7 +14,7 @@
 
 # ~/.bash_profile: executed by bash for login shells.
 GREEN="\[\e[0;32m\]"
-BLUE="\[\e[0;34m\]"
+BLUE="\[\e[0;36m\]"
 RED="\[\e[0;31m\]"
 YELLOW="\[\e[0;33m\]"
 COLOREND="\[\e[00m\]"
