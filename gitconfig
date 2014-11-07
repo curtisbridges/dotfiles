@@ -8,6 +8,7 @@
 	autocrlf = true
 	editor = mate -w
 	fileMode = false
+	safecrlf = false
 [branch]
 	autosetuprebase = always
 [pull]
@@ -16,3 +17,5 @@
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
+[credential]
+	helper = osxkeychain
