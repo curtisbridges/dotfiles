@@ -56,7 +56,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 
 # Responsive Prompt
 parse_git_branch() {
