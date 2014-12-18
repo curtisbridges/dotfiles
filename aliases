@@ -12,12 +12,18 @@ alias grep='grep --color'                     # show differences in colour
 # Some shortcuts for different directory listings
 alias ls='ls -FHG'
 alias ll='ls -l'
-alias lm='ll |more'        #  Pipe through 'more'
+alias lm='ll | more'       #  Pipe through 'more'
 alias lr='ll -R'           #  Recursive ls.
 alias la='ll -A'           #  Show hidden files.
 
+# Directories
+alias db='cd ~/Documents/Dropbox'
+alias dl='cd ~/Downloads'
+alias dt='cd ~/Desktop'
 alias dev='cd ~/Developer'
 
 # Favored applications and app specific customizations
 alias macvim='open /Applications/MacVim.app'
 
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
