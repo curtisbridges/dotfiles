@@ -1,31 +1,10 @@
-# -> Prevents accidentally clobbering files.
-alias mkdir='mkdir -p'
-
 # Don"t put duplicate lines in the history.
 export HISTCONTROL="ignoredups"
-
-# Default to human readable figures
-alias df='df -h'
-alias du='du -h'
-
-# alias less='less -r'                          # raw control characters
-alias whence='type -a'                        # where, of a sort
-alias grep='grep --color'                     # show differences in colour
-
-# Some shortcuts for different directory listings
-alias ls='ls -FHG'
-alias ll='ls -l'
-alias lm='ll |more'        #  Pipe through 'more'
-alias lr='ll -R'           #  Recursive ls.
-alias la='ll -A'           #  Show hidden files.
-
-# Favored applications and app specific customizations
-alias macvim='open /Applications/MacVim.app'
 
 export EDITOR=vim
 export VISUAL='mate -w'
 
-alias dev='pushd ~/Developer'
+export GWT_HOME='/usr/local/Cellar/gwt/2.7.0'
 
 #
 # Handy command line utilities

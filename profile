@@ -29,6 +29,11 @@ if [ -e "${HOME}/.bashrc" ] ; then
   source "${HOME}/.bashrc"
 fi
 
+# source the users aliases if it exists
+if [ -e "${HOME}/.aliases" ] ; then
+  source "${HOME}/.aliases"
+fi
+
 # Set PATH so it includes user's private bin if it exists
 if [ -d "${HOME}/bin" ] ; then
   PATH=${HOME}/bin:${PATH}
@@ -55,8 +60,6 @@ fi
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
-
-# export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 
 # Responsive Prompt
 parse_git_branch() {

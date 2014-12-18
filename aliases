@@ -1,0 +1,23 @@
+# -> Prevents accidentally clobbering files.
+alias mkdir='mkdir -p'
+
+# Default to human readable figures
+alias df='df -h'
+alias du='du -h'
+
+# alias less='less -r'                          # raw control characters
+alias whence='type -a'                        # where, of a sort
+alias grep='grep --color'                     # show differences in colour
+
+# Some shortcuts for different directory listings
+alias ls='ls -FHG'
+alias ll='ls -l'
+alias lm='ll |more'        #  Pipe through 'more'
+alias lr='ll -R'           #  Recursive ls.
+alias la='ll -A'           #  Show hidden files.
+
+alias dev='cd ~/Developer'
+
+# Favored applications and app specific customizations
+alias macvim='open /Applications/MacVim.app'
+
