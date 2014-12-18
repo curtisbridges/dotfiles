@@ -43,6 +43,11 @@ if [ -e "${HOME}/.aliases" ] ; then
   source "${HOME}/.aliases"
 fi
 
+# source the users functions if it exists
+if [ -e "${HOME}/.functions" ] ; then
+  source "${HOME}/.functions"
+fi
+
 # Set PATH so it includes user's private bin if it exists
 if [ -d "${HOME}/bin" ] ; then
   PATH=${HOME}/bin:${PATH}
