@@ -16,6 +16,11 @@ function removeFromPath() {
 	export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
 
+# Create a new directory and enter it
+function mkd() {
+    mkdir -p "$@" && cd "$@"
+}
+
 function extract()      # Handy Extract Program
 {
     if [ -f $1 ] ; then
