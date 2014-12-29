@@ -16,6 +16,9 @@ function removeFromPath() {
 	export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
 
+# And then set the jdk to be 1.8
+setjdk 1.8
+
 # Create a new directory and enter it
 function mkd() {
     mkdir -p "$@" && cd "$@"
