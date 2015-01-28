@@ -17,7 +17,8 @@ function removeFromPath() {
 }
 
 # And then set the jdk to be 1.8
-setjdk 1.8.0_31
+#setjdk 1.8.0_31
+setjdk 1.8
 
 # Create a new directory and enter it
 function mkd() {
