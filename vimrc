@@ -12,7 +12,7 @@ set autochdir " always change working directory to the buffer's
 
 if has("gui_running")
     set background=dark " we plan to use a dark background
-    colorscheme wombat " my color scheme (only works in GUI)
+    "colorscheme wombat " my color scheme (only works in GUI)
     set columns=140 " perfect size for me
     set lines=80 " perfect size for me, maximizes veritcally on a win/1600x1200 screen
     set mousehide " hide the mouse cursor when typing
@@ -23,7 +23,7 @@ if has("gui_running")
 endif
 
 " indentation settings
-set isfname+=\  " Adds support for windows paths.
+"set isfname+=\  " Adds support for windows paths.
 set expandtab " no tab characters
 set smarttab
 set shiftwidth=4 " auto-indent amount when using cindent, >>, << and stuff like that
@@ -43,7 +43,7 @@ set infercase " case inferred by default
 set nowrap " do not wrap line
 set showmatch " show matching brackets
 set matchtime=5 " how many tenths of a second to blink matching brackets 
-set directory=~/vimfiles/tmp " directory to place swap files in
+set directory=/tmp " directory to place swap files in
 set clipboard+=unnamed " share windows clipboard
 set mouse=a " use mouse everywhere
 
@@ -65,7 +65,7 @@ set sidescrolloff=10 " Keep 5 lines at the size
 
 " backups
 set backup
-set backupdir=~/vimfiles/backup
+set backupdir=~/backups
 "set nowritebackup
 set autowrite
 
@@ -247,4 +247,5 @@ map <C-V> "+gP
 
 " automatically maximize gvim on start
 "autocmd GUIEnter * simalt ~x
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
