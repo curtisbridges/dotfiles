@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files="profile bashrc aliases functions vimrc gitconfig gitignore gitignore_global gitattributes dictionary"
+files="bash_profile bashrc aliases functions vimrc gitconfig gitignore gitignore_global gitattributes dictionary"
 dir=~/Developer/DotFiles
 
 # Make symlinks

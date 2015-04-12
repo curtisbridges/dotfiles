@@ -66,3 +66,9 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 PROMPT_COMMAND=prompt
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/cmb/Applications/google-cloud-sdk/path.bash.inc'
+
+# The next line enables bash completion for gcloud.
+source '/Users/cmb/Applications/google-cloud-sdk/completion.bash.inc'
