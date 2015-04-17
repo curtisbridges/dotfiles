@@ -68,7 +68,11 @@ fi
 PROMPT_COMMAND=prompt
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/cmb/Applications/google-cloud-sdk/path.bash.inc'
+if [ -f "${HOME}/Applications/google-cloud-sdk/path.bash.inc" ]; then
+	source "${HOME}/Applications/google-cloud-sdk/path.bash.inc"
+fi
 
 # The next line enables bash completion for gcloud.
-source '/Users/cmb/Applications/google-cloud-sdk/completion.bash.inc'
+if [ -f "${HOME}/Applications/google-cloud-sdk/completion.bash.inc" ]; then
+	source "${HOME}/Applications/google-cloud-sdk/completion.bash.inc"
+fi
