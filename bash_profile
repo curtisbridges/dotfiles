@@ -65,6 +65,11 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
+if [ -d "${HOME}/.ssh" ] ; then
+	ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
+	ssh-add "${HOME}/.ssh/riverbed_gitlab_rsa" &> /dev/null
+fi
+
 PROMPT_COMMAND=prompt
 
 # The next line updates PATH for the Google Cloud SDK.
