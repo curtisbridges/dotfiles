@@ -81,3 +81,8 @@ fi
 if [ -f "${HOME}/Applications/google-cloud-sdk/completion.bash.inc" ]; then
 	source "${HOME}/Applications/google-cloud-sdk/completion.bash.inc"
 fi
+
+# source acesses tokens, if present
+if [ -e "${HOME}/.access_tokens" ] ; then
+  source "${HOME}/.access_tokens"
+fi
