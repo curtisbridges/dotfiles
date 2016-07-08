@@ -67,7 +67,12 @@ fi
 
 if [ -d "${HOME}/.ssh" ] ; then
 	ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
+	ssh-add "${HOME}/.ssh/github" &> /dev/null
 	ssh-add "${HOME}/.ssh/riverbed_gitlab_rsa" &> /dev/null
+fi
+
+if [ -d "${HOME}/.aws_creds" ] ; then
+	source "${HOME}/.aws_creds"
 fi
 
 PROMPT_COMMAND=prompt

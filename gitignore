@@ -6,6 +6,7 @@
 *.exe
 *.o
 *.so
+*.pyc
  
 # Temporary files #
 ###################
@@ -32,7 +33,13 @@
  
 # OS generated files #
 ######################
-.DS_Store*
+Desktop.ini
+.DS_Store
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+

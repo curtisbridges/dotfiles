@@ -1,5 +1,5 @@
-" Curtis Bridges <curtis.bridges@gmail.com>
-" September 9, 2010
+" Curtis Bridges <curtis@curtisbridges.com>
+" 2016-02-01
 " _vimrc
 
 " basic settings
@@ -11,15 +11,16 @@ syntax on
 set autochdir " always change working directory to the buffer's
 
 if has("gui_running")
-    set background=dark " we plan to use a dark background
-    "colorscheme wombat " my color scheme (only works in GUI)
+    set background=light " we plan to use a light background
     set columns=140 " perfect size for me
     set lines=80 " perfect size for me, maximizes veritcally on a win/1600x1200 screen
     set mousehide " hide the mouse cursor when typing
     set guioptions-=tT "no tear offs
-    set guifont=courier_new:h8:w5 " font
+    " set guifont=courier_new:h8:w5 " font
     "set guifont=sans_serif " font
     "set guifont=arial " font
+else
+    set background=dark " use dark background with terminal
 endif
 
 " indentation settings
@@ -64,10 +65,10 @@ set scrolloff=10 " Keep 10 lines (top/bottom) for scope
 set sidescrolloff=10 " Keep 5 lines at the size
 
 " backups
-set backup
-set backupdir=~/backups
-"set nowritebackup
-set autowrite
+"set backup
+"set backupdir=~/backups
+set nowritebackup
+"set autowrite
 
 " filesystem and term settings
 set ttyfast

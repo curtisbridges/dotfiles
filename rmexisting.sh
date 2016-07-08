@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files="bash_profile bashrc aliases functions vimrc gitconfig gitignore gitignore_global gitattributes dictionary plan"
+files="bash_profile bashrc aliases functions gitconfig gitignore gitignore_global gitattributes dictionary plan vimrc"
 
 for file in $files; do
     # echo "Creating symlink to $file in home directory."
