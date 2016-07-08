@@ -1,17 +1,3 @@
-# base-files version 3.9-3
-
-# To pick up the latest recommended .bash_profile content,
-# look in /etc/defaults/etc/skel/.bash_profile
-
-# Modifying /etc/skel/.bash_profile directly will prevent
-# setup from updating it.
-
-# The copy in your home directory (~/.bash_profile) is yours, please
-# feel free to customise it to create a shell
-# environment to your liking.  If you feel a change
-# would be benifitial to all, please feel free to send
-# a patch to the cygwin mailing list.
-
 # ~/.bash_profile: executed by bash for login shells.
 GREEN="\[\e[0;32m\]"
 BLUE="\[\e[0;36m\]"
@@ -57,7 +43,7 @@ if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
 
-if [ -d "${HOME}/.homebrew_token" ] ; then
+if [ -d "${HOME}/.homebrew_token" ]; then
 	source "${HOME}/.homebrew_token"
 fi
 
@@ -67,12 +53,18 @@ fi
 
 if [ -d "${HOME}/.ssh" ] ; then
 	ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
-	ssh-add "${HOME}/.ssh/github" &> /dev/null
+#	ssh-add "${HOME}/.ssh/github" &> /dev/null
 	ssh-add "${HOME}/.ssh/riverbed_gitlab_rsa" &> /dev/null
 fi
 
+# Source my AWS creds
 if [ -d "${HOME}/.aws_creds" ] ; then
 	source "${HOME}/.aws_creds"
+fi
+
+# Source acesses tokens, if present
+if [ -e "${HOME}/.access_tokens" ] ; then
+  source "${HOME}/.access_tokens"
 fi
 
 PROMPT_COMMAND=prompt
@@ -85,9 +77,4 @@ fi
 # The next line enables bash completion for gcloud.
 if [ -f "${HOME}/Applications/google-cloud-sdk/completion.bash.inc" ]; then
 	source "${HOME}/Applications/google-cloud-sdk/completion.bash.inc"
-fi
-
-# source acesses tokens, if present
-if [ -e "${HOME}/.access_tokens" ] ; then
-  source "${HOME}/.access_tokens"
 fi

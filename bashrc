@@ -9,4 +9,3 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 export GOPATH=$HOME/go
 export LOCALPATH=/usr/local/bin:/usr/local/sbin
 export PATH=$PATH:$LOCALPATH:$GOPATH/bin
-
