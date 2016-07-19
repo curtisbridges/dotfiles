@@ -4,8 +4,6 @@
 [push]
 	default = simple
 [core]
-	eol = LF
-	autocrlf = true
 	editor = mate -w
 	fileMode = false
 	safecrlf = false

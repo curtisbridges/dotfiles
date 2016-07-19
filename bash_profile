@@ -24,57 +24,13 @@ if [ -e "${HOME}/.bashrc" ] ; then
   source "${HOME}/.bashrc"
 fi
 
-# source the users aliases if it exists
-if [ -e "${HOME}/.aliases" ] ; then
-  source "${HOME}/.aliases"
-fi
-
-# source the users functions if it exists
-if [ -e "${HOME}/.functions" ] ; then
-  source "${HOME}/.functions"
-fi
-
-# Set PATH so it includes user's private bin if it exists
-if [ -d "${HOME}/bin" ] ; then
-  PATH=${HOME}/bin:${PATH}
+# source the common environment settings
+if [ -e "${HOME}/.environment" ] ; then
+  source "${HOME}/.environment"
 fi
 
 if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
 
-if [ -d "${HOME}/.homebrew_token" ]; then
-	source "${HOME}/.homebrew_token"
-fi
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
-
-if [ -d "${HOME}/.ssh" ] ; then
-	ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
-#	ssh-add "${HOME}/.ssh/github" &> /dev/null
-	ssh-add "${HOME}/.ssh/riverbed_gitlab_rsa" &> /dev/null
-fi
-
-# Source my AWS creds
-if [ -d "${HOME}/.aws_creds" ] ; then
-	source "${HOME}/.aws_creds"
-fi
-
-# Source acesses tokens, if present
-if [ -e "${HOME}/.access_tokens" ] ; then
-  source "${HOME}/.access_tokens"
-fi
-
-PROMPT_COMMAND=prompt
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f "${HOME}/Applications/google-cloud-sdk/path.bash.inc" ]; then
-	source "${HOME}/Applications/google-cloud-sdk/path.bash.inc"
-fi
-
-# The next line enables bash completion for gcloud.
-if [ -f "${HOME}/Applications/google-cloud-sdk/completion.bash.inc" ]; then
-	source "${HOME}/Applications/google-cloud-sdk/completion.bash.inc"
-fi
