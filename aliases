@@ -23,6 +23,9 @@ alias dt='cd ~/Desktop'
 alias dev='cd ~/Developer'
 alias webui='cd ~/Developer/webui'
 
+# Update and Upgrade Homebrew
+alias buu='brew update && brew upgrade'
+
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
