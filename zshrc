@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-# export ZSH=/Users/cbridges/.oh-my-zsh
+export ZSH=/Users/cbridges/.oh-my-zsh
 
 export KEYTIMEOUT=1
 
@@ -81,7 +81,7 @@ plugins=(git git-extras git-flow github osx brew vi-mode npm sudo web-search)
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -90,7 +90,7 @@ plugins=(git git-extras git-flow github osx brew vi-mode npm sudo web-search)
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='mate'
 fi
 
 # Compilation flags
@@ -107,4 +107,5 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 
