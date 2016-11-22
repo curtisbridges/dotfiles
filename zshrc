@@ -108,4 +108,5 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
