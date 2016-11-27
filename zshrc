@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/cbridges/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 export KEYTIMEOUT=1
 
@@ -18,7 +18,7 @@ bindkey -v
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/Users/cbridges/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
