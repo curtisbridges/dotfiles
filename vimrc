@@ -1,5 +1,5 @@
 " Curtis Bridges <curtis@curtisbridges.com>
-" 2016-02-01
+" 2017-03-30
 " _vimrc
 
 " basic settings
@@ -16,9 +16,8 @@ if has("gui_running")
     set lines=80 " perfect size for me, maximizes veritcally on a win/1600x1200 screen
     set mousehide " hide the mouse cursor when typing
     set guioptions-=tT "no tear offs
-    " set guifont=courier_new:h8:w5 " font
-    "set guifont=sans_serif " font
-    "set guifont=arial " font
+    set guifont=SF\ Mono\ Regular:h12
+    "set guifont=Menlo
 else
     set background=dark " use dark background with terminal
 endif
