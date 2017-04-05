@@ -26,6 +26,8 @@ alias webui='cd ~/Developer/webui'
 # Update and Upgrade Homebrew
 alias buu='brew update && brew upgrade'
 
+alias mvim='/Applications/MacVim.app/Contents/bin/mvim'
+
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
@@ -53,3 +55,4 @@ alias gbr="git checkout -b"
 alias gba="git branch -a"
 alias gsquish="git commit -a --amend -C HEAD"
 alias gff="git stash && git fetch && git rebase origin/develop && git stash pop"
+
