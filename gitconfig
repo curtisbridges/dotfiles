@@ -4,7 +4,7 @@
 [push]
 	default = simple
 [core]
-	editor = mate -w
+	editor = mvim
 	fileMode = false
 	safecrlf = false
 [branch]
@@ -21,3 +21,8 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+
+# this include will override the defaults above if the directory happens to be for work
+[includeIf "gitdir:~/**/riverbed/*"]
+  path = .gitconfig-riverbed
+
