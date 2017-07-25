@@ -12,8 +12,8 @@ set autochdir " always change working directory to the buffer's
 
 if has("gui_running")
     set background=light " we plan to use a light background
-    set columns=140 " perfect size for me
-    set lines=80 " perfect size for me, maximizes veritcally on a win/1600x1200 screen
+    set columns=120 " perfect size for me
+    set lines=40 " perfect size for me
     set mousehide " hide the mouse cursor when typing
     set guioptions-=tT "no tear offs
     set guifont=SF\ Mono\ Regular:h12
