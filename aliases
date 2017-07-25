@@ -21,7 +21,7 @@ alias db='cd ~/Documents/Dropbox'
 alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
 alias dev='cd ~/Developer'
-alias webui='cd ~/Developer/webui'
+alias webui='cd ~/Developer/riverbed/webui'
 
 # Update and Upgrade Homebrew
 alias buu='brew update && brew upgrade'
