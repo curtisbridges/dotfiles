@@ -106,3 +106,5 @@ fi
 # alias ohmyzsh="vim ~/.oh-my-zsh"
 # export ANDROID_HOME=/usr/local/opt/android-sdk
 
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
