@@ -8,8 +8,6 @@ if [ -e "${HOME}/.environment" ] ; then
     source ${HOME}/.environment
 fi
 
-
-
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -23,7 +21,6 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-
 
 
 # Set name of the theme to load.
@@ -90,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mate'
+  export EDITOR='mvim'
 fi
 
 # Compilation flags
@@ -105,8 +102,7 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export ANDROID_HOME=/usr/local/opt/android-sdk
+# alias zshconfig="vim ~/.zshrc"
+# alias ohmyzsh="vim ~/.oh-my-zsh"
+# export ANDROID_HOME=/usr/local/opt/android-sdk
 
