@@ -17,28 +17,35 @@ set autochdir " always change working directory to the buffer's
 " Let's make it pretty
 try
     if has('gui_running')
-        colorscheme onehalflight
+        "colorscheme onehalfdark
+        "colorscheme two-firewatch
+        colorscheme onedark
 
-        set background=light " use a light background when using a gui
-        set columns=120 " perfect size for me
-        set lines=40 " perfect size for me
+        set background=dark
+        set columns=120
+        set lines=40
         set mousehide " hide the mouse cursor when typing
         set guioptions-=tT "no tear offs
         set guifont=SF\ Mono\ Regular:h12
 
-        let g:lightline = { 'colorscheme': 'PaperColor_light', }
+        "let g:lightline = { 'colorscheme': 'PaperColor_light', }
+        "let g:lightline = { 'colorscheme': 'twofirewatch', }
+        let g:lightline = { 'colorscheme': 'onedark', }
     else
+        "colorscheme two-firewatch
         colorscheme onedark
-        "colorscheme onehalfdark
         set background=dark " use dark background with terminal
 
         let g:lightline = { 'colorscheme': 'onedark', }
+        "let g:lightline = { 'colorscheme': 'twofirewatch', }
     endif
 catch
 endtry
 
 set laststatus=2
 set cursorline
+
+let g:two_firewatch_italics=1
 
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
