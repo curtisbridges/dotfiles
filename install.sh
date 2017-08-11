@@ -1,11 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-files="environment bash_profile bashrc zshrc inputrc aliases functions gitconfig gitconfig-riverbed gitignore gitignore_global gitattributes dictionary plan vimrc"
-dir=`pwd`
-
-# Make symlinks
-for file in $files; do
-    echo "Creating symlink to .$file in home directory."
-    ln -sf $dir/$file ~/.$file
+for f in ~/Developer/dotfiles/*
+do
+  ln -s "$f" "$HOME/.${f##*/}"
 done
-

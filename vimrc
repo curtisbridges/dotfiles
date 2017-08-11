@@ -1,32 +1,54 @@
 " Curtis Bridges <curtis@curtisbridges.com>
-" 2017-07-26
+" 2017-08-11
 " .vimrc
 
 " basic settings
 set nocompatible
-
 behave mswin
+
+" Set utf8 as standard encoding and en_US as the standard language
+set encoding=utf8
 
 " turn on syntax highlighting
 syntax on
 
 set autochdir " always change working directory to the buffer's
 
-if has("gui_running")
-    set background=light " we plan to use a light background
-    set columns=120 " perfect size for me
-    set lines=40 " perfect size for me
-    set mousehide " hide the mouse cursor when typing
-    set guioptions-=tT "no tear offs
-    set guifont=SF\ Mono\ Regular:h12
-else
-    set background=dark " use dark background with terminal
-endif
+" Let's make it pretty
+try
+    if has('gui_running')
+        colorscheme onehalflight
 
+        set background=light " use a light background when using a gui
+        set columns=120 " perfect size for me
+        set lines=40 " perfect size for me
+        set mousehide " hide the mouse cursor when typing
+        set guioptions-=tT "no tear offs
+        set guifont=SF\ Mono\ Regular:h12
+
+        let g:lightline = { 'colorscheme': 'PaperColor_light', }
+    else
+        colorscheme onedark
+        "colorscheme onehalfdark
+        set background=dark " use dark background with terminal
+
+        let g:lightline = { 'colorscheme': 'onedark', }
+    endif
+catch
+endtry
+
+set laststatus=2
+set cursorline
+
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'itchyny/lightline.vim'
+
+" Initialize plugin system
+call plug#end()
 
 " backups
-"set backup
-"set backupdir=~/backups
 set nowritebackup
 "set autowrite
 set noswapfile
@@ -40,7 +62,7 @@ set softtabstop=4 " when hitting tab or backspace, how many spaces should a tab 
 set tabstop=4 
 set shiftround " when at 3 spaces, and I hit > ... go to 4, not 5
 set list " we do what to show tabs, to ensure we get them out of my files
-set listchars=tab:>-,trail:- " show tabs and trailing 
+set listchars=tab:>-,trail:· " show tabs and trailing 
 "set listchars=tab:>- " show hard tabs 
 
 set autoindent
@@ -55,6 +77,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 filetype plugin on
+filetype plugin indent on
 filetype indent on
 
 "set ignorecase " case insensitive by default
@@ -75,17 +98,17 @@ set ruler " Always show current positions along the bottom
 set linespace=0 " don't insert any extra pixel lines betweens rows
 set scrolloff=10 " Keep 10 lines (top/bottom) for scope
 set sidescrolloff=10 " Keep 5 lines at the size
+set noshowmode " Let our lightline show the mode
 
 " filesystem and term settings
 set ttyfast
 set novisualbell
 set noerrorbells " don't make noise
 set wildchar=<TAB>      " Expansion in the command line..
-set wildignore=*.o,*.obj,*.bak,*.exe,*.java~,*.class,*.jar
-set suffixes=\.swp,\.exe,\.zip,\.gz,\.class,\.jar
-"set makeprg=ant\ -emacs\ -find\ build.xml
-"set makeef=ant.log
-"set grepprg=find \/n
+set wildignore+=*~,*.swp,*.o,*.obj,*.bak,*.exe,*.class,*.jar,*.pyc
+set wildignore+=*node_modules/**,*vendor/**,.git
+set wildmenu  " Enable command-line completion
+set suffixes=.swp,.exe,.zip,.gz,.class,.jar
 set tags=tags;src/**/tags
 set hlsearch " highlight the search pattern while searching
 set incsearch " BUT do highlight as you type you search phrase
@@ -94,4 +117,16 @@ set incsearch " BUT do highlight as you type you search phrase
 " mispellings
 iab THe The
 iab teh the
+
+" Make double-<Esc> clear search highlights
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+
+" Delete trailing white space on save, useful for some filetypes ;)
+fun! CleanExtraSpaces()
+    let save_cursor = getpos(".")
+    let old_query = getreg('/')
+    silent! %s/\s\+$//e
+    call setpos('.', save_cursor)
+    call setreg('/', old_query)
+endfun
 
