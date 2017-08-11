@@ -1,3 +1,6 @@
 [submodule "vim/pack/cmb/start/lightline.vim"]
 	path = vim/pack/cmb/start/lightline.vim
 	url = git@github.com:itchyny/lightline.vim.git
+[submodule "vim/pack/cmb/start/onedark.vim"]
+	path = vim/pack/cmb/start/onedark.vim
+	url = git@github.com:joshdick/onedark.vim.git
