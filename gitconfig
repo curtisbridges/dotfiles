@@ -1,6 +1,8 @@
 [user]
 	name = Curtis Bridges
 	email = curtis@curtisbridges.com
+[github]
+	user = curtisbridges
 [push]
 	default = simple
 [core]
@@ -25,4 +27,3 @@
 # this include will override the defaults above if the directory happens to be for work
 [includeIf "gitdir:~/**/riverbed/*"]
   path = .gitconfig-riverbed
-
