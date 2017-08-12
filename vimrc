@@ -18,10 +18,10 @@ set autochdir " always change working directory to the buffer's
 try
     if has('gui_running')
         "colorscheme onehalfdark
-        "colorscheme two-firewatch
-        colorscheme onedark
+        colorscheme two-firewatch
+        "colorscheme onedark
 
-        set background=dark
+        set background=light
         set columns=120
         set lines=40
         set mousehide " hide the mouse cursor when typing
@@ -29,8 +29,8 @@ try
         set guifont=SF\ Mono\ Regular:h12
 
         "let g:lightline = { 'colorscheme': 'PaperColor_light', }
-        "let g:lightline = { 'colorscheme': 'twofirewatch', }
-        let g:lightline = { 'colorscheme': 'onedark', }
+        let g:lightline = { 'colorscheme': 'twofirewatch', }
+        "let g:lightline = { 'colorscheme': 'onedark', }
     else
         "colorscheme two-firewatch
         colorscheme onedark
@@ -51,6 +51,7 @@ let g:two_firewatch_italics=1
 call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
+Plug 'plasticboy/vim-markdown'
 
 " Initialize plugin system
 call plug#end()
