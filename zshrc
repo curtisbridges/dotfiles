@@ -71,7 +71,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras git-flow github osx brew vi-mode npm sudo web-search docker)
+plugins=(aws brew docker git git-extras git-flow history ng npm osx sudo vi-mode wd web-search)
 
 # User configuration
 
@@ -108,3 +108,18 @@ fi
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+# Requires osx plugin
+# tab	Open the current directory in a new tab
+# ofd	Open the current directory in a Finder window
+# pfd	Return the path of the frontmost Finder window
+# pfs	Return the current Finder selection
+# cdf	cd to the current Finder directory
+# pushdf	pushd to the current Finder directory
+# quick-look	Quick-Look a specified file
+# man-preview	Open a specified man page in Preview app
+# showfiles	Show hidden files
+# hidefiles	Hide the hidden files
+# itunes	Control iTunes. User itunes -h for usage details
+# spotify	Control Spotify and search by artist, album, track and etc.
+alias ql=quick-look

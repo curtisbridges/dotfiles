@@ -1,0 +1,13 @@
+dotfiles:~/Developer/dotfiles
+dev:~/Developer
+rvbd:~/Developer/riverbed
+ur:~/Developer/riverbed/user-redirector
+ops:~/Developer/riverbed/saas-ops
+scripts:~/Developer/riverbed/saas-ops/scripts
+dot:~/Developer/dotfiles
+down:~/Downloads
+docs:~/Documents
+cb:~/Developer/personal/curtisbridges.com
+blog:~/Developer/personal/curtisbridges.github.com
+edu:~/Developer/education
+udacity:~/Developer/education/Udacity
