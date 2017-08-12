@@ -29,6 +29,8 @@
     hidePanelWhenEmpty: true
     panelHeight: 69
     showPanel: true
+  "merge-conflicts":
+    gitPath: "/usr/local/bin/git"
   minimap:
     plugins:
       "find-and-replace": true
@@ -42,6 +44,8 @@
     extendAutocompleteToColorValue: true
     markerType: "native-dot"
     mergeColorDuplicates: true
+  "symbols-tree-view":
+    autoToggle: true
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
