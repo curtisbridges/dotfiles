@@ -13,15 +13,6 @@ alias grep='grep --color'                     # show differences in color
 alias ls='ls -FHG'
 alias ll='ls -l'
 
-# Directories
-alias db='cd ~/Documents/Dropbox'
-alias dl='cd ~/Downloads'
-alias dt='cd ~/Desktop'
-alias dev='cd ~/Developer'
-alias webui='cd ~/Developer/riverbed/webui'
-alias ur='cd ~/Developer/riverbed/user-redirector'
-alias saas='cd ~/Developer/riverbed/saas-ops'
-
 # Update and Upgrade Homebrew
 alias buu='brew update && brew upgrade && brew prune && brew cleanup && brew doctor'
 
