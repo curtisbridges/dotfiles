@@ -6,6 +6,7 @@ tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'caskroom/cask'
+tap 'caskroom/fonts'
 
 # Brews
 brew 'ack'
@@ -65,7 +66,7 @@ cask 'visual-studio-code'
 cask 'vmware-fusion'
 
 # Fonts
-cask 'font-sauce-code-powerline'
+cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
@@ -78,7 +79,6 @@ mas 'microsoft-remote-desktop', id: 715768417
 mas 'Pages', id: 409201541
 mas 'Pixelmator', id: 407963104
 mas 'Reeder', id: 880001334
-mas 'Sketch', id: 402476602
 mas 'Tweetbot', id: 557168941
 mas 'the-unarchiver', id: 425424353
 mas 'Xcode', id: 497799835
