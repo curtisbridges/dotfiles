@@ -35,7 +35,6 @@ brew 'youtube-dl'
 brew 'zsh'
 
 # Casks
-cask '1password'
 cask 'appcleaner'
 cask 'atom'
 cask 'balsamiq-mockups'
