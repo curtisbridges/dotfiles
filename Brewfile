@@ -35,34 +35,35 @@ brew 'youtube-dl'
 brew 'zsh'
 
 # Casks
-cask 'appcleaner'
-cask 'atom'
-cask 'balsamiq-mockups'
-cask 'battle-net'
-cask 'calibre'
-cask 'deluge'
-cask 'docker'
-cask 'doxie'
-cask 'eclipse-java'
-cask 'firefox'
-cask 'geekbench'
-cask 'github-desktop'
-cask 'google-chrome'
-cask 'iterm2'
-cask 'java'
-cask 'kaleidoscope'
-cask 'kindle'
-cask 'little-snitch'
-cask 'macvim'
-cask 'micro-snitch'
-cask 'transmit'
-cask 'tower'
-cask 'sketch'
-cask 'slack'
-cask 'spotify'
-cask 'superduper'
-cask 'visual-studio-code'
-cask 'vmware-fusion'
+#                                                   # Linux equivalents
+cask 'appcleaner'                                   # None needed (package managers)
+cask 'atom'                                         # Atom
+cask 'balsamiq-mockups'                             # ???
+cask 'battle-net'                                   # ---
+cask 'calibre'                                      # calibre
+cask 'deluge'                                       # deluge
+cask 'docker'                                       # docker
+cask 'doxie'                                        # ---
+cask 'eclipse-java'                                 # eclipse
+cask 'firefox'                                      # firefox
+cask 'geekbench'                                    # ---
+cask 'github-desktop'                               # ---
+cask 'google-chrome'                                # google-chrome
+cask 'iterm2'                                       # gnome-terminal
+cask 'java'                                         # java
+cask 'kaleidoscope'                                 # ???
+cask 'kindle'                                       # ???
+cask 'little-snitch'                                # ???
+cask 'macvim'                                       # gvim
+cask 'micro-snitch'                                 # ???
+cask 'transmit'                                     # ???
+cask 'tower'                                        # ---
+cask 'sketch'                                       # ???
+cask 'slack'                                        # slack
+cask 'spotify'                                      # spotify web
+cask 'superduper'                                   # ---
+cask 'visual-studio-code'                           # visual studio code
+cask 'vmware-fusion'                                # vmware workstation for linux
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
@@ -71,13 +72,13 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
-mas '1Password', id: 443987910
-mas '1Blocker', id: 1107421413
-mas 'Marked 2', id: 890031187
-mas 'microsoft-remote-desktop', id: 715768417
-mas 'Pages', id: 409201541
-mas 'Pixelmator', id: 407963104
-mas 'Reeder', id: 880001334
-mas 'Tweetbot', id: 557168941
-mas 'the-unarchiver', id: 425424353
-mas 'Xcode', id: 497799835
+mas '1Password', id: 443987910                      # lastpass / keepass
+mas '1Blocker', id: 1107421413                      # ghostery
+mas 'Marked 2', id: 890031187                       # ???
+mas 'microsoft-remote-desktop', id: 715768417       # ???
+mas 'Pages', id: 409201541                          # google docs / libreoffice
+mas 'Pixelmator', id: 407963104                     # gimp
+mas 'Reeder', id: 880001334                         # FeedReader
+mas 'Tweetbot', id: 557168941                       # twitter web
+mas 'the-unarchiver', id: 425424353                 # built-in?
+mas 'Xcode', id: 497799835                          # AndroidStudio
