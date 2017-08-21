@@ -76,6 +76,7 @@ cask 'font-source-serif-pro'
 mas '1Password', id: 443987910                      # lastpass / keepass
 mas '1Blocker', id: 1107421413                      # ghostery
 mas 'Marked 2', id: 890031187                       # ???
+mas 'Blackmagic Disk Speed Test', id: 425264550     # meh.
 mas 'microsoft-remote-desktop', id: 715768417       # ???
 mas 'Pages', id: 409201541                          # google docs / libreoffice
 mas 'PiPifier', id: 1160374471                      # PiP all the things
