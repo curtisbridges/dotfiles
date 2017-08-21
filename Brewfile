@@ -78,6 +78,7 @@ mas '1Blocker', id: 1107421413                      # ghostery
 mas 'Marked 2', id: 890031187                       # ???
 mas 'microsoft-remote-desktop', id: 715768417       # ???
 mas 'Pages', id: 409201541                          # google docs / libreoffice
+mas 'PiPifier', id: 1160374471                      # PiP all the things
 mas 'Pixelmator', id: 407963104                     # gimp
 mas 'Reeder', id: 880001334                         # FeedReader
 mas 'Tweetbot', id: 557168941                       # twitter web
