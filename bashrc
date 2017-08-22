@@ -8,3 +8,7 @@ export VISUAL='mvim'
 #export ANDROID_HOME=/usr/local/opt/android-sdk
 export LOCALPATH=/usr/local/bin:/usr/local/sbin
 export PATH=$LOCALPATH:$PATH
+
+
+# recoverable typos!
+eval "$(thefuck --alias)"
