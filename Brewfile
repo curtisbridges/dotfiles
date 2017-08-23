@@ -82,6 +82,7 @@ mas 'Pages', id: 409201541                          # google docs / libreoffice
 mas 'PiPifier', id: 1160374471                      # PiP all the things
 mas 'Pixelmator', id: 407963104                     # gimp
 mas 'Reeder', id: 880001334                         # FeedReader
+mas 'Speedtest by Ookla', id: 1153157709            # speedtest.net
 mas 'Tweetbot', id: 557168941                       # twitter web
 mas 'the-unarchiver', id: 425424353                 # built-in?
 mas 'Xcode', id: 497799835                          # AndroidStudio
