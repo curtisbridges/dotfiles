@@ -37,10 +37,12 @@ brew 'zsh'
 
 # Casks
 #                                                   # Linux equivalents
+cask '1password'                                    # lastpass / keepass
 cask 'appcleaner'                                   # None needed (package managers)
 cask 'atom'                                         # Atom
 cask 'balsamiq-mockups'                             # ???
 cask 'battle-net'                                   # ---
+cask 'cakebrew'                                     # None needed (package manager UIs)
 cask 'calibre'                                      # calibre
 cask 'deluge'                                       # deluge
 cask 'docker'                                       # docker
@@ -56,6 +58,7 @@ cask 'kaleidoscope'                                 # ???
 cask 'kindle'                                       # ???
 cask 'little-snitch'                                # ???
 cask 'macvim'                                       # gvim
+cask 'marked'                                       # ???
 cask 'micro-snitch'                                 # ???
 cask 'transmit'                                     # ???
 cask 'tower'                                        # ---
@@ -73,9 +76,7 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
-mas '1Password', id: 443987910                      # lastpass / keepass
 mas '1Blocker', id: 1107421413                      # ghostery
-mas 'Marked 2', id: 890031187                       # ???
 mas 'Blackmagic Disk Speed Test', id: 425264550     # meh.
 mas 'microsoft-remote-desktop', id: 715768417       # ???
 mas 'Pages', id: 409201541                          # google docs / libreoffice
