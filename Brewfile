@@ -2,11 +2,11 @@
 cask_args appdir: '/Applications'
 
 # Taps
-tap 'caskroom/cask'
-tap 'homebrew/bundle'
 tap 'homebrew/core'
+tap 'homebrew/bundle'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
+tap 'buo/cask-upgrade'                              # adds 'brew cu' to upgrade casks
 
 # Brews
 brew 'ack'
