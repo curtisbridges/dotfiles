@@ -65,6 +65,7 @@ cask 'tower'                                        # ---
 cask 'sketch'                                       # ???
 cask 'slack'                                        # slack
 cask 'spotify'                                      # spotify web
+cask 'steam'                                        # steam
 cask 'superduper'                                   # ---
 cask 'visual-studio-code'                           # visual studio code
 cask 'vmware-fusion'                                # vmware workstation for linux
