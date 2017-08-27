@@ -44,6 +44,7 @@ cask 'balsamiq-mockups'                             # ???
 cask 'battle-net'                                   # ---
 cask 'cakebrew'                                     # None needed (package manager UIs)
 cask 'calibre'                                      # calibre
+cask 'carbon-copy-cloner'                           # ???
 cask 'deluge'                                       # deluge
 cask 'docker'                                       # docker
 cask 'doxie'                                        # ---
@@ -66,7 +67,6 @@ cask 'sketch'                                       # ???
 cask 'slack'                                        # slack
 cask 'spotify'                                      # spotify web
 cask 'steam'                                        # steam
-cask 'superduper'                                   # ---
 cask 'visual-studio-code'                           # visual studio code
 cask 'vmware-fusion'                                # vmware workstation for linux
 
