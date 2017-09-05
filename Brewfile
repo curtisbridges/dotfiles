@@ -43,6 +43,7 @@ cask 'appcleaner'                                   # None needed (package manag
 cask 'atom'                                         # Atom
 cask 'balsamiq-mockups'                             # ???
 cask 'battle-net'                                   # ---
+cask 'brave'
 cask 'cakebrew'                                     # None needed (package manager UIs)
 cask 'calibre'                                      # calibre
 #cask 'carbon-copy-cloner'                           # ???
@@ -54,6 +55,7 @@ cask 'firefox'                                      # firefox
 cask 'geekbench'                                    # ---
 cask 'github-desktop'                               # ---
 cask 'google-chrome'                                # google-chrome
+cask 'hyper'
 cask 'iterm2'                                       # gnome-terminal
 cask 'java'                                         # java
 cask 'kaleidoscope'                                 # ???
