@@ -42,7 +42,7 @@ cask '1password'                                    # lastpass / keepass
 cask 'appcleaner'                                   # None needed (package managers)
 cask 'atom'                                         # Atom
 cask 'balsamiq-mockups'                             # ???
-cask 'battle-net'                                   # ---
+#cask 'battle-net'                                   # ---
 cask 'brave'
 cask 'cakebrew'                                     # None needed (package manager UIs)
 cask 'calibre'                                      # calibre
@@ -68,8 +68,8 @@ cask 'transmit'                                     # ???
 cask 'tower'                                        # ---
 cask 'sketch'                                       # ???
 cask 'slack'                                        # slack
-cask 'spotify'                                      # spotify web
-cask 'steam'                                        # steam
+#cask 'spotify'                                      # spotify web
+#cask 'steam'                                        # steam
 cask 'visual-studio-code'                           # visual studio code
 cask 'vmware-fusion'                                # vmware workstation for linux
 
