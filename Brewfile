@@ -64,12 +64,13 @@ cask 'little-snitch'                                # ???
 cask 'macvim'                                       # gvim
 cask 'marked'                                       # ???
 cask 'micro-snitch'                                 # ???
-cask 'transmit'                                     # ???
-cask 'tower'                                        # ---
 cask 'sketch'                                       # ???
 cask 'slack'                                        # slack
 #cask 'spotify'                                      # spotify web
 #cask 'steam'                                        # steam
+cask 'transmit'                                     # ???
+cask 'tower'                                        # ---
+cask 'twitch'
 cask 'visual-studio-code'                           # visual studio code
 cask 'vmware-fusion'                                # vmware workstation for linux
 
