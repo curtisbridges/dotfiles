@@ -1,15 +1,20 @@
-dotfiles:~/Developer/dotfiles
+# Generic Directories
 dev:~/Developer
-rvbd:~/Developer/riverbed
-ur:~/Developer/riverbed/user-redirector
-scripts:~/Developer/riverbed/saas-ops/scripts
-dot:~/Developer/dotfiles
-down:~/Downloads
+desk:~/Desktop
 docs:~/Documents
+dl:~/Downloads
+
+
+# Personal Projects
+dot:~/Developer/dotfiles
 cb:~/Developer/personal/curtisbridges.com
 blog:~/Developer/personal/curtisbridges.github.com
 edu:~/Developer/education
-udacity:~/Developer/education/Udacity
+
+# Work
+rvbd:~/Developer/riverbed
+ur:~/Developer/riverbed/user-redirector
+ep:~/Developer/riverbed/saas-ops/event-processor
+scripts:~/Developer/riverbed/saas-ops/scripts
 webui:~/Developer/riverbed/webui
-desk:~/Desktop
 sops:~/Developer/riverbed/saas-ops
