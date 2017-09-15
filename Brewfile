@@ -39,6 +39,7 @@ brew 'zsh'
 # Casks
 #                                                   # Linux equivalents
 cask '1password'                                    # lastpass / keepass
+cask 'android-studio'                               # Android Studio
 cask 'appcleaner'                                   # None needed (package managers)
 cask 'atom'                                         # Atom
 cask 'balsamiq-mockups'                             # ???
