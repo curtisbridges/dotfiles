@@ -1591,6 +1591,8 @@
 	<string>78242376-9DA2-44A9-AE12-133E88F4F184</string>
 	<key>DimBackgroundWindows</key>
 	<true/>
+	<key>DimOnlyText</key>
+	<true/>
 	<key>DisableFullscreenTransparency</key>
 	<true/>
 	<key>HideScrollbar</key>
@@ -1658,7 +1660,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>713 944 796 473 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1849 469 710 638 0 0 2560 1417 </string>
+	<string>1710 440 850 750 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3032,6 +3034,8 @@
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>524163286.79355103</real>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -3067,8 +3071,10 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/cmb/Developer/dotfiles/iterm</string>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
-	<true/>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<false/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -3085,10 +3091,14 @@
 	<true/>
 	<key>SmartPlacement</key>
 	<true/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.48360877403846159</real>
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>TabStyle</key>
 	<integer>1</integer>
+	<key>UseBorder</key>
+	<false/>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WordCharacters</key>
