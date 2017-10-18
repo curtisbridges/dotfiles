@@ -16,6 +16,7 @@ rvbd:~/Developer/riverbed
 ur:~/Developer/riverbed/user-redirector
 ep:~/Developer/riverbed/saas-ops/event-processor
 scripts:~/Developer/riverbed/saas-ops/scripts
-webui:~/Developer/riverbed/webui
 sops:~/Developer/riverbed/saas-ops
+tf:~/Developer/riverbed/saas-terraform-envs
+webui:~/Developer/riverbed/webui
 work:~/Documents/Work/Riverbed/_Notes
