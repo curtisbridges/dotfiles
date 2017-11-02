@@ -66,6 +66,7 @@ cask 'little-snitch'                                # ???
 cask 'macvim'                                       # gvim
 cask 'marked'                                       # ???
 cask 'micro-snitch'                                 # ???
+cask 'signal'
 cask 'sketch'                                       # ???
 cask 'slack'                                        # slack
 #cask 'spotify'                                      # spotify web
