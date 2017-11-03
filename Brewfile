@@ -44,11 +44,8 @@ cask 'android-studio'                               # Android Studio
 cask 'appcleaner'                                   # None needed (package managers)
 cask 'atom'                                         # Atom
 cask 'balsamiq-mockups'                             # ???
-#cask 'battle-net'                                   # ---
-cask 'brave'
 cask 'cakebrew'                                     # None needed (package manager UIs)
 cask 'calibre'                                      # calibre
-#cask 'carbon-copy-cloner'                           # ???
 cask 'deluge'                                       # deluge
 cask 'docker'                                       # docker
 cask 'doxie'                                        # ---
@@ -69,7 +66,7 @@ cask 'micro-snitch'                                 # ???
 cask 'signal'
 cask 'sketch'                                       # ???
 cask 'slack'                                        # slack
-#cask 'spotify'                                      # spotify web
+cask 'spotify'                                      # spotify web
 #cask 'steam'                                        # steam
 cask 'transmit'                                     # ???
 cask 'tower'                                        # ---
