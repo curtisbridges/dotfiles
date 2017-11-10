@@ -44,7 +44,6 @@ cask 'android-studio'                               # Android Studio
 cask 'appcleaner'                                   # None needed (package managers)
 cask 'atom'                                         # Atom
 cask 'balsamiq-mockups'                             # ???
-cask 'bittorrent'                                   # bittorrent
 cask 'cakebrew'                                     # None needed (package manager UIs)
 cask 'calibre'                                      # calibre
 cask 'docker'                                       # docker
