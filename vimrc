@@ -29,7 +29,7 @@ try
         set guifont=SF\ Mono\ Regular:h12
 
         "let g:lightline = { 'colorscheme': 'PaperColor_light', }
-        let g:lightline = { 'colorscheme': 'twofirewatch', }
+        "let g:lightline = { 'colorscheme': 'twofirewatch', }
         "let g:lightline = { 'colorscheme': 'onedark', }
     else
         "colorscheme two-firewatch
@@ -67,11 +67,11 @@ set expandtab " no tab characters
 set smarttab
 set shiftwidth=4 " auto-indent amount when using cindent, >>, << and stuff like that
 set softtabstop=4 " when hitting tab or backspace, how many spaces should a tab be (see expandtab)
-set tabstop=4 
+set tabstop=4
 set shiftround " when at 3 spaces, and I hit > ... go to 4, not 5
 set list " we do what to show tabs, to ensure we get them out of my files
-set listchars=tab:>-,trail:· " show tabs and trailing 
-"set listchars=tab:>- " show hard tabs 
+set listchars=tab:>-,trail:· " show tabs and trailing
+"set listchars=tab:>- " show hard tabs
 
 set autoindent
 set smartindent
@@ -93,7 +93,7 @@ set smartcase " if there are caps, go case-sensitive
 set infercase " case inferred by default
 set nowrap " do not wrap line
 set showmatch " show matching brackets
-set matchtime=5 " how many tenths of a second to blink matching brackets 
+set matchtime=5 " how many tenths of a second to blink matching brackets
 set directory=/tmp " directory to place swap files in
 set clipboard+=unnamed " share windows clipboard
 set mouse=a " use mouse everywhere
@@ -137,4 +137,3 @@ fun! CleanExtraSpaces()
     call setpos('.', save_cursor)
     call setreg('/', old_query)
 endfun
-
