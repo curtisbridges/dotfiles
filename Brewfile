@@ -61,6 +61,7 @@ cask 'kindle'                                       # ???
 cask 'little-snitch'                                # ???
 cask 'macvim'                                       # gvim
 cask 'marked'                                       # ???
+cask 'marsedit'
 cask 'micro-snitch'                                 # ???
 cask 'signal'
 cask 'sketch'                                       # ???

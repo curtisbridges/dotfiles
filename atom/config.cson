@@ -11,6 +11,7 @@
     projectHome: "/Users/cmb/Developer"
     telemetryConsent: "limited"
     titleBar: "custom-inset"
+    uriHandlerRegistration: "always"
   editor:
     fontFamily: "SF Mono"
     fontSize: 12
