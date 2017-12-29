@@ -44,7 +44,6 @@ cask 'android-studio'                               # Android Studio
 cask 'appcleaner'                                   # None needed (package managers)
 cask 'atom'                                         # Atom
 cask 'balsamiq-mockups'                             # ???
-cask 'cakebrew'                                     # None needed (package manager UIs)
 cask 'calibre'                                      # calibre
 cask 'docker'                                       # docker
 cask 'doxie'                                        # ---
@@ -53,7 +52,6 @@ cask 'firefox'                                      # firefox
 cask 'geekbench'                                    # ---
 cask 'github-desktop'                               # ---
 cask 'google-chrome'                                # google-chrome
-cask 'hyper'
 cask 'iterm2'                                       # gnome-terminal
 cask 'java'                                         # java
 cask 'kaleidoscope'                                 # ???
@@ -67,7 +65,6 @@ cask 'signal'
 cask 'sketch'                                       # ???
 cask 'slack'                                        # slack
 cask 'spotify'                                      # spotify web
-#cask 'steam'                                        # steam
 cask 'transmit'                                     # ???
 cask 'tower'                                        # ---
 cask 'twitch'
@@ -83,13 +80,11 @@ cask 'font-source-serif-pro'
 
 # Mac App Store
 mas '1Blocker', id: 1107421413                      # ghostery
-mas 'Blackmagic Disk Speed Test', id: 425264550     # meh.
 mas 'microsoft-remote-desktop', id: 715768417       # ???
 mas 'Pages', id: 409201541                          # google docs / libreoffice
 mas 'PiPifier', id: 1160374471                      # PiP all the things
 mas 'Pixelmator', id: 407963104                     # gimp
 mas 'Reeder', id: 880001334                         # FeedReader
-mas 'Speedtest by Ookla', id: 1153157709            # speedtest.net
 mas 'Tweetbot', id: 557168941                       # twitter web
 mas 'the-unarchiver', id: 425424353                 # built-in?
 mas 'Xcode', id: 497799835                          # AndroidStudio
