@@ -70,6 +70,7 @@ cask 'tower'                                        # ---
 cask 'twitch'
 cask 'visual-studio-code'                           # visual studio code
 cask 'vmware-fusion'                                # vmware workstation for linux
+cask 'wireshark'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
