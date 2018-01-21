@@ -8,6 +8,9 @@
     useAlternateScoring: false
   core:
     automaticallyUpdate: false
+    disabledPackages: [
+      "symbols-tree-view"
+    ]
     projectHome: "/Users/cmb/Developer"
     telemetryConsent: "limited"
     titleBar: "custom-inset"
@@ -53,3 +56,7 @@
     hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+".js.source":
+  editor:
+    tabLength: 2
+    tabType: "soft"
