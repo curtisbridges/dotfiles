@@ -2,17 +2,21 @@
 	name = Curtis Bridges
 	email = curtis@curtisbridges.com
 [github]
-	user = curtisbridges
-[push]
-	default = simple
+    user = curtisbridges
 [core]
 	editor = vim
 	fileMode = false
 	safecrlf = false
-[branch]
-	autosetuprebase = always
+[fetch]
+    prune = true
 [pull]
 	rebase = preserve
+[push]
+	default = simple
+[branch]
+    autosetuprebase = always
+[rebase]
+    autosquash = true
 [filter "media"]
 	required = true
 	clean = git media clean %f

@@ -71,7 +71,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew docker git git-extras git-flow history ng npm osx sudo vi-mode wd web-search terraform)
+plugins=(aws brew docker git git-extras git-flow history ng npm osx sudo vi-mode wd web-search)
 
 # User configuration
 
@@ -107,8 +107,8 @@ fi
 # alias ohmyzsh="vim ~/.oh-my-zsh"
 # export ANDROID_HOME=/usr/local/opt/android-sdk
 
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
 
 # recoverable typos!
 eval "$(thefuck --alias)"

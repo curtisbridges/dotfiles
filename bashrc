@@ -1,7 +1,7 @@
 # Don"t put duplicate lines in the history.
 export HISTCONTROL="ignoredups"
 
-export EDITOR=vim
+export EDITOR='atom -nw'
 export VISUAL='atom -nw'
 
 export LOCALPATH=/usr/local/bin:/usr/local/sbin
