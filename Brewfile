@@ -57,8 +57,8 @@ cask 'java'                                         # java
 cask 'kaleidoscope'                                 # ???
 cask 'kindle'                                       # ???
 cask 'little-snitch'                                # ???
+cask 'macdown'
 cask 'macvim'                                       # gvim
-cask 'marked'                                       # ???
 cask 'marsedit'
 cask 'micro-snitch'                                 # ???
 cask 'signal'
