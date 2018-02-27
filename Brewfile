@@ -40,7 +40,6 @@ brew 'zsh'
 #                                                   # Linux equivalents
 cask '1password'                                    # lastpass / keepass
 cask 'acorn'                                        # Gimp
-cask 'android-studio'                               # Android Studio
 cask 'appcleaner'                                   # None needed (package managers)
 cask 'atom'                                         # Atom
 cask 'balsamiq-mockups'                             # ???
@@ -49,7 +48,6 @@ cask 'docker'                                       # docker
 cask 'doxie'                                        # ---
 cask 'eclipse-java'                                 # eclipse
 cask 'firefox'                                      # firefox
-cask 'geekbench'                                    # ---
 cask 'github-desktop'                               # ---
 cask 'google-chrome'                                # google-chrome
 cask 'iterm2'                                       # gnome-terminal
@@ -59,7 +57,6 @@ cask 'kindle'                                       # ???
 cask 'little-snitch'                                # ???
 cask 'macdown'
 cask 'macvim'                                       # gvim
-cask 'marsedit'
 cask 'micro-snitch'                                 # ???
 cask 'signal'
 cask 'sketch'                                       # ???
