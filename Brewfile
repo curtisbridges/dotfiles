@@ -40,7 +40,6 @@ brew 'zsh'
 # Casks
 #                                                   # Linux equivalents
 cask '1password'                                    # lastpass / keepass
-cask 'acorn'                                        # Gimp
 cask 'appcleaner'                                   # None needed (package managers)
 cask 'atom'                                         # Atom
 cask 'balsamiq-mockups'                             # ???
