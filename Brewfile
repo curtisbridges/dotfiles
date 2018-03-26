@@ -61,7 +61,6 @@ cask 'micro-snitch'                                 # ???
 cask 'signal'
 cask 'sketch'                                       # ???
 cask 'slack'                                        # slack
-cask 'spotify'                                      # spotify web
 cask 'transmit'                                     # ???
 cask 'tower'                                        # ---
 cask 'transmission'
