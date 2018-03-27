@@ -64,7 +64,6 @@ cask 'slack'                                        # slack
 cask 'transmit'                                     # ???
 cask 'tower'                                        # ---
 cask 'transmission'
-cask 'twitch'
 cask 'visual-studio-code'                           # visual studio code
 cask 'vmware-fusion'                                # vmware workstation for linux
 cask 'wireshark'
