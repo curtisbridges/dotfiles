@@ -38,34 +38,33 @@ brew 'youtube-dl'
 brew 'zsh'
 
 # Casks
-#                                                   # Linux equivalents
-cask '1password'                                    # lastpass / keepass
-cask 'appcleaner'                                   # None needed (package managers)
-cask 'atom'                                         # Atom
-cask 'balsamiq-mockups'                             # ???
-cask 'calibre'                                      # calibre
-cask 'docker'                                       # docker
-cask 'doxie'                                        # ---
-cask 'eclipse-java'                                 # eclipse
-cask 'firefox'                                      # firefox
-cask 'github-desktop'                               # ---
-cask 'google-chrome'                                # google-chrome
-cask 'iterm2'                                       # gnome-terminal
-cask 'java'                                         # java
-cask 'kaleidoscope'                                 # ???
-cask 'kindle'                                       # ???
-cask 'little-snitch'                                # ???
+cask '1password'
+cask 'appcleaner'
+cask 'atom'
+cask 'balsamiq-mockups'
+cask 'calibre'
+cask 'docker'
+cask 'doxie'
+cask 'eclipse-java'
+cask 'firefox'
+cask 'github-desktop'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'java'
+cask 'kaleidoscope'
+cask 'kindle'
+cask 'little-snitch'
 cask 'macdown'
-cask 'macvim'                                       # gvim
-cask 'micro-snitch'                                 # ???
+cask 'macvim'
+cask 'micro-snitch'
 cask 'signal'
-cask 'sketch'                                       # ???
-cask 'slack'                                        # slack
-cask 'transmit'                                     # ???
-cask 'tower'                                        # ---
+cask 'sketch'
+cask 'slack'
+cask 'transmit'
+cask 'tower'
 cask 'transmission'
-cask 'visual-studio-code'                           # visual studio code
-cask 'vmware-fusion'                                # vmware workstation for linux
+cask 'visual-studio-code'
+cask 'vmware-fusion'
 cask 'wireshark'
 
 # Fonts
