@@ -20,7 +20,6 @@
     fontSize: 12
     preferredLineLength: 120
     scrollPastEnd: true
-    showIndentGuide: true
     showInvisibles: true
     softWrap: true
     softWrapAtPreferredLineLength: true
