@@ -38,7 +38,7 @@ brew 'youtube-dl'
 brew 'zsh'
 
 # Casks
-cask '1password'
+#cask '1password' # for now, remove it. Using the beta channel until 7.0 release
 cask 'appcleaner'
 cask 'atom'
 cask 'balsamiq-mockups'
