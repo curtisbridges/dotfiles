@@ -71,12 +71,12 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
-mas '1Blocker', id: 1107421413                      # ghostery
-mas 'microsoft-remote-desktop', id: 715768417       # ???
-mas 'Pages', id: 409201541                          # google docs / libreoffice
-mas 'PiPifier', id: 1160374471                      # PiP all the things
-mas 'Pixelmator', id: 407963104                     # gimp
-mas 'Reeder', id: 880001334                         # FeedReader
-mas 'Tweetbot', id: 557168941                       # twitter web
-mas 'the-unarchiver', id: 425424353                 # built-in?
-mas 'Xcode', id: 497799835                          # AndroidStudio
+mas '1Blocker', id: 1107421413
+mas 'microsoft-remote-desktop', id: 715768417
+mas 'Pages', id: 409201541
+mas 'PiPifier', id: 1160374471
+mas 'Pixelmator', id: 407963104
+mas 'Reeder', id: 880001334
+mas 'Tweetbot', id: 557168941
+mas 'the-unarchiver', id: 425424353
+mas 'Xcode', id: 497799835
