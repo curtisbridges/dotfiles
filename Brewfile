@@ -65,7 +65,6 @@ cask 'tower'
 cask 'transmission'
 cask 'visual-studio-code'
 cask 'vmware-fusion'
-cask 'wireshark'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
