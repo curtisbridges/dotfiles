@@ -26,3 +26,5 @@ alias localip="ipconfig getifaddr en0"
 
 # Apps
 alias vsc=code
+alias tower=gittower
+
