@@ -1,0 +1,1 @@
+/Users/cmb/.config/fisherman/cprintf/completions/cprintf.fish

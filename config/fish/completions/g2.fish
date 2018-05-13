@@ -1,0 +1,1 @@
+/Users/cmb/.config/fisherman/g2/completions/g2.fish
