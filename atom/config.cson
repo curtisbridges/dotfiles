@@ -31,7 +31,7 @@
   linter: {}
   "linter-ui-default":
     hidePanelWhenEmpty: true
-    panelHeight: 69
+    panelHeight: 129
   "merge-conflicts":
     gitPath: "/usr/local/bin/git"
   minimap:

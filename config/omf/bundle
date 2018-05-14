@@ -1,2 +1,6 @@
+package aws
+package git-flow
+package osx
+package thefuck
 theme bobthefish
 theme default
