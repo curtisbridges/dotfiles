@@ -127,3 +127,15 @@ eval "$(thefuck --alias)"
 # itunes	Control iTunes. User itunes -h for usage details
 # spotify	Control Spotify and search by artist, album, track and etc.
 alias ql=quick-look
+
+# Set Spaceship ZSH as a prompt
+# autoload -U promptinit; promptinit
+
+SPACESHIP_VI_MODE_SHOW=false
+SPACESHIP_EXIT_CODE_SHOW=true
+SPACESHIP_TIME_SHOW=false
+SPACESHIP_USER_SHOW=true
+
+PURE_PROMPT_SYMBOL=➜
+
+# prompt pure
