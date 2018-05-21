@@ -24,6 +24,9 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
+set LOCAL_IP (ipconfig getifaddr en0)
+alias serve "browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000"
+
 # Apps
 alias vsc=code
 alias tower=gittower
