@@ -80,6 +80,10 @@ plugins=(aws brew docker git git-extras git-flow history ng npm osx sudo vi-mode
 
 source $ZSH/oh-my-zsh.sh
 
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
