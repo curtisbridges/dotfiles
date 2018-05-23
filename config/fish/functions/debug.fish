@@ -1,1 +1,0 @@
-/Users/cmb/.config/fisherman/debug/debug.fish

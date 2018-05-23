@@ -1,1 +1,0 @@
-/Users/cmb/.config/fisherman/to-fish/functions/to.fish
