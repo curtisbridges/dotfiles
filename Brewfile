@@ -6,7 +6,8 @@ tap 'homebrew/core'
 tap 'homebrew/bundle'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
-tap 'buo/cask-upgrade'                              # adds 'brew cu' to upgrade casks
+tap 'caskroom/versions'
+tap 'buo/cask-upgrade'
 
 # Brews
 brew 'ack'
