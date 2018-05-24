@@ -80,9 +80,11 @@ plugins=(aws brew docker git git-extras git-flow history ng npm osx sudo vi-mode
 
 source $ZSH/oh-my-zsh.sh
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+if [[ `uname` == 'Darwin' ]]; then
+    source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+fi
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -143,3 +145,9 @@ SPACESHIP_USER_SHOW=true
 PURE_PROMPT_SYMBOL=➜
 
 # prompt pure
+
+if [[ `uname` == 'Linux' ]]; then
+wd() {
+  . /home/cmb/bin/wd/wd.sh
+}
+fi
