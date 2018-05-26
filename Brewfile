@@ -67,6 +67,7 @@ cask 'rescuetime'
 cask 'signal'
 cask 'sketch'
 cask 'slack'
+cask 'spotify'
 cask 'transmit'
 # temporary removal for beta channel
 # cask 'tower'
