@@ -90,6 +90,6 @@ mas 'Pages', id: 409201541
 mas 'PiPifier', id: 1160374471
 mas 'Pixelmator', id: 407963104
 mas 'Reeder', id: 880001334
-mas 'Tweetbot', id: 557168941
+mas 'Tweetbot', id: 1384080005
 mas 'the-unarchiver', id: 425424353
 mas 'Xcode', id: 497799835
