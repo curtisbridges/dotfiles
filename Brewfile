@@ -69,6 +69,7 @@ cask 'signal'
 cask 'sketch'
 cask 'slack'
 cask 'spotify'
+cask 'steam'
 cask 'transmit'
 # temporary removal for beta channel
 # cask 'tower'
