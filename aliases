@@ -14,7 +14,7 @@ alias ls='ls -FHG'
 alias ll='ls -l'
 
 # Update and Upgrade Homebrew
-alias buu='brew update && brew upgrade && brew prune && brew cleanup && brew doctor'
+alias buu='brew update && brew upgrade && brew cask upgrade && brew prune && brew cleanup && brew doctor'
 alias buf='brew bundle --file=~/.Brewfile'
 
 # Lock the screen (when going AFK)
