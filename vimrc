@@ -36,7 +36,7 @@ try
         colorscheme onedark
         set background=dark " use dark background with terminal
 
-        let g:lightline = { 'colorscheme': 'onedark', }
+        "let g:lightline = { 'colorscheme': 'onedark', }
         "let g:lightline = { 'colorscheme': 'twofirewatch', }
     endif
 catch
@@ -48,13 +48,13 @@ set cursorline
 let g:two_firewatch_italics=1
 
 " Specify a directory for plugins
-call plug#begin('~/.vim/plugged')
+"call plug#begin('~/.vim/plugged')
 
-Plug 'itchyny/lightline.vim'
-Plug 'plasticboy/vim-markdown'
+"Plug 'itchyny/lightline.vim'
+"Plug 'plasticboy/vim-markdown'
 
 " Initialize plugin system
-call plug#end()
+"call plug#end()
 
 " backups
 set nowritebackup
