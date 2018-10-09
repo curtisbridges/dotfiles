@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for f in ~/Developer/dotfiles/*
+for f in ~/Developer/Personal/dotfiles/*
 do
-  ln -s "$f" "$HOME/.${f##*/}"
+  ln -sf "$f" "$HOME/.${f##*/}"
 done

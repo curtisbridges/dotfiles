@@ -6,18 +6,18 @@ dl:~/Downloads
 
 
 # Personal Projects
-dot:~/Developer/dotfiles
-cb:~/Developer/personal/curtisbridges.com
-blog:~/Developer/personal/curtisbridges.github.com
-journal:~/Documents/Journal
+dot:~/Developer/Personal/dotfiles
+cb:~/Developer/Personal/curtisbridges.com
+blog:~/Developer/Personal/curtisbridges.github.com
 edu:~/Developer/education
 
 # Work
-rvbd:~/Developer/riverbed
-ur:~/Developer/riverbed/user-redirector
-ep:~/Developer/riverbed/saas-ops/event-processor
-scripts:~/Developer/riverbed/saas-ops/scripts
-sops:~/Developer/riverbed/saas-ops
-tf:~/Developer/riverbed/saas-terraform-envs
-webui:~/Developer/riverbed/webui
+rvbd:~/Developer/Work/Riverbed
+ur:~/Developer/Work/Riverbed/user-redirector
+ep:~/Developer/Work/Riverbed/saas-ops/event-processor
+scripts:~/Developer/Work/Riverbed/saas-ops/scripts
+sops:~/Developer/Work/Riverbed/saas-ops
+tf:~/Developer/Work/Riverbed/saas-terraform-envs
+A
+webui:~/Developer/Work/Riverbed/webui
 work:~/Documents/Work/Riverbed/_Notes
