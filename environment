@@ -21,13 +21,3 @@ if [ -d "${HOME}/.ssh" ] ; then
   ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
   ssh-add "${HOME}/.ssh/riverbed_gitlab_rsa" &> /dev/null
 fi
-
-# Source my AWS creds
-if [ -d "${HOME}/.aws_creds" ] ; then
-  source "${HOME}/.aws_creds"
-fi
-
-# Source access tokens, if present
-if [ -e "${HOME}/.access_tokens" ] ; then
-  source "${HOME}/.access_tokens"
-fi
