@@ -113,12 +113,6 @@ fi
 # alias ohmyzsh="vim ~/.oh-my-zsh"
 # export ANDROID_HOME=/usr/local/opt/android-sdk
 
-# export PATH="$HOME/.jenv/bin:$PATH"
-# eval "$(jenv init -)"
-
-# recoverable typos!
-eval "$(thefuck --alias)"
-
 # Requires osx plugin
 # tab	Open the current directory in a new tab
 # ofd	Open the current directory in a Finder window
