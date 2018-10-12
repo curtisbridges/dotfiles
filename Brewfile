@@ -46,6 +46,7 @@ brew 'zsh-syntax-highlighting'
 
 # Casks
 cask '1password'
+cask 'alfred'
 cask 'appcleaner'
 cask 'atom'
 # cask 'balsamiq-mockups'
