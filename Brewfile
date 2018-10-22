@@ -53,6 +53,7 @@ cask 'appcleaner'
 cask 'atom'
 # cask 'balsamiq-mockups'
 # cask 'calibre'
+cask 'deluge'
 # cask 'discord'
 # cask 'docker'
 # cask 'doxie'
@@ -78,7 +79,7 @@ cask 'tower'
 cask 'visual-studio-code'
 # cask 'vmware-fusion'
 
-# Fonts
+# Fonts -- removed because homebrew's update will always pull these
 # cask 'font-source-code-pro-for-powerline'
 # cask 'font-source-code-pro'
 # cask 'font-input'
