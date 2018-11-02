@@ -1,5 +1,4 @@
 " Curtis Bridges <curtis@curtisbridges.com>
-" 2017-08-11
 " .vimrc
 
 " basic settings
@@ -14,14 +13,19 @@ syntax on
 
 set autochdir " always change working directory to the buffer's
 
+" Add vim8 packages
+packadd! onedark.vim
+packadd! lightline.vim
+
+
 " Let's make it pretty
 try
     if has('gui_running')
         "colorscheme onehalfdark
-        colorscheme two-firewatch
-        "colorscheme onedark
+        "colorscheme two-firewatch
+        :colorscheme onedark
 
-        set background=light
+        set background=dark " use dark background
         set columns=120
         set lines=40
         set mousehide " hide the mouse cursor when typing
