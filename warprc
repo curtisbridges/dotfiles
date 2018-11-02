@@ -4,12 +4,12 @@ desk:~/Desktop
 docs:~/Documents
 dl:~/Downloads
 
-
 # Personal Projects
 dot:~/Developer/Personal/dotfiles
 cb:~/Developer/Personal/curtisbridges.com
 blog:~/Developer/Personal/curtisbridges.github.com
 edu:~/Developer/education
+test:~/Developer/Test
 
 # Work
 rvbd:~/Developer/Work/Riverbed
@@ -17,7 +17,5 @@ ur:~/Developer/Work/Riverbed/user-redirector
 ep:~/Developer/Work/Riverbed/saas-ops/event-processor
 scripts:~/Developer/Work/Riverbed/saas-ops/scripts
 sops:~/Developer/Work/Riverbed/saas-ops
-tf:~/Developer/Work/Riverbed/saas-terraform-envs
-A
 webui:~/Developer/Work/Riverbed/webui
 work:~/Documents/Work/Riverbed/_Notes
