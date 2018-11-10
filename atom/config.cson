@@ -16,7 +16,7 @@
     titleBar: "custom-inset"
     uriHandlerRegistration: "always"
   editor:
-    fontFamily: "SF Mono"
+    fontFamily: "Hack, Fira Code, SF Mono, Menlo, Consolas, DejaVu Sans Mono, monospace"
     fontSize: 12
     preferredLineLength: 120
     scrollPastEnd: true
