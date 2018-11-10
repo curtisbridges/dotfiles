@@ -7,3 +7,6 @@
 [submodule "vim/pack/cmb/opt/lightline.vim"]
 	path = vim/pack/cmb/opt/lightline.vim
 	url = git@github.com:itchyny/lightline.vim.git
+[submodule "vim/pack/default/start/vim-polyglot"]
+	path = vim/pack/default/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
