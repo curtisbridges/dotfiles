@@ -19,25 +19,9 @@ packadd! lightline.vim
 
 
 "Let's make it pretty
-try
-    if has('gui_running')
-        "colorscheme onehalfdark
-        "colorscheme two-firewatch
-        :colorscheme onedark
-
-        set background=dark "use dark background
-        "set columns=120
-        "set lines=40
-        set mousehide "hide the mouse cursor when typing
-        set guioptions-=tT "no tear offs
-        set guifont=SF\ Mono\ Regular:h12
-    else
-        "colorscheme two-firewatch
-        colorscheme onedark
-        set background=dark "use dark background with terminal
-    endif
-catch
-endtry
+"colorscheme two-firewatch
+colorscheme onedark
+set background=dark "use dark background with terminal
 
 set laststatus=2
 set cursorline
