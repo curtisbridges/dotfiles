@@ -52,6 +52,7 @@
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
+  "vim-mode-plus": {}
   welcome:
     showOnStartup: false
 ".js.source":
