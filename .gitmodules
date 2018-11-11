@@ -1,12 +1,12 @@
-[submodule "vim/pack/cmb/opt/onehalf"]
-	path = vim/pack/cmb/opt/onehalf
-	url = git@github.com:sonph/onehalf.git
-[submodule "vim/pack/cmb/opt/onedark.vim"]
-	path = vim/pack/cmb/opt/onedark.vim
+[submodule "vim/.vim/pack/default/opt/onedark.vim"]
+	path = vim/.vim/pack/default/opt/onedark.vim
 	url = git@github.com:joshdick/onedark.vim.git
-[submodule "vim/pack/cmb/opt/lightline.vim"]
-	path = vim/pack/cmb/opt/lightline.vim
+[submodule "vim/.vim/pack/default/opt/lightline.vim"]
+	path = vim/.vim/pack/default/opt/lightline.vim
 	url = git@github.com:itchyny/lightline.vim.git
-[submodule "vim/pack/default/start/vim-polyglot"]
-	path = vim/pack/default/start/vim-polyglot
+[submodule "vim/.vim/pack/default/start/vim-polyglot"]
+	path = vim/.vim/pack/default/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
+[submodule "vim/.vim/pack/default/opt/vim-polyglot"]
+	path = vim/.vim/pack/default/opt/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot

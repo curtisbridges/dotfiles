@@ -2,21 +2,21 @@
 	name = Curtis Bridges
 	email = curtis@curtisbridges.com
 [github]
-    user = curtisbridges
+	user = curtisbridges
 [core]
 	editor = vim
 	fileMode = false
 	safecrlf = false
 [fetch]
-    prune = true
+    	prune = true
 [pull]
 	rebase = preserve
 [push]
 	default = simple
 [branch]
-    autosetuprebase = always
+    	autosetuprebase = always
 [rebase]
-    autosquash = true
+    	autosquash = true
 [filter "media"]
 	required = true
 	clean = git media clean %f
@@ -30,5 +30,6 @@
 	process = git-lfs filter-process
 
 # this include will override the defaults above if the directory happens to be for work
-[includeIf "gitdir:~/**/riverbed/*"]
-  path = .gitconfig-riverbed
+[includeIf "gitdir:~/**/Riverbed/*"]
+  	email = curtis.bridges@riverbed.com
+

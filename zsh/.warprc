@@ -5,11 +5,12 @@ docs:~/Documents
 dl:~/Downloads
 
 # Personal Projects
-dot:~/Developer/Personal/dotfiles
+dot:~/dotfiles
 cb:~/Developer/Personal/curtisbridges.com
 blog:~/Developer/Personal/curtisbridges.github.com
 edu:~/Developer/education
 test:~/Developer/Test
+github:~/Developer/github
 
 # Work
 rvbd:~/Developer/Work/Riverbed
