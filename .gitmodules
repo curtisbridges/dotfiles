@@ -8,5 +8,5 @@
 	path = vim/.vim/pack/default/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
 [submodule "vim/.vim/pack/default/opt/vim-polyglot"]
-	path = vim/.vim/pack/default/opt/vim-polyglot
+	path = vim/.vim/pack/default/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
