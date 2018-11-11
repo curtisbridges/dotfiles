@@ -3,7 +3,7 @@
 
 "basic settings
 set nocompatible
-behave mswin
+"behave mswin
 
 "Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -38,7 +38,6 @@ set background=dark "use dark background with terminal
 
 set laststatus=2
 set cursorline
-set t_Co=256
 
 "backups
 set nowritebackup
@@ -53,6 +52,14 @@ set shiftwidth=4 "auto-indent amount when using cindent, >>, << and stuff like t
 set softtabstop=4 "when hitting tab or backspace, how many spaces should a tab be (see expandtab)
 set tabstop=4
 set shiftround "when at 3 spaces, and I hit > ... go to 4, not 5
+
+"set ignorecase "case insensitive by default
+set smartcase "if there are caps, go case-sensitive
+set infercase "case inferred by default
+
+set nowrap "do not wrap line
+set showmatch "show matching brackets
+set matchtime=5 "how many tenths of a second to blink matching brackets
 set list "we do what to show tabs, to ensure we get them out of my files
 set listchars=tab:>-,trail:· "show tabs and trailing
 "set listchars=tab:>- "show hard tabs
@@ -82,6 +89,7 @@ filetype indent on
 "set ignorecase "case insensitive by default
 set smartcase "if there are caps, go case-sensitive
 set infercase "case inferred by default
+
 set nowrap "do not wrap line
 set showmatch "show matching brackets
 set matchtime=5 "how many tenths of a second to blink matching brackets

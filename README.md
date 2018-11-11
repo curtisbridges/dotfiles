@@ -1,5 +1,4 @@
 # DotFiles
-========
 
 This is my collection of [configuration files](http://dotfiles.github.io/).
 
