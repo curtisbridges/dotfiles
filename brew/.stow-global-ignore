@@ -1,0 +1,11 @@
+.DS_Store
+.git
+
+.stow-local-ignore
+
+^/@.*
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
