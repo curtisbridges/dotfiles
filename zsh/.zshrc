@@ -8,10 +8,23 @@ if [ -e "${HOME}/.environment" ] ; then
     source ${HOME}/.environment
 fi
 
+# options
+# -------
+setopt hist_ignore_all_dups  # remove older duplicate entries from history
+setopt share_history         # share history between different instances of the shell
+setopt hist_reduce_blanks    # remove superfluous blanks from history items
+setopt auto_list             # automatically list choices on ambiguous completion
+setopt menu_complete         # insert first suggestion while autocompleting
+setopt prompt_subst          # allow command, param and arithmetic expansion in the prompt
+setopt auto_menu             # automatically use menu completion
+setopt always_to_end         # move cursor to end if word had one match
+# setopt auto_cd             # auto cd when writing dir in the shell
+# setopt correctall          # correct typo(ed) commands
+
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+# HISTFILE=~/.histfile
+# HISTSIZE=1000
+# SAVEHIST=1000
 bindkey -v
 
 # End of lines configured by zsh-newuser-install
@@ -30,7 +43,7 @@ compinit
 ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
@@ -127,14 +140,6 @@ fi
 # itunes	Control iTunes. User itunes -h for usage details
 # spotify	Control Spotify and search by artist, album, track and etc.
 alias ql=quick-look
-
-# Set Spaceship ZSH as a prompt
-# autoload -U promptinit; promptinit
-
-SPACESHIP_VI_MODE_SHOW=false
-SPACESHIP_EXIT_CODE_SHOW=true
-SPACESHIP_TIME_SHOW=false
-SPACESHIP_USER_SHOW=true
 
 PURE_PROMPT_SYMBOL=➜
 
