@@ -3,19 +3,18 @@
 
 "basic settings
 set nocompatible
-"behave mswin
 
 "Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf8
+set encoding=utf-8
 
 "turn on syntax highlighting
 syntax on
 
-set autochdir "always change working directory to the buffer's
-
 "Add vim8 packages
 packadd! onedark.vim
-packadd! lightline.vim
+"packadd! lightline.vim
+
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h12
 
 "let g:onedark_termcolors=256
 " onedark.vim override: Don't set a background color when running in a terminal;
@@ -31,13 +30,16 @@ if (has("autocmd") && !has("gui_running"))
   augroup END
 endif
 
+let g:airline_powerline_fonts = 1
+
 "Let's make it pretty
 "colorscheme two-firewatch
 colorscheme onedark
 set background=dark "use dark background with terminal
-
 set laststatus=2
-set cursorline
+
+"directory handling
+set autochdir "always change working directory to the buffer's
 
 "backups
 set nowritebackup
@@ -58,11 +60,12 @@ set smartcase "if there are caps, go case-sensitive
 set infercase "case inferred by default
 
 set nowrap "do not wrap line
+
 set showmatch "show matching brackets
 set matchtime=5 "how many tenths of a second to blink matching brackets
-set list "we do what to show tabs, to ensure we get them out of my files
-set listchars=tab:>-,trail:· "show tabs and trailing
-"set listchars=tab:>- "show hard tabs
+set list "we want to show tabs, to ensure we get them out of my files
+"set listchars=tab:>-,trail:· "show tabs and trailing
+set listchars=tab:\›\ ,trail:·,extends:>,precedes:<,eol:¬
 
 set autoindent
 set smartindent
@@ -81,10 +84,25 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+"remap C-/ to comment out the current line
+nnoremap <C-_> gcc
+"remap <CR> in normal mode to enter command mode
+nnoremap <CR> :
+
+"move to beginning/end of line
+"cmb> leaving this commented out because I'm not sure I want to overwrite the default H and L behavior
+"nnoremap H ^
+"nnoremap L $
+
+"surround current word with double-quotes
+nnoremap <leader>"" viw<esc>a"<esc>hbi"<esc>lel
 
 filetype plugin on
 filetype plugin indent on
 filetype indent on
+
+"setting wrap while editing markdown files
+autocmd FileType markdown set wrap
 
 "set ignorecase "case insensitive by default
 set smartcase "if there are caps, go case-sensitive
@@ -100,7 +118,9 @@ set mousehide "hide the mouse while typing
 
 "line and column numbering
 set number "turn on line numbers
-set numberwidth=4 "We are good up to 99999 lines
+set numberwidth=4 "We are good up to 9999 lines
+set relativenumber
+set cursorline
 set ruler "Always show current positions along the bottom
 set linespace=0 "don't insert any extra pixel lines betweens rows
 set scrolloff=10 "Keep 10 lines (top/bottom) for scope
