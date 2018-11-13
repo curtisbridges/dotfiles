@@ -39,3 +39,16 @@ cd ..
 rm -rf fonts
 ```
 At the time of this update, I'm using `DejaVu Sans` in vim and manually setting it in the Terminal.app.
+
+## Maintenance
+
+To keep the dotfiles up to date, without local changes:
+```bash
+$ git pull
+```
+If there are local changes, you'll have to stash them first before pulling from my remote.
+
+To update the vim package submodules:
+```bash
+$ git submodule update --remote
+```

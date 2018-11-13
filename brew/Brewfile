@@ -79,7 +79,7 @@ cask 'sketch'
 cask 'transmit'
 cask 'tower'
 cask 'visual-studio-code'
-# cask 'vmware-fusion'
+cask 'vmware-fusion'
 
 # Fonts -- removed because homebrew's update will always pull these
 cask 'font-hack'
