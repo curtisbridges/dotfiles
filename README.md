@@ -4,10 +4,11 @@ This is my collection of [configuration files](http://dotfiles.github.io/).
 
 ## Usage
 
-Pull the repository...
+Pull the repository and its submodules...
 ```bash
 $ git clone git@github.com:curtisbridges/dotfiles.git ~
 $ cd ~/dotfiles
+$ git pull --recurse-submodules
 ```
 
 Installing is easiest using [homebrew](https://brew.sh) and create the symbolic links using [GNU
