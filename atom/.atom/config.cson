@@ -8,12 +8,9 @@
     useAlternateScoring: false
   core:
     automaticallyUpdate: false
-    disabledPackages: [
-      "symbols-tree-view"
-    ]
     projectHome: "/Users/cmb/Developer"
     telemetryConsent: "limited"
-    titleBar: "custom-inset"
+    titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
     fontFamily: "Hack, Fira Code, SF Mono, Menlo, Consolas, DejaVu Sans Mono, monospace"
