@@ -84,7 +84,7 @@ cask 'qlvideo'
 
 
 # Fonts -- removed because homebrew's update will always pull these
-cask 'font-hack'
+# cask 'font-hack'
 # cask 'font-source-code-pro-for-powerline'
 # cask 'font-source-code-pro'
 # cask 'font-input'
