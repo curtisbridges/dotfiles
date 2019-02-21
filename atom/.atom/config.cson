@@ -10,10 +10,14 @@
     automaticallyUpdate: false
     projectHome: "/Users/cmb/Developer"
     telemetryConsent: "limited"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
     titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
-    fontFamily: "Hack, Fira Code, SF Mono, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    fontFamily: "SF SF Mono, Mono, Menlo, Consolas, DejaVu Sans Mono, Hack, Fira Code, monospace"
     fontSize: 12
     preferredLineLength: 120
     scrollPastEnd: true
