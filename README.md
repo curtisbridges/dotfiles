@@ -21,11 +21,12 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 Install stow:
 ```bash
 $ brew install stow
+$ cd dotfiles # wherever you cloned the repo to, recommend one directory level above home dir
 $ stow atom bash git vim zsh # plus whatever else you'd like
 ```
 Optionally, you can install all the homebrew software and casks I find useful:
 ```bash
-$ brew bundle brew/Brewfile
+$ brew bundle --global # requires `stow brew` was executed
 ```
 For the best Terminal and vim experience, clone the [powerline](https://github.com/powerline/fonts) patched font repo into a temporary directory and install them:
 ```bash
