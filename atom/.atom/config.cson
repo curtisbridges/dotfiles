@@ -14,7 +14,6 @@
       "atom-dark-ui"
       "atom-dark-syntax"
     ]
-    titleBar: "custom"
     uriHandlerRegistration: "always"
   editor:
     fontFamily: "SF SF Mono, Mono, Menlo, Consolas, DejaVu Sans Mono, Hack, Fira Code, monospace"
