@@ -70,7 +70,7 @@ cask 'vmware-fusion'
 cask 'java'
 brew 'ant'
 brew 'maven'
-cask 'eclipse-java'
+cask 'eclipse-ide'
 
 # Fonts -- removed because homebrew's update will always pull these
 # cask 'font-hack'
