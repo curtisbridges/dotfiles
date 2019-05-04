@@ -1,0 +1,27 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDelete": false,
+    "editor.wordWrapColumn": 100,
+    "editor.hover.delay": 250,
+    "editor.fontFamily": "Hack, SF Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "window.nativeTabs": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.suggestSelection": "first",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": false,
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.renderWhitespace": "all"
+}
