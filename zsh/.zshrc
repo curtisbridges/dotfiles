@@ -20,6 +20,7 @@ setopt auto_menu             # automatically use menu completion
 setopt always_to_end         # move cursor to end if word had one match
 # setopt auto_cd             # auto cd when writing dir in the shell
 # setopt correctall          # correct typo(ed) commands
+unsetopt correct_all
 
 # Lines configured by zsh-newuser-install
 # HISTFILE=~/.histfile
@@ -62,7 +63,7 @@ CASE_SENSITIVE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
