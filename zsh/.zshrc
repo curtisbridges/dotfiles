@@ -85,7 +85,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew docker docker-compose extract gitfast git-extras git-flow gitignore history ng node npm osx vi-mode wd web-search)
+plugins=(aws brew docker docker-compose extract git gitfast git-extras git-flow gitignore history ng node npm osx vi-mode wd web-search)
 
 # User configuration
 
