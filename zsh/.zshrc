@@ -90,7 +90,8 @@ plugins=(aws brew docker docker-compose extract git gitfast git-extras git-flow 
 # User configuration
 
 export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
-# export MANPATH="/usr/local/man:$MANPATH"
+# export PATH="/usr/local/opt/ruby/bin:$PATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
