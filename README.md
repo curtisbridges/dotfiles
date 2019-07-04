@@ -22,7 +22,7 @@ Install stow:
 ```bash
 $ brew install stow
 $ cd dotfiles # wherever you cloned the repo to, recommend one directory level above home dir
-$ stow atom bash git vim zsh # plus whatever else you'd like
+$ stow bash git vim vscode zsh # plus whatever else you'd like
 ```
 Optionally, you can install all the homebrew software and casks I find useful:
 ```bash
