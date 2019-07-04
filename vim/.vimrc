@@ -10,18 +10,17 @@ set encoding=utf-8
 "turn on syntax highlighting
 syntax on
 
-"Add vim8 packages
+"Add vim8 packages; NOTE: this is the airline theme, not vim theme
 packadd! onedark.vim
-"packadd! lightline.vim
 
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h12
+set guifont=DejaVuSansMonoPowerline:h11
 
 let g:airline_powerline_fonts = 1
+let g:airline_theme='onedark'
 
 "Let's make it pretty
-"colorscheme two-firewatch
 colorscheme onedark
-set background=dark "use dark background with terminal
+"set background=dark "use dark background with terminal
 set laststatus=2
 
 "directory handling
