@@ -25,7 +25,84 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
 # Apps
-alias vsc=code
 alias tower=gittower
 
-alias gt='git town'
+# git
+ga='git add'
+gaa='git add --all'
+
+gb='git branch'
+gbD='git branch -D'
+gba='git branch -a'
+gbd='git branch -d'
+
+gc='git commit -v'
+'gc!'='git commit -v --amend'
+gca='git commit -v -a'
+'gca!'='git commit -v -a --amend'
+gcam='git commit -a -m'
+gcm='git commit -m'
+
+gco='git checkout'
+gcb='git checkout -b'
+gcd='git checkout develop'
+gcf='git config --list'
+gch='git checkout hotfix'
+
+gcl='git clone --recurse-submodules'
+
+gd='git diff'
+
+gfo='git fetch origin'
+
+ggpull='git pull origin "$(git_current_branch)"'
+ggpush='git push origin "$(git_current_branch)"'
+
+gl='git pull'
+
+gm='git merge'
+gma='git merge --abort'
+gmom='git merge origin/master'
+gmt='git mergetool --no-prompt'
+
+gp='git push'
+gpd='git push --dry-run'
+gpf='git push --force-with-lease'
+'gpf!'='git push --force'
+
+grb='git rebase'
+grba='git rebase --abort'
+grbc='git rebase --continue'
+grbd='git rebase develop'
+grbi='git rebase -i'
+grbm='git rebase master'
+grbs='git rebase --skip'
+
+gr='git remote'
+gra='git remote add'
+
+grh='git reset'
+grhh='git reset --hard'
+gru='git reset --'
+
+grm='git rm'
+grmc='git rm --cached'
+
+gss='git status -s'
+gst='git status'
+
+gsta='git stash push'
+gstaa='git stash apply'
+gstall='git stash --all'
+gstc='git stash clear'
+gstd='git stash drop'
+gstl='git stash list'
+gstp='git stash pop'
+gsts='git stash show --text'
+
+gup='git pull --rebase'
+gupa='git pull --rebase --autostash'
+gupav='git pull --rebase --autostash -v'
+gupv='git pull --rebase -v'
+gwch='git whatchanged -p --abbrev-commit --pretty=medium'
+
