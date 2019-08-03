@@ -161,3 +161,7 @@ export NVM_DIR="$HOME/.nvm"
 # /usr/local/opt/nvm will destroy any nvm-installed Node installations
 # upon upgrade/reinstall.
 
+
+  # Set Spaceship ZSH as a prompt
+  autoload -U promptinit; promptinit
+  prompt spaceship
