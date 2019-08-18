@@ -26,4 +26,6 @@ alias localip="ipconfig getifaddr en0"
 
 # Apps
 alias tower=gittower
+alias yt=youtube-dl
+alias yt4=youtube-dl --format mp4
 
