@@ -104,7 +104,7 @@ set mousehide "hide the mouse while typing
 "line and column numbering
 set number "turn on line numbers
 set numberwidth=4 "We are good up to 9999 lines
-set relativenumber
+" set relativenumber
 set cursorline
 set ruler "Always show current positions along the bottom
 set linespace=0 "don't insert any extra pixel lines betweens rows
