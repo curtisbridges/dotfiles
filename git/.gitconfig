@@ -33,3 +33,5 @@
 [includeIf "gitdir:~/**/Riverbed/*"]
   	email = curtis.bridges@riverbed.com
 
+[gpg]
+	program = /usr/local/bin/gpg
