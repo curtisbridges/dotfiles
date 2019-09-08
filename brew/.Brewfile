@@ -1,11 +1,6 @@
 # Settings
 cask_args appdir: '/Applications'
 
-# Taps
-tap 'homebrew/core'
-tap 'homebrew/bundle'
-tap 'buo/cask-upgrade'
-
 # Brews
 brew 'ack'
 brew 'angluar-cli'
