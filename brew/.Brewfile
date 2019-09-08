@@ -61,6 +61,7 @@ cask 'deluge'
 # non-cask doesn't install docker daemon!
 cask 'docker'
 cask 'firefox'
+cask 'gitup'
 cask 'kaleidoscope'
 cask 'karabiner-elements'
 cask 'kindle'
