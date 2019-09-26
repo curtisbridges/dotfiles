@@ -3,6 +3,10 @@ if [ -d "${HOME}/bin" ] ; then
   PATH=${HOME}/bin:${PATH}
 fi
 
+if [ -d "${HOME}/scripts" ] ; then
+  PATH=${HOME}/scripts:${PATH}
+fi
+
 # source the users aliases if it exists
 if [ -e "${HOME}/.aliases" ] ; then
   source "${HOME}/.aliases"

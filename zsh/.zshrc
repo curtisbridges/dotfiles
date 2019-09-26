@@ -88,7 +88,6 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(aws docker docker-compose extract git git-extras git-flow history ng node npm osx vi-mode vscode wd web-search)
 
 # User configuration
-
 export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 # export PATH="/usr/local/opt/ruby/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
@@ -149,7 +148,7 @@ PURE_PROMPT_SYMBOL=➜
 
 if [[ `uname` == 'Linux' ]]; then
 wd() {
-  . /home/cmb/bin/wd/wd.sh
+  . ~/bin/wd/wd.sh
 }
 fi
 
@@ -162,4 +161,3 @@ export NVM_DIR="$HOME/.nvm"
 # upon upgrade/reinstall.
 
 neofetch
-
