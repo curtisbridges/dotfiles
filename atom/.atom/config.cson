@@ -8,6 +8,7 @@
     useAlternateScoring: false
   core:
     automaticallyUpdate: false
+    closeDeletedFileTabs: true
     projectHome: "/Users/cmb/Developer"
     telemetryConsent: "limited"
     uriHandlerRegistration: "always"
