@@ -6,8 +6,8 @@ dl:~/Downloads
 
 # Personal Projects
 dot:~/dotfiles
+dump:~/Documents/Brain Dumps
 notes:~/Documents/Notes
-cb:~/Developer/Personal/curtisbridges.com
 blog:~/Developer/Personal/curtisbridges.github.com
 edu:~/Developer/education
 test:~/Developer/Test
@@ -20,4 +20,4 @@ ep:~/Developer/Work/Riverbed/saas-ops/event-processor
 scripts:~/Developer/Work/Riverbed/saas-ops/scripts
 sops:~/Developer/Work/Riverbed/saas-ops
 webui:~/Developer/Work/Riverbed/webui
-work:~/Documents/Work/Riverbed/_Notes
+work:~/Documents/Work
