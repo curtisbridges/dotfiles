@@ -66,7 +66,6 @@ cask 'telegram'
 cask 'transmit'
 cask 'tower'
 cask 'visual-studio-code'
-cask 'vmware-fusion'
 
 # Java
 cask 'java'
