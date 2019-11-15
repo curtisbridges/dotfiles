@@ -13,7 +13,7 @@ syntax on
 "Add vim8 packages; NOTE: this is the airline theme, not vim theme
 packadd! onedark.vim
 
-set guifont=DejaVuSansMonoPowerline:h13
+set guifont=SFMonoPowerline-Regular:h13
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='onedark'
