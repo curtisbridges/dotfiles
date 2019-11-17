@@ -65,6 +65,7 @@ cask 'slack'
 cask 'telegram'
 cask 'transmit'
 cask 'tower'
+cask 'typora'
 cask 'visual-studio-code'
 
 # Java
