@@ -9,9 +9,12 @@ dot:~/dotfiles
 dump:~/Documents/Brain Dumps
 notes:~/Documents/Notes
 blog:~/Developer/Personal/curtisbridges.github.com
-edu:~/Developer/education
+edu:~/Developer/Education
 test:~/Developer/Test
 github:~/Developer/github
+work:~/Documents/Work
+mgr:~/Documents/Manager
+self:~/Documents/Work/Self Employment
 
 # Work
 rvbd:~/Developer/Work/Riverbed
@@ -20,5 +23,3 @@ ep:~/Developer/Work/Riverbed/saas-ops/event-processor
 scripts:~/Developer/Work/Riverbed/saas-ops/scripts
 sops:~/Developer/Work/Riverbed/saas-ops
 webui:~/Developer/Work/Riverbed/webui
-work:~/Documents/Work
-mgr:~/Documents/Manager
