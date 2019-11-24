@@ -4,17 +4,18 @@ desk:~/Desktop
 docs:~/Documents
 dl:~/Downloads
 
-# Personal Projects
+# Personal
 dot:~/dotfiles
-dump:~/Documents/Brain Dumps
+journal:~/Documents/Journal
 notes:~/Documents/Notes
-blog:~/Developer/Personal/curtisbridges.github.com
-edu:~/Developer/Education
-test:~/Developer/Test
-github:~/Developer/github
 work:~/Documents/Work
 mgr:~/Documents/Manager
 self:~/Documents/Work/Self Employment
+
+# Development
+edu:~/Developer/Education
+test:~/Developer/Test
+github:~/Developer/github
 
 # Work
 rvbd:~/Developer/Work/Riverbed
