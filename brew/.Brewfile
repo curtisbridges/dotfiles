@@ -66,12 +66,6 @@ cask 'tower'
 cask 'typora'
 cask 'visual-studio-code'
 
-# Java
-cask 'java'
-brew 'ant'
-brew 'maven'
-cask 'eclipse-ide'
-
 # Fonts -- removed because homebrew's update will always pull these
 # cask 'font-hack'
 # cask 'font-source-code-pro-for-powerline'
