@@ -18,9 +18,9 @@ test:~/Developer/Test
 github:~/Developer/github
 
 # Work
-rvbd:~/Developer/Work/Riverbed
-ur:~/Developer/Work/Riverbed/user-redirector
-ep:~/Developer/Work/Riverbed/saas-ops/event-processor
-scripts:~/Developer/Work/Riverbed/saas-ops/scripts
-sops:~/Developer/Work/Riverbed/saas-ops
-webui:~/Developer/Work/Riverbed/webui
+ur:~/Developer/user-redirector
+ep:~/Developer/saas-ops/event-processor
+scripts:~/Developer/saas-ops/scripts
+sops:~/Developer/saas-ops
+webui:~/Developer/webui
+
