@@ -15,12 +15,12 @@ self:~/Documents/Work/Self Employment
 # Development
 edu:~/Developer/Education
 test:~/Developer/Test
-github:~/Developer/github
+github:~/Developer/GitHub
 
 # Work
-ur:~/Developer/user-redirector
-ep:~/Developer/saas-ops/event-processor
-scripts:~/Developer/saas-ops/scripts
-sops:~/Developer/saas-ops
-webui:~/Developer/webui
+ur:~/Developer/Work/Riverbed/user-redirector
+ep:~/Developer/Work/Riverbed/saas-ops/event-processor
+scripts:~/Developer/Work/Riverbed/saas-ops/scripts
+sops:~/Developer/Work/Riverbed/saas-ops
+webui:~/Developer/Work/Riverbed/webui
 
