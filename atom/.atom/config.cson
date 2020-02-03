@@ -13,8 +13,7 @@
     telemetryConsent: "limited"
     uriHandlerRegistration: "always"
   editor:
-    fontFamily: "SF, SF Mono, Mono, Menlo, Consolas, DejaVu Sans Mono, Hack, Fira Code, monospace"
-    fontSize: 12
+    fontFamily: "SF Mono, SF, Mono, Menlo, Consolas, DejaVu Sans Mono, Hack, Fira Code, monospace"
     preferredLineLength: 120
     scrollPastEnd: true
     showInvisibles: true
