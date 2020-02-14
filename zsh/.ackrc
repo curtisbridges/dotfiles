@@ -1,0 +1,14 @@
+# Always use color
+--color
+
+# Ignore stuff
+--ignore-dir=.idea/
+--ignore-dir=node_modules/
+
+# Make sure ack knows how to search common filetypes used in node.js projects
+--ignore-dir=node_modules
+--type-set=coffee=.coffee
+--type-set=jade=.jade
+--type-set=feature=.feature
+--type-set=json=.json
+
