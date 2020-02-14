@@ -4,11 +4,15 @@
 # Ignore stuff
 --ignore-dir=.idea/
 --ignore-dir=node_modules/
+--ignore-dir=tmp
 
 # Make sure ack knows how to search common filetypes used in node.js projects
---ignore-dir=node_modules
 --type-set=coffee=.coffee
 --type-set=jade=.jade
 --type-set=feature=.feature
 --type-set=json=.json
+--type-set=javascript=.js
+--type-set=typescript=.ts
+--type=javascript
+--type=typescript
 
