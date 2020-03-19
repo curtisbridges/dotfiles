@@ -47,7 +47,6 @@ brew 'zsh-syntax-highlighting'
 # Casks
 cask '1password'
 cask 'appcleaner'
-cask 'atom'
 cask 'balenaetcher'
 cask 'deluge'
 # non-cask doesn't install docker daemon!
