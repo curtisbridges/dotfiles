@@ -85,11 +85,10 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws docker docker-compose extract git git-extras git-flow history ng node npm osx vi-mode vscode wd web-search)
+plugins=(archlinux autojump aws docker docker-compose extract git git-extras git-flow history ng node npm vi-mode vscode web-search)
 
 # User configuration
 export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
-# export PATH="/usr/local/opt/ruby/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -98,6 +97,8 @@ if [[ `uname` == 'Darwin' ]]; then
     source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+elif [[ `uname` == 'Linux' ]]; then
+    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
 # You may need to manually set your language environment
@@ -145,12 +146,6 @@ alias ql=quick-look
 PURE_PROMPT_SYMBOL=➜
 
 # prompt pure
-
-if [[ `uname` == 'Linux' ]]; then
-wd() {
-  . ~/bin/wd/wd.sh
-}
-fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
