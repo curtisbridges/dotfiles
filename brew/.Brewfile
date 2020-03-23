@@ -4,6 +4,7 @@ cask_args appdir: '/Applications'
 # Brews
 brew 'ack'
 brew 'angluar-cli'
+brew 'autojump'
 brew 'awscli'
 brew 'bash'
 brew 'cocoapods'
