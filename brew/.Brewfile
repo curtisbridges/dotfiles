@@ -57,11 +57,11 @@ cask 'kaleidoscope'
 cask 'karabiner-elements'
 cask 'kindle'
 cask 'krita'
+cask 'oracle-jdk'
 cask 'slack'
 cask 'telegram'
 cask 'transmit'
 cask 'tower'
-cask 'typora'
 cask 'visual-studio-code'
 
 # Fonts -- removed because homebrew's update will always pull these
