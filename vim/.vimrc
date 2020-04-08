@@ -11,15 +11,15 @@ set encoding=utf-8
 syntax on
 
 "Add vim8 packages; NOTE: this is the airline theme, not vim theme
-packadd! onedark.vim
+"packadd! onedark.vim
 
-set guifont=SFMonoPowerline-Regular:h13
+"set guifont=SFMonoPowerline-Regular:h13
 
-let g:airline_powerline_fonts = 1
-let g:airline_theme='onedark'
+"let g:airline_powerline_fonts = 1
+"let g:airline_theme='onedark'
 
 "Let's make it pretty
-colorscheme onedark
+"colorscheme onedark
 "set background=dark "use dark background with terminal
 set laststatus=2
 
