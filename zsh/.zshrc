@@ -85,7 +85,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux autojump aws docker docker-compose extract git git-extras git-flow history ng node npm vi-mode vscode web-search)
+plugins=(autojump aws docker docker-compose extract git git-extras git-flow history ng node npm vi-mode vscode web-search)
 
 # User configuration
 export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
@@ -143,7 +143,6 @@ fi
 # hidefiles	Hide the hidden files
 # itunes	Control iTunes. User itunes -h for usage details
 # spotify	Control Spotify and search by artist, album, track and etc.
-alias ql=quick-look
 
 PURE_PROMPT_SYMBOL=➜
 
