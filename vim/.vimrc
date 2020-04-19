@@ -20,7 +20,7 @@ syntax on
 
 "Let's make it pretty
 "colorscheme onedark
-"set background=dark "use dark background with terminal
+set background=dark "use dark background with terminal
 set laststatus=2
 
 "directory handling
