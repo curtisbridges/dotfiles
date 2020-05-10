@@ -157,3 +157,4 @@ export NVM_DIR="$HOME/.nvm"
 # /usr/local/opt/nvm will destroy any nvm-installed Node installations
 # upon upgrade/reinstall.
 
+echo "Work hard. Get shit done."
