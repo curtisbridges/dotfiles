@@ -23,5 +23,4 @@ fi
 
 if [ -d "${HOME}/.ssh" ] ; then
   ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
-  ssh-add "${HOME}/.ssh/riverbed_gitlab_rsa" &> /dev/null
 fi

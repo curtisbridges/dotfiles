@@ -10,7 +10,7 @@
 [fetch]
     	prune = true
 [pull]
-	rebase = preserve
+	rebase = merges
 [push]
 	default = simple
 [branch]
@@ -21,17 +21,11 @@
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
-[credential]
-	helper = osxkeychain
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-
-# this include will override the defaults above if the directory happens to be for work
-[includeIf "gitdir:~/**/Riverbed/*"]
-  	email = curtis.bridges@riverbed.com
 
 [gpg]
 	program = /usr/local/bin/gpg
