@@ -1,6 +1,3 @@
-"Curtis Bridges <curtis@curtisbridges.com>
-".vimrc
-
 "basic settings
 set nocompatible
 
@@ -55,39 +52,7 @@ set listchars=tab:\›\ ,trail:·,extends:>,precedes:<,eol:¬
 set autoindent
 set smartindent
 
-"auto indent pasted text
-nnoremap p p=`]<C-o>
-nnoremap P P=`]<C-o>
 
-"code indent as a block
-vnoremap < <gv
-vnoremap > >gv
-
-"window movement
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
-"remap C-/ to comment out the current line
-nnoremap <C-_> gcc
-"remap <CR> in normal mode to enter command mode
-nnoremap <CR> :
-
-"move to beginning/end of line
-"cmb> leaving this commented out because I'm not sure I want to overwrite the default H and L behavior
-"nnoremap H ^
-"nnoremap L $
-
-"surround current word with double-quotes
-nnoremap <leader>"" viw<esc>a"<esc>hbi"<esc>lel
-
-filetype plugin on
-filetype plugin indent on
-filetype indent on
-
-"setting wrap while editing markdown files
-autocmd FileType markdown set wrap
 
 "set ignorecase "case insensitive by default
 set smartcase "if there are caps, go case-sensitive
@@ -127,18 +92,3 @@ set incsearch "BUT do highlight as you type you search phrase
 
 set spell
 
-"abbreviations!
-iab THe The
-iab teh the
-
-"Make double-<Esc> clear search highlights
-nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
-
-"Delete trailing white space on save, useful for some filetypes ;)
-fun! CleanExtraSpaces()
-    let save_cursor = getpos(".")
-    let old_query = getreg('/')
-    silent! %s/\s\+$//e
-    call setpos('.', save_cursor)
-    call setreg('/', old_query)
-endfun
