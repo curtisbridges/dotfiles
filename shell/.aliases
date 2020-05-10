@@ -32,5 +32,4 @@ alias yt=youtube-dl
 alias yt4=youtube-dl --format mp4
 alias code='code -n'
 alias nf=neofetch
-alias vim=nvim
 
