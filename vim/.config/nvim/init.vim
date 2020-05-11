@@ -3,7 +3,10 @@
 
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
+source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/themes/onedark.vim
 
+"TO BE CLEANED UP!
 
 filetype plugin on
 filetype plugin indent on
@@ -11,10 +14,6 @@ filetype indent on
 
 "setting wrap while editing markdown files
 autocmd FileType markdown set wrap
-
-"abbreviations!
-iab THe The
-iab teh the
 
 "Make double-<Esc> clear search highlights
 nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>

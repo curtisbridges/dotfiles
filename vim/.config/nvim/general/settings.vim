@@ -52,8 +52,6 @@ set listchars=tab:\›\ ,trail:·,extends:>,precedes:<,eol:¬
 set autoindent
 set smartindent
 
-
-
 "set ignorecase "case insensitive by default
 set smartcase "if there are caps, go case-sensitive
 set infercase "case inferred by default
@@ -91,4 +89,3 @@ set hlsearch "highlight the search pattern while searching
 set incsearch "BUT do highlight as you type you search phrase
 
 set spell
-
