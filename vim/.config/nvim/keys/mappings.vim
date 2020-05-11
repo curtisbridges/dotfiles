@@ -1,5 +1,7 @@
 "Key Mappings
 
+" jj escape
+inoremap jj <Esc>
 
 "auto indent pasted text
 nnoremap p p=`]<C-o>
