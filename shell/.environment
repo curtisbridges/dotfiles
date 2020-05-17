@@ -17,10 +17,9 @@ if [ -e "${HOME}/.functions" ] ; then
   source "${HOME}/.functions"
 fi
 
-if [ -d "${HOME}/.homebrew_token" ]; then
-  source "${HOME}/.homebrew_token"
-fi
-
 if [ -d "${HOME}/.ssh" ] ; then
   ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
 fi
+
+export PATH="$PATH:/usr/lib/ccache/bin"
+

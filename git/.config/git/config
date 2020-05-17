@@ -4,7 +4,7 @@
 [github]
 	user = curtisbridges
 [core]
-	editor = vim
+	editor = nvim
 	fileMode = false
 	safecrlf = false
 [fetch]
