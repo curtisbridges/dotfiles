@@ -19,7 +19,7 @@ if [[ `uname` == 'Darwin' ]]; then
     alias buf='brew bundle --file=~/.Brewfile'
 else
 #    alias upgrade='sudo apt update && sudo apt upgrade'
-    alias upgrade='sudo pacman -Syu'
+    alias upgrade='yay -Syu'
 fi
 
 # IP addresses
