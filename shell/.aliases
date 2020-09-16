@@ -15,7 +15,7 @@ alias ll='ls -l'
 
 # Update and Upgrade Homebrew
 if [[ `uname` == 'Darwin' ]]; then
-    alias upgrade='brew update && brew upgrade && brew cask upgrade --greedy && brew doctor'
+    alias upgrade='brew update && brew upgrade && brew upgrade --cask --greedy && brew doctor'
     alias buf='brew bundle --file=~/.Brewfile'
 else
 #    alias upgrade='sudo apt update && sudo apt upgrade'
