@@ -33,3 +33,7 @@ alias yt4=youtube-dl --format mp4
 alias code='code -n'
 alias nf=neofetch
 
+if [[ `uname` == 'Linux' ]]; then
+    alias open="xdg-open"
+fi
+
