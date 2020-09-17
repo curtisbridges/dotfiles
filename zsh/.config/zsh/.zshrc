@@ -1,5 +1,7 @@
+# Just show some machine info mostly for vanity reasons.
 neofetch
 
+# And a "motivational" message.
 echo "Work hard. Get shit done."
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
@@ -52,7 +54,7 @@ compinit
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
@@ -171,6 +173,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
-
-# To customize prompt, run `p10k configure` or edit ~/Developer/Personal/dotfiles/zsh/.config/zsh/.p10k.zsh.
-[[ ! -f ~/Developer/Personal/dotfiles/zsh/.config/zsh/.p10k.zsh ]] || source ~/Developer/Personal/dotfiles/zsh/.config/zsh/.p10k.zsh
