@@ -8,7 +8,7 @@ Pull the repository and its submodules...
 ```bash
 $ git clone git@github.com:curtisbridges/dotfiles.git ~
 $ cd dotfiles
-$ stow --target=$HOME stow shell bash git vim zsh # plus whatever else you'd like
+$ stow --target=$HOME shell tools terminal # plus whatever else you'd like
 ```
 
 ## Maintenance
