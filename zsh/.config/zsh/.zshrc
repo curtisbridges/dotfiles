@@ -4,6 +4,9 @@ neofetch
 # And a "motivational" message.
 echo "Work hard. Get shit done."
 
+# Make sure all our configuration is done in the XDG config dir...
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -16,7 +19,7 @@ export ZSH=~/.oh-my-zsh
 
 export KEYTIMEOUT=1
 
-# source my environment settings
+# source my machine specific settings
 if [ -e "${HOME}/.environment" ] ; then
     source ${HOME}/.environment
 fi
@@ -104,8 +107,11 @@ plugins=(autojump aws docker docker-compose extract git git-extras git-flow hist
 export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 
+# Use Oh-My-Zsh.
 source $ZSH/oh-my-zsh.sh
 
+# Since I use both Macs (Darwin), Arch Linux (home machine), and Debian based Linux (servers, etc.) handle
+# platform specific setup here.
 if [[ `uname` == 'Darwin' ]]; then
     source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -121,19 +127,9 @@ fi
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR="nvim"
-else
-    export EDITOR="nvim"
-    export VISUAL="code"
-fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# Preferred editor
+export EDITOR="nvim"
+export VISUAL="code"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -161,9 +157,8 @@ fi
 
 PURE_PROMPT_SYMBOL=➜
 
-# prompt pure
-
-export NVM_DIR="$HOME/.nvm"
+# Setup nvm for node development, I don't like its defaults
+export NVM_DIR="$HOME/.config/nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
