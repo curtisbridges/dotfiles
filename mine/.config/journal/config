@@ -1,3 +1,2 @@
-stats = true
-permission = true
-debug = true
+editor = code -n
+
