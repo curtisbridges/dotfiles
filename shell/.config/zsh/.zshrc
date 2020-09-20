@@ -10,9 +10,9 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -57,7 +57,7 @@ compinit
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
@@ -129,7 +129,7 @@ fi
 
 # Preferred editor
 export EDITOR="nvim"
-export VISUAL="code"
+export VISUAL="code -n"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -155,7 +155,7 @@ export VISUAL="code"
 # itunes	Control iTunes. User itunes -h for usage details
 # spotify	Control Spotify and search by artist, album, track and etc.
 
-PURE_PROMPT_SYMBOL=➜
+#PURE_PROMPT_SYMBOL=➜
 
 # Setup nvm for node development
 export NVM_DIR="$HOME/.nvm"
@@ -167,4 +167,12 @@ export NVM_DIR="$HOME/.nvm"
 # upon upgrade/reinstall.
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+#[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+# Pure Prompt
+#autoload -U promptinit; promptinit
+#prompt pure
+
+# Use starship prompt
+eval "$(starship init zsh)"
+
