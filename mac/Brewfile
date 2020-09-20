@@ -42,6 +42,7 @@ brew 'zsh-syntax-highlighting'
 # Casks
 cask '1password'
 cask 'appcleaner'
+cask 'Alacritty'
 # non-cask doesn't install docker daemon!
 cask 'firefox'
 cask 'krita'
