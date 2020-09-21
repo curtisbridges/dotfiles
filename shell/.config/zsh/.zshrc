@@ -18,11 +18,12 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export ZSH=~/.oh-my-zsh
 
 export KEYTIMEOUT=1
-
+echo -n "loading environment vars..."
 # source my machine specific settings
 if [ -e "${HOME}/.environment" ] ; then
     source ${HOME}/.environment
 fi
+echo "done."
 
 # options
 # -------
@@ -101,17 +102,22 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump aws docker docker-compose extract git git-extras git-flow history ng node npm vi-mode vscode web-search)
+echo -n "loading plugins..."
+plugins=(autojump docker docker-compose extract git git-extras git-flow history node npm vi-mode vscode web-search)
+echo "done."
 
 # User configuration
 export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 
 # Use Oh-My-Zsh.
+echo -n "loading omz..."
 source $ZSH/oh-my-zsh.sh
+echo "done."
 
 # Since I use both Macs (Darwin), Arch Linux (home machine), and Debian based Linux (servers, etc.) handle
 # platform specific setup here.
+echo -n "loading native zsh stuffs..."
 if [[ `uname` == 'Darwin' ]]; then
     source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -123,6 +129,7 @@ elif [[ `lsb_release -i -s` == 'Arch' ]]; then
 else
     source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
+echo "done."
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -158,9 +165,11 @@ export VISUAL="code -n"
 #PURE_PROMPT_SYMBOL=➜
 
 # Setup nvm for node development
+echo -n "loading nvm..."
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+echo "done."
 
 # You can set $NVM_DIR to any location, but leaving it unchanged from
 # /usr/local/opt/nvm will destroy any nvm-installed Node installations
@@ -174,5 +183,6 @@ export NVM_DIR="$HOME/.nvm"
 #prompt pure
 
 # Use starship prompt
+echo -n "loading starship..."
 eval "$(starship init zsh)"
-
+echo "done."
