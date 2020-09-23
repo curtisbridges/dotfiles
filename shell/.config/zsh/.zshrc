@@ -162,8 +162,6 @@ export VISUAL="code -n"
 # itunes	Control iTunes. User itunes -h for usage details
 # spotify	Control Spotify and search by artist, album, track and etc.
 
-#PURE_PROMPT_SYMBOL=➜
-
 # Setup nvm for node development
 echo -n "loading nvm..."
 export NVM_DIR="$HOME/.nvm"
@@ -175,14 +173,15 @@ echo "done."
 # /usr/local/opt/nvm will destroy any nvm-installed Node installations
 # upon upgrade/reinstall.
 
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-#[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
-
+echo -n "loading custom prompt..."
+autoload -U promptinit; promptinit
 # Pure Prompt
-#autoload -U promptinit; promptinit
+#PURE_PROMPT_SYMBOL=➜
 #prompt pure
 
-# Use starship prompt
-echo -n "loading starship..."
-eval "$(starship init zsh)"
+# Spaceship Prompt
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_VI_MODE_SHOW=false
+prompt spaceship
 echo "done."
+
