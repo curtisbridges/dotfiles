@@ -26,11 +26,6 @@ set shiftwidth=4 "auto-indent amount when using cindent, >>, << and stuff like t
 set tabstop=4
 set softtabstop=4 "when hitting tab or backspace, how many spaces should a tab be (see expandtab)
 set shiftround "when at 3 spaces, and I hit > ... go to 4, not 7
-
-"set ignorecase "case insensitive by default
-set smartcase "if there are caps, go case-sensitive
-set infercase "case inferred by default
-
 set nowrap "do not wrap line
 
 set showmatch "show matching brackets
@@ -46,9 +41,6 @@ set smartindent
 "set ignorecase "case insensitive by default
 set smartcase "if there are caps, go case-sensitive
 set infercase "case inferred by default
-
-set showmatch "show matching brackets
-set matchtime=5 "how many tenths of a second to blink matching brackets
 
 "line and column numbering
 set number "turn on line numbers
@@ -66,4 +58,9 @@ set hlsearch "highlight the search pattern while searching
 set incsearch "BUT do highlight as you type you search phrase
 
 set spell
+
+set clipboard=unnamedplus
+
+set splitbelow "Horizontal splits will automatically be below
+set splitright "Vertical splits will automatically be to the right
 
