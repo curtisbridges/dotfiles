@@ -7,13 +7,6 @@ echo "Work hard. Get shit done."
 # Make sure all our configuration is done in the XDG config dir...
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
-
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -122,6 +115,7 @@ if [[ `uname` == 'Darwin' ]]; then
     source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+#    source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
     [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 elif [[ `lsb_release -i -s` == 'Arch' ]]; then
     source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
@@ -146,7 +140,6 @@ export VISUAL="code -n"
 # Example aliases
 # alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
-# export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # Requires osx plugin
 # tab	Open the current directory in a new tab
