@@ -18,16 +18,16 @@ window:
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 120
-    lines: 40
+    columns: 100
+    lines: 50
 
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
   #position:
-    # x: 5
-    # y: 5
+  #  x: 20
+  #  y: 20
 
   # Window padding (changes require restart)
   #
@@ -307,11 +307,11 @@ cursor:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  style: Beam
+  style: Block
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
-  #unfocused_hollow: true
+  unfocused_hollow: true
 
 # Live config reload (changes require restart)
 live_config_reload: true
@@ -361,7 +361,7 @@ mouse:
   # If this is `true`, the cursor is temporarily hidden when typing.
   hide_when_typing: true
 
-  #url:
+  url:
     # URL launcher
     #
     # This program is executed when clicking on a text which is recognized as a URL.
@@ -373,9 +373,9 @@ mouse:
     #   - (macOS) open
     #   - (Linux/BSD) xdg-open
     #   - (Windows) explorer
-    #launcher:
-    #  program: xdg-open
-    #  args: []
+    launcher:
+      program: open
+      args: []
 
     # URL modifiers
     #
@@ -511,7 +511,7 @@ mouse:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # at once.
-#key_bindings:
+key_bindings:
   # (Windows, Linux, and BSD only)
   #- { key: V,        mods: Control|Shift, action: Paste            }
   #- { key: C,        mods: Control|Shift, action: Copy             }
@@ -526,20 +526,20 @@ mouse:
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
 
   # (macOS only)
-  #- { key: N,        mods: Command, action: SpawnNewInstance            }
-  #- { key: Key0,   mods: Command,         action: ResetFontSize    }
+  - { key: N,      mods: Command,         action: SpawnNewInstance }
+  - { key: Key0,   mods: Command,         action: ResetFontSize    }
   #- { key: Equals, mods: Command,         action: IncreaseFontSize }
-  #- { key: Add,    mods: Command,         action: IncreaseFontSize }
-  #- { key: Minus,  mods: Command,         action: DecreaseFontSize }
+  - { key: Add,    mods: Command,         action: IncreaseFontSize }
+  - { key: Minus,  mods: Command,         action: DecreaseFontSize }
   #- { key: K,      mods: Command,         action: ClearHistory     }
   #- { key: K,      mods: Command,         chars: "\x0c"            }
-  #- { key: V,      mods: Command,         action: Paste            }
-  #- { key: C,      mods: Command,         action: Copy             }
-  #- { key: H,      mods: Command,         action: Hide             }
-  #- { key: M,      mods: Command,         action: Minimize         }
-  #- { key: Q,      mods: Command,         action: Quit             }
-  #- { key: W,      mods: Command,         action: Quit             }
-  #- { key: F,      mods: Command|Control, action: ToggleFullscreen }
+  - { key: V,      mods: Command,         action: Paste            }
+  - { key: C,      mods: Command,         action: Copy             }
+  - { key: H,      mods: Command,         action: Hide             }
+  - { key: M,      mods: Command,         action: Minimize         }
+  - { key: Q,      mods: Command,         action: Quit             }
+  - { key: W,      mods: Command,         action: Quit             }
+  - { key: F,      mods: Command|Control, action: ToggleFullscreen }
 
   #- { key: Paste,                    action: Paste                            }
   #- { key: Copy,                     action: Copy                             }
