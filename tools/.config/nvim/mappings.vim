@@ -29,3 +29,7 @@ nnoremap <CR> :
 
 "surround current word with double-quotes
 nnoremap <leader>"" viw<esc>a"<esc>hbi"<esc>lel
+
+"Make double-<Esc> clear search highlights¬
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>¬
+
