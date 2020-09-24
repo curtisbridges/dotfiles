@@ -29,6 +29,7 @@ brew 'ripgrep'
 brew 'stow'
 brew 'trash'
 brew 'thefuck'
+brew 'tmux'
 brew 'wget'
 brew 'xz'
 brew 'yarn'
@@ -41,18 +42,31 @@ brew 'zsh-syntax-highlighting'
 
 # Casks
 cask '1password'
+cask 'alfred'
 cask 'appcleaner'
 cask 'Alacritty'
-# non-cask doesn't install docker daemon!
+cask 'iterm2'
+cask 'docker'
+cask 'google-chrome'
 cask 'firefox'
+cask 'kitty'
 cask 'krita'
+cask 'postman'
 cask 'slack'
+cask 'vimr' # I don't love this, but I lack suitable alternatives
 cask 'visual-studio-code'
 
-# Fonts -- removed because homebrew's update will always pull these
-# cask 'font-hack'
-# cask 'font-source-code-pro-for-powerline'
-# cask 'font-source-code-pro'
-# cask 'font-input'
-# cask 'font-source-sans-pro'
-# cask 'font-source-serif-pro'
+# Fonts
+cask 'font-fira-code-nerd-font'
+cask 'font-hack'
+cask 'font-hack-nerd-font'
+cask 'font-hasklig'
+
+# Mac App Store Apps
+mas 'Xcode', id: 497799835
+mas 'Apple Developer', id: 640199958
+mas 'Tweetbot', id: 1384080005
+mas 'Pocket', id: 568494494
+mas 'Silicio', id: 933627574 # Media miniplayer app
+mas 'AdGuard for Safari', id: 1440147259
+
