@@ -43,12 +43,12 @@ brew 'zsh-syntax-highlighting'
 cask '1password'
 cask 'alfred'
 cask 'appcleaner'
-cask 'Alacritty'
-cask 'iterm2'
+cask 'calibre'
 cask 'docker'
-cask 'google-chrome'
 cask 'firefox'
-cask 'kitty'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'karabiner-elements'
 cask 'krita'
 cask 'postman'
 cask 'slack'
@@ -69,3 +69,4 @@ mas 'Tweetbot', id: 1384080005                      # Twitter client
 mas 'Pocket', id: 568494494                         # Read Later service
 mas 'Silicio', id: 933627574                        # Media miniplayer app
 mas 'AdGuard for Safari', id: 1440147259            # Ad Blocker / Privacy
+
