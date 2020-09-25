@@ -1,17 +1,12 @@
 #!/bin/sh
 # Setup defaults for a new Mac
 
-# Assuming Xcode is installed, install the command line tools
-xcode-select --install
-
-# Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
 # Set computer name (as done via System Preferences → Sharing)
-#sudo scutil --set ComputerName "bosch"
-#sudo scutil --set HostName "bosch"
-#sudo scutil --set LocalHostName "bosch"
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "bosch"
+HOSTNAME=bosch
+sudo scutil --set ComputerName "$HOSTNAME"
+sudo scutil --set HostName "$HOSTNAME"
+sudo scutil --set LocalHostName "$HOSTNAME"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$HOSTNAME"
 
 # Default scrollbar behavior...
 defaults write NSGlobalDomain AppleShowScrollBars -string "Automatic"
@@ -83,7 +78,6 @@ defaults write com.apple.finder EmptyTrashSecurely -bool true
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
-
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
@@ -139,7 +133,6 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
-
 ###############################################################################
 # Rectangle                                                                        #
 ###############################################################################
@@ -147,4 +140,3 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 defaults write com.knollsoft.Rectangle gapSize -float 10
 defaults write com.knollsoft.Rectangle almostMaximizeHeight -float .90
 defaults write com.knollsoft.Rectangle almostMaximizeWidth -float .90
-
