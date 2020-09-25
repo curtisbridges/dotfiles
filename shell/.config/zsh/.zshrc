@@ -156,11 +156,11 @@ export VISUAL="code -n"
 # spotify	Control Spotify and search by artist, album, track and etc.
 
 # Setup nvm for node development
-echo -n "loading nvm..."
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh" --no-use  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-echo "done."
+#echo -n "loading nvm..."
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh" --no-use  # This loads nvm
+#[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+#echo "done."
 
 # You can set $NVM_DIR to any location, but leaving it unchanged from
 # /usr/local/opt/nvm will destroy any nvm-installed Node installations
