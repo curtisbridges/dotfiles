@@ -115,10 +115,8 @@ if [[ `uname` == 'Darwin' ]]; then
     source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-#    source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
     [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 elif [[ `lsb_release -i -s` == 'Arch' ]]; then
-    source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
     source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 else
     source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -154,17 +152,6 @@ export VISUAL="code -n"
 # hidefiles	Hide the hidden files
 # itunes	Control iTunes. User itunes -h for usage details
 # spotify	Control Spotify and search by artist, album, track and etc.
-
-# Setup nvm for node development
-#echo -n "loading nvm..."
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh" --no-use  # This loads nvm
-#[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-#echo "done."
-
-# You can set $NVM_DIR to any location, but leaving it unchanged from
-# /usr/local/opt/nvm will destroy any nvm-installed Node installations
-# upon upgrade/reinstall.
 
 echo -n "loading custom prompt..."
 autoload -U promptinit; promptinit
