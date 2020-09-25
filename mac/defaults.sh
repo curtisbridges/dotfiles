@@ -25,6 +25,13 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+#Fixing Automatic Software Updates
+defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true 
+defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
+defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
+defaults write com.apple.SoftwareUpdate ConfigDataInstall -int 1
+defaults write com.apple.commerce AutoUpdate -bool true
+defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 
 # Disable local Time Machine snapshots
 sudo tmutil disablelocal
@@ -93,6 +100,9 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.1
 
+#Changes Minimize to Dock Animation to "Genie" (Seems to be the fastest by my eye)
+defaults write com.apple.dock mineffect -string "genie" 
+
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
@@ -129,4 +139,12 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
+
+###############################################################################
+# Rectangle                                                                        #
+###############################################################################
+
+defaults write com.knollsoft.Rectangle gapSize -float 10
+defaults write com.knollsoft.Rectangle almostMaximizeHeight -float .90
+defaults write com.knollsoft.Rectangle almostMaximizeWidth -float .90
 
