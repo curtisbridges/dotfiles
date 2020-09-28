@@ -4,8 +4,8 @@
 inoremap jj <Esc>
 
 "auto indent pasted text
-nnoremap p p=`]<C-o>
-nnoremap P P=`]<C-o>
+"nnoremap p p=`]<C-o>
+"nnoremap P P=`]<C-o>
 
 "code indent as a block
 vnoremap < <gv

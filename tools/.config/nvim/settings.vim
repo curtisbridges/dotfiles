@@ -8,7 +8,9 @@ set encoding=utf-8
 syntax on
 
 "Let's make it pretty
-set termguicolors
+if (has("termguicolors"))
+ set termguicolors
+endif
 set background=dark "use dark background with terminal
 
 "directory handling
@@ -21,7 +23,6 @@ set nobackup
 "indentation settings
 set expandtab "no tab characters
 set smarttab
-set expandtab
 set shiftwidth=4 "auto-indent amount when using cindent, >>, << and stuff like that
 set tabstop=4
 set softtabstop=4 "when hitting tab or backspace, how many spaces should a tab be (see expandtab)
@@ -37,6 +38,7 @@ set listchars=tab:\›\ ,trail:·,extends:>,precedes:<,eol:¬
 "indentation settings
 set autoindent
 set smartindent
+set cindent
 
 "set ignorecase "case insensitive by default
 set smartcase "if there are caps, go case-sensitive
@@ -57,10 +59,10 @@ set noerrorbells "don't make noise
 set hlsearch "highlight the search pattern while searching
 set incsearch "BUT do highlight as you type you search phrase
 
-set spell
-
 set clipboard=unnamedplus
 
 set splitbelow "Horizontal splits will automatically be below
 set splitright "Vertical splits will automatically be to the right
+
+let mapleader = " " " Leader key is SPACE
 
