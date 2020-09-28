@@ -12,6 +12,7 @@
 --type-set=feature=.feature
 --type-set=json=.json
 --type-set=javascript=.js
+--type-set=md=.md,.mkd,.markdown
 --type-set=typescript=.ts
 --type=javascript
 --type=typescript

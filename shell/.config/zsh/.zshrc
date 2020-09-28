@@ -11,12 +11,10 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export ZSH=~/.oh-my-zsh
 
 export KEYTIMEOUT=1
-echo -n "loading environment vars..."
 # source my machine specific settings
 if [ -e "${HOME}/.environment" ] ; then
     source ${HOME}/.environment
 fi
-echo "done."
 
 # options
 # -------
@@ -64,7 +62,7 @@ CASE_SENSITIVE="true"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=1
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -88,29 +86,27 @@ COMPLETION_WAITING_DOTS="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-echo -n "loading plugins..."
-plugins=(autojump docker docker-compose extract git git-extras git-flow history node npm vi-mode vscode web-search)
-echo "done."
+# Plugins
+plugins=(
+    autojump docker docker-compose dotenv 
+    extract git git-extras git-flow history 
+    node npm osx vi-mode web-search
+)
 
 # User configuration
 export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 
 # Use Oh-My-Zsh.
-echo -n "loading omz..."
 source $ZSH/oh-my-zsh.sh
-echo "done."
+
+# command correction
+eval $(thefuck --alias)
+# fuzzy finder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Since I use both Macs (Darwin), Arch Linux (home machine), and Debian based Linux (servers, etc.) handle
 # platform specific setup here.
-echo -n "loading native zsh stuffs..."
 if [[ `uname` == 'Darwin' ]]; then
     source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -121,39 +117,12 @@ elif [[ `lsb_release -i -s` == 'Arch' ]]; then
 else
     source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
-echo "done."
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
 
 # Preferred editor
 export EDITOR="nvim"
 export VISUAL="code -n"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="vim ~/.zshrc"
-# alias ohmyzsh="vim ~/.oh-my-zsh"
-
-# Requires osx plugin
-# tab	Open the current directory in a new tab
-# ofd	Open the current directory in a Finder window
-# pfd	Return the path of the frontmost Finder window
-# pfs	Return the current Finder selection
-# cdf	cd to the current Finder directory
-# pushdf	pushd to the current Finder directory
-# quick-look	Quick-Look a specified file
-# man-preview	Open a specified man page in Preview app
-# showfiles	Show hidden files
-# hidefiles	Hide the hidden files
-# itunes	Control iTunes. User itunes -h for usage details
-# spotify	Control Spotify and search by artist, album, track and etc.
-
-echo -n "loading custom prompt..."
+# Prompt setup
 autoload -U promptinit; promptinit
 # Pure Prompt
 #PURE_PROMPT_SYMBOL=➜
@@ -163,5 +132,4 @@ autoload -U promptinit; promptinit
 SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_VI_MODE_SHOW=false
 prompt spaceship
-echo "done."
 

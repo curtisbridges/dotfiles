@@ -13,27 +13,30 @@ alias grep='grep --color'                     # show differences in color
 alias ls='ls -FHG'
 alias ll='ls -l'
 
-# Update and Upgrade Homebrew
-if [[ `uname` == 'Darwin' ]]; then
-    alias upgrade='brew update && brew upgrade && brew upgrade --cask --greedy && brew doctor'
-    alias buf='brew bundle --file=~/.Brewfile'
-else
-#    alias upgrade='sudo apt update && sudo apt upgrade'
-    alias upgrade='yay -Syu'
-fi
-
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
 # Apps
+alias cat=bat
+alias code='code -n'
+alias top=htop
+alias nf=neofetch
+alias ping='prettyping --nolegend'
 alias vim=nvim
-alias tower=gittower
 alias yt=youtube-dl
 alias yt4=youtube-dl --format mp4
-alias code='code -n'
-alias nf=neofetch
 
+# Update and Upgrade Homebrew
+if [[ `uname` == 'Darwin' ]]; then
+    alias upgrade='brew update && brew upgrade && brew upgrade --cask --greedy && brew doctor'
+    alias buf='brew bundle --file=~/.Brewfile'
+else
+    alias upgrade='sudo apt update && sudo apt upgrade' # debian based linux
+    # alias upgrade='yay -Syu' # Arch based linux
+fi
+
+# Make 'open' work in Linux (I love it on macOS)
 if [[ `uname` == 'Linux' ]]; then
     alias open="xdg-open"
 fi
