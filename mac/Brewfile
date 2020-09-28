@@ -2,37 +2,32 @@
 cask_args appdir: '/Applications'
 
 # Brews
-brew 'ack'
-brew 'autojump'
-brew 'bash'
-brew 'cscope'
-brew 'ctags'
-brew 'dos2unix'
+brew 'ack'          # code search tool
+brew 'autojump'     # jump to directories fast!
+brew 'bat'          # a 'cat' replacement
+brew 'dos2unix'     # convert dos files to unix line endings
 brew 'ffmpeg'
-brew 'gdbm'
-brew 'git'
-brew 'gitmoji'
-brew 'git-flow'
-brew 'git-open'
-brew 'git-town'
-brew 'gpg'
+brew 'fish'         # alternative shell (not POSIX compliant)
+brew 'git'          # source control
+brew 'git-flow'     # standard git workflows
+brew 'git-open'     # open git repository webpage from the shell
+brew 'gpg'          # encryption utils
 brew 'httpie'
-brew 'hugo'
-brew 'neofetch'
-brew 'nmap'
-brew 'node'
-brew 'openssl'
-brew 'pcre'
+brew 'hugo'         # static website generator alterative to jekyll
+brew 'neofetch'     # graphical system summary
+brew 'nmap'         # port scanning util
+brew 'node'         # use node directly over nvm
+brew 'openssl'      # ssl utilities
 brew 'readline'
-brew 'ripgrep'
-brew 'stow'
-brew 'trash'
+brew 'ripgrep'      # a faster grep
+brew 'stow'         # dotfile installation utility
+brew 'trash'        # macOS utility to leverage the trashcan from the shell
 brew 'thefuck'
-brew 'tmux'
-brew 'wget'
-brew 'xz'
-brew 'yarn'
-brew 'youtube-dl'
+brew 'tldr'         # a more concise man replacement
+brew 'tmux'         # terminal multiplexer (not yet used)
+brew 'wget'         # alternative shell web download util
+brew 'yarn'         # alternative to npm
+brew 'youtube-dl'   # download youtube videos
 # zsh
 brew 'zsh'
 brew 'zsh-autosuggestions'
@@ -40,22 +35,24 @@ brew 'zsh-history-substring-search'
 brew 'zsh-syntax-highlighting'
 
 # Casks
-cask '1password'
-cask 'alfred'
-cask 'appcleaner'
-cask 'calibre'
-cask 'docker'
-cask 'firefox'
-cask 'google-chrome'
-cask 'iterm2'
-cask 'karabiner-elements'
-cask 'krita'
-cask 'postman'
-cask 'slack'
-cask 'vimr' # I don't love this, but I lack suitable alternatives
-cask 'visual-studio-code'
+cask '1password'            # password manager
+cask 'alfred'               # application launcher and more
+cask 'appcleaner'           # clean uninstalls
+cask 'calibre'              # ebook utilities
+cask 'docker'               # container software
+cask 'firefox'              # open source web browser
+cask 'google-chrome'        # Google's web browser
+cask 'iterm2'               # a more feature-rich terminal
+cask 'karabiner-elements'   # low-level keyboard and mouse control
+cask 'krita'                # open source paint app
+cask 'postman'              # work with REST APIs
+cask 'slack'                # online chat rooms
+cask 'vimr'                 # visual nvim frontend. I don't love it.
+cask 'visual-studio-code'   # Microsoft cross-platform editor
 
 # Fonts
+# Fonts would also include source-code-pro but that one will reinstall
+# every brew update.
 cask 'font-fira-code-nerd-font'
 cask 'font-hack'
 cask 'font-hack-nerd-font'
