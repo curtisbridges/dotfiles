@@ -11,6 +11,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export ZSH=~/.oh-my-zsh
 
 export KEYTIMEOUT=1
+
 # source my machine specific settings
 if [ -e "${HOME}/.environment" ] ; then
     source ${HOME}/.environment
@@ -19,37 +20,29 @@ fi
 # options
 # -------
 setopt hist_ignore_all_dups  # remove older duplicate entries from history
-#setopt share_history         # share history between different instances of the shell
+setopt hist_find_no_dups     # ignore duplicates when searching
 setopt hist_reduce_blanks    # remove superfluous blanks from history items
+setopt share_history         # share history between different instances of the shell
 setopt auto_list             # automatically list choices on ambiguous completion
 setopt menu_complete         # insert first suggestion while autocompleting
 setopt prompt_subst          # allow command, param and arithmetic expansion in the prompt
 setopt auto_menu             # automatically use menu completion
 setopt always_to_end         # move cursor to end if word had one match
-# setopt auto_cd             # auto cd when writing dir in the shell
+setopt auto_cd               # auto cd when writing dir in the shell
 # setopt correctall          # correct typo(ed) commands
 unsetopt correct_all
 
-# Lines configured by zsh-newuser-install
-# HISTFILE=~/.histfile
-# HISTSIZE=1000
-# SAVEHIST=1000
-bindkey -v
+# History
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
 
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-# zstyle :compinstall filename '~/.zshrc'
+# vi keybinds
+bindkey -v
 
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-
-
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
@@ -102,10 +95,11 @@ source $ZSH/oh-my-zsh.sh
 
 # command correction
 eval $(thefuck --alias)
+
 # fuzzy finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Since I use both Macs (Darwin), Arch Linux (home machine), and Debian based Linux (servers, etc.) handle
+# Since I use both Macs (Darwin), Arch Linux (sometimes), and Debian based Linux (servers, etc.) handle
 # platform specific setup here.
 if [[ `uname` == 'Darwin' ]]; then
     source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -118,9 +112,12 @@ else
     source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
-# Preferred editor
+# Default Apps
 export EDITOR="nvim"
 export VISUAL="code -n"
+export TERMINAL="iterm"
+export BROWSER="safari"
+export PAGER="less"
 
 # Prompt setup
 autoload -U promptinit; promptinit
