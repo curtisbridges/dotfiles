@@ -9,7 +9,7 @@ syntax on
 
 "Let's make it pretty
 if (has("termguicolors"))
- set termguicolors
+    set termguicolors
 endif
 set background=dark "use dark background with terminal
 
@@ -45,7 +45,7 @@ set smartcase "if there are caps, go case-sensitive
 set infercase "case inferred by default
 
 "line and column numbering
-set number "turn on line numbers
+set number relativenumber "turn on line numbers
 set numberwidth=4 "We are good up to 9999 lines
 set cursorline
 set ruler "Always show current positions along the bottom
@@ -59,10 +59,16 @@ set noerrorbells "don't make noise
 set hlsearch "highlight the search pattern while searching
 set incsearch "BUT do highlight as you type you search phrase
 
+"some misc settings for OS integration
 set clipboard=unnamedplus
+set mouse=a
 
 set splitbelow "Horizontal splits will automatically be below
 set splitright "Vertical splits will automatically be to the right
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=500
 
 let mapleader = " " " Leader key is SPACE
 
