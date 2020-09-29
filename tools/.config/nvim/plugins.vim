@@ -20,12 +20,14 @@ if !exists('g:vscode')
     " Themes
     "Plug 'flazz/vim-colorschemes'
     Plug 'morhetz/gruvbox'
-    colorscheme gruvbox
 
     Plug 'leafgarland/typescript-vim'
 
     " finish plugin loading
     call plug#end()
+
+    " Can't set colorscheme before plug#end
+    colorscheme gruvbox
 
     "
     " Plugin configuration
@@ -33,10 +35,7 @@ if !exists('g:vscode')
     let g:airline_theme='gruvbox'
     let g:airline_powerline_fonts = 1
 
-     let g:coc_global_extensions = [
-    'coc-emmet', 'coc-css', 'coc-html', 
-    'coc-json', 'coc-prettier', 'coc-tsserver'
-    ]
+     let g:coc_global_extensions = [ 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver' ]
 
    " make fzf use ag so it leverages .gitignores
     let $FZF_DEFAULT_COMMAND = 'ag -g ""'
