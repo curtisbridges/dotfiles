@@ -37,9 +37,11 @@ brew 'yarn'             # alternative to npm
 brew 'youtube-dl'       # download youtube videos
 # zsh
 brew 'zsh'
-brew 'zsh-autosuggestions'
-brew 'zsh-history-substring-search'
-brew 'zsh-syntax-highlighting'
+brew 'zplug'
+# disabling for now but leaving in file; zplug now handles the below...
+#brew 'zsh-autosuggestions'
+#brew 'zsh-history-substring-search'
+#brew 'zsh-syntax-highlighting'
 
 # Casks
 cask '1password'            # password manager
