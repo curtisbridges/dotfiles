@@ -19,6 +19,7 @@ brew 'gpg'              # encryption utils
 brew 'htop'             # system stats
 brew 'httpie'
 brew 'hugo'             # static website generator alterative to jekyll
+brew 'mas'              # required for mas apps below
 brew 'neofetch'         # graphical system summary
 brew 'nmap'             # port scanning util
 brew 'node'             # use node directly over nvm
@@ -32,6 +33,8 @@ brew 'trash'            # macOS utility to leverage the trashcan from the shell
 brew 'thefuck'          # command correction utility
 brew 'tldr'             # a more concise man replacement
 brew 'tmux'             # terminal multiplexer (not yet used)
+brew 'tmuxinator'       # tmux projects
+brew 'tree'             # directory tree
 brew 'wget'             # alternative shell web download util
 brew 'yarn'             # alternative to npm
 brew 'youtube-dl'       # download youtube videos

@@ -1,3 +1,7 @@
+# editor commands
+alias e="$EDITOR"
+alias v="$VISUAL"
+
 # -> Prevents accidentally clobbering files.
 alias mkdir='mkdir -p'
 
@@ -11,11 +15,20 @@ alias grep='grep --color'                     # show differences in color
 
 # Some shortcuts for different directory listings
 alias ls='ls -FHG'
+alias la='ls -al'
 alias ll='ls -l'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
+
+# Get week number
+alias week='date +%V'
+# Stopwatch
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Apps
 alias cat=bat
@@ -27,17 +40,42 @@ alias vim=nvim
 alias yt=youtube-dl
 alias yt4=youtube-dl --format mp4
 
+#tmux
+alias tm=tmux
+alias tma='tmux attach'
+alias tmat='tmux attach -t'
+alias tmk='tmux kill-session -t'
+alias tmls='tmux list-sessions'
+alias tmn='tmux new-session'
+alias tmx=tmuxinator
+
 # Update and Upgrade Homebrew
 if [[ `uname` == 'Darwin' ]]; then
-    alias upgrade='brew update && brew upgrade && brew upgrade --cask --greedy && brew doctor'
-    alias buf='brew bundle --file=~/.Brewfile'
+    alias bup='brew update && brew upgrade && brew upgrade --cask --greedy && brew doctor'
 else
     alias upgrade='sudo apt update && sudo apt upgrade' # debian based linux
     # alias upgrade='yay -Syu' # Arch based linux
 fi
+alias upup='npm i -g npm; hr; npm update -g; hr;'
 
 # Make 'open' work in Linux (I love it on macOS)
 if [[ `uname` == 'Linux' ]]; then
     alias open="xdg-open"
 fi
+
+# Git
+alias g=git
+alias ga='git add'
+alias gaa='git add .'
+alias gb='git branch'
+alias gbd='git branch -D'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias gd='git diff'
+alias gf='git fetch'
+alias glo='git log --graph --pretty=oneline --abbrev-commit'
+alias gll='git pull'
+alias gp='git push'
+alias gpo='git push origin'
+alias gss='git status -s'
 

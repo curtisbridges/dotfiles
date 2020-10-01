@@ -2,6 +2,8 @@
 
 " jj escape
 inoremap jj <Esc>
+inoremap jk <Esc>
+inoremap kk <Esc>
 
 "auto indent pasted text
 "nnoremap p p=`]<C-o>
