@@ -1,8 +1,15 @@
+# Operating system chaff
 .DS_Store
+
+# VCS chaff
 .git
+.gitignore
 
-^/@.*
+# backup and swap files
+#*.swp
+#*.*~
 
+# text files
 ^/README.*
 ^/LICENSE.*
 ^/COPYING

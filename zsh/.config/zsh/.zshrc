@@ -1,5 +1,6 @@
-# Make sure all our configuration is done in the XDG config dir...
-export XDG_CONFIG_HOME="$HOME/.config"
+# Curtis Bridges (curtis@curtisbridges.com)
+# ZSH config
+
 export KEYTIMEOUT=1
 
 # History
@@ -8,7 +9,13 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 # Load zplug
-source ${ZDOTDIR:-$HOME}/.zplug.zsh
+source ${ZDOTDIR:-$HOME}/zplug.zsh
+
+# experimental loading code
+for config_file (${ZDOTDIR:-$HOME}/autoload/*.zsh)
+do
+  source $config_file
+done
 
 # options
 # -------
@@ -41,37 +48,15 @@ eval $(thefuck --alias)
 # fuzzy finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Since I use both Macs (Darwin), Arch Linux (sometimes), and Debian based Linux (servers, etc.) handle
-# platform specific setup here.
-if [[ `uname` == 'Darwin' ]]; then
-#    source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-#    source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#    source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-    [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-    if [ $ITERM_SESSION_ID ]; then
-        precmd() {
-            echo -ne "\033]0;${PWD##*/}\007"
-        }
-    fi
-#elif [[ `lsb_release -i -s` == 'Arch' ]]; then
-#    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#else
-#    source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
-
-# source my machine specific settings
-if [ -e "${HOME}/.environment" ] ; then
-    source ${HOME}/.environment
-fi
-
-# Prompt setup
+ Prompt setup
 autoload -U promptinit; promptinit
 # Pure Prompt
 #PURE_PROMPT_SYMBOL=➜
 #prompt pure
 
 # Spaceship Prompt
-SPACESHIP_PROMPT_SEPARATE_LINE=false
+#SPACESHIP_CHAR_SYMBOL=⚡️
+SPACESHIP_PROMPT_SEPARATE_LINE=true
 SPACESHIP_VI_MODE_SHOW=false
 prompt spaceship
 

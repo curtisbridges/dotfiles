@@ -20,7 +20,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 "remap C-/ to comment out the current line
-nnoremap <C-_> gcc
+nnoremap <C-/> gcc
 "remap <CR> in normal mode to enter command mode
 nnoremap <CR> :
 
@@ -34,4 +34,6 @@ nnoremap <leader>"" viw<esc>a"<esc>hbi"<esc>lel
 
 "Make double-<Esc> clear search highlights¬
 nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>¬
+
+nnoremap <leader>b :buffers<CR>:buffer<SPACE>
 

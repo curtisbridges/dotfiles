@@ -106,6 +106,20 @@ defaults write com.apple.dock autohide -bool true
 # Don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
 
+
+###############################################################################
+# Safari                                                                        #
+###############################################################################
+
+# Show the favorites bar
+defaults write com.apple.Safari ShowFavoritesBar -bool true
+
+###############################################################################
+# Terminal                                                                        #
+###############################################################################
+
+defaults write com.apple.Terminal AppleShowScrollBars -string WhenScrolling
+
 ###############################################################################
 # Mail                                                                        #
 ###############################################################################

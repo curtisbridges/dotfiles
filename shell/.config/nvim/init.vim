@@ -4,7 +4,7 @@
 source $HOME/.config/nvim/settings.vim
 source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/autocmds.vim
-source $HOME/.config/nvim/subs.vim
+source $HOME/.config/nvim/substitutions.vim
 source $HOME/.config/nvim/functions.vim
 
 " Only use plugins if not running within vscode.

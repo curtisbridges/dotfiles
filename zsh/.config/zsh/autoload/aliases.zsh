@@ -44,24 +44,23 @@ alias yt4=youtube-dl --format mp4
 alias tm=tmux
 alias tma='tmux attach'
 alias tmat='tmux attach -t'
-alias tmk='tmux kill-session -t'
+alias tmkt='tmux kill-session -t'
 alias tmls='tmux list-sessions'
 alias tmn='tmux new-session'
+alias tmk='tmux kill-server'
 alias tmx=tmuxinator
 
 # Update and Upgrade Homebrew
 if [[ `uname` == 'Darwin' ]]; then
     alias bup='brew update && brew upgrade && brew upgrade --cask --greedy && brew doctor'
 else
-    alias upgrade='sudo apt update && sudo apt upgrade' # debian based linux
-    # alias upgrade='yay -Syu' # Arch based linux
-fi
-alias upup='npm i -g npm; hr; npm update -g; hr;'
+    alias aup='sudo apt update && sudo apt upgrade' # debian based linux
+    alias yup='yay -Syu' # Arch based linux
 
-# Make 'open' work in Linux (I love it on macOS)
-if [[ `uname` == 'Linux' ]]; then
+    # Make 'open' work in Linux (I love it on macOS)
     alias open="xdg-open"
 fi
+alias bup='npm i -g npm; npm update -g'
 
 # Git
 alias g=git

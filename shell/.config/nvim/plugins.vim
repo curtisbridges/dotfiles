@@ -27,6 +27,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
 " language support
+Plug 'mattn/emmet-vim'
 Plug 'leafgarland/typescript-vim'
 
 " markdown support
@@ -47,6 +48,9 @@ colorscheme nord
 "
 let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
+" places buffer markers on the top of the terminal
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#buffer_nr_show = 1
 
 let g:coc_global_extensions = [ 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver' ]
 

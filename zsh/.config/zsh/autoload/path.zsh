@@ -7,16 +7,6 @@ if [ -d "${HOME}/scripts" ] ; then
   PATH=${HOME}/scripts:${PATH}
 fi
 
-# source the users aliases if it exists
-if [ -e "${HOME}/.aliases" ] ; then
-  source "${HOME}/.aliases"
-fi
-
-# source the users functions if it exists
-if [ -e "${HOME}/.functions" ] ; then
-  source "${HOME}/.functions"
-fi
-
 if [ -d "${HOME}/.ssh" ] ; then
   ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
 fi
