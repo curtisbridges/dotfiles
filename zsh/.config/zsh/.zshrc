@@ -42,9 +42,6 @@ unsetopt correct_all
 # vi keybinds
 bindkey -v
 
-# completions
-autoload -Uz compinit && compinit
-
 # User configuration
 export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
@@ -52,15 +49,18 @@ export MANPATH="/usr/local/man:$MANPATH"
 # command correction
 eval $(thefuck --alias)
 
-# Prompt setup
-autoload -U promptinit; promptinit
+# zsh-syntax-highlighting zsh-history-substring-search zsh-autosuggestions zsh-completions
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+fi
 
-# Pure Prompt
-#PURE_PROMPT_SYMBOL=➜
-#prompt pure
+# completions
+autoload -Uz compinit && compinit
 
 # Spaceship Prompt
-#SPACESHIP_CHAR_SYMBOL=⚡️
 SPACESHIP_PROMPT_SEPARATE_LINE=true
 SPACESHIP_VI_MODE_SHOW=false
 prompt spaceship
