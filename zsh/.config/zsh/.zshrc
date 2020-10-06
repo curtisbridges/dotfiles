@@ -8,21 +8,14 @@ HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 
-# Load zplug
-declare -A ZINIT  # initial Zinit's hash definition, if configuring before loading Zinit, and then:
-ZINIT[HOME_DIR]=${ZDOTDIR:-$HOME}/zinit
-
-#source ${ZDOTDIR:-$HOME}/zplug.zsh
-source ${ZINIT[HOME_DIR]}/bin/zinit.zsh
+# init zplug
+source ${ZDOTDIR:-$HOME}/zplug.zsh
 
 # automatic loading code
 for config_file (${ZDOTDIR:-$HOME}/autoload/*.zsh)
 do
   source $config_file
 done
-
-# fuzzy finder
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # options
 # -------
@@ -46,22 +39,11 @@ bindkey -v
 export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 
-# command correction
-eval $(thefuck --alias)
-
-# zsh-syntax-highlighting zsh-history-substring-search zsh-autosuggestions zsh-completions
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-fi
-
 # completions
 autoload -Uz compinit && compinit
 
 # Spaceship Prompt
 SPACESHIP_PROMPT_SEPARATE_LINE=true
 SPACESHIP_VI_MODE_SHOW=false
-prompt spaceship
+#prompt spaceship
 
