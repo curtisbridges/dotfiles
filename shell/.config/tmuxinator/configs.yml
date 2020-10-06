@@ -45,8 +45,7 @@ root: ~/.config
 # attach: false
 
 windows:
-  - aliases: $EDITOR ../.aliases
-  - zshrc: cd zsh && $EDITOR .zshrc .zlogin zplug.zsh
+  - zshrc: cd zsh && $EDITOR .zshrc .zlogin autoload/*.zsh
   - tmuxrc: $EDITOR tmux/tmux.conf
-  - nvimrc: cd nvim && $EDITOR init.vim autocmds.vim colors.vim functions.vim mappings.vim plugins.vim settings.vim subs.vim
+  - nvimrc: cd nvim && $EDITOR *.vim
 

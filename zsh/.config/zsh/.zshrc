@@ -9,13 +9,20 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 # Load zplug
-source ${ZDOTDIR:-$HOME}/zplug.zsh
+declare -A ZINIT  # initial Zinit's hash definition, if configuring before loading Zinit, and then:
+ZINIT[HOME_DIR]=${ZDOTDIR:-$HOME}/zinit
 
-# experimental loading code
+#source ${ZDOTDIR:-$HOME}/zplug.zsh
+source ${ZINIT[HOME_DIR]}/bin/zinit.zsh
+
+# automatic loading code
 for config_file (${ZDOTDIR:-$HOME}/autoload/*.zsh)
 do
   source $config_file
 done
+
+# fuzzy finder
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # options
 # -------
@@ -45,11 +52,9 @@ export MANPATH="/usr/local/man:$MANPATH"
 # command correction
 eval $(thefuck --alias)
 
-# fuzzy finder
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
- Prompt setup
+# Prompt setup
 autoload -U promptinit; promptinit
+
 # Pure Prompt
 #PURE_PROMPT_SYMBOL=➜
 #prompt pure

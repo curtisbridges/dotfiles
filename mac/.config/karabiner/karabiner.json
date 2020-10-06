@@ -211,32 +211,6 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                        "description": "Post space is pressed alone, left_ctrl otherwise",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "spacebar"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
                     }
                 ]
             },
@@ -266,6 +240,28 @@
                     "ignore": true,
                     "manipulate_caps_lock_led": false,
                     "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 638,
+                        "vendor_id": 1452
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "fn"
+                            },
+                            "to": {
+                                "key_code": "left_control"
+                            }
+                        }
+                    ]
                 }
             ],
             "fn_function_keys": [

@@ -40,16 +40,6 @@ alias vim=nvim
 alias yt=youtube-dl
 alias yt4=youtube-dl --format mp4
 
-#tmux
-alias tm=tmux
-alias tma='tmux attach'
-alias tmat='tmux attach -t'
-alias tmkt='tmux kill-session -t'
-alias tmls='tmux list-sessions'
-alias tmn='tmux new-session'
-alias tmk='tmux kill-server'
-alias tmx=tmuxinator
-
 # Update and Upgrade Homebrew
 if [[ `uname` == 'Darwin' ]]; then
     alias bup='brew update && brew upgrade && brew upgrade --cask --greedy && brew doctor'
@@ -60,21 +50,5 @@ else
     # Make 'open' work in Linux (I love it on macOS)
     alias open="xdg-open"
 fi
-alias bup='npm i -g npm; npm update -g'
-
-# Git
-alias g=git
-alias ga='git add'
-alias gaa='git add .'
-alias gb='git branch'
-alias gbd='git branch -D'
-alias gcm='git commit -m'
-alias gco='git checkout'
-alias gd='git diff'
-alias gf='git fetch'
-alias glo='git log --graph --pretty=oneline --abbrev-commit'
-alias gll='git pull'
-alias gp='git push'
-alias gpo='git push origin'
-alias gss='git status -s'
+alias nup='npm i -g npm; npm update -g'
 
