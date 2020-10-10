@@ -30,10 +30,16 @@ nnoremap <CR> :
 "nnoremap L $
 
 "surround current word with double-quotes
-nnoremap <leader>"" viw<esc>a"<esc>hbi"<esc>lel
+"nnoremap <leader>"" viw<esc>a"<esc>hbi"<esc>lel
 
 "Make double-<Esc> clear search highlights¬
 nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>¬
 
+"enable from plugin mappings
+nnoremap <C-p> :Files<CR>
 nnoremap <leader>b :buffers<CR>:buffer<SPACE>
+nnoremap <Leader>h :History<CR>
 
+"format selection
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)

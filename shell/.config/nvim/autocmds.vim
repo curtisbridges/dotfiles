@@ -24,3 +24,6 @@ autocmd FileType md,markdown setlocal conceallevel=2
 autocmd BufRead COMMIT_EDITMSG setlocal spell
 autocmd BufRead COMMIT_EDITMSG setlocal colorcolumn=50
 
+" typescript
+autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
+

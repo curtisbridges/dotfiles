@@ -8,7 +8,7 @@ export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
 
 # Default Apps
 export EDITOR="nvim"
-export VISUAL="nvim"
+export VISUAL="code -n"
 export TERMINAL="iterm"
 export BROWSER="safari"
 export PAGER="less"

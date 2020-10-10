@@ -10,6 +10,7 @@ zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-history-substring-search", defer:3
 zplug "pndurette/zsh-lux"    # macOS light/dark mode switcher
+zplug "plugins/alias-finder", from:oh-my-zsh
 zplug "plugins/autojump", from:oh-my-zsh
 zplug "plugins/docker", from:oh-my-zsh
 zplug "plugins/docker-compose", from:oh-my-zsh

@@ -1,6 +1,9 @@
 # Settings
 cask_args appdir: '/Applications'
 
+# Taps
+tap mongodb/brew
+
 # Brews
 brew 'ack'              # code search tool
 brew 'ag'               # another code search tool
@@ -20,6 +23,7 @@ brew 'htop'             # system stats
 brew 'httpie'
 brew 'hugo'             # static website generator alterative to jekyll
 brew 'mas'              # required for mas apps below
+brew 'mongodb-community'# nosql db
 brew 'neofetch'         # graphical system summary
 brew 'nmap'             # port scanning util
 brew 'node'             # use node directly over nvm
@@ -58,6 +62,7 @@ cask 'iterm2'               # a more feature-rich terminal
 cask 'karabiner-elements'   # low-level keyboard and mouse control
 cask 'krita'                # open source paint app
 cask 'postman'              # work with REST APIs
+cask 'robo-3t'              # MongoDB Admin UI
 cask 'slack'                # online chat rooms
 cask 'vimr'                 # visual nvim frontend. I don't love it.
 cask 'visual-studio-code'   # Microsoft cross-platform editor

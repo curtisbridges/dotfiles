@@ -46,9 +46,7 @@ call plug#end()
 " Can't set colorscheme before plug#end
 colorscheme onedark
 
-"
 " Plugin configuration
-"
 let g:airline_theme='onedark'
 let g:airline_powerline_fonts = 1
 let g:onedark_terminal_italics = 1
@@ -111,4 +109,3 @@ let g:vim_markdown_folding_disabled = 1
 filetype plugin on
 filetype plugin indent on
 filetype indent on
-
