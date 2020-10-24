@@ -64,7 +64,6 @@ cask 'krita'                # open source paint app
 cask 'postman'              # work with REST APIs
 cask 'robo-3t'              # MongoDB Admin UI
 cask 'slack'                # online chat rooms
-cask 'vimr'                 # visual nvim frontend. I don't love it.
 cask 'visual-studio-code'   # Microsoft cross-platform editor
 
 # Fonts
