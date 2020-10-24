@@ -24,7 +24,7 @@ setopt hist_find_no_dups     # ignore duplicates when searching
 setopt hist_reduce_blanks    # remove superfluous blanks from history items
 setopt share_history         # share history between different instances of the shell
 setopt auto_list             # automatically list choices on ambiguous completion
-setopt menu_complete         # insert first suggestion while autocompleting
+unsetopt menu_complete         # insert first suggestion while autocompleting
 setopt prompt_subst          # allow command, param and arithmetic expansion in the prompt
 setopt auto_menu             # automatically use menu completion
 setopt always_to_end         # move cursor to end if word had one match
