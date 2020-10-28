@@ -1,7 +1,6 @@
-# Init zplug
-export ZPLUG_HOME=/usr/local/opt/zplug
+# ZPLUG_HOME is defined in the platform specific files (mac/linux)
 
-# Homebrew-installed zplug
+# zplug init
 source $ZPLUG_HOME/init.zsh
 
 # Plugins

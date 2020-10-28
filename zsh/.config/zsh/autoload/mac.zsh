@@ -11,5 +11,8 @@ if [[ `uname` == 'Darwin' ]]; then
             echo -ne "\033]0;${PWD##*/}\007"
         }
     fi
+
+    # Define ZPLUG's location
+    export ZPLUG_HOME=/usr/local/opt/zplug
 fi
 
