@@ -8,14 +8,14 @@ HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 
-# init zplug
-source ${ZDOTDIR:-$HOME}/zplug.zsh
-
 # automatic loading code
 for config_file (${ZDOTDIR:-$HOME}/autoload/*.zsh)
 do
   source $config_file
 done
+
+# init zplug
+source ${ZDOTDIR:-$HOME}/zplug.zsh
 
 # options
 # -------

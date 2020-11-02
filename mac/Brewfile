@@ -61,9 +61,12 @@ cask 'google-chrome'        # Google's web browser
 cask 'iterm2'               # a more feature-rich terminal
 cask 'karabiner-elements'   # low-level keyboard and mouse control
 cask 'krita'                # open source paint app
+cask 'mongodb-compass'      # MongoDB frontend
+cask 'netnewswire'          # RSS feed reader
 cask 'postman'              # work with REST APIs
 cask 'robo-3t'              # MongoDB Admin UI
 cask 'slack'                # online chat rooms
+cask 'transmit'             # ftp/sftp/etc app
 cask 'visual-studio-code'   # Microsoft cross-platform editor
 
 # Fonts

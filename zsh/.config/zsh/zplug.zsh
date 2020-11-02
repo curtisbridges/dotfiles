@@ -1,7 +1,6 @@
 # Init zplug
-export ZPLUG_HOME=~/.zplug
 
-# Homebrew-installed zplug
+# zplug init
 source $ZPLUG_HOME/init.zsh
 
 # Plugins
