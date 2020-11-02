@@ -1,5 +1,5 @@
 # Init zplug
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=~/.zplug
 
 # Homebrew-installed zplug
 source $ZPLUG_HOME/init.zsh
