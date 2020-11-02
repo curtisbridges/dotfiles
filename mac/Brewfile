@@ -2,7 +2,8 @@
 cask_args appdir: '/Applications'
 
 # Taps
-tap mongodb/brew
+tap 'mongodb/brew'
+tap 'homebrew/cask-fonts'
 
 # Brews
 brew 'ack'              # code search tool
@@ -25,6 +26,7 @@ brew 'hugo'             # static website generator alterative to jekyll
 brew 'mas'              # required for mas apps below
 brew 'mongodb-community'# nosql db
 brew 'neofetch'         # graphical system summary
+brew 'neovim'           # preferred vim
 brew 'nmap'             # port scanning util
 brew 'node'             # use node directly over nvm
 brew 'noti'             # macOS command line notification hook
@@ -42,6 +44,7 @@ brew 'tree'             # directory tree
 brew 'wget'             # alternative shell web download util
 brew 'yarn'             # alternative to npm
 brew 'youtube-dl'       # download youtube videos
+
 # zsh
 brew 'zsh'
 brew 'zplug'
@@ -85,4 +88,3 @@ mas 'Tweetbot', id: 1384080005                      # Twitter client
 mas 'Pocket', id: 568494494                         # Read Later service
 mas 'Silicio', id: 933627574                        # Media miniplayer app
 mas 'AdGuard for Safari', id: 1440147259            # Ad Blocker / Privacy
-
