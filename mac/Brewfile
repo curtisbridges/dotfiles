@@ -57,6 +57,7 @@ brew 'zplug'
 cask '1password'            # password manager
 cask 'alfred'               # application launcher and more
 cask 'appcleaner'           # clean uninstalls
+cask 'balenaetcher'         # ISO -> USB writing app
 cask 'calibre'              # ebook utilities
 cask 'docker'               # container software
 cask 'firefox'              # open source web browser
