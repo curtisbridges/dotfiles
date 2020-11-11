@@ -11,5 +11,10 @@ if [ -d "${HOME}/.ssh" ] ; then
   ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
 fi
 
+if [ -d "${HOME}/.npm-global" ] ; then
+  PATH=${PATH}:${HOME}/.npm-global/bin
+fi
+
+
 export PATH="$PATH:/usr/lib/ccache/bin"
 
