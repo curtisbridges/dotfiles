@@ -40,15 +40,5 @@ alias vim=nvim
 alias yt=youtube-dl
 alias yt4=youtube-dl --format mp4
 
-# Update and Upgrade Homebrew
-if [[ `uname` == 'Darwin' ]]; then
-    alias bup='brew update && brew upgrade && brew upgrade --cask --greedy && brew doctor'
-else
-    alias aup='sudo apt update && sudo apt upgrade' # debian based linux
-    alias yup='yay -Syu' # Arch based linux
-
-    # Make 'open' work in Linux (I love it on macOS)
-    alias open="xdg-open"
-fi
+# Updates and Upgrades
 alias nup='npm i -g npm; npm update -g'
-

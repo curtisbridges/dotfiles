@@ -14,5 +14,8 @@ if [[ `uname` == 'Darwin' ]]; then
 
     # Define ZPLUG's location
     export ZPLUG_HOME=/usr/local/opt/zplug
+
+    # Brew update
+    alias bup='brew update && brew upgrade && brew doctor'
 fi
 
