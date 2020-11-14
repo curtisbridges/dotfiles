@@ -86,6 +86,6 @@ mas 'Xcode', id: 497799835
 mas 'Apple Developer', id: 640199958
 mas 'Moom', id: 419330170                           # Window Manager
 mas 'Tweetbot', id: 1384080005                      # Twitter client
-mas 'Pocket', id: 568494494                         # Read Later service
-mas 'Silicio', id: 933627574                        # Media miniplayer app
+#mas 'Pocket', id: 568494494                         # Read Later service
+#mas 'Silicio', id: 933627574                        # Media miniplayer app
 mas 'AdGuard for Safari', id: 1440147259            # Ad Blocker / Privacy
