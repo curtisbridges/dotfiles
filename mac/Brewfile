@@ -2,7 +2,6 @@
 cask_args appdir: '/Applications'
 
 # Taps
-tap 'mongodb/brew'
 tap 'homebrew/cask-fonts'
 
 # Brews
@@ -24,7 +23,6 @@ brew 'htop'             # system stats
 brew 'httpie'
 brew 'hugo'             # static website generator alterative to jekyll
 brew 'mas'              # required for mas apps below
-brew 'mongodb-community'# nosql db
 brew 'neofetch'         # graphical system summary
 brew 'neovim'           # preferred vim
 brew 'nmap'             # port scanning util
@@ -65,10 +63,8 @@ cask 'google-chrome'        # Google's web browser
 cask 'iterm2'               # a more feature-rich terminal
 cask 'karabiner-elements'   # low-level keyboard and mouse control
 cask 'krita'                # open source paint app
-cask 'mongodb-compass'      # MongoDB frontend
 cask 'netnewswire'          # RSS feed reader
 cask 'postman'              # work with REST APIs
-cask 'robo-3t'              # MongoDB Admin UI
 cask 'slack'                # online chat rooms
 cask 'transmit'             # ftp/sftp/etc app
 cask 'visual-studio-code'   # Microsoft cross-platform editor
