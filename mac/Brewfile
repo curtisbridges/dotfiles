@@ -34,7 +34,7 @@ brew 'readline'
 brew 'ripgrep'          # a faster grep
 brew 'starship'         # The best prompt for any shell
 brew 'stow'             # dotfile installation utility
-brew 'trash'            # macOS utility to leverage the trashcan from the shell
+brew 'trash-cli'        # utility to leverage the trashcan from the shell
 brew 'thefuck'          # command correction utility
 brew 'tldr'             # a more concise man replacement
 brew 'tmux'             # terminal multiplexer (not yet used)
