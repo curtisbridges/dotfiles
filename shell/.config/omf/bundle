@@ -1,8 +1,6 @@
 package bang-bang
 package git-flow
-package https://github.com/PatrickF1/fzf.fish
 package https://github.com/jhillyerd/plugin-git
-package osx
+package https://github.com/PatrickF1/fzf.fish
 package tab
-package xcode
 theme default
