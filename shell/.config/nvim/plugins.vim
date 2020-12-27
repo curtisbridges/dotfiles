@@ -3,9 +3,7 @@
 " Load vim-plugged plugin manager
 call plug#begin('~/.vim/plugged')
 
-"
 " My Plugins!
-"
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
@@ -43,16 +41,18 @@ Plug 'dkarter/bullets.vim'
 " finish plugin loading
 call plug#end()
 
-" Can't set colorscheme before plug#end
-colorscheme onedark
-
 " Plugin configuration
 let g:airline_theme='onedark'
 let g:airline_powerline_fonts = 1
 let g:onedark_terminal_italics = 1
 " places buffer markers on the top of the terminal
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+" Can't set colorscheme before plug#end
+set background=dark
+colorscheme onedark
+"colorscheme gruvbox
 
 let g:coc_global_extensions = [ 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver' ]
 
