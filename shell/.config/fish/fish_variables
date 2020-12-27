@@ -1,5 +1,11 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
+SETUVAR FZF_DISABLE_KEYBINDINGS:0
+SETUVAR FZF_LEGACY_KEYBINDINGS:1
+SETUVAR FZF_PREVIEW_DIR_CMD:ls
+SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
+SETUVAR FZF_TMUX_HEIGHT:40\x25
 SETUVAR __fish_initialized:3100
 SETUVAR __git_plugin_abbreviations:g\x1ega\x1egaa\x1egapa\x1egap\x1egb\x1egba\x1egban\x1egbd\x1egbD\x1egbl\x1egbs\x1egbsb\x1egbsg\x1egbsr\x1egbss\x1egc\x1egc\x21\x1egcn\x21\x1egca\x1egca\x21\x1egcan\x21\x1egcv\x1egcav\x1egcav\x21\x1egcm\x1egcam\x1egscam\x1egcfx\x1egcf\x1egcl\x1egclean\x1egclean\x21\x1egclean\x21\x21\x1egcount\x1egcp\x1egcpa\x1egcpc\x1egd\x1egdca\x1egds\x1egdsc\x1egdw\x1egdwc\x1egignore\x1egf\x1egfa\x1egfm\x1egfo\x1egl\x1egll\x1eglr\x1eglg\x1eglgg\x1eglgga\x1eglo\x1eglog\x1eglom\x1eglod\x1egloo\x1egm\x1egmt\x1egp\x1egp\x21\x1egpo\x1egpo\x21\x1egpv\x1egpv\x21\x1eggp\x21\x1egpu\x1egr\x1egra\x1egrb\x1egrba\x1egrbc\x1egrbi\x1egrbm\x1egrbmi\x1egrbmia\x1egrbd\x1egrbdi\x1egrbdia\x1egrbs\x1egrev\x1egrh\x1egrhh\x1egrm\x1egrmc\x1egrmv\x1egrrm\x1egrs\x1egrset\x1egrss\x1egrup\x1egrv\x1egsh\x1egsd\x1egsr\x1egss\x1egst\x1egsta\x1egstd\x1egstp\x1egsts\x1egsu\x1egsur\x1egsuri\x1egts\x1egtv\x1egsw\x1egswc\x1egunignore\x1egup\x1egwch\x1egco\x1egcb\x1egcod\x1egcom\x1egfb\x1egff\x1egfr\x1egfh\x1egfs\x1egfbs\x1egffs\x1egfrs\x1egfhs\x1egfss\x1egfbt\x1egfft\x1egfrt\x1egfht\x1egfst\x1egfp
 SETUVAR __git_plugin_initialized:Tue\x20Dec\x2022\x2010\x3a50\x3a55\x20EST\x202020
@@ -107,6 +113,7 @@ SETUVAR _fish_abbr_grbm:git\x20rebase\x20master
 SETUVAR _fish_abbr_grbmi:git\x20rebase\x20master\x20\x2d\x2dinteractive
 SETUVAR _fish_abbr_grbmia:git\x20rebase\x20master\x20\x2d\x2dinteractive\x20\x2d\x2dautosquash
 SETUVAR _fish_abbr_grbs:git\x20rebase\x20\x2d\x2dskip
+SETUVAR _fish_abbr_grep:ripgrep
 SETUVAR _fish_abbr_grev:git\x20revert
 SETUVAR _fish_abbr_grh:git\x20reset
 SETUVAR _fish_abbr_grhh:git\x20reset\x20\x2d\x2dhard
@@ -140,6 +147,11 @@ SETUVAR _fish_abbr_gunignore:git\x20update\x2dindex\x20\x2d\x2dno\x2dassume\x2du
 SETUVAR _fish_abbr_gup:git\x20pull\x20\x2d\x2drebase
 SETUVAR _fish_abbr_gwch:git\x20whatchanged\x20\x2dp\x20\x2d\x2dabbrev\x2dcommit\x20\x2d\x2dpretty\x3dmedium
 SETUVAR _fish_abbr_nf:neofetch
+SETUVAR _fish_abbr_tm:tmux
+SETUVAR _fish_abbr_tmas:tmux\x20attach\x2dsession\x20\x2dt
+SETUVAR _fish_abbr_tmks:tmux\x20kill\x2dsession\x20\x2dt
+SETUVAR _fish_abbr_tmls:tmux\x20list\x2dsessions
+SETUVAR _fish_abbr_tmns:tmux\x20new\x2dsession\x20\x2dt
 SETUVAR _fish_abbr_top:htop
 SETUVAR _fish_abbr_vim:nvim
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
