@@ -9,6 +9,3 @@ xcode-select --install
 
 # Install homebrew packages
 
-# Setup prompt (requires node installed)
-npm install -g spaceship-prompt
-# The above might require: `npm install -g pure-prompt`

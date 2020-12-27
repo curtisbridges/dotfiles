@@ -32,6 +32,7 @@ brew 'openssl'          # ssl utilities
 brew 'prettyping'       # a better ping
 brew 'readline'
 brew 'ripgrep'          # a faster grep
+brew 'starship'         # The best prompt for any shell
 brew 'stow'             # dotfile installation utility
 brew 'trash'            # macOS utility to leverage the trashcan from the shell
 brew 'thefuck'          # command correction utility
