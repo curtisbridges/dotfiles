@@ -59,8 +59,9 @@ cask 'balenaetcher'         # ISO -> USB writing app
 cask 'calibre'              # ebook utilities
 cask 'docker'               # container software
 cask 'firefox'              # open source web browser
-cask 'google-chrome'        # Google's web browser
+#cask 'google-chrome'        # Google's web browser
 cask 'iterm2'               # a more feature-rich terminal
+cask 'kaleidoscope'         # Rich diffs
 cask 'karabiner-elements'   # low-level keyboard and mouse control
 cask 'krita'                # open source paint app
 cask 'netnewswire'          # RSS feed reader
@@ -85,3 +86,5 @@ mas 'Tweetbot', id: 1384080005                      # Twitter client
 #mas 'Pocket', id: 568494494                         # Read Later service
 #mas 'Silicio', id: 933627574                        # Media miniplayer app
 mas 'AdGuard for Safari', id: 1440147259            # Ad Blocker / Privacy
+mas 'Pixelmator Pro', id: 1289583905                # Pro image editing
+
