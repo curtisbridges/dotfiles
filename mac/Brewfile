@@ -11,7 +11,8 @@ brew 'autojump'         # jump to directories fast!
 brew 'bat'              # a 'cat' replacement with syntax highlighting and paging
 brew 'diff-so-fancy'    # a better diff
 brew 'dos2unix'         # convert dos files to unix line endings
-brew 'fd'               # a better find
+brew 'fasd'             # a better find
+brew 'fd'               # a better find too
 brew 'ffmpeg'
 brew 'fish'             # alternative shell (not POSIX compliant)
 brew 'fzf'              # fuzzy file finder (shell and vim!)
@@ -22,19 +23,20 @@ brew 'gpg'              # encryption utils
 brew 'htop'             # system stats
 brew 'httpie'
 brew 'hugo'             # static website generator alterative to jekyll
+brew ‘macos-trash'      # utility to leverage the trashcan from the shell
 brew 'mas'              # required for mas apps below
 brew 'neofetch'         # graphical system summary
 brew 'neovim'           # preferred vim
 brew 'nmap'             # port scanning util
-brew 'node'             # use node directly over nvm
+brew 'node'             # install a system node.js (also install nvm)
 brew 'noti'             # macOS command line notification hook
 brew 'openssl'          # ssl utilities
 brew 'prettyping'       # a better ping
 brew 'readline'
 brew 'ripgrep'          # a faster grep
+brew 'spicetify-cli'    # tool to make Spotify prettier
 brew 'starship'         # The best prompt for any shell
 brew 'stow'             # dotfile installation utility
-brew 'trash-cli'        # utility to leverage the trashcan from the shell
 brew 'thefuck'          # command correction utility
 brew 'tldr'             # a more concise man replacement
 brew 'tmux'             # terminal multiplexer (not yet used)
@@ -46,11 +48,10 @@ brew 'youtube-dl'       # download youtube videos
 
 # zsh
 brew 'zsh'
-brew 'zplug'
-# disabling for now but leaving in file; zplug now handles the below...
-#brew 'zsh-autosuggestions'
-#brew 'zsh-history-substring-search'
-#brew 'zsh-syntax-highlighting'
+brew 'zsh-autosuggestions'
+brew 'zsh-completions'
+brew 'zsh-history-substring-search'
+brew 'zsh-syntax-highlighting'
 
 # Casks
 cask '1password'            # password manager
@@ -61,6 +62,7 @@ cask 'calibre'              # ebook utilities
 cask 'coteditor'            # good native macOS editor
 cask 'discord'              # alternate comms
 cask 'docker'               # container software
+cask ‘figma’                # design software
 cask 'firefox'              # open source web browser
 cask 'google-chrome'        # Google's web browser
 cask 'iterm2'               # a more feature-rich terminal

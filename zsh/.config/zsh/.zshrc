@@ -1,6 +1,9 @@
 # Curtis Bridges (curtis@curtisbridges.com)
 # ZSH config
 
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/cmb/.local/share/oh-my-zsh"
+
 export KEYTIMEOUT=1
 
 # History
@@ -8,14 +11,28 @@ HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 
+# Node related
+export NVM_DIR="$XDG_DATA_HOME/nvm"
+NVM_LAZY=1       # don't load nvm until a nvm command is issued (nvm/node/yarn/npx)
+#NVM_AUTOLOAD=1   # autoload when a .nvmrc exists in the current directory 
+
+# Init 
+eval "$(fasd --init auto)"
+
+# oh-my-zsh config
+plugins=(
+  autojump brew command-not-found 
+  common-aliases fasd fzf git nvm osx 
+  thefuck tmux tmuxinator web-search
+  history-substring-search
+)
+source $ZSH/oh-my-zsh.sh
+
 # automatic loading code
 for config_file (${ZDOTDIR:-$HOME}/autoload/*.zsh)
 do
   source $config_file
 done
-
-# init zplug
-source ${ZDOTDIR:-$HOME}/zplug.zsh
 
 # options
 # -------
@@ -42,8 +59,5 @@ export MANPATH="/usr/local/man:$MANPATH"
 # completions
 autoload -Uz compinit && compinit
 
-# Spaceship Prompt
-SPACESHIP_PROMPT_SEPARATE_LINE=true
-SPACESHIP_VI_MODE_SHOW=false
-#prompt spaceship
-
+# Use homebrew installed starship prompt
+eval "$(starship init zsh)"

@@ -1,34 +1,6 @@
-# editor commands
-alias e="$EDITOR"
-alias v="$VISUAL"
-
-# -> Prevents accidentally clobbering files.
-alias mkdir='mkdir -p'
-
-# Default to human readable figures
-alias df='df -h'
-alias du='du -h'
-
-# alias less='less -r'                        # raw control characters
-alias whence='type -a'                        # where, of a sort
-alias grep='grep --color'                     # show differences in color
-
-# Some shortcuts for different directory listings
-alias ls='ls -FHG'
-alias la='ls -al'
-alias ll='ls -l'
-
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
-
-# Get week number
-alias week='date +%V'
-# Stopwatch
-alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
-
-# Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Apps
 alias cat=bat

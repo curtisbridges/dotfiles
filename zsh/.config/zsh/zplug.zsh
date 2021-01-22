@@ -6,8 +6,6 @@ source $ZPLUG_HOME/init.zsh
 # Plugins
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "zsh-users/zsh-history-substring-search", defer:3
 zplug "pndurette/zsh-lux"    # macOS light/dark mode switcher
 zplug "plugins/alias-finder", from:oh-my-zsh
 zplug "plugins/autojump", from:oh-my-zsh
@@ -18,6 +16,8 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/osx", from:oh-my-zsh
 zplug "plugins/tmux", from:oh-my-zsh
 zplug "plugins/tmuxinator", from:oh-my-zsh
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-history-substring-search", defer:3
 
 # Theme
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
