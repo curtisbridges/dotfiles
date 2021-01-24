@@ -8,7 +8,4 @@ if [[ `uname` == 'Darwin' ]]; then
     #         echo -ne "\033]0;${PWD##*/}\007"
     #     }
     # fi
-
-    # Brew update
-    alias bup='brew update && brew upgrade'
 fi

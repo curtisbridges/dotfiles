@@ -23,3 +23,12 @@ function extract()      # Handy Extract Program
         echo "'$1' is not a valid file!"
     fi
 }
+
+funcion update()
+{
+    echo "Updating homebrew..."
+    brew update && brew upgrade
+    echo "Updating global npm packages..."
+    npm i -g npm; npm update -g
+    echo "done."
+}

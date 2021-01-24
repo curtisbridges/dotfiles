@@ -19,13 +19,14 @@ NVM_LAZY=1       # don't load nvm until a nvm command is issued (nvm/node/yarn/n
 # Init 
 eval "$(fasd --init auto)"
 
-# oh-my-zsh config
+# oh-my-zsh plugins
 plugins=(
   autojump brew command-not-found 
   common-aliases fasd fzf git nvm osx 
   thefuck tmux tmuxinator web-search
   history-substring-search
 )
+# oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
 
 # automatic loading code

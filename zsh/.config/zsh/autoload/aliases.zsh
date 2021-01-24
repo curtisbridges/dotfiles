@@ -11,6 +11,3 @@ alias ping='prettyping --nolegend'
 alias vim=nvim
 alias yt=youtube-dl
 alias yt4=youtube-dl --format mp4
-
-# Updates and Upgrades
-alias nup='npm i -g npm; npm update -g'
