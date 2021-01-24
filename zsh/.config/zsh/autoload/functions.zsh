@@ -24,11 +24,30 @@ function extract()      # Handy Extract Program
     fi
 }
 
-funcion update()
-{
-    echo "Updating homebrew..."
-    brew update && brew upgrade
+function fup() {
+    echo "Updating flatpak..."
+    flatpak update
+}
+
+function nup() {
     echo "Updating global npm packages..."
-    npm i -g npm; npm update -g
+    npm i -g npm && npm update -g
     echo "done."
+}
+
+funcion update() {
+    if [[ `uname` == 'Darwin' ]]; then
+        echo "Updating homebrew..."
+        brew update && brew upgrade
+    elif [[ `lsb_release -i -s` == 'Arch' ]]; then
+        echo "Updating via yay..."
+        yay -Syu
+        fup
+    else
+        echo "Updating via apt..."
+        sudo apt update && sudo apt upgrade
+        fup
+    fi
+
+    nup
 }
