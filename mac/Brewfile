@@ -54,27 +54,28 @@ brew 'zsh-history-substring-search'
 brew 'zsh-syntax-highlighting'
 
 # Casks
-cask '1password'            # password manager
-cask 'alfred'               # application launcher and more
-cask 'appcleaner'           # clean uninstalls
-cask 'balenaetcher'         # ISO -> USB writing app
-cask 'calibre'              # ebook utilities
-cask 'coteditor'            # good native macOS editor
-cask 'discord'              # alternate comms
-cask 'docker'               # container software
-cask ‘figma’                # design software
-cask 'firefox'              # open source web browser
-cask 'google-chrome'        # Google's web browser
-cask 'iterm2'               # a more feature-rich terminal
-cask 'kaleidoscope'         # Rich diffs
-cask 'karabiner-elements'   # low-level keyboard and mouse control
-cask 'krita'                # open source paint app
-cask 'netnewswire'          # RSS feed reader
-cask 'postman'              # work with REST APIs
-cask 'slack'                # online chat rooms
-cask 'transmit'             # ftp/sftp/etc app
-cask 'twitch'               # live coding!
-cask 'visual-studio-code'   # Microsoft cross-platform editor
+cask '1password'              # password manager
+cask 'alfred'                 # application launcher and more
+cask 'appcleaner'             # clean uninstalls
+cask 'balenaetcher'           # ISO -> USB writing app
+cask 'calibre'                # ebook utilities
+cask 'coteditor'              # good native macOS editor
+cask 'discord'                # alternate comms
+cask 'docker'                 # container software
+cask ‘figma’                  # design software
+cask 'firefox'                # open source web browser
+cask 'google-backup-and-sync' # Google Drive auto sync
+cask 'google-chrome'          # Google's web browser
+cask 'iterm2'                 # a more feature-rich terminal
+cask 'kaleidoscope'           # Rich diffs
+cask 'karabiner-elements'     # low-level keyboard and mouse control
+cask 'krita'                  # open source paint app
+cask 'netnewswire'            # RSS feed reader
+cask 'postman'                # work with REST APIs
+cask 'slack'                  # online chat rooms
+cask 'transmit'               # ftp/sftp/etc app
+cask 'twitch'                 # live coding!
+cask 'visual-studio-code'     # Microsoft cross-platform editor
 
 # Fonts
 # Fonts would also include source-code-pro but that one will reinstall
