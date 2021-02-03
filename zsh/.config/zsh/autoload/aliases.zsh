@@ -4,7 +4,6 @@ alias localip="ipconfig getifaddr en0"
 
 # Apps
 alias cat=bat
-alias code='code -n'
 alias top=htop
 alias nf=neofetch
 alias ping='prettyping --nolegend'
