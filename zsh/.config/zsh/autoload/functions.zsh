@@ -38,7 +38,7 @@ function nup() {
 funcion update() {
     if [[ `uname` == 'Darwin' ]]; then
         echo "Updating homebrew..."
-        brew update && brew upgrade
+        brew update && brew upgrade && brew upgrade --cask --greedy
     elif [[ `lsb_release -i -s` == 'Arch' ]]; then
         echo "Updating via yay..."
         yay -Syu
