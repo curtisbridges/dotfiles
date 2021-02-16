@@ -21,10 +21,12 @@ eval "$(fasd --init auto)"
 
 # oh-my-zsh plugins
 plugins=(
-  autojump brew command-not-found 
-  common-aliases fasd fzf git nvm osx 
-  thefuck tmux tmuxinator web-search
-  history-substring-search
+  autojump brew 
+  command-not-found common-aliases 
+  fasd fzf git heroku nvm 
+  osx thefuck 
+  tmux tmuxinator 
+  web-search history-substring-search
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
