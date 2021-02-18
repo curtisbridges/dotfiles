@@ -3,6 +3,9 @@ cask_args appdir: '/Applications'
 
 # Taps
 tap 'homebrew/cask-fonts'
+tap 'heroku/brew'      # heroku-cli
+tap 'apparition47/tap' # mail tracking blocker
+tap 'khanhas/tap'      # spicetify
 
 # Brews
 brew 'ack'              # code search tool
@@ -24,6 +27,7 @@ brew 'htop'             # system stats
 brew 'httpie'
 brew 'hugo'             # static website generator alterative to jekyll
 brew ‘macos-trash'      # utility to leverage the trashcan from the shell
+brew 'mailtrackerblocker' # block remote loading images in mail
 brew 'mas'              # required for mas apps below
 brew 'neofetch'         # graphical system summary
 brew 'neovim'           # preferred vim

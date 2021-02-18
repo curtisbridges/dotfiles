@@ -27,6 +27,7 @@ plugins=(
   osx thefuck 
   tmux tmuxinator 
   web-search history-substring-search
+  sudo
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
