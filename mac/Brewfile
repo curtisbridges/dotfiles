@@ -68,8 +68,6 @@ cask 'discord'                # alternate comms
 cask 'docker'                 # container software
 cask ‘figma’                  # design software
 cask 'firefox'                # open source web browser
-cask 'google-backup-and-sync' # Google Drive auto sync
-cask 'google-chrome'          # Google's web browser
 cask 'iterm2'                 # a more feature-rich terminal
 cask 'kaleidoscope'           # Rich diffs
 cask 'karabiner-elements'     # low-level keyboard and mouse control
