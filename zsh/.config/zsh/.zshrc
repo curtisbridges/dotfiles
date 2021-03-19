@@ -16,6 +16,8 @@ export NVM_DIR="$XDG_DATA_HOME/nvm"
 NVM_LAZY=1       # don't load nvm until a nvm command is issued (nvm/node/yarn/npx)
 #NVM_AUTOLOAD=1   # autoload when a .nvmrc exists in the current directory 
 
+ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
+
 # Init 
 eval "$(fasd --init auto)"
 
@@ -23,7 +25,8 @@ eval "$(fasd --init auto)"
 plugins=(
   autojump brew 
   command-not-found common-aliases 
-  fasd fzf git heroku nvm 
+  fasd fzf git heroku 
+# nvm 
   osx thefuck 
   tmux tmuxinator 
   web-search history-substring-search
