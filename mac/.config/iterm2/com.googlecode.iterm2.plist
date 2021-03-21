@@ -7375,7 +7375,11 @@
 	<integer>0</integer>
 	<key>TabsHaveCloseButton</key>
 	<false/>
+	<key>TmuxUsesDedicatedProfile</key>
+	<false/>
 	<key>UseBorder</key>
+	<false/>
+	<key>UseTmuxStatusBar</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
