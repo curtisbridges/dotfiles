@@ -12,11 +12,16 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 # Node related
-export NVM_DIR="$XDG_DATA_HOME/nvm"
+export NVM_DIR="$HOME/.nvm"
 NVM_LAZY=1       # don't load nvm until a nvm command is issued (nvm/node/yarn/npx)
 #NVM_AUTOLOAD=1   # autoload when a .nvmrc exists in the current directory 
 
+# required so tmux plugin will function with XDG_CONFIG_HOME
 ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
+#ZSH_TMUX_AUTOCONNECT=true
+#ZSH_TMUX_AUTOSTART=true
+#ZSH_TMUX_ITERM2=true
+ZSH_TMUX_UNICODE=true
 
 # Init 
 eval "$(fasd --init auto)"
@@ -26,7 +31,7 @@ plugins=(
   autojump brew 
   command-not-found common-aliases 
   fasd fzf git heroku 
-# nvm 
+  node nvm 
   osx thefuck 
   tmux tmuxinator 
   web-search history-substring-search

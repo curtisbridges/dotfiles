@@ -12,7 +12,6 @@ if [[ `uname` == 'Linux' ]]; then
     # source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     alias bat=batcat
 
-    export NVM_DIR="$HOME/.nvm"
     [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && . "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
 
   fi
