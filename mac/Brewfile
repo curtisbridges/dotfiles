@@ -4,7 +4,6 @@ cask_args appdir: '/Applications'
 # Taps
 tap 'homebrew/cask-fonts'
 tap 'heroku/brew'      # heroku-cli
-tap 'apparition47/tap' # mail tracking blocker
 tap 'khanhas/tap'      # spicetify
 
 # Brews
