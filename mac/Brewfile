@@ -24,7 +24,6 @@ brew 'git-open'         # open git repository webpage from the shell
 brew 'gpg'              # encryption utils
 brew 'htop'             # system stats
 brew 'httpie'
-brew 'hugo'             # static website generator alterative to jekyll
 brew ‘macos-trash'      # utility to leverage the trashcan from the shell
 brew 'mailtrackerblocker' # block remote loading images in mail
 brew 'mas'              # required for mas apps below
@@ -81,9 +80,9 @@ cask 'visual-studio-code'     # Microsoft cross-platform editor
 # Fonts
 # Fonts would also include source-code-pro but that one will reinstall
 # every brew update.
-cask 'font-fira-code-nerd-font'
+cask 'font-cascadia-code'
+cask 'font-fira-code'
 cask 'font-hack'
-cask 'font-hack-nerd-font'
 cask 'font-hasklig'
 
 # Mac App Store Apps
