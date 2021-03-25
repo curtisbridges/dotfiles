@@ -3,50 +3,51 @@ cask_args appdir: '/Applications'
 
 # Taps
 tap 'homebrew/cask-fonts'
-tap 'heroku/brew'      # heroku-cli
-tap 'khanhas/tap'      # spicetify
+tap 'heroku/brew'          # heroku-cli
 
 # Brews
-brew 'ack'              # code search tool
-brew 'ag'               # another code search tool
-brew 'autojump'         # jump to directories fast!
-brew 'bat'              # a 'cat' replacement with syntax highlighting and paging
-brew 'diff-so-fancy'    # a better diff
-brew 'dos2unix'         # convert dos files to unix line endings
-brew 'fasd'             # a better find
-brew 'fd'               # a better find too
+brew 'ack'                  # code search tool
+brew 'ag'                   # another code search tool
+brew 'autojump'             # jump to directories fast!
+brew 'awscli'
+brew 'bat'                  # a 'cat' replacement with syntax highlighting and paging
+brew 'diff-so-fancy'        # a better diff
+brew 'dos2unix'             # convert dos files to unix line endings
+brew 'fasd'                 # a better find
+brew 'fd'                   # a better find too
 brew 'ffmpeg'
-brew 'fish'             # alternative shell (not POSIX compliant)
-brew 'fzf'              # fuzzy file finder (shell and vim!)
-brew 'git'              # source control
-brew 'git-flow'         # standard git workflows
-brew 'git-open'         # open git repository webpage from the shell
-brew 'gpg'              # encryption utils
-brew 'htop'             # system stats
+brew 'fish'                 # alternative shell (not POSIX compliant)
+brew 'fzf'                  # fuzzy file finder (shell and vim!)
+brew 'gatsby-cli'
+brew 'git'                  # source control
+brew 'git-flow'             # standard git workflows
+brew 'git-open'             # open git repository webpage from the shell
+brew 'gpg'                  # encryption utils
+brew 'htop'                 # system stats
 brew 'httpie'
-brew ‘macos-trash'      # utility to leverage the trashcan from the shell
-brew 'mailtrackerblocker' # block remote loading images in mail
-brew 'mas'              # required for mas apps below
-brew 'neofetch'         # graphical system summary
-brew 'neovim'           # preferred vim
-brew 'nmap'             # port scanning util
-brew 'node'             # install a system node.js (also install nvm)
-brew 'noti'             # macOS command line notification hook
-brew 'openssl'          # ssl utilities
-brew 'prettyping'       # a better ping
+brew ‘macos-trash'          # utility to leverage the trashcan from the shell
+brew 'mailtrackerblocker'   # block remote loading images in mail
+brew 'mas'                  # required for mas apps below
+brew 'neofetch'             # graphical system summary
+brew 'neovim'               # preferred vim
+brew 'nmap'                 # port scanning util
+brew 'node'                 # install a system node.js (also install nvm)
+brew 'noti'                 # macOS command line notification hook
+brew 'openssl'              # ssl utilities
+brew 'prettyping'           # a better ping
 brew 'readline'
-brew 'ripgrep'          # a faster grep
-brew 'spicetify-cli'    # tool to make Spotify prettier
-brew 'starship'         # The best prompt for any shell
-brew 'stow'             # dotfile installation utility
-brew 'thefuck'          # command correction utility
-brew 'tldr'             # a more concise man replacement
-brew 'tmux'             # terminal multiplexer (not yet used)
-brew 'tmuxinator'       # tmux projects
-brew 'tree'             # directory tree
-brew 'wget'             # alternative shell web download util
-brew 'yarn'             # alternative to npm
-brew 'youtube-dl'       # download youtube videos
+brew 'ripgrep'              # a faster grep
+brew 'spicetify-cli'        # tool to make Spotify prettier
+brew 'starship'             # The best prompt for any shell
+brew 'stow'                 # dotfile installation utility
+brew 'thefuck'              # command correction utility
+brew 'tldr'                 # a more concise man replacement
+brew 'tmux'                 # terminal multiplexer (not yet used)
+brew 'tmuxinator'           # tmux projects
+brew 'tree'                 # directory tree
+brew 'wget'                 # alternative shell web download util
+brew 'yarn'                 # alternative to npm
+brew 'youtube-dl'           # download youtube videos
 
 # zsh
 brew 'zsh'

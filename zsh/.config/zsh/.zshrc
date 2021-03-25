@@ -30,12 +30,13 @@ eval "$(fasd --init auto)"
 plugins=(
   autojump brew 
   command-not-found common-aliases 
-  fasd fzf git heroku 
+  fasd fzf git
   node nvm 
   osx thefuck 
+  sudo
   tmux tmuxinator 
   web-search history-substring-search
-  sudo
+  you-should-use
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
