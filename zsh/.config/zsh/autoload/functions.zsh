@@ -32,13 +32,16 @@ function fup() {
 function nup() {
     echo "Updating global npm packages..."
     npm i -g npm && npm update -g
-    echo "done."
+}
+
+function bup() {
+    echo "Updating homebrew..."
+    brew update && brew upgrade && brew upgrade --cask --greedy
 }
 
 funcion update() {
     if [[ `uname` == 'Darwin' ]]; then
-        echo "Updating homebrew..."
-        brew update && brew upgrade && brew upgrade --cask --greedy
+        bup
     elif [[ `lsb_release -i -s` == 'Arch' ]]; then
         echo "Updating via yay..."
         yay -Syu
