@@ -3,16 +3,16 @@ cask_args appdir: '/Applications'
 
 # Taps
 tap 'homebrew/cask-fonts'
-tap 'heroku/brew'          # heroku-cli
 
 # Brews
 brew 'ack'                  # code search tool
 brew 'ag'                   # another code search tool
 brew 'autojump'             # jump to directories fast!
-brew 'awscli'
+brew 'awscli'               # AWS cli client
 brew 'bat'                  # a 'cat' replacement with syntax highlighting and paging
 brew 'diff-so-fancy'        # a better diff
 brew 'dos2unix'             # convert dos files to unix line endings
+brew 'exa'                  # a replacement ls supporting git and tree
 brew 'fasd'                 # a better find
 brew 'fd'                   # a better find too
 brew 'ffmpeg'
@@ -67,11 +67,13 @@ cask 'discord'                # alternate comms
 cask 'docker'                 # container software
 cask ‘figma’                  # design software
 cask 'firefox'                # open source web browser
+cask 'github'                 # cli github client
 cask 'iterm2'                 # a more feature-rich terminal
 cask 'kaleidoscope'           # Rich diffs
 cask 'karabiner-elements'     # low-level keyboard and mouse control
 cask 'krita'                  # open source paint app
 cask 'netnewswire'            # RSS feed reader
+cask 'openaudible'            # download / process audible content
 cask 'postman'                # work with REST APIs
 cask 'slack'                  # online chat rooms
 cask 'transmit'               # ftp/sftp/etc app
@@ -85,6 +87,7 @@ cask 'font-cascadia-code'
 cask 'font-fira-code'
 cask 'font-hack'
 cask 'font-hasklig'
+#cask 'font-source-code-pro' # will always update if installed...
 
 # Mac App Store Apps
 mas 'Xcode', id: 497799835
