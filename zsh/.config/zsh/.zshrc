@@ -33,8 +33,7 @@ plugins=(
   fasd fzf git
   node nvm 
   osx thefuck 
-  sudo
-  tmux tmuxinator 
+  sudo tmux 
   web-search history-substring-search
   you-should-use
 )
