@@ -44,8 +44,7 @@ root: ~/.config
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
 
-windows:
-  - zshrc: cd zsh && $EDITOR .zshrc .zlogin autoload/*.zsh
-  - tmuxrc: $EDITOR tmux/tmux.conf
-  - nvimrc: cd nvim && $EDITOR *.vim
-
+# windows:
+#   - zshrc: cd zsh && $EDITOR .zshrc .zlogin autoload/*.zsh
+#   - tmuxrc: $EDITOR tmux/tmux.conf
+#   - nvimrc: cd nvim && $EDITOR *.vim
