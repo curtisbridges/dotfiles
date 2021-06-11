@@ -58,6 +58,7 @@ brew 'zsh-syntax-highlighting'
 
 # Casks
 cask '1password'              # password manager
+cask 'adoptopenjdk'           # install java dev
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
 cask 'balenaetcher'           # ISO -> USB writing app

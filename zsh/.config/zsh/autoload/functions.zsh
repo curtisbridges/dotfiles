@@ -54,3 +54,9 @@ funcion update() {
 
     nup
 }
+
+function javahome() {
+  unset JAVA_HOME
+  export JAVA_HOME=$(/usr/libexec/java_home -v "$1");
+  java -version
+}
