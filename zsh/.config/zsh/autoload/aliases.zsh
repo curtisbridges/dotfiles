@@ -12,7 +12,7 @@ alias yt=youtube-dl
 alias yt4=youtube-dl --format mp4
 
 # general use
-alias ls='exa'                                                       # ls
+alias ls='exa -F'                                                       # ls
 alias l='exa -lbF --git  --group-directories-first'                  # list, size, type, git
 alias ll='exa -lbGF --git  --group-directories-first'                # long list
 alias llm='exa -lbGd --git --sort=modified'                          # long list, modified date sort
