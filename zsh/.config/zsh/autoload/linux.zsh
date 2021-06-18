@@ -15,7 +15,9 @@ if [[ `uname` == 'Linux' ]]; then
   source ~/.linuxbrew/share/zsh-you-should-use/you-should-use.plugin.zsh
   # alias bat=batcat
 
+  # nvm & node setup
   #export NVM_DIR="$HOME/.nvm"
+  source $NVM_DIR/nvm.sh
   # [ -s "~/.linuxbrew/opt/nvm/nvm.sh" ] && . "~/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
   # [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && . "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
 fi

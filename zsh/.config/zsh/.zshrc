@@ -15,7 +15,6 @@ SAVEHIST=1000
 export NVM_DIR="$HOME/.nvm"
 NVM_LAZY=1       # don't load nvm until a nvm command is issued (nvm/node/yarn/npx)
 #NVM_AUTOLOAD=1   # autoload when a .nvmrc exists in the current directory
-source $NVM_DIR/nvm.sh
 
 # required so tmux plugin will function with XDG_CONFIG_HOME
 ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf

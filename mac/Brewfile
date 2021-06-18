@@ -2,7 +2,7 @@
 cask_args appdir: '/Applications'
 
 # Taps
-tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-fonts'   # Note: Only works on macOS
 
 # Brews
 brew 'ack'                  # code search tool
@@ -16,9 +16,9 @@ brew 'exa'                  # a replacement ls supporting git and tree
 brew 'fasd'                 # a better find
 brew 'fd'                   # a better find too
 brew 'ffmpeg'
+brew 'firebase-cli'         # Firebase CLI
 brew 'fish'                 # alternative shell (not POSIX compliant)
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
-brew 'gatsby-cli'
 brew 'git'                  # source control
 brew 'git-flow'             # standard git workflows
 brew 'git-open'             # open git repository webpage from the shell
@@ -26,18 +26,17 @@ brew 'gpg'                  # encryption utils
 brew 'htop'                 # system stats
 brew 'httpie'
 brew ‘macos-trash'          # utility to leverage the trashcan from the shell
-brew 'mailtrackerblocker'   # block remote loading images in mail
+# brew 'mailtrackerblocker'   # block remote loading images in mail
 brew 'mas'                  # required for mas apps below
 brew 'neofetch'             # graphical system summary
 brew 'neovim'               # preferred vim
 brew 'nmap'                 # port scanning util
-brew 'node'                 # install a system node.js (also install nvm)
+brew 'nvm'                  # install nvm, install all node versions using nvm.
 brew 'noti'                 # macOS command line notification hook
 brew 'openssl'              # ssl utilities
 brew 'prettyping'           # a better ping
 brew 'readline'
 brew 'ripgrep'              # a faster grep
-brew 'spicetify-cli'        # tool to make Spotify prettier
 brew 'starship'             # The best prompt for any shell
 brew 'stow'                 # dotfile installation utility
 brew 'thefuck'              # command correction utility
@@ -57,7 +56,7 @@ brew 'zsh-history-substring-search'
 brew 'zsh-syntax-highlighting'
 brew 'zsh-you-should-use'
 
-# Casks
+# Casks (Note: Only works on macOS)
 cask '1password'              # password manager
 cask 'adoptopenjdk'           # install java dev
 cask 'alfred'                 # application launcher and more
@@ -85,13 +84,13 @@ cask 'visual-studio-code'     # Microsoft cross-platform editor
 # Fonts
 # Fonts would also include source-code-pro but that one will reinstall
 # every brew update.
-cask 'font-cascadia-code'
+# cask 'font-cascadia-code'
 cask 'font-fira-code'
 cask 'font-hack'
 cask 'font-hasklig'
 #cask 'font-source-code-pro' # will always update if installed...
 
-# Mac App Store Apps
+# Mac App Store Apps (macOS only, obviously)
 mas 'Xcode', id: 497799835
 mas 'Apple Developer', id: 640199958
 mas 'Moom', id: 419330170                           # Window Manager
