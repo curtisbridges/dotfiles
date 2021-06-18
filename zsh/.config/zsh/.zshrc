@@ -14,7 +14,7 @@ SAVEHIST=1000
 # Node related
 export NVM_DIR="$HOME/.nvm"
 NVM_LAZY=1       # don't load nvm until a nvm command is issued (nvm/node/yarn/npx)
-#NVM_AUTOLOAD=1   # autoload when a .nvmrc exists in the current directory 
+#NVM_AUTOLOAD=1   # autoload when a .nvmrc exists in the current directory
 
 # required so tmux plugin will function with XDG_CONFIG_HOME
 ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
@@ -23,19 +23,18 @@ ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
 #ZSH_TMUX_ITERM2=true
 ZSH_TMUX_UNICODE=true
 
-# Init 
-eval "$(fasd --init auto)"
+# Init
+# eval "$(fasd --init auto)"
 
 # oh-my-zsh plugins
 plugins=(
-  autojump brew 
-  command-not-found common-aliases 
-  fasd fzf git
-  node nvm 
-  osx thefuck 
-  sudo tmux 
+  autojump brew
+  command-not-found common-aliases
+  fasd git
+  node nvm
+  osx tmux tmuxinator
   web-search history-substring-search
-  you-should-use
+  # you-should-use
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
