@@ -29,8 +29,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'gruvbox-community/gruvbox' " a better maintained gruvbox
 "Plug 'arcticicestudio/nord-vim'
 Plug 'joshdick/onedark.vim'
-"Plug 'sainnhe/edge' " a new onedark derivative
 "Plug 'rakr/vim-one'
+
+"Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons (NERDTree)
 
 " tpope
 Plug 'tpope/vim-commentary'
@@ -40,6 +41,7 @@ Plug 'tpope/vim-surround'
 " language support
 Plug 'mattn/emmet-vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 
 " markdown support
 Plug 'godlygeek/tabular'
@@ -54,7 +56,7 @@ call plug#end()
 " Plugin configuration
 let g:airline_theme='onedark'
 let g:airline_powerline_fonts = 1
-"let g:onedark_terminal_italics = 1
+let g:onedark_terminal_italics = 1
 " places buffer markers on the top of the terminal
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#buffer_nr_show = 1

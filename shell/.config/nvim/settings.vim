@@ -71,4 +71,3 @@ set splitright "Vertical splits will automatically be to the right
 set updatetime=500
 
 let mapleader = " " " Leader key is SPACE
-

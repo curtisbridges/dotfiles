@@ -1,6 +1,0 @@
-package bang-bang
-package git-flow
-package https://github.com/jhillyerd/plugin-git
-package https://github.com/PatrickF1/fzf.fish
-package tab
-theme default
