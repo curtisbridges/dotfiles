@@ -2428,7 +2428,7 @@
 				<real>0.67058825492858887</real>
 			</dict>
 			<key>Cursor Type</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -2831,6 +2831,15 @@
 			<string>xterm-256color</string>
 			<key>Transparency</key>
 			<real>0.025156709336742911</real>
+			<key>Triggers</key>
+			<array>
+				<dict>
+					<key>action</key>
+					<string>BounceTrigger</string>
+					<key>regex</key>
+					<string>^[Pp]assword:</string>
+				</dict>
+			</array>
 			<key>Unicode Normalization</key>
 			<integer>0</integer>
 			<key>Unlimited Scrollback</key>
@@ -7374,7 +7383,7 @@
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TabsHaveCloseButton</key>
-	<true/>
+	<false/>
 	<key>TmuxUsesDedicatedProfile</key>
 	<false/>
 	<key>UseBorder</key>
