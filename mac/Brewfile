@@ -66,7 +66,7 @@ cask 'calibre'                # ebook utilities
 cask 'coteditor'              # good native macOS editor
 cask 'discord'                # alternate comms
 cask 'docker'                 # container software
-cask ‘figma’                  # design software
+cask 'figma'                  # design software
 cask 'firefox'                # open source web browser
 cask 'github'                 # cli github client
 cask 'iterm2'                 # a more feature-rich terminal
