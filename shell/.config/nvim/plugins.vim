@@ -18,8 +18,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'      " Set up fzf and fzf.vim
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'      " Set up fzf and fzf.vim
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 

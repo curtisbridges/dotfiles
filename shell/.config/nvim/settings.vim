@@ -70,4 +70,4 @@ set splitright "Vertical splits will automatically be to the right
 " delays and poor user experience.
 set updatetime=500
 
-let mapleader = " " " Leader key is SPACE
+let mapleader = "\<Space>"

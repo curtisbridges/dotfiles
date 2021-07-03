@@ -1,5 +1,7 @@
 "Key Mappings
 
+nnoremap <leader>w :w<cr>
+
 " jj escape
 inoremap jj <Esc>
 inoremap jk <Esc>

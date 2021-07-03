@@ -30,7 +30,7 @@ ZSH_TMUX_UNICODE=true
 plugins=(
   autojump brew
   command-not-found common-aliases
-  fasd git
+  fasd fzf git
   node nvm
   osx tmux tmuxinator
   web-search history-substring-search
@@ -72,3 +72,4 @@ autoload -Uz compinit && compinit
 
 # Use homebrew installed starship prompt
 eval "$(starship init zsh)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
