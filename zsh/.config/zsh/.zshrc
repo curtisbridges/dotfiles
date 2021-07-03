@@ -18,8 +18,9 @@ NVM_LAZY=1       # don't load nvm until a nvm command is issued (nvm/node/yarn/n
 
 # required so tmux plugin will function with XDG_CONFIG_HOME
 ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
-#ZSH_TMUX_AUTOCONNECT=true
-#ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=false
+ZSH_TMUX_AUTOSTART_ONCE=true
+ZSH_TMUX_AUTOCONNECT=true
 #ZSH_TMUX_ITERM2=true
 ZSH_TMUX_UNICODE=true
 

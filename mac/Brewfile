@@ -35,7 +35,7 @@ brew 'nvm'                  # install nvm, install all node versions using nvm.
 brew 'noti'                 # macOS command line notification hook
 brew 'openssl'              # ssl utilities
 brew 'prettyping'           # a better ping
-brew 'readline'
+brew 'readline'             # dunno
 brew 'ripgrep'              # a faster grep
 brew 'starship'             # The best prompt for any shell
 brew 'stow'                 # dotfile installation utility
