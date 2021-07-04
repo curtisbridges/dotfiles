@@ -26,6 +26,9 @@ ZSH_TMUX_UNICODE=true
 
 # Init
 # eval "$(fasd --init auto)"
+export FZF_BASE=$(brew --prefix)/bin/fzf
+export FZF_DEFAULT_COMMAND=fzf
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
 # oh-my-zsh plugins
 plugins=(
@@ -35,7 +38,7 @@ plugins=(
   node nvm
   osx tmux tmuxinator
   web-search history-substring-search
-  # you-should-use
+  you-should-use
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
@@ -64,12 +67,11 @@ unsetopt correct_all
 # vi keybinds
 bindkey -v
 
-# User configuration
-export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
-export MANPATH="/usr/local/man:$MANPATH"
-
 # completions
 autoload -Uz compinit && compinit
 
 # Use homebrew installed starship prompt
 eval "$(starship init zsh)"
+
+# Prevent duplicate entries in PATH
+typeset -U PATH
