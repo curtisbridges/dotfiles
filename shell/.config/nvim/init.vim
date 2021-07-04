@@ -13,4 +13,3 @@ if !exists('g:vscode')
 endif
 
 source $HOME/.config/nvim/colors.vim
-

@@ -26,4 +26,3 @@ autocmd BufRead COMMIT_EDITMSG setlocal colorcolumn=50
 
 " typescript
 autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
-
