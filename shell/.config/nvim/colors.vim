@@ -2,4 +2,3 @@
 
 " Highlight Customizations
 highlight Comment gui=italic
-
