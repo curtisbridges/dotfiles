@@ -26,15 +26,16 @@ ZSH_TMUX_UNICODE=true
 
 # Init
 # eval "$(fasd --init auto)"
-export FZF_BASE=$(brew --prefix)/bin/fzf
-export FZF_DEFAULT_COMMAND=fzf
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+#export FZF_BASE=$(brew --prefix)/bin/fzf
+#export FZF_DEFAULT_COMMAND=fzf
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border --ansi'
 
 # oh-my-zsh plugins
 plugins=(
   autojump brew
   command-not-found common-aliases
-  fasd git
+  fasd fzf git
   node nvm
   osx tmux tmuxinator
   web-search history-substring-search
@@ -55,17 +56,17 @@ setopt hist_ignore_all_dups  # remove older duplicate entries from history
 setopt hist_find_no_dups     # ignore duplicates when searching
 setopt hist_reduce_blanks    # remove superfluous blanks from history items
 setopt share_history         # share history between different instances of the shell
-setopt auto_list             # automatically list choices on ambiguous completion
-unsetopt menu_complete         # insert first suggestion while autocompleting
 setopt prompt_subst          # allow command, param and arithmetic expansion in the prompt
-setopt auto_menu             # automatically use menu completion
 setopt always_to_end         # move cursor to end if word had one match
 setopt auto_cd               # auto cd when writing dir in the shell
-# setopt correctall          # correct typo(ed) commands
-unsetopt correct_all
+setopt auto_list             # automatically list choices on ambiguous completion
+setopt auto_menu             # automatically use menu completion
+unsetopt correctall          # don't correct typo(ed) commands
+unsetopt menu_complete       # insert first suggestion while autocompleting
 
 # vi keybinds
-bindkey -v
+# NOTE: using vi bindings breaks fzf keybinds
+#bindkey -v
 
 # completions
 autoload -Uz compinit && compinit

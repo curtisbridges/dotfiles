@@ -11,9 +11,4 @@ if [ -d "${HOME}/.ssh" ] ; then
   ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
 fi
 
-# if [ -d "${HOME}/.npm" ] ; then
-#   PATH=${PATH}:${HOME}/.npm/bin
-# fi
-
 export PATH
-# export PATH="$PATH:/usr/lib/ccache/bin"
