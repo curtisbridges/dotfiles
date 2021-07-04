@@ -62,8 +62,8 @@ cask 'adoptopenjdk'           # install java dev
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
 cask 'balenaetcher'           # ISO -> USB writing app
+cask 'boop'                   # Scriptable text engine
 cask 'calibre'                # ebook utilities
-cask 'coteditor'              # good native macOS editor
 cask 'discord'                # alternate comms
 cask 'docker'                 # container software
 cask 'figma'                  # design software
