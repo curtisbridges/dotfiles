@@ -22,3 +22,7 @@ alias lx='exa -lbhHgUmua@ --time-style=long-iso --git --color-scale' # all + ext
 # specialty views
 alias lS='exa -1'                                                       # one column, just names
 alias lt='exa --tree --level=2'                                         # tree
+
+# Debug PATH
+alias pp="echo $PATH | sed 's/:/\n/g'"
+alias ppu="echo $PATH | sed 's/:/\n/g' | sort | uniq -c"
