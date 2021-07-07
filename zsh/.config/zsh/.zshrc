@@ -39,7 +39,7 @@ plugins=(
   node nvm
   osx tmux tmuxinator
   web-search history-substring-search
-  you-should-use
+  # you-should-use
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
