@@ -85,10 +85,14 @@ cask 'visual-studio-code'     # Microsoft cross-platform editor
 # Fonts would also include source-code-pro but that one will reinstall
 # every brew update.
 # cask 'font-cascadia-code'
-cask 'font-fira-code'
-cask 'font-hack'
-cask 'font-hasklig'
-#cask 'font-source-code-pro' # will always update if installed...
+cask 'font-caskaydia-cove-nerd-font'
+# cask 'font-fira-code'
+cask 'font-fira-code-nerd-font'
+# cask 'font-hack'
+cask 'font-hack-nerd-font'
+# cask 'font-hasklig'
+# cask 'font-source-code-pro' # will always update if installed...
+cask 'font-sauce-code-pro-nerd-font'
 
 # Mac App Store Apps (macOS only, obviously)
 mas 'Xcode', id: 497799835
