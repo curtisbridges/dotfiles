@@ -18,6 +18,7 @@ brew 'fd'                   # a better find too
 brew 'ffmpeg'
 brew 'firebase-cli'         # Firebase CLI
 brew 'fish'                 # alternative shell (not POSIX compliant)
+brew 'fortune'              # words of wisdom
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
 brew 'git'                  # source control
 brew 'git-flow'             # standard git workflows
