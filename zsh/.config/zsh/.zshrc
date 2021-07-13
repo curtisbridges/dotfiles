@@ -76,6 +76,3 @@ eval "$(starship init zsh)"
 
 # Prevent duplicate entries in PATH
 typeset -U PATH
-
-# Provide some (short) words of wisdom
-fortune -s

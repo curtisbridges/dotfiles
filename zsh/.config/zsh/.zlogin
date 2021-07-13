@@ -1,5 +1,5 @@
-# Just show some machine info mostly for vanity reasons.
-neofetch
-
 # And a "motivational" message.
-echo "Work hard. Get shit done."
+# echo "Work hard. Get shit done."
+
+# Provide some (short) words of wisdom
+fortune -s
