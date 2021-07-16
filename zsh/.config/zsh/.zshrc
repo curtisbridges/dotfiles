@@ -35,11 +35,10 @@ export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border --ansi'
 plugins=(
   autojump brew
   command-not-found common-aliases
-  fasd fzf git
+  fasd git
   node nvm
   osx tmux tmuxinator
   web-search history-substring-search
-  you-should-use
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
