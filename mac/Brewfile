@@ -83,15 +83,18 @@ cask 'twitch'                 # live coding!
 cask 'visual-studio-code'     # Microsoft cross-platform editor
 
 # Fonts
+# Patched with nerd font support are good for Terminal but iTerm2 has built-in glyphs.
 # Fonts would also include source-code-pro but that one will reinstall
 # every brew update.
-# cask 'font-cascadia-code'
-cask 'font-caskaydia-cove-nerd-font'
-# cask 'font-fira-code'
-cask 'font-fira-code-nerd-font'
-# cask 'font-hack'
-cask 'font-hack-nerd-font'
-# cask 'font-hasklig'
+cask 'font-sf-pro'
+cask 'font-sf-mono'
+cask 'font-cascadia-code'
+# cask 'font-caskaydia-cove-nerd-font'
+cask 'font-dejavu'
+# cask 'font-dejavu-sans-mono-nerd-font'
+cask 'font-fira-code'
+cask 'font-hack'
+cask 'font-hasklig'
 # cask 'font-source-code-pro' # will always update if installed...
 cask 'font-sauce-code-pro-nerd-font'
 
