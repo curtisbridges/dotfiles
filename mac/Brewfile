@@ -88,10 +88,8 @@ cask 'visual-studio-code'     # Microsoft cross-platform editor
 # every brew update.
 cask 'font-sf-pro'
 cask 'font-sf-mono'
-cask 'font-cascadia-code'
-# cask 'font-caskaydia-cove-nerd-font'
-cask 'font-dejavu'
-# cask 'font-dejavu-sans-mono-nerd-font'
+cask 'font-cascadia-code'     # nerdfont: font-caskaydia-cove-nerd-font
+cask 'font-dejavu'            # nerdfont: font-dejavu-sans-mono-nerd-font
 cask 'font-fira-code'
 cask 'font-hack'
 cask 'font-hasklig'
