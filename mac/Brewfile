@@ -1,6 +1,3 @@
-# Settings
-cask_args appdir: '/Applications'
-
 # Taps
 tap 'homebrew/cask-fonts'   # Note: Only works on macOS
 
@@ -60,6 +57,7 @@ brew 'zsh-you-should-use'
 # Casks (Note: Only works on macOS)
 cask '1password'              # password manager
 cask 'adoptopenjdk'           # install java dev
+cask 'aerial'                 # picturesque screensaver
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
 cask 'balenaetcher'           # ISO -> USB writing app
