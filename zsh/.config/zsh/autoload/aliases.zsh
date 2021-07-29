@@ -11,6 +11,7 @@ alias up=uptime
 alias vim=nvim
 alias yt=youtube-dl
 alias yt4=youtube-dl --format mp4
+alias gs=gss  # I am so done with this typo!
 
 # post-pended aliases
 alias -g F='| fzf'
