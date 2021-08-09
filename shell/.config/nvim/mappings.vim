@@ -44,3 +44,12 @@ nnoremap <Leader>h :History<CR>
 "format selection
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+
+"ThePrimeagen top remaps
+" make Y behave like other capitol commands
+nnoremap Y y$
+
+" keep things centered
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
