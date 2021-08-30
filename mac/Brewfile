@@ -22,7 +22,7 @@ brew 'git-flow'             # standard git workflows
 brew 'git-open'             # open git repository webpage from the shell
 brew 'gpg'                  # encryption utils
 brew 'htop'                 # system stats
-brew 'httpie'
+brew 'httpie'               # curl replacement
 brew ‘macos-trash'          # utility to leverage the trashcan from the shell
 # brew 'trash-cli'            # linux equivalent of macos-trash
 brew 'mas'                  # required for mas apps below
