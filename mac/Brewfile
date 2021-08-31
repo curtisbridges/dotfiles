@@ -12,8 +12,7 @@ brew 'dos2unix'             # convert dos files to unix line endings
 brew 'exa'                  # a replacement ls supporting git and tree
 brew 'fasd'                 # a better find
 brew 'fd'                   # a better find too
-brew 'ffmpeg'
-brew 'firebase-cli'         # Firebase CLI
+brew 'ffmpeg'               # audio/visual conversion tool
 brew 'fish'                 # alternative shell (not POSIX compliant)
 brew 'fortune'              # words of wisdom
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
@@ -60,14 +59,13 @@ cask 'adoptopenjdk'           # install java dev
 cask 'aerial'                 # picturesque screensaver
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
-cask 'balenaetcher'           # ISO -> USB writing app
 cask 'boop'                   # Scriptable text engine
 cask 'calibre'                # ebook utilities
 cask 'discord'                # alternate comms
 cask 'docker'                 # container software
 cask 'figma'                  # design software
 cask 'firefox'                # open source web browser
-cask 'github'                 # cli github client
+cask 'github'                 # github client
 cask 'iterm2'                 # a more feature-rich terminal
 cask 'kaleidoscope'           # Rich diffs
 cask 'karabiner-elements'     # low-level keyboard and mouse control
