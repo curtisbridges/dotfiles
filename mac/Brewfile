@@ -22,7 +22,7 @@ brew 'git-open'             # open git repository webpage from the shell
 brew 'gpg'                  # encryption utils
 brew 'htop'                 # system stats
 brew 'httpie'               # curl replacement
-brew ‘macos-trash'          # utility to leverage the trashcan from the shell
+brew 'macos-trash'          # utility to leverage the trashcan from the shell
 # brew 'trash-cli'            # linux equivalent of macos-trash
 brew 'mas'                  # required for mas apps below
 brew 'neofetch'             # graphical system summary
@@ -55,7 +55,8 @@ brew 'zsh-you-should-use'
 
 # Casks (Note: Only works on macOS)
 cask '1password'              # password manager
-cask 'adoptopenjdk'           # install java dev
+# broken for Apple silicon
+# cask 'adoptopenjdk'           # install java dev
 cask 'aerial'                 # picturesque screensaver
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
@@ -93,11 +94,10 @@ cask 'font-hasklig'
 cask 'font-sauce-code-pro-nerd-font'
 
 # Mac App Store Apps (macOS only, obviously)
-mas 'Xcode', id: 497799835
+# mas 'Xcode', id: 497799835                          # Removed so new installs don't take 100 years
 mas 'Apple Developer', id: 640199958
 mas 'Moom', id: 419330170                           # Window Manager
 mas 'Tweetbot', id: 1384080005                      # Twitter client
 mas 'Pocket', id: 568494494                         # Read Later service
-mas 'Silicio', id: 933627574                        # Media miniplayer app
 mas 'AdGuard for Safari', id: 1440147259            # Ad Blocker / Privacy
 mas 'Pixelmator Pro', id: 1289583905                # Pro image editing

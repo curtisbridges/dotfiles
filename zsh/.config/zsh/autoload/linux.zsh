@@ -1,4 +1,7 @@
 # setup linux specific config here
+
+# TODO: convert to using $(brew --prefix)
+
 if [[ `uname` == 'Linux' ]]; then
   # Make 'open' work in Linux (I love it on macOS)
   alias open="xdg-open"
