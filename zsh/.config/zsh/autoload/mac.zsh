@@ -11,6 +11,7 @@ if [[ `uname` == 'Darwin' ]]; then
     # fi
 
     # Homebrew sbin
+    export PATH="$(brew --prefix)/bin:$PATH"
     export PATH="$(brew --prefix)/sbin:$PATH"
 
     # Node setup -- homebrew nvm lives in homebrew installed dirs
