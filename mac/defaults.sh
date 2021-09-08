@@ -32,7 +32,8 @@ defaults write com.apple.commerce AutoUpdate -bool true
 defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 
 # Disable local Time Machine snapshots
-sudo tmutil disablelocal
+# (removed in recent versions, unfortunately)
+# sudo tmutil disablelocal
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
