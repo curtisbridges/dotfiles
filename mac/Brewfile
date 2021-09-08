@@ -69,7 +69,7 @@ cask 'firefox'                # open source web browser
 cask 'github'                 # github client
 cask 'iterm2'                 # a more feature-rich terminal
 cask 'kaleidoscope'           # Rich diffs
-cask 'karabiner-elements'     # low-level keyboard and mouse control
+#cask 'karabiner-elements'     # low-level keyboard and mouse control
 cask 'krita'                  # open source paint app
 cask 'netnewswire'            # RSS feed reader
 cask 'openaudible'            # download / process audible content

@@ -8,6 +8,9 @@ sudo scutil --set HostName "$HOSTNAME"
 sudo scutil --set LocalHostName "$HOSTNAME"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$HOSTNAME"
 
+# Window move using mouse drag
+defaults write -g NSWindowShouldDragOnGesture -bool true
+
 # Default scrollbar behavior...
 defaults write NSGlobalDomain AppleShowScrollBars -string "Automatic"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
@@ -21,7 +24,7 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 #Fixing Automatic Software Updates
-defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true 
+defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
 defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
 defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 defaults write com.apple.SoftwareUpdate ConfigDataInstall -int 1
@@ -95,7 +98,7 @@ defaults write com.apple.dock show-process-indicators -bool true
 defaults write com.apple.dock expose-animation-duration -float 0.1
 
 #Changes Minimize to Dock Animation to "Genie" (Seems to be the fastest by my eye)
-defaults write com.apple.dock mineffect -string "genie" 
+defaults write com.apple.dock mineffect -string "genie"
 
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
