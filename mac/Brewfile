@@ -62,6 +62,7 @@ cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
 cask 'boop'                   # Scriptable text engine
 cask 'calibre'                # ebook utilities
+cask 'dash'                   # developer docks
 cask 'discord'                # alternate comms
 cask 'docker'                 # container software
 cask 'figma'                  # design software
@@ -75,7 +76,7 @@ cask 'netnewswire'            # RSS feed reader
 cask 'openaudible'            # download / process audible content
 cask 'postman'                # work with REST APIs
 cask 'slack'                  # online chat rooms
-cask 'spotify'                # music streaming
+#cask 'spotify'                # music streaming
 cask 'transmit'               # ftp/sftp/etc app
 cask 'twitch'                 # live coding!
 cask 'utm'                    # Virtual machines UI using QEMU
@@ -90,9 +91,11 @@ cask 'font-sf-mono'
 cask 'font-cascadia-code'     # nerdfont: font-caskaydia-cove-nerd-font
 cask 'font-dejavu'            # nerdfont: font-dejavu-sans-mono-nerd-font
 cask 'font-fira-code'
+cask 'font-fira-code-nerd-font'
 cask 'font-hack'
 cask 'font-hasklig'
 # cask 'font-source-code-pro' # will always update if installed...
+cask 'font-sauce-code-pro-nerd' # source code pro nerd font
 cask 'font-sauce-code-pro-nerd-font'
 
 # Mac App Store Apps (macOS only, obviously)
