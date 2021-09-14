@@ -18,3 +18,4 @@ To keep the dotfiles up to date, without local changes:
 $ git pull
 ```
 If there are local changes, you'll have to stash them first before pulling from my remote.
+
