@@ -1,4 +1,10 @@
 #!/bin/sh
+
+if [[ "$(uname)" != "Darwin" ]]; then
+  echo "Not on MacOS, exiting..."
+  exit 1
+fi
+
 # Setup defaults for a new Mac
 
 # Set computer name (as done via System Preferences → Sharing)
@@ -7,6 +13,10 @@ sudo scutil --set ComputerName "$HOSTNAME"
 sudo scutil --set HostName "$HOSTNAME"
 sudo scutil --set LocalHostName "$HOSTNAME"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$HOSTNAME"
+
+# Enable subpixel font rendering on non-Apple LCDs
+# Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
+defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 # Window move using mouse drag
 defaults write -g NSWindowShouldDragOnGesture -bool true
@@ -68,6 +78,9 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Avoid creating .DS_Store files on network volumes or USB volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# Keep folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
 # Use column view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
@@ -152,7 +165,12 @@ defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
 ###############################################################################
-# Rectangle                                                                        #
+# Hammerspoon                                                                 #
+###############################################################################
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
+
+###############################################################################
+# Rectangle                                                                   #
 ###############################################################################
 
 defaults write com.knollsoft.Rectangle gapSize -float 10
