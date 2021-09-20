@@ -62,11 +62,11 @@ brew 'zsh-you-should-use'
 cask '1password'              # password manager
 # broken for Apple silicon
 # cask 'adoptopenjdk'           # install java dev
-cask 'aerial'                 # picturesque screensaver
+# cask 'aerial'                 # picturesque screensaver
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
-cask 'boop'                   # Scriptable text engine
-cask 'calibre'                # ebook utilities
+# cask 'boop'                   # Scriptable text engine
+# cask 'calibre'                # ebook utilities
 cask 'dash'                   # developer docks
 cask 'discord'                # alternate comms
 cask 'docker'                 # container software
@@ -76,16 +76,16 @@ cask 'github'                 # github client
 cask 'hammerspoon'            # programmable mac automation
 cask 'iterm2'                 # a more feature-rich terminal
 cask 'kaleidoscope'           # Rich diffs
-#cask 'karabiner-elements'     # low-level keyboard and mouse control
+# cask 'karabiner-elements'     # low-level keyboard and mouse control
 cask 'krita'                  # open source paint app
 cask 'netnewswire'            # RSS feed reader
-cask 'openaudible'            # download / process audible content
+# cask 'openaudible'            # download / process audible content
 cask 'postman'                # work with REST APIs
 cask 'slack'                  # online chat rooms
 #cask 'spotify'                # music streaming
 cask 'transmit'               # ftp/sftp/etc app
-cask 'twitch'                 # live coding!
-cask 'utm'                    # Virtual machines UI using QEMU
+# cask 'twitch'                 # live coding!
+# cask 'utm'                    # Virtual machines UI using QEMU
 cask 'visual-studio-code'     # Microsoft cross-platform editor
 
 # Fonts
@@ -105,9 +105,9 @@ cask 'font-sauce-code-pro-nerd-font'# source code pro nerd font
 
 # Mac App Store Apps (macOS only, obviously)
 # mas 'Xcode', id: 497799835                          # Removed so new installs don't take 100 years
-mas 'Apple Developer', id: 640199958
-mas 'Moom', id: 419330170                           # Window Manager
-mas 'Tweetbot', id: 1384080005                      # Twitter client
-mas 'Pocket', id: 568494494                         # Read Later service
-mas 'AdGuard for Safari', id: 1440147259            # Ad Blocker / Privacy
-mas 'Pixelmator Pro', id: 1289583905                # Pro image editing
+# mas 'Apple Developer', id: 640199958
+# mas 'Moom', id: 419330170                           # Window Manager
+# mas 'Tweetbot', id: 1384080005                      # Twitter client
+# mas 'Pocket', id: 568494494                         # Read Later service
+# mas 'AdGuard for Safari', id: 1440147259            # Ad Blocker / Privacy
+# mas 'Pixelmator Pro', id: 1289583905                # Pro image editing
