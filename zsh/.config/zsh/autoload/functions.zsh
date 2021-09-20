@@ -42,6 +42,7 @@ function bup() {
 funcion update() {
     if [[ `uname` == 'Darwin' ]]; then
         bup
+        mas upgrade
     elif [[ `lsb_release -i -s` == 'Arch' ]]; then
         echo "Updating via yay..."
         yay -Syu
