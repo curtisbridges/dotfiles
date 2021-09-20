@@ -18,8 +18,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'      " Set up fzf and fzf.vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'      " Set up fzf and fzf.vim
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -31,7 +31,7 @@ Plug 'arcticicestudio/nord-vim'
 "Plug 'joshdick/onedark.vim'
 "Plug 'rakr/vim-one'
 
-"Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons (NERDTree)
+"Plug 'ryanoasis/vim-devicons' " Developer Icons (NERDTree)
 
 " tpope
 Plug 'tpope/vim-commentary'
@@ -41,7 +41,7 @@ Plug 'tpope/vim-surround'
 " language support
 Plug 'mattn/emmet-vim'
 Plug 'leafgarland/typescript-vim'
-Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
+Plug 'ap/vim-css-color' " CSS Color Preview
 
 " markdown support
 Plug 'godlygeek/tabular'

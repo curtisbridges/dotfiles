@@ -1,3 +1,10 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": ["css", "javascript", "typescript", "markdown"]
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "markdown"
+  ]
 }
