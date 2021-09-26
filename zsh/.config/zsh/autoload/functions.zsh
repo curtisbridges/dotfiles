@@ -39,7 +39,7 @@ function bup() {
     brew update && brew upgrade && brew upgrade --cask --greedy
 }
 
-funcion update() {
+function update() {
     if [[ `uname` == 'Darwin' ]]; then
         bup
         # mas upgrade # hasn't worked since 10.13; No ability to login via cmd line
