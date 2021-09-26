@@ -11,7 +11,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 " Load vim-plugged plugin manager
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/vim-plugged')
 
 " My Plugins!
 Plug 'vim-airline/vim-airline'
