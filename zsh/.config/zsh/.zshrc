@@ -68,6 +68,9 @@ unsetopt menu_complete       # insert first suggestion while autocompleting
 # NOTE: using vi bindings breaks fzf keybinds
 #bindkey -v
 
+# zmv
+autoload -U zmv
+
 # completions
 autoload -Uz compinit && compinit
 
