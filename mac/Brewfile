@@ -33,7 +33,6 @@ brew 'mas'                  # required for mas apps below
 brew 'neofetch'             # graphical system summary
 brew 'neovim'               # preferred vim
 brew 'nmap'                 # port scanning util
-brew 'nvm'                  # install nvm, install all node versions using nvm.
 brew 'noti'                 # macOS command line notification hook
 brew 'openssl'              # ssl utilities
 brew 'prettyping'           # a better ping
@@ -46,6 +45,7 @@ brew 'tldr'                 # a more concise man replacement
 brew 'tmux'                 # terminal multiplexer (not yet used)
 brew 'tmuxinator'           # tmux projects
 brew 'tree'                 # directory tree
+brew 'volta'                # node version manager
 brew 'wget'                 # alternative shell web download util
 brew 'yarn'                 # alternative to npm
 brew 'youtube-dl'           # download youtube videos
