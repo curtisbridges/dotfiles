@@ -27,8 +27,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'flazz/vim-colorschemes'
 "Plug 'morhetz/gruvbox' " the original gruvbox
 "Plug 'gruvbox-community/gruvbox' " a better maintained gruvbox
-Plug 'arcticicestudio/nord-vim'
-"Plug 'joshdick/onedark.vim'
+"Plug 'arcticicestudio/nord-vim'
+Plug 'joshdick/onedark.vim'
 "Plug 'rakr/vim-one'
 
 "Plug 'ryanoasis/vim-devicons' " Developer Icons (NERDTree)
@@ -64,9 +64,9 @@ let g:onedark_terminal_italics = 1
 
 " Can't set colorscheme before plug#end
 set background=dark
-"colorscheme onedark
+colorscheme onedark
 "colorscheme gruvbox
-colorscheme nord
+"colorscheme nord
 
 let g:coc_global_extensions = [ 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver' ]
 
