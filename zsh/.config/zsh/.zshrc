@@ -11,11 +11,6 @@ HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 
-# Node related
-#export NVM_DIR="$HOME/.nvm"
-#NVM_LAZY=1       # don't load nvm until a nvm command is issued (nvm/node/yarn/npx)
-#NVM_AUTOLOAD=1   # autoload when a .nvmrc exists in the current directory
-
 # required so tmux plugin will function with XDG_CONFIG_HOME
 ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
 ZSH_TMUX_AUTOSTART=false
@@ -23,9 +18,9 @@ ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=true
 #ZSH_TMUX_ITERM2=true
 ZSH_TMUX_UNICODE=true
+export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux-plugins"
 
 # Init
-# eval "$(fasd --init auto)"
 #export FZF_BASE=$(brew --prefix)/bin/fzf
 #export FZF_DEFAULT_COMMAND=fzf
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
@@ -37,9 +32,9 @@ plugins=(
   command-not-found common-aliases
   fasd git
   node
-  osx tmux tmuxinator
+  osx
+  tmux
   web-search history-substring-search
-  # you-should-use
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
@@ -50,6 +45,10 @@ do
   source $config_file
 done
 
+# Node related
+#export NVM_DIR="$HOME/.nvm"
+#NVM_LAZY=1       # don't load nvm until a nvm command is issued (nvm/node/yarn/npx)
+#NVM_AUTOLOAD=1   # autoload when a .nvmrc exists in the current directory
 export VOLTA_HOME="$HOME/.volta"
 export PATH=$VOLTA_HOME/bin:$PATH
 
