@@ -18,7 +18,7 @@ ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=true
 #ZSH_TMUX_ITERM2=true
 ZSH_TMUX_UNICODE=true
-export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux-plugins"
+export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux/plugins"
 
 # Init
 #export FZF_BASE=$(brew --prefix)/bin/fzf
