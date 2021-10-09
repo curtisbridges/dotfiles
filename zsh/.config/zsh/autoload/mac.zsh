@@ -20,10 +20,10 @@ if [[ `uname` == 'Darwin' ]]; then
     # [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
     # iTerm2 integration
-    test -e /Users/cmb/.config/zsh/.iterm2_shell_integration.zsh && source /Users/cmb/.config/zsh/.iterm2_shell_integration.zsh || true
-    if [ $ITERM_SESSION_ID ]; then
-        precmd() {
-            echo -ne "\033]0;${PWD##*/}\007"
-        }
-    fi
+    # test -e /Users/cmb/.config/zsh/.iterm2_shell_integration.zsh && source /Users/cmb/.config/zsh/.iterm2_shell_integration.zsh || true
+    # if [ $ITERM_SESSION_ID ]; then
+    #     precmd() {
+    #         echo -ne "\033]0;${PWD##*/}\007"
+    #     }
+    # fi
 fi
