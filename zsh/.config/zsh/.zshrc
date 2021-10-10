@@ -1,10 +1,9 @@
 # Curtis Bridges (curtis@curtisbridges.com)
 # ZSH config
 
+# Configure OMZ
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.local/share/oh-my-zsh"
-
-# Configure OMZ
 # DISABLE_AUTO_TITLE="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
@@ -18,11 +17,8 @@ SAVEHIST=1000
 
 # required so tmux plugin will function with XDG_CONFIG_HOME
 ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
-# ZSH_TMUX_AUTOSTART=false
-# ZSH_TMUX_AUTOSTART_ONCE=true
-# ZSH_TMUX_AUTOCONNECT=true
-# ZSH_TMUX_ITERM2=true
 ZSH_TMUX_UNICODE=true
+ZSH_TMUX_FIXTERM=true
 
 export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux/plugins"
 
@@ -34,9 +30,13 @@ export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border --ansi'
 
 # oh-my-zsh plugins
 plugins=(
+  alias-finder aliases
   autojump brew
-  command-not-found common-aliases
-  fasd git
+  command-not-found
+  common-aliases
+  docker docker-compose
+  frontend-search
+  gh git git-auto-fetch git-extras git-flow
   node
   osx
   tmux
@@ -52,9 +52,6 @@ do
 done
 
 # Node related
-#export NVM_DIR="$HOME/.nvm"
-#NVM_LAZY=1       # don't load nvm until a nvm command is issued (nvm/node/yarn/npx)
-#NVM_AUTOLOAD=1   # autoload when a .nvmrc exists in the current directory
 export VOLTA_HOME="$HOME/.volta"
 export PATH=$VOLTA_HOME/bin:$PATH
 

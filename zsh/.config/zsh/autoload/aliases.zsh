@@ -12,6 +12,7 @@ alias vim=nvim
 alias yt=youtube-dl
 alias yt4=youtube-dl --format mp4
 alias gs=gss  # I am so done with this typo!
+alias nv=volta
 
 # post-pended aliases
 alias -g F='| fzf'
@@ -25,8 +26,8 @@ alias la='exa -lbhHgUmua --git --color-scale'                        # all list
 alias lx='exa -lbhHgUmua@ --time-style=long-iso --git --color-scale' # all + extended list
 
 # specialty views
-alias lS='exa -1'                                                       # one column, just names
-alias lt='exa --tree --level=2'                                         # tree
+alias lS='exa -1'                                                    # one column, just names
+alias lt='exa --tree --level=2'                                      # tree
 
 # Debug PATH
 # NOTE: This double quote gets evaluated greedily and needs to be replaced with something else.
