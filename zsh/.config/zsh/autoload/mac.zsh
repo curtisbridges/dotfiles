@@ -14,16 +14,4 @@ if [[ `uname` == 'Darwin' ]]; then
     # Homebrew sbin
     export PATH="$(brew --prefix)/bin:$PATH"
     export PATH="$(brew --prefix)/sbin:$PATH"
-
-    # Node setup -- homebrew nvm lives in homebrew installed dirs
-    # [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
-    # [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
-
-    # iTerm2 integration
-    # test -e /Users/cmb/.config/zsh/.iterm2_shell_integration.zsh && source /Users/cmb/.config/zsh/.iterm2_shell_integration.zsh || true
-    # if [ $ITERM_SESSION_ID ]; then
-    #     precmd() {
-    #         echo -ne "\033]0;${PWD##*/}\007"
-    #     }
-    # fi
 fi
