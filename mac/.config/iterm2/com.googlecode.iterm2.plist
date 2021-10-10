@@ -2073,7 +2073,7 @@
 		</dict>
 	</dict>
 	<key>Default Bookmark Guid</key>
-	<string>8E792E8B-E1EF-4B48-8282-6D4D338450E1</string>
+	<string>7890801C-1C48-4C71-8071-19D5C0FCB203</string>
 	<key>DimBackgroundWindows</key>
 	<true/>
 	<key>DimInactiveSplitPanes</key>
@@ -2466,6 +2466,8 @@
 			<false/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>Icon</key>
+			<integer>1</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Jobs to Ignore</key>
@@ -2836,7 +2838,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Title Components</key>
-			<integer>1</integer>
+			<integer>896</integer>
 			<key>Transparency</key>
 			<real>0.10394212271357138</real>
 			<key>Triggers</key>
@@ -3616,7 +3618,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>12</integer>
 			<key>Working Directory</key>
 			<string>/Users/cmb</string>
 		</dict>
@@ -8153,14 +8155,16 @@
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.29544051829452223</real>
+	<key>StatusBarPosition</key>
+	<integer>1</integer>
 	<key>StretchTabsToFillBar</key>
-	<false/>
+	<true/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>4</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TabsHaveCloseButton</key>
-	<false/>
+	<true/>
 	<key>TerminalMargin</key>
 	<integer>5</integer>
 	<key>TerminalVMargin</key>
