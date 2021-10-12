@@ -30,7 +30,7 @@ export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border --ansi'
 
 # oh-my-zsh plugins
 plugins=(
-  alias-finder aliases
+  aliases
   autojump brew
   command-not-found
   common-aliases
