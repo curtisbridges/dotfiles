@@ -1,26 +1,25 @@
-[user]
-	name = Curtis Bridges
-	email = curtis@curtisbridges.com
-[github]
-	user = curtisbridges
+[includeIf "gitdir:~/Developer/"]
+  path = github
+[includeIf "gitdir:~/Developer/Work/Skillsoft/"]
+  path = skillsoft
 [core]
 	editor = nvim
 	fileMode = false
 	safecrlf = false
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [fetch]
-    	prune = true
+	prune = true
 [pager]
-    diff = diff-so-fancy | less --tabs=1,5 -RFX
-    show = diff-so-fancy | less --tabs=1,5 -RFX
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
 [pull]
 	rebase = merges
 [push]
 	default = simple
 [branch]
-    	autosetuprebase = always
+	autosetuprebase = always
 [rebase]
-    	autosquash = true
+	autosquash = true
 [filter "media"]
 	required = true
 	clean = git media clean %f
@@ -30,10 +29,13 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-
 [gpg]
 	program = /usr/local/bin/gpg
 [color]
 	ui = true
 [init]
 	defaultBranch = main
+[format]
+	pretty = oneline
+[commit]
+	gpgsign = false
