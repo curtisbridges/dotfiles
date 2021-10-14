@@ -40,6 +40,7 @@ plugins=(
   node
   osx
   tmux
+  vi-mode
   web-search history-substring-search
 )
 # oh-my-zsh loading
