@@ -1,6 +1,5 @@
 # Taps
 tap 'homebrew/bundle'
-tap 'homebrew/autoupdate'
 tap 'homebrew/command-not-found'
 tap 'homebrew/cask'              # Only works on macOS
 tap 'homebrew/cask-fonts'        # Only works on macOS
@@ -20,9 +19,9 @@ brew 'ffmpeg'               # audio/visual conversion tool
 brew 'fish'                 # alternative shell (not POSIX compliant)
 brew 'fortune'              # words of wisdom
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
+brew 'gh'                   # GitHub
 brew 'git'                  # source control
 brew 'git-flow'             # standard git workflows
-brew 'git-open'             # open git repository webpage from the shell
 brew 'gpg'                  # encryption utils
 brew 'htop'                 # system stats
 brew 'httpie'               # curl replacement
@@ -96,12 +95,12 @@ cask 'font-sf-pro'
 cask 'font-sf-mono'
 cask 'font-cascadia-code'     # nerdfont: font-caskaydia-cove-nerd-font
 cask 'font-dejavu'            # nerdfont: font-dejavu-sans-mono-nerd-font
-cask 'font-fira-code'         # nerdfont: ffont-fira-code-nerd-font
+cask 'font-fira-code'         # nerdfont: font-fira-code-nerd-font
 cask 'font-fira-code-nerd-font'
 cask 'font-hack'
 cask 'font-hasklig'
 # cask 'font-source-code-pro' # will always update if installed...
-cask 'font-sauce-code-pro-nerd-font'# source code pro nerd font
+cask 'font-sauce-code-pro-nerd-font' # source code pro nerd font
 
 # Mac App Store Apps (macOS only, obviously)
 # mas 'Xcode', id: 497799835                          # Removed so new installs don't take 100 years
