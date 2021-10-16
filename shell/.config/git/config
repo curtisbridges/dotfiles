@@ -1,3 +1,6 @@
+[user]
+	name = Curtis Bridges
+	email = curtis@curtisbridges.com
 [includeIf "gitdir:~/Developer/"]
   path = github
 [includeIf "gitdir:~/Developer/Work/Skillsoft/"]
