@@ -75,8 +75,9 @@ cask 'github'                 # github client
 cask 'hammerspoon'            # programmable mac automation
 cask 'iterm2'                 # a more feature-rich terminal
 cask 'kaleidoscope'           # Rich diffs
-# cask 'karabiner-elements'     # low-level keyboard and mouse control
+cask 'karabiner-elements'     # low-level keyboard and mouse control
 cask 'krita'                  # open source paint app
+# cask 'maestral'               # open source dropbox replacement
 cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
 cask 'postman'                # work with REST APIs

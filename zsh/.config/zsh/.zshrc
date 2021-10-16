@@ -1,19 +1,22 @@
 # Curtis Bridges (curtis@curtisbridges.com)
 # ZSH config
 
+# ZSH options
+setopt AUTO_PUSHD
+
 export KEYTIMEOUT=1
+
+# History
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+HIST_STAMPS="yyyy-mm-dd"
+HISTSIZE=1000
+SAVEHIST=1000
 
 # Configure OMZ
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.local/share/oh-my-zsh"
 # DISABLE_AUTO_TITLE="true"
 COMPLETION_WAITING_DOTS="true"
-HIST_STAMPS="yyyy-mm-dd"
-
-# History
-HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
 
 # required so tmux plugin will function with XDG_CONFIG_HOME
 ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
