@@ -2,6 +2,10 @@
 # platform specific setup here.
 
 if [[ `uname` == 'Darwin' ]]; then
+    # Enable Colors in Terminal.app
+    export CLICOLOR=1
+    export LSCOLORS=ExFxBxDxCxegedabagacad
+
     source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

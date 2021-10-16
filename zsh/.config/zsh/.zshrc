@@ -1,14 +1,14 @@
 # Curtis Bridges (curtis@curtisbridges.com)
 # ZSH config
 
+export KEYTIMEOUT=1
+
 # Configure OMZ
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.local/share/oh-my-zsh"
 # DISABLE_AUTO_TITLE="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
-
-export KEYTIMEOUT=1
 
 # History
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
