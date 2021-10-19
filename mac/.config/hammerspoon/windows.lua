@@ -1,8 +1,10 @@
+-- Settings
 hs.grid.setGrid('16x9')
 hs.grid.setMargins('10, 10')
 
 hs.window.animationDuration = 0
 
+-- Functions
 function getWin()
   return hs.window.focusedWindow()
 end
@@ -17,6 +19,7 @@ function moveWindow(x, y, w, h)
   f.y = max.y + (max.h*y)
   f.w = max.w*w
   f.h = max.h*h
+
   win:setFrame(f)
 end
 
@@ -27,10 +30,23 @@ function gridWindow(cell)
   hs.grid.set(win, cell, screen)
 end
 
--- maximized
+--
+-- Bindings
+--
+
+-- maximized window
 hs.hotkey.bind(hyper, "w", function() hs.grid.maximizeWindow() end)
+-- minimize window
+hs.hotkey.bind(hyper, "s", function() local win = hs.window.frontmostWindow() win:minimize() end)
+hs.hotkey.bind(hyper, "c", function() local win = hs.window.frontmostWindow() win:centerOnScreen() end)
+
 -- full screen
-hs.hotkey.bind(hyper, "s", function() local win = hs.window.frontmostWindow() win:setFullscreen(not win:isFullscreen()) end)
+hs.hotkey.bind(hyper, "f", function() local win = hs.window.frontmostWindow() win:setFullscreen(not win:isFullscreen()) end)
+-- move window to next screen
+hs.hotkey.bind(hyper, "n", function() local win = getWin(); win:moveToScreen(win:screen():next()) end)
+
+-- snap window to grid
+hs.hotkey.bind(hyper, "g", function() hs.grid.snap(getWin()) end)
 
 -- halves
 hs.hotkey.bind(hyper,"a", function() gridWindow({0, 0, 8, 9}) end)
@@ -44,3 +60,10 @@ hs.hotkey.bind(hyper,"3", function() gridWindow({11, 0, 5, 9}) end)
 -- biased (70/30 ish)
 hs.hotkey.bind(hyper,"[", function() gridWindow({0, 0, 10, 9}) end)
 hs.hotkey.bind(hyper,"]", function() gridWindow({10, 0, 6, 9}) end)
+
+-- layout1 = {
+--  {"Mail", nil, "Color LCD", hs.layout.maximized, nil, nil},
+--  {"Safari", nil, "Thunderbolt Display", hs.layout.maximized, nil, nil},
+--  {"iTunes", "iTunes", "Color LCD", hs.layout.maximized, nil, nil},
+--  {"iTunes", "MiniPlayer", "Color LCD", nil, nil, hs.geometry.rect(0, -48, 400, 48)},
+-- }
