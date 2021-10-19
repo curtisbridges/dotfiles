@@ -2,7 +2,7 @@
 hs.grid.setGrid('16x9')
 hs.grid.setMargins('10, 10')
 
-hs.window.animationDuration = 0
+hs.window.animationDuration = 0.1
 
 -- Functions
 function getWin()
@@ -35,15 +35,20 @@ end
 --
 
 -- maximized window
-hs.hotkey.bind(hyper, "w", function() hs.grid.maximizeWindow() end)
+hs.hotkey.bind(hyper, "space", function() hs.grid.maximizeWindow() end)
+-- mostly maxed window
+hs.hotkey.bind(hyper, "w", function() gridWindow({2, 0, 12, 9}) end)
+
 -- minimize window
-hs.hotkey.bind(hyper, "s", function() local win = hs.window.frontmostWindow() win:minimize() end)
+-- hs.hotkey.bind(hyper, "s", function() local win = hs.window.frontmostWindow() win:minimize() end)
+hs.hotkey.bind(hyper, "s", function() gridWindow({5, 0, 6, 5}) end)
 hs.hotkey.bind(hyper, "c", function() local win = hs.window.frontmostWindow() win:centerOnScreen() end)
 
 -- full screen
 hs.hotkey.bind(hyper, "f", function() local win = hs.window.frontmostWindow() win:setFullscreen(not win:isFullscreen()) end)
 -- move window to next screen
-hs.hotkey.bind(hyper, "n", function() local win = getWin(); win:moveToScreen(win:screen():next()) end)
+hs.hotkey.bind(hyper, "pagedown", function() local win = getWin(); win:moveToScreen(win:screen():next()) end)
+hs.hotkey.bind(hyper, "pageup", function() local win = getWin(); win:moveToScreen(win:screen():previous()) end)
 
 -- snap window to grid
 hs.hotkey.bind(hyper, "g", function() hs.grid.snap(getWin()) end)
@@ -60,6 +65,8 @@ hs.hotkey.bind(hyper,"3", function() gridWindow({11, 0, 5, 9}) end)
 -- biased (70/30 ish)
 hs.hotkey.bind(hyper,"[", function() gridWindow({0, 0, 10, 9}) end)
 hs.hotkey.bind(hyper,"]", function() gridWindow({10, 0, 6, 9}) end)
+hs.hotkey.bind(hyper,"q", function() gridWindow({0, 0, 6, 9}) end)
+hs.hotkey.bind(hyper,"e", function() gridWindow({6, 0, 10, 9}) end)
 
 -- layout1 = {
 --  {"Mail", nil, "Color LCD", hs.layout.maximized, nil, nil},
