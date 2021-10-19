@@ -1,6 +1,6 @@
-hs.hotkey.bind(hyper, "b", function() toggleApplication("Safari") end)
+-- hs.hotkey.bind(hyper, "b", function() toggleApplication("Safari") end)
 -- hs.hotkey.bind(hyper, "c", function() toggleApplication("Google Chrome") end)
-hs.hotkey.bind(hyper, "f", function() toggleApplication("Finder") end)
+-- hs.hotkey.bind(hyper, "f", function() toggleApplication("Finder") end)
 -- hs.hotkey.bind(hyper, "m", function() toggleApplication("Mail") end)
 hs.hotkey.bind(hyper, "p", function() toggleApplication("System Preferences") end)
 hs.hotkey.bind(hyper, "t", function() toggleApplication("Terminal") end)

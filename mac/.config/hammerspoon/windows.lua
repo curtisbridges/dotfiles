@@ -1,5 +1,5 @@
 hs.grid.setGrid('16x9')
-hs.grid.setMargins('10x10')
+hs.grid.setMargins('10, 10')
 
 hs.window.animationDuration = 0
 
@@ -28,14 +28,13 @@ function gridWindow(cell)
 end
 
 -- maximized
-hs.hotkey.bind(hyper, "\\", function() hs.grid.maximizeWindow() end)
+hs.hotkey.bind(hyper, "w", function() hs.grid.maximizeWindow() end)
 -- full screen
--- this one for fullscreen mode
- hs.hotkey.bind(hyper, "return", function() local win = hs.window.frontmostWindow() win:setFullscreen(not win:isFullscreen()) end)
+hs.hotkey.bind(hyper, "s", function() local win = hs.window.frontmostWindow() win:setFullscreen(not win:isFullscreen()) end)
 
 -- halves
-hs.hotkey.bind(hyper,"[", function() gridWindow({0, 0, 8, 9}) end)
-hs.hotkey.bind(hyper,"]", function() gridWindow({8, 0, 8, 9}) end)
+hs.hotkey.bind(hyper,"a", function() gridWindow({0, 0, 8, 9}) end)
+hs.hotkey.bind(hyper,"d", function() gridWindow({8, 0, 8, 9}) end)
 
 -- thirds(ish)
 hs.hotkey.bind(hyper,"1", function() gridWindow({0, 0, 5, 9}) end)
@@ -43,5 +42,5 @@ hs.hotkey.bind(hyper,"2", function() gridWindow({5, 0, 6, 9}) end)
 hs.hotkey.bind(hyper,"3", function() gridWindow({11, 0, 5, 9}) end)
 
 -- biased (70/30 ish)
-hs.hotkey.bind(hyper,"pageup", function() gridWindow({0, 0, 10, 9}) end)
-hs.hotkey.bind(hyper,"pagedown", function() gridWindow({10, 0, 6, 9}) end)
+hs.hotkey.bind(hyper,"[", function() gridWindow({0, 0, 10, 9}) end)
+hs.hotkey.bind(hyper,"]", function() gridWindow({10, 0, 6, 9}) end)
