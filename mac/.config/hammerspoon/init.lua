@@ -8,6 +8,10 @@ hs.loadSpoon('SpoonInstall')
 Install = spoon.SpoonInstall
 spoon.SpoonInstall.use_syncinstall = true
 
+-- ModalMgr Spoon must be loaded explicitly, because this repository heavily relies upon it.
+Install:andUse("ModalMgr")
+Install:andUwshhse("WinWin")
+
 -- Spoons!
 -- Install:andUse("KSheet", {
 --   hotkeys = {
@@ -20,7 +24,16 @@ spoon.SpoonInstall.use_syncinstall = true
 require "utils"
 require "apps"
 require "binds"
-require "windows"
+-- require "layout"
+require "window"
+require "window-management"
+
+hs.hotkey.bind(hyper, "\\", function() SwitchLayout() end)
+
+-- hs.ArrangeDesktop:logCurrentArrangement()
+
+-- Finally we initialize ModalMgr supervisor
+spoon.ModalMgr.supervisor:enter()
 
 -- Show Hammerspoon loaded
 hs.alert("Hammerspoon config loaded")
