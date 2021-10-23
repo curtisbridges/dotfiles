@@ -4,11 +4,24 @@ Hammerspoon automates your Mac using the scripting language lua.
 
 ## Keybinds
 
-TBD
+- Esc / Modifier (Hyper or Ctrl)
+- Arrow keys
+- Edit (Home/End, PgUp/PgDn)
+
+- Global mute with overlay!
 
 ## Window Management
 
-TBD
+- Mostly maxed (90% or px value)
+
+- 50/50 (halves)
+- 70/30 (biased)
+- 33/33/33 (thirds)
+- 80% width / 100% height
+
+Automatically / shortcuts
+- Arrange 4K screens (main, dev, etc.)
+- Arrange laptop screens
 
 ## TODO
 - [ ] Document existing keybinds in this README
