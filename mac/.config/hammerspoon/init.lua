@@ -10,7 +10,7 @@ spoon.SpoonInstall.use_syncinstall = true
 
 -- ModalMgr Spoon must be loaded explicitly, because this repository heavily relies upon it.
 Install:andUse("ModalMgr")
-Install:andUwshhse("WinWin")
+Install:andUse("WinWin")
 
 -- Spoons!
 -- Install:andUse("KSheet", {
