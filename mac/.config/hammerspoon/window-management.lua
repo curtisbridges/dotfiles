@@ -92,26 +92,7 @@ hs.hotkey.bind( hyper, 's', chain { grid.bottomHalf, grid.bottomThird, grid.bott
 hs.hotkey.bind( hyper, 'a', chain { grid.leftHalf, grid.leftThird, grid.leftTwoThirds, } )
 
 hs.hotkey.bind( hyper, 'c', chain { grid.centeredBig, grid.centeredSmall, } )
-hs.hotkey.bind( hyper, "f", function() local win = hs.window.frontmostWindow() win:setFullscreen(not win:isFullscreen()) end)
-
-hs.hotkey.bind({ 'ctrl', 'alt', 'cmd' }, 'left', function()
-  local win = hs.window.focusedWindow()
-  if not win then
-    alertCannotManipulateWindow()
-    return
-  end
-  win:moveOneScreenWest()
-end)
-
-hs.hotkey.bind({ 'ctrl', 'alt', 'cmd' }, 'right', function()
-  local win = hs.window.focusedWindow()
-  if not win then
-    alertCannotManipulateWindow()
-    return
-  end
-  win:moveOneScreenEast()
-end)
-
+hs.hotkey.bind( hyper, 'f', function() local win = hs.window.frontmostWindow() win:setFullscreen(not win:isFullscreen()) end)
 
 ----------------------------------------------------------------------------------------------------
 -- resizeM modal environment

@@ -1,7 +1,6 @@
 -- Defines
--- hyper =  {"⌘", "⌥", "⌃"}	-- caps lock held down
--- shyper = {"⌘", "⌥", "⇧", "⌃"}	-- caps lock held down, with shift
-hyper = {"⌘", "⌥", "⇧", "⌃"}
+meh =  {"⌘", "⌥", "⌃"}	-- bottom row modifiers
+hyper = {"⌘", "⌥", "⇧", "⌃"}	-- caps lock held down (karabiner hyper)
 
 -- Download and install this _one_ spoon to autoload all the others
 hs.loadSpoon('SpoonInstall')
