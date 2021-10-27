@@ -9,6 +9,24 @@ function getWin()
   return hs.window.focusedWindow()
 end
 
+-- Bind new method to windowMeta
+-- function windowMeta.new()
+--   local self = setmetatable(windowMeta, {
+    -- Treate table like a function
+    -- Event listener when windowMeta() is called
+--     __call = function (cls, ...)
+--       return cls.new(...)
+--     end,
+--   })
+
+--   self.window = window.focusedWindow()
+--   self.screen = window.focusedWindow():screen()
+--   self.windowGrid = grid.get(self.window)
+--   self.screenGrid = grid.getGrid(self.screen)
+
+--   return self
+-- end
+
 function moveWindow(x, y, w, h)
   local win = hs.window.focusedWindow()
   local f = win:frame()
@@ -29,6 +47,13 @@ function gridWindow(cell)
 
   hs.grid.set(win, cell, screen)
 end
+
+-- function modifyDown()
+--   local win = window.focusedWindow()
+--   local screen = win:screen()
+  -- if pinned to top, grow down until hits screen bottom
+  -- if not pinned, move window down until window bottom hits screen bottom
+-- end
 
 --
 -- Bindings
@@ -65,6 +90,10 @@ hs.hotkey.bind(hyper, 'up', function() hs.grid.resizeWindowTaller() end)
 hs.hotkey.bind(hyper, 'right', function() hs.grid.resizeWindowThinner() end)
 hs.hotkey.bind(hyper, 'left', function() hs.grid.resizeWindowWider() end)
 hs.hotkey.bind(hyper, 'down', function() hs.grid.resizeWindowShorter() end)
+
+-- "zoom"
+hs.hotkey.bind(hyper, '-', function() hs.grid.resizeWindowThinner() end)
+hs.hotkey.bind(hyper, '=', function() hs.grid.resizeWindowWider() end)
 
 -- halves
 -- hs.hotkey.bind(hyper,"a", function() gridWindow({0, 0, 6, 12}) end)
