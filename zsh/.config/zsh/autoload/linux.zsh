@@ -25,4 +25,7 @@ if [[ `uname` == 'Linux' ]]; then
   fi
   # source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   # alias bat=batcat
+
+  # function because I stink at shell quotes
+  function localip() {hostname -I | awk '{print $1}'}
 fi

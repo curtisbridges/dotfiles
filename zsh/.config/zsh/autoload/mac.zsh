@@ -18,4 +18,6 @@ if [[ `uname` == 'Darwin' ]]; then
     # Homebrew sbin
     export PATH="$(brew --prefix)/bin:$PATH"
     export PATH="$(brew --prefix)/sbin:$PATH"
+
+    alias localip="ipconfig getifaddr en0"
 fi

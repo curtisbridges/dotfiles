@@ -1,6 +1,5 @@
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en0"
 
 # Apps
 alias cat=bat
@@ -11,7 +10,6 @@ alias up=uptime
 alias vim=nvim
 alias yt=youtube-dl
 alias yt4=youtube-dl --format mp4
-alias gs=gss  # I am so done with this typo!
 alias nv=volta
 
 # post-pended aliases
