@@ -2,7 +2,7 @@
 hs.grid.setGrid('12x12')
 hs.grid.setMargins('10, 10')
 
-hs.window.animationDuration = 0.1
+hs.window.animationDuration = 0.0
 
 -- Functions
 function getWin()

@@ -59,8 +59,7 @@ brew 'zsh-you-should-use'
 
 # Casks (Note: Only works on macOS)
 cask '1password'              # password manager
-# broken for Apple silicon
-# cask 'adoptopenjdk'           # install java dev
+# cask 'temurin'                # java jdk
 # cask 'aerial'                 # picturesque screensaver
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
@@ -78,6 +77,7 @@ cask 'kaleidoscope'           # Rich diffs
 cask 'karabiner-elements'     # low-level keyboard and mouse control
 cask 'krita'                  # open source paint app
 # cask 'maestral'               # open source dropbox replacement
+cask 'microsoft-outlook'      # Microsoft Outlook (for work)
 cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
 cask 'postman'                # work with REST APIs
@@ -94,6 +94,7 @@ cask 'visual-studio-code'     # Microsoft cross-platform editor
 # every brew update.
 cask 'font-sf-pro'
 cask 'font-sf-mono'
+# cask 'font-sf-mono-for-powerline' # ligatures for SF Mono
 cask 'font-cascadia-code'     # nerdfont: font-caskaydia-cove-nerd-font
 cask 'font-dejavu'            # nerdfont: font-dejavu-sans-mono-nerd-font
 cask 'font-fira-code'         # nerdfont: font-fira-code-nerd-font
