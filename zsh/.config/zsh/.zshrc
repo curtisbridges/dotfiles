@@ -43,11 +43,11 @@ plugins=(
   node
   osx
   tmux
-  vi-mode
   web-search history-substring-search
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
+ZSH_THEME=""  # disable because I handle my own themes
 
 # automatic loading code
 for config_file (${ZDOTDIR:-$HOME}/autoload/*.zsh)
@@ -85,6 +85,10 @@ autoload -Uz compinit && compinit
 
 # Use homebrew installed starship prompt
 eval "$(starship init zsh)"
+
+# Pure Prompt (alternative prompt)
+# autoload -U promptinit; promptinit
+# prompt pure
 
 # Prevent duplicate entries in PATH
 typeset -U PATH

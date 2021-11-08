@@ -12,4 +12,3 @@ export VISUAL="code -n"
 export TERMINAL="iterm"
 export BROWSER="safari"
 export PAGER="less"
-

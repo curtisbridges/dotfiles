@@ -43,3 +43,14 @@ Automatically / shortcuts
 
 ## Quirks
 - `hyper-.` seems to trigger a sysdiagnose
+  - This can be fixed. I forgot how I fixed it... maybe disabled it in macOS Keyboard Shortcuts?
+
+## Target Workflow
+- Move Window
+  - Top, left, right
+- Maximize window
+- Grow window (when centered)
+- Pin left/right
+  - When window is pinned to a side, left/right will grow/shrink window to a min size
+
+Changes should trigger on screen display of position and size for a short duration.
