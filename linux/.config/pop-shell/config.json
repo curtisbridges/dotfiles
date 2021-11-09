@@ -1,12 +1,18 @@
 {
   "float": [
     {
-      "class": "pop-shell-example",
-      "title": "pop-shell-example"
+      "class": "Cawbird"
     },
     {
       "class": "Gnome-boxes"
+    },
+    {
+      "class": "Gnome-system-monitor"
+    },
+    {
+      "class": "Gnome-control-center"
     }
   ],
+  "skiptaskbarhidden": [],
   "log_on_focus": false
 }

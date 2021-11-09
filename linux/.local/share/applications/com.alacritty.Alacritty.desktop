@@ -2,7 +2,7 @@
 Type=Application
 TryExec=alacritty
 Exec=alacritty
-Icon=/home/cmb/.local/share/icons/cmb/icon-terminal.png
+Icon=org.gnome.Terminal
 Terminal=false
 Categories=System;TerminalEmulator;
 
