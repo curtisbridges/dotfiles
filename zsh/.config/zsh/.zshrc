@@ -40,8 +40,8 @@ plugins=(
   docker docker-compose
   frontend-search
   gh git git-auto-fetch git-extras git-flow
+  macos
   node
-  osx
   tmux
   web-search history-substring-search
 )
