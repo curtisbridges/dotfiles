@@ -35,5 +35,5 @@ alias ppu="echo $PATH | sed 's/:/\n/g' | sort | uniq -c"
 # Additional git aliases
 alias gdn='git diff --name-status'
 alias gdsc='git diff --stat --color'
-alias gupd='!git stash && git fetch origin && git merge —-rebase origin/$(git_develop_branch) && git stash pop'
-alias gupm='!git stash && git fetch origin && git merge —-rebase origin/$(git_main_branch) && git stash pop'
+alias gupd='git stash && git fetch && git rebase $(git_develop_branch) && git stash pop'
+alias gupm='git stash && git fetch && git rebase $(git_main_branch) && git stash pop'
