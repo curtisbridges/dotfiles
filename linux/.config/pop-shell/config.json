@@ -11,6 +11,14 @@
     },
     {
       "class": "Gnome-control-center"
+    },
+    {
+      "class": "Repoman",
+      "title": "repoman"
+    },
+    {
+      "class": "Gnome-terminal",
+      "title": "Preferences – Profile “One Dark”"
     }
   ],
   "skiptaskbarhidden": [],
