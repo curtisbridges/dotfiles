@@ -20,3 +20,29 @@ end
 function fancyNotify(t,m)
      hs.notify.new({title=t, informativeText=m}):send():release()
 end
+
+-- function file_exists(path)
+--     local f=io.open(path,"r")
+--     if f~=nil then io.close(f) return true else return false end
+--     -- ~= is != in other languages
+-- end
+-- function launchApp(name)
+--     -- .. is concat string operator
+--     return function()
+--         path = "/Applications/" .. name .. ".app"
+--         if file_exists(path) then
+--             hs.application.launchOrFocus(path)
+--             return
+--         end
+--         path = "/System/Library/CoreServices/" .. name .. ".app"
+--         if file_exists(path) then
+--             hs.application.launchOrFocus(path)
+--             return
+--         end
+--         path = "/System/Applications/" .. name .. ".app"
+--         if file_exists(path) then
+--             hs.application.launchOrFocus(path)
+--             return
+--         end
+--     end
+-- end

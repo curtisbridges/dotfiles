@@ -1,44 +1,61 @@
--- Defines
-meh =  {"⌘", "⌥", "⌃"}	-- bottom row modifiers
-hyper = {"⌘", "⌥", "⇧", "⌃"}	-- caps lock held down (karabiner hyper)
+--
+-- Hammerspoon configuration file
+--
 
+-- Global Defines
+meh   = {'⌘', '⌥', '⌃'} -- bottom row modifiers
+hyper = {'⌘', '⌥', '⇧', '⌃'} -- caps lock held down (karabiner hyper)
+
+-- Spoons!
 -- Download and install this _one_ spoon to autoload all the others
 hs.loadSpoon('SpoonInstall')
 Install = spoon.SpoonInstall
 spoon.SpoonInstall.use_syncinstall = true
+-- Clipboard manager
+Install:andUse('ClipboardTool')
+spoon.ClipboardTool.paste_on_select = true
+spoon.ClipboardTool.show_in_menubar = false
+spoon.ClipboardTool.show_copied_alert = false
+spoon.ClipboardTool:start()
+hs.hotkey.bind( hyper, 'v', function() spoon.ClipboardTool:toggleClipboard() end)
 
--- ModalMgr Spoon must be loaded explicitly, because this repository heavily relies upon it.
-Install:andUse("ModalMgr")
-Install:andUse("WinWin")
+-- Shortcut overlay
+Install:andUse(
+  'KSheet', { hotkeys = {
+      toggle = {meh, '/'}
+    }
+  }
+)
 
--- Spoons!
--- Install:andUse("KSheet", {
---   hotkeys = {
---     toggle = { hyper, "/" }
---   }
--- })
--- Install:andUse("enantravers/Hyper")
+-- my modules
+require 'utils'
+require 'window'
 
--- load my modules
-require "utils"
-require "apps"
-require "binds"
+-- hs.hotkey.bind(hyper, "b", function() toggleApplication("Safari") end)
+-- hs.hotkey.bind(hyper, "c", function() toggleApplication("Google Chrome") end)
+-- hs.hotkey.bind(hyper, "f", function() toggleApplication("Finder") end)
+-- hs.hotkey.bind(hyper, "m", function() toggleApplication("Mail") end)
+-- hs.hotkey.bind( hyper, 'p', function() toggleApplication('System Preferences') end )
+-- hs.hotkey.bind( hyper, 't', function() toggleApplication('Terminal') end )
+
 -- require "layout"
-require "window"
-require "window-management"
+-- this one for lock the screen
+-- hs.hotkey.bind(hyper, "l", function() hs.caffeinate.lockScreen() end)
+-- this one is for putting the system to sleep
+-- hs.hotkey.bind(meh, "z", function() hs.caffeinate.systemSleep() end)
+-- vi like cursor movements
+-- local keyDelay = 100
+-- hs.hotkey.bind(hyper, "h", function() hs.eventtap.keyStroke({}, "left", keyDelay) end, true)
+-- hs.hotkey.bind(hyper, "j", function() hs.eventtap.keyStroke({}, "down", keyDelay) end, true)
+-- hs.hotkey.bind(hyper, "k", function() hs.eventtap.keyStroke({}, "up", keyDelay) end, true)
+-- hs.hotkey.bind(hyper, "l", function() hs.eventtap.keyStroke({}, "right", keyDelay) end, true)
+-- h_bind("f", function() hs.eventtap.keyStroke({}, "pagedown", keyDelay) end, true)
+-- h_bind("b", function() hs.eventtap.keyStroke({}, "pageup", keyDelay) end, true)
+-- hs_bind("a", function() hs.eventtap.keyStroke({}, "home", keyDelay) end, true)
+-- hs_bind("e", function() hs.eventtap.keyStroke({}, "end", keyDelay) end, true)
 
-hs.hotkey.bind(hyper, "\\", function() SwitchLayout() end)
+-- hammerspoon
+hs.hotkey.bind( hyper, 'delete', function() hs.reload() end )
 
--- hs.ArrangeDesktop:logCurrentArrangement()
-
--- Finally we initialize ModalMgr supervisor
-spoon.ModalMgr.supervisor:enter()
-
--- Show Hammerspoon loaded
-hs.alert("Hammerspoon config loaded")
--- Install:andUse("FadeLogo", {
---   config = {
---     default_run = 0.5,
---   },
---   start = true
--- })
+-- show Hammerspoon loaded
+hs.alert('Hammerspoon loaded')

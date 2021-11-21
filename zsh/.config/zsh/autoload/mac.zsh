@@ -20,4 +20,5 @@ if [[ `uname` == 'Darwin' ]]; then
     export PATH="$(brew --prefix)/sbin:$PATH"
 
     alias localip="ipconfig getifaddr en0"
+    alias nq=networkQuality
 fi

@@ -1,0 +1,8 @@
+{
+  "Lua.diagnostics.globals": [
+    "meh",
+    "hyper",
+    "hs",
+    "spoon"
+  ]
+}

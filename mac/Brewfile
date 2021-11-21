@@ -80,9 +80,10 @@ cask 'krita'                  # open source paint app
 cask 'microsoft-outlook'      # Microsoft Outlook (for work)
 cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
+cask 'pocket-casts'           # podcast player
 cask 'postman'                # work with REST APIs
-cask 'slack'                  # online chat rooms
-#cask 'spotify'                # music streaming
+cask 'slack'                  # workplace comms
+cask 'spotify'                # music streaming
 cask 'transmit'               # ftp/sftp/etc app
 # cask 'twitch'                 # live coding!
 # cask 'utm'                    # Virtual machines UI using QEMU
@@ -108,10 +109,10 @@ cask 'font-sauce-code-pro-nerd-font' # source code pro nerd font
 # mas 'AdGuard for Safari', id: 1440147259            # Ad Blocker / Privacy
 # mas 'Apple Developer', id: 640199958
 # mas 'Keynote', id: 409183694
-# mas 'Moom', id: 419330170                           # Window Manager
+mas 'Moom', id: 419330170                           # Window Manager
 # mas 'Numbers', id: 409203825
-# mas 'Pocket', id: 568494494                         # Read Later service
-# mas 'Pixelmator Pro', id: 1289583905                # Pro image editing
+mas 'Pocket', id: 568494494                         # Read Later service
+mas 'Pixelmator Pro', id: 1289583905                # Pro image editing
 # mas 'Pages', id: 409201541
-# mas 'Tweetbot', id: 1384080005                      # Twitter client
+mas 'Tweetbot', id: 1384080005                      # Twitter client
 # mas 'Xcode', id: 497799835                          # Removed so new installs don't take 100 years
