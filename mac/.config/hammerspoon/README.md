@@ -23,13 +23,13 @@ Automatically / shortcuts
 
 ## TODO
 - [x] Document existing keybinds in this README
-- [ ] Add show keybinds overlay
+- [x] Add show keybinds overlay
 - [ ] Convert window management to use `layout`
 - [x] Add window to 80% width, 100% height
 - [x] Add right bias halves
 - [x] Move window to next/prev screens
-- [ ] Shrink/Grow window (x and y)
-- [ ] Move window
+- [x] Shrink/Grow window (x and y)
+- [x] Move window
 - [ ] Add multi-window layouts
   - [ ] Home
   - [ ] Dev
@@ -49,11 +49,10 @@ Automatically / shortcuts
   - [x] halves (q,e)
   - [x] thirds (1, 2, 3)
   - [x] biased 70/30 (4, 3)
-- [ ] Snap direction (arrows)
-- [ ] Move Window (w-a-s-d), grows/shrinks when pinned
-- [ ] Center window (c)
+- [x] Snap direction (arrows)
+- [x] Move Window (w-a-s-d), grows/shrinks when pinned
+- [x] Center window (c)
 - [x] Maximize window (x)
-- Shrink window (r)
 - Grow/shrink window (when centered) (=, -)
 - [x] Snap to grid (g)
 
