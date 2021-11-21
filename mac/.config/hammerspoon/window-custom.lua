@@ -1,16 +1,16 @@
 -- Settings
-local MAX_WIDTH = 10
-local MIN_WIDTH = 2
-local MAX_HEIGHT = 10
+local MAX_WIDTH = 30
+local MIN_WIDTH = 3
+local MAX_HEIGHT = 30
 local MIN_HEIGHT = 3
 
-hs.grid.setGrid('10x10')
+hs.grid.setGrid('30x30')
 hs.grid.setMargins('10, 10')
 
 hs.window.animationDuration = 0.0
 
 -- Functions
-local function getWin()
+function getWin()
   return hs.window.focusedWindow()
 end
 
@@ -22,9 +22,9 @@ local function gridWindow(cell)
 end
 
 -- window positions
-local previousFrameSizes = {}
+previousFrameSizes = {}
 -- custom maximize toggle
-local function toggleMaximize()
+function toggleMaximize()
   local curWin = hs.window.focusedWindow()
   local curWinFrame = curWin:frame()
 
@@ -114,14 +114,14 @@ end
 --
 
 -- halves
-hs.hotkey.bind( hyper, 'q', function() gridWindow({0, 0, 5, MAX_HEIGHT}) end ) -- first half
-hs.hotkey.bind( hyper, 'e', function() gridWindow({5, 0, 5, MAX_HEIGHT}) end ) -- second half
+hs.hotkey.bind( hyper, 'q', function() gridWindow({0, 0, MAX_WIDTH/2, MAX_HEIGHT}) end ) -- first half
+hs.hotkey.bind( hyper, 'e', function() gridWindow({MAX_WIDTH/2, 0, MAX_WIDTH/2, MAX_HEIGHT}) end ) -- second half
 
 -- thirds(ish) -> 33|33|33 or 30|40|30
-hs.hotkey.bind( hyper, '1', function() gridWindow({0, 0, 3, MAX_HEIGHT}) end ) -- first third
-hs.hotkey.bind( hyper, '2', function() gridWindow({3, 0, 4, MAX_HEIGHT}) end ) -- second third
-hs.hotkey.bind( hyper, '3', function() gridWindow({7, 0, 3, MAX_HEIGHT}) end ) -- last third
-hs.hotkey.bind( hyper, '4', function() gridWindow({3, 0, 7, MAX_HEIGHT}) end ) -- last 70
+hs.hotkey.bind( hyper, '1', function() gridWindow({0, 0, MAX_WIDTH/3, MAX_HEIGHT}) end ) -- first third
+hs.hotkey.bind( hyper, '2', function() gridWindow({MAX_WIDTH/3, 0, (MAX_WIDTH/3)+1, MAX_HEIGHT}) end ) -- second third
+hs.hotkey.bind( hyper, '3', function() gridWindow({(MAX_WIDTH/3)*2+1, 0, MAX_WIDTH/3, MAX_HEIGHT}) end ) -- last third
+hs.hotkey.bind( hyper, '4', function() gridWindow({MAX_WIDTH/3, 0, (MAX_WIDTH/3)*2+1, MAX_HEIGHT}) end ) -- last 70
 
 -- window state
 hs.hotkey.bind( hyper, 'space', function() toggleMaximize() end )
@@ -135,7 +135,7 @@ hs.hotkey.bind( hyper, 'f', function() local win = getWin() win:toggleFullScreen
 -- snap window to grid
 hs.hotkey.bind( hyper, 'g', function() hs.grid.snap(getWin()) end )
 
-hs.hotkey.bind( hyper, 'h', function() hs.expose.show() end ) -- doesn't work for some reason
+-- hs.hotkey.bind( hyper, 'h', function() hs.expose.show() end ) -- doesn't work for some reason
 
 -- move window to next screen
 -- hs.hotkey.bind( hyper, ".", function() local win = getWin() win:moveToScreen(win:screen():next()) end )

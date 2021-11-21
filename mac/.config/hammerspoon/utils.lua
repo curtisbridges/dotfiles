@@ -18,7 +18,7 @@ function toggleApplication(name)
 end
 
 function fancyNotify(t,m)
-     hs.notify.new({title=t, informativeText=m}):send():release()
+  hs.notify.new({title=t, informativeText=m}):send():release()
 end
 
 -- function file_exists(path)

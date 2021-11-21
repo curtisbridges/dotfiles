@@ -3,7 +3,7 @@
 --
 
 -- Global Defines
-meh   = {'⌘', '⌥', '⌃'} -- bottom row modifiers
+meh = {'⌘', '⌥', '⌃'} -- bottom row modifiers
 hyper = {'⌘', '⌥', '⇧', '⌃'} -- caps lock held down (karabiner hyper)
 
 -- Spoons!
@@ -17,11 +17,19 @@ spoon.ClipboardTool.paste_on_select = true
 spoon.ClipboardTool.show_in_menubar = false
 spoon.ClipboardTool.show_copied_alert = false
 spoon.ClipboardTool:start()
-hs.hotkey.bind( hyper, 'v', function() spoon.ClipboardTool:toggleClipboard() end)
+hs.hotkey.bind(
+  hyper,
+  'v',
+  function()
+    spoon.ClipboardTool:toggleClipboard()
+  end
+)
 
 -- Shortcut overlay
 Install:andUse(
-  'KSheet', { hotkeys = {
+  'KSheet',
+  {
+    hotkeys = {
       toggle = {meh, '/'}
     }
   }
@@ -29,7 +37,8 @@ Install:andUse(
 
 -- my modules
 require 'utils'
-require 'window'
+require 'window-custom'
+require 'window-modal'
 
 -- hs.hotkey.bind(hyper, "b", function() toggleApplication("Safari") end)
 -- hs.hotkey.bind(hyper, "c", function() toggleApplication("Google Chrome") end)
@@ -55,7 +64,31 @@ require 'window'
 -- hs_bind("e", function() hs.eventtap.keyStroke({}, "end", keyDelay) end, true)
 
 -- hammerspoon
-hs.hotkey.bind( hyper, 'delete', function() hs.reload() end )
+hs.hotkey.bind(
+  hyper,
+  'delete',
+  function()
+    hs.reload()
+  end
+)
+-- Finally we initialize ModalMgr supervisor
+spoon.ModalMgr.supervisor:enter()
+
+-- hammerspoon
+hs.hotkey.bind(
+  hyper,
+  'delete',
+  function()
+    hs.reload()
+  end
+)
+hs.hotkey.bind(
+  meh,
+  '/',
+  function()
+    hs.hotkey.showHotkeys()
+  end
+)
 
 -- show Hammerspoon loaded
 hs.alert('Hammerspoon loaded')
