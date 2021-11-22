@@ -114,8 +114,8 @@ end
 --
 
 -- halves
-hs.hotkey.bind( hyper, 'q', function() gridWindow({0, 0, MAX_WIDTH/2, MAX_HEIGHT}) end ) -- first half
-hs.hotkey.bind( hyper, 'e', function() gridWindow({MAX_WIDTH/2, 0, MAX_WIDTH/2, MAX_HEIGHT}) end ) -- second half
+hs.hotkey.bind( hyper, '[', function() gridWindow({0, 0, MAX_WIDTH/2, MAX_HEIGHT}) end ) -- first half
+hs.hotkey.bind( hyper, ']', function() gridWindow({MAX_WIDTH/2, 0, MAX_WIDTH/2, MAX_HEIGHT}) end ) -- second half
 
 -- thirds(ish) -> 33|33|33 or 30|40|30
 hs.hotkey.bind( hyper, '1', function() gridWindow({0, 0, MAX_WIDTH/3, MAX_HEIGHT}) end ) -- first third
@@ -125,12 +125,12 @@ hs.hotkey.bind( hyper, '4', function() gridWindow({MAX_WIDTH/3, 0, (MAX_WIDTH/3)
 
 -- window state
 hs.hotkey.bind( hyper, 'space', function() toggleMaximize() end )
-hs.hotkey.bind( hyper, 'z', function() local win = getWin() win:toggleZoom() end )
-hs.hotkey.bind( hyper, 'x', function() toggleMaximize() end )
-hs.hotkey.bind( hyper, 'c', function() local win = getWin() win:centerOnScreen() end )
+-- hs.hotkey.bind( hyper, 'z', function() local win = getWin() win:toggleZoom() end )
+-- hs.hotkey.bind( hyper, 'x', function() toggleMaximize() end )
+-- hs.hotkey.bind( hyper, 'c', function() local win = getWin() win:centerOnScreen() end )
 -- v is clipboard manager
-hs.hotkey.bind( hyper, 'b', function() local win = getWin() win:sendToBack() end )
-hs.hotkey.bind( hyper, 'f', function() local win = getWin() win:toggleFullScreen() end )
+-- hs.hotkey.bind( hyper, 'b', function() local win = getWin() win:sendToBack() end )
+-- hs.hotkey.bind( hyper, 'f', function() local win = getWin() win:toggleFullScreen() end )
 
 -- snap window to grid
 hs.hotkey.bind( hyper, 'g', function() hs.grid.snap(getWin()) end )

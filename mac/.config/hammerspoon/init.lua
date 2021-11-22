@@ -6,6 +6,12 @@
 meh = {'⌘', '⌥', '⌃'} -- bottom row modifiers
 hyper = {'⌘', '⌥', '⇧', '⌃'} -- caps lock held down (karabiner hyper)
 
+BROWSER = 'Safari'
+EDITOR = 'Visual Studio Code'
+FILES = 'Finder'
+MAIL = 'Mail'
+TERMINAL = 'iTerm2'
+
 -- Spoons!
 -- Download and install this _one_ spoon to autoload all the others
 hs.loadSpoon('SpoonInstall')
@@ -19,6 +25,10 @@ spoon.ClipboardTool.show_copied_alert = false
 spoon.ClipboardTool:start()
 hs.hotkey.bind( hyper, 'v', function() spoon.ClipboardTool:toggleClipboard() end )
 
+-- Window Management
+Install:andUse("ModalMgr")
+Install:andUse("WinWin")
+
 -- Shortcut overlay
 Install:andUse( 'KSheet', { hotkeys = { toggle = {meh, '/'} } } )
 
@@ -27,12 +37,11 @@ require 'utils'
 require 'window-custom'
 require 'window-modal'
 
--- hs.hotkey.bind(hyper, "b", function() toggleApplication("Safari") end)
--- hs.hotkey.bind(hyper, "c", function() toggleApplication("Google Chrome") end)
--- hs.hotkey.bind(hyper, "f", function() toggleApplication("Finder") end)
--- hs.hotkey.bind(hyper, "m", function() toggleApplication("Mail") end)
--- hs.hotkey.bind( hyper, 'p', function() toggleApplication('System Preferences') end )
--- hs.hotkey.bind( hyper, 't', function() toggleApplication('Terminal') end )
+hs.hotkey.bind(hyper, 'b', function() toggleApplication(BROWSER) end)
+hs.hotkey.bind(hyper, 'e', function() toggleApplication(EDITOR) end)
+hs.hotkey.bind(hyper, 'f', function() toggleApplication(FILES) end)
+hs.hotkey.bind(hyper, 'm', function() toggleApplication(MAIL) end)
+hs.hotkey.bind(hyper, 't', function() toggleApplication(TERMINAL) end)
 
 -- require "layout"
 -- this one for lock the screen
