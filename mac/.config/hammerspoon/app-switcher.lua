@@ -2,7 +2,7 @@ BROWSER = 'Safari'             -- Google Chrome
 EDITOR = 'Visual Studio Code'  -- TextEdit
 FILES = 'Finder'               -- ???
 MAIL = 'Mail'                  -- Outlook
-TERMINAL = 'iTerm2'            -- Terminal
+TERMINAL = 'iTerm'            -- Terminal
 MUSIC = 'Spotify'              -- Apple Music
 PODCASTS = 'Pocket Casts'      -- Apple Podcasts
 
@@ -12,7 +12,7 @@ spoon.ModalMgr:new(MODAL_ID)
 local cmodal = spoon.ModalMgr.modal_list[MODAL_ID]
 
 local function appActivate(name)
-  findOrLaunch(name)
+  hs.application.launchOrFocus(name)
   spoon.ModalMgr:deactivate({MODAL_ID})
 end
 
