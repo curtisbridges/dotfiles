@@ -3,6 +3,7 @@ local MAX_WIDTH = 30
 local MIN_WIDTH = 3
 local MAX_HEIGHT = 30
 local MIN_HEIGHT = 3
+local keyDelay = 100
 
 hs.grid.setGrid('30x30')
 hs.grid.setMargins('10, 10')
@@ -114,52 +115,52 @@ end
 --
 
 -- halves
-hs.hotkey.bind( hyper, '[', function() gridWindow({0, 0, MAX_WIDTH/2, MAX_HEIGHT}) end ) -- first half
-hs.hotkey.bind( hyper, ']', function() gridWindow({MAX_WIDTH/2, 0, MAX_WIDTH/2, MAX_HEIGHT}) end ) -- second half
+hs.hotkey.bind(hyper, '[', function() gridWindow({0, 0, MAX_WIDTH/2, MAX_HEIGHT}) end) -- first half
+hs.hotkey.bind(hyper, ']', function() gridWindow({MAX_WIDTH/2, 0, MAX_WIDTH/2, MAX_HEIGHT}) end) -- second half
 
 -- thirds(ish) -> 33|33|33 or 30|40|30
-hs.hotkey.bind( hyper, '1', function() gridWindow({0, 0, MAX_WIDTH/3, MAX_HEIGHT}) end ) -- first third
-hs.hotkey.bind( hyper, '2', function() gridWindow({MAX_WIDTH/3, 0, (MAX_WIDTH/3)+1, MAX_HEIGHT}) end ) -- second third
-hs.hotkey.bind( hyper, '3', function() gridWindow({(MAX_WIDTH/3)*2+1, 0, MAX_WIDTH/3, MAX_HEIGHT}) end ) -- last third
-hs.hotkey.bind( hyper, '4', function() gridWindow({MAX_WIDTH/3, 0, (MAX_WIDTH/3)*2+1, MAX_HEIGHT}) end ) -- last 70
+hs.hotkey.bind(hyper, '1', function() gridWindow({0, 0, MAX_WIDTH/3, MAX_HEIGHT}) end) -- first third
+hs.hotkey.bind(hyper, '2', function() gridWindow({MAX_WIDTH/3, 0, (MAX_WIDTH/3)+1, MAX_HEIGHT}) end) -- second third
+hs.hotkey.bind(hyper, '3', function() gridWindow({(MAX_WIDTH/3)*2+1, 0, MAX_WIDTH/3, MAX_HEIGHT}) end) -- last third
+hs.hotkey.bind(hyper, '4', function() gridWindow({MAX_WIDTH/3, 0, (MAX_WIDTH/3)*2+1, MAX_HEIGHT}) end) -- last 70
 
 -- window state
-hs.hotkey.bind( hyper, 'space', function() toggleMaximize() end )
--- hs.hotkey.bind( hyper, 'z', function() local win = getWin() win:toggleZoom() end )
--- hs.hotkey.bind( hyper, 'x', function() toggleMaximize() end )
--- hs.hotkey.bind( hyper, 'c', function() local win = getWin() win:centerOnScreen() end )
+hs.hotkey.bind(hyper, 'space', function() toggleMaximize() end)
+-- hs.hotkey.bind(hyper, 'z', function() local win = getWin() win:toggleZoom() end)
+-- hs.hotkey.bind(hyper, 'x', function() toggleMaximize() end)
+-- hs.hotkey.bind(hyper, 'c', function() local win = getWin() win:centerOnScreen() end)
 -- v is clipboard manager
--- hs.hotkey.bind( hyper, 'b', function() local win = getWin() win:sendToBack() end )
--- hs.hotkey.bind( hyper, 'f', function() local win = getWin() win:toggleFullScreen() end )
+-- hs.hotkey.bind(hyper, 'b', function() local win = getWin() win:sendToBack() end)
+-- hs.hotkey.bind(hyper, 'f', function() local win = getWin() win:toggleFullScreen() end)
 
 -- snap window to grid
-hs.hotkey.bind( hyper, 'g', function() hs.grid.snap(getWin()) end )
+hs.hotkey.bind(hyper, 'g', function() hs.grid.snap(getWin()) end)
 
--- hs.hotkey.bind( hyper, 'h', function() hs.expose.show() end ) -- doesn't work for some reason
+-- hs.hotkey.bind(hyper, 'h', function() hs.expose.show() end) -- doesn't work for some reason
 
 -- move window to next screen
--- hs.hotkey.bind( hyper, ".", function() local win = getWin() win:moveToScreen(win:screen():next()) end )
--- hs.hotkey.bind( hyper, ",", function() local win = getWin() win:moveToScreen(win:screen():previous()) end )
+-- hs.hotkey.bind(hyper, ".", function() local win = getWin() win:moveToScreen(win:screen():next()) end)
+-- hs.hotkey.bind(hyper, ",", function() local win = getWin() win:moveToScreen(win:screen():previous()) end)
 
 -- move windows
-hs.hotkey.bind( meh, 'up', function() hs.grid.pushWindowUp() end )
-hs.hotkey.bind( meh, 'right', function() hs.grid.pushWindowRight() end )
-hs.hotkey.bind( meh, 'left', function() hs.grid.pushWindowLeft() end )
-hs.hotkey.bind( meh, 'down', function() hs.grid.pushWindowDown() end )
+hs.hotkey.bind(meh, 'up', hs.grid.pushWindowUp, nil, hs.grid.pushWindowUp)
+hs.hotkey.bind(meh, 'right', hs.grid.pushWindowRight, nil, hs.grid.pushWindowRight)
+hs.hotkey.bind(meh, 'left', hs.grid.pushWindowLeft, nil, hs.grid.pushWindowLeft)
+hs.hotkey.bind(meh, 'down', hs.grid.pushWindowDown, nil, hs.grid.pushWindowDown)
 
 -- adjust window size
-hs.hotkey.bind( hyper, '-', function() hs.grid.resizeWindowThinner() end )
-hs.hotkey.bind( hyper, '=', function() hs.grid.resizeWindowWider() end )
-hs.hotkey.bind( hyper, 'pageup', function() hs.grid.resizeWindowShorter() end )
-hs.hotkey.bind( hyper, 'pagedown', function() hs.grid.resizeWindowTaller() end )
+hs.hotkey.bind(hyper, '-', hs.grid.resizeWindowThinner, nil, hs.grid.resizeWindowThinner)
+hs.hotkey.bind(hyper, '=', hs.grid.resizeWindowWider, nil, hs.grid.resizeWindowWider)
+hs.hotkey.bind(hyper, 'pageup', hs.grid.resizeWindowShorter, nil, hs.grid.resizeWindowShorter)
+hs.hotkey.bind(hyper, 'pagedown', hs.grid.resizeWindowTaller, nil, hs.grid.resizeWindowTaller)
 
-hs.hotkey.bind( hyper, 'up', function() modifyUp() end)
-hs.hotkey.bind( hyper, 'right', function() modifyRight() end )
-hs.hotkey.bind( hyper, 'left', function() modifyLeft() end )
-hs.hotkey.bind( hyper, 'down', function() modifyDown() end )
+hs.hotkey.bind(hyper, 'up', modifyUp, nil, modifyUp)
+hs.hotkey.bind(hyper, 'right', modifyRight, nil, modifyRight)
+hs.hotkey.bind(hyper, 'left', modifyLeft, nil, modifyLeft)
+hs.hotkey.bind(hyper, 'down', modifyDown, nil, modifyDown)
 
 -- focus windows
-hs.hotkey.bind( hyper, 'w', function() local win = getWin() win:focusWindowNorth() end )
-hs.hotkey.bind( hyper, 'd', function() local win = getWin() win:focusWindowEast() end )
-hs.hotkey.bind( hyper, 'a', function() local win = getWin() win:focusWindowWest() end )
-hs.hotkey.bind( hyper, 's', function() local win = getWin() win:focusWindowSouth() end )
+hs.hotkey.bind(hyper, 'w', function() local win = getWin() win:focusWindowNorth() end)
+hs.hotkey.bind(hyper, 'd', function() local win = getWin() win:focusWindowEast() end)
+hs.hotkey.bind(hyper, 'a', function() local win = getWin() win:focusWindowWest() end)
+hs.hotkey.bind(hyper, 's', function() local win = getWin() win:focusWindowSouth() end)

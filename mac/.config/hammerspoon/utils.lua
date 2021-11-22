@@ -3,7 +3,7 @@ function findOrLaunch(a)
   if not app then
     hs.application.launchOrFocus(a)
   end
-  return hs.application.find(a)
+  return app
 end
 
 function toggleApplication(name)
