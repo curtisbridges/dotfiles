@@ -16,16 +16,15 @@ local function appActivate(name)
   spoon.ModalMgr:deactivate({MODAL_ID})
 end
 
+-- direct apps
+hs.hotkey.bind(hyper, 'b', BROWSER, function() appActivate(BROWSER) end)
+hs.hotkey.bind(hyper, 'e', EDITOR, function() appActivate(EDITOR) end)
+hs.hotkey.bind(hyper, 't', TERMINAL, function() appActivate(TERMINAL) end)
+
 -- modal related
 cmodal:bind('', 'escape', 'Deactivate AppSwitcher', function() spoon.ModalMgr:deactivate({MODAL_ID}) end )
 cmodal:bind('', 'tab', 'Toggle Cheatsheet', function() spoon.ModalMgr:toggleCheatsheet() end )
 
--- hs.hotkey.bind(hyper, 'b', function() findOrLaunch(BROWSER) end)
--- hs.hotkey.bind(hyper, 'e', function() findOrLaunch(EDITOR) end)
--- hs.hotkey.bind(hyper, 'f', function() findOrLaunch(FILES) end)
--- hs.hotkey.bind(hyper, 'm', function() findOrLaunch(MAIL) end)
--- hs.hotkey.bind(hyper, 't', function() findOrLaunch(TERMINAL) end)
--- hs.hotkey.bind(hyper, 'p', function() findOrLaunch(PODCASTS) end)
 cmodal:bind('', 'b', BROWSER, function() appActivate(BROWSER) end)
 cmodal:bind('', 'e', EDITOR, function() appActivate(EDITOR) end)
 cmodal:bind('', 'f', FILES, function() appActivate(FILES) end)
