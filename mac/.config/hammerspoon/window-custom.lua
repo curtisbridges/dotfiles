@@ -1,9 +1,9 @@
 -- Settings
 local MAX_WIDTH = 30
-local MIN_WIDTH = 3
+-- local MIN_WIDTH = 3
 local MAX_HEIGHT = 30
-local MIN_HEIGHT = 3
-local keyDelay = 100
+-- local MIN_HEIGHT = 3
+-- local keyDelay = 100
 
 hs.grid.setGrid('30x30')
 hs.grid.setMargins('10, 10')
@@ -26,7 +26,9 @@ end
 previousFrameSizes = {}
 -- custom maximize toggle
 function toggleMaximize()
-  local curWin = hs.window.focusedWindow()
+  local curWin = getWin()
+  if curWin == nil then return end
+
   local curWinFrame = curWin:frame()
 
   -- if current window has a stored size
@@ -44,6 +46,7 @@ end
 local function modifyUp()
   local win = hs.window.focusedWindow()
   if win == nil then return end
+
   local screen = win:screen()
   local sg = hs.grid.getGrid(screen)
   local g = hs.grid.get(win)
@@ -60,6 +63,7 @@ end
 local function modifyDown()
   local win = hs.window.focusedWindow()
   if win == nil then return end
+
   local screen = win:screen()
   local sg = hs.grid.getGrid(screen)
   local g = hs.grid.get(win)
@@ -78,6 +82,7 @@ end
 local function modifyLeft()
   local win = hs.window.focusedWindow()
   if win == nil then return end
+
   local screen = win:screen()
 
   local sg = hs.grid.getGrid(screen)
@@ -97,6 +102,7 @@ end
 local function modifyRight()
   local win = hs.window.focusedWindow()
   if win == nil then return end
+
   local screen = win:screen()
   local sg = hs.grid.getGrid(screen)
   local g = hs.grid.get(win)
