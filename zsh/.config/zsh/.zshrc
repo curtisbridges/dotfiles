@@ -16,6 +16,7 @@ SAVEHIST=1000
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.local/share/oh-my-zsh"
 # DISABLE_AUTO_TITLE="true"
+DISABLE_MAGIC_FUNCTIONS="true"
 COMPLETION_WAITING_DOTS="true"
 
 # required so tmux plugin will function with XDG_CONFIG_HOME
