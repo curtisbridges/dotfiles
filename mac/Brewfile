@@ -88,6 +88,7 @@ cask 'spotify'                # music streaming
 cask 'transmit'               # ftp/sftp/etc app
 # cask 'twitch'                 # live coding!
 # cask 'utm'                    # Virtual machines UI using QEMU
+cask 'typora'                 # markdown editor
 cask 'visual-studio-code'     # Microsoft cross-platform editor
 
 # Fonts
