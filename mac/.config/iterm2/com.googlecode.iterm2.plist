@@ -2037,7 +2037,7 @@
 			<key>ASCII Anti Aliased</key>
 			<true/>
 			<key>ASCII Ligatures</key>
-			<true/>
+			<false/>
 			<key>Allow Title Reporting</key>
 			<true/>
 			<key>Ambiguous Double Width</key>
@@ -2813,7 +2813,7 @@
 			<key>ASCII Anti Aliased</key>
 			<true/>
 			<key>ASCII Ligatures</key>
-			<true/>
+			<false/>
 			<key>Allow Title Reporting</key>
 			<true/>
 			<key>Ambiguous Double Width</key>
@@ -3097,6 +3097,8 @@
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Draw Powerline Glyphs</key>
+			<false/>
+			<key>Enable Triggers in Interactive Apps</key>
 			<false/>
 			<key>Flashing Bell</key>
 			<true/>
@@ -3493,6 +3495,8 @@
 				<dict>
 					<key>action</key>
 					<string>BounceTrigger</string>
+					<key>disabled</key>
+					<true/>
 					<key>regex</key>
 					<string>^[Pp]assword:</string>
 				</dict>
