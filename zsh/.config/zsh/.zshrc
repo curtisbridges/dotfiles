@@ -34,15 +34,13 @@ export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border --ansi'
 
 # oh-my-zsh plugins
 plugins=(
-  aliases
+  aliases common-aliases
   autojump brew
   command-not-found
-  common-aliases
   docker docker-compose
   frontend-search
   gh git git-auto-fetch git-extras git-flow
   macos
-  node
   tmux
   web-search history-substring-search
 )
