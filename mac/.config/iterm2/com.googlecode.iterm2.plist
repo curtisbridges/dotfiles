@@ -7446,7 +7446,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>10.322769574037531</real>
+			<real>20</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -7550,6 +7550,8 @@
 			<integer>1</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Use Transparency</key>
+			<true/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -7920,7 +7922,7 @@
 			<key>Title Components</key>
 			<integer>896</integer>
 			<key>Transparency</key>
-			<real>0.10394212271357138</real>
+			<real>0.050000000000000003</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
