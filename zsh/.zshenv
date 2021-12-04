@@ -1,5 +1,6 @@
 # this is the bare bones setup to move everything to XDG dir
 ZDOTDIR=$HOME/.config/zsh
+export TERM=xterm-256color
 
 # Other XDG paths
 export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
@@ -9,6 +10,6 @@ export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
 # Default Apps
 export EDITOR="code -n"
 export VISUAL="code -n"
-export TERMINAL="iterm"
-export BROWSER="safari"
+export TERMINAL="alacritty"
+export BROWSER="google-chrome"
 export PAGER="less"
