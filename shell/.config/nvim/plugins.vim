@@ -16,7 +16,6 @@ call plug#begin('~/.local/share/vim-plugged')
 " My Plugins!
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'edkolev/tmuxline.vim'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'      " Set up fzf and fzf.vim
@@ -26,9 +25,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Themes
 "Plug 'flazz/vim-colorschemes'
 "Plug 'morhetz/gruvbox' " the original gruvbox
-"Plug 'gruvbox-community/gruvbox' " a better maintained gruvbox
+Plug 'gruvbox-community/gruvbox' " a better maintained gruvbox
 "Plug 'arcticicestudio/nord-vim'
-Plug 'joshdick/onedark.vim'
+"Plug 'joshdick/onedark.vim'
 "Plug 'rakr/vim-one'
 
 "Plug 'ryanoasis/vim-devicons' " Developer Icons (NERDTree)
@@ -54,18 +53,25 @@ Plug 'dkarter/bullets.vim'
 call plug#end()
 
 " Plugin configuration
+
+" Colorscheme config
+"let g:onedark_terminal_italics = 1
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_italic=1
+
+" Airline config
+let g:airline_powerline_fonts = 1
 "let g:airline_theme='onedark'
+let g:airline_theme='gruvbox'
 "let g:airline_theme='nord_minimal'
-"let g:airline_powerline_fonts = 1
-let g:onedark_terminal_italics = 1
 " places buffer markers on the top of the terminal
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " Can't set colorscheme before plug#end
 set background=dark
-colorscheme onedark
-"colorscheme gruvbox
+"colorscheme onedark
+colorscheme gruvbox
 "colorscheme nord
 
 let g:coc_global_extensions = [ 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver' ]

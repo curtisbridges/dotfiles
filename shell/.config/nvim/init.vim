@@ -1,6 +1,12 @@
 "Curtis Bridges <curtis@curtisbridges.com>
 "init.vim
 
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 source $HOME/.config/nvim/settings.vim
 source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/autocmds.vim
