@@ -3,14 +3,14 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-env:
+# env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  TERM: alacritty
+  # TERM: alacritty
 
 window:
   # Window dimensions (changes require restart)
@@ -34,17 +34,17 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 10
-    y: 10
+    x: 5
+    y: 5
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: false
+  # dynamic_padding: true
 
   # Window decorations
   #
   # Values for `decorations`:
   #     - full: Borders and title bar
-  #     - none: Neither borders nor title bar. Square corners.
+  #     - none: Neither borders nor title bar. Square corners. Can't mouse move!
   #
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
@@ -266,11 +266,11 @@ colors:
 # The value `0.0` is completely transparent and `1.0` is opaque.
 background_opacity: 0.95
 
-#selection:
-  #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  #save_to_clipboard: false
+  save_to_clipboard: false
 
 cursor:
   # Cursor style
@@ -284,6 +284,15 @@ cursor:
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
   unfocused_hollow: true
+
+  # Cursor blinking state
+  #
+  # Values for `blinking`:
+  #   - Never: Prevent the cursor from ever blinking
+  #   - Off: Disable blinking by default
+  #   - On: Enable blinking by default
+  #   - Always: Force the cursor to always blink
+  #blinking: Off
 
 # Live config reload (changes require restart)
 live_config_reload: true
@@ -521,7 +530,14 @@ key_bindings:
   #- { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
   #- { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
   #- { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
+  # Fullscreen without macOS fullscreen nonsense
   - { key: Return,  mods: Command,  action: ToggleSimpleFullscreen }
+  # Use command + [ - to go to previous tmux window
+  # - { key: LBracket, mods: Command, chars: "\x5c\x70" }
+  # Use command + ] - to go to previous tmux window
+  # - { key: RBracket, mods: Command, chars: "\x5c\x6e" }
+  # ctrl-^ doesn't work in some terminals like alacritty
+  # - { key: Key6, mods: Control, chars: "\x1e" }
 
 #debug:
   # Display the time it takes to redraw each frame.
