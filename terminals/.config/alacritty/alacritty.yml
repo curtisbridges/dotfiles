@@ -111,7 +111,7 @@ font:
     style: Italic
 
   # Font size
-  size: 14.0
+  size: 12.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -492,7 +492,7 @@ mouse:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # at once.
-key_bindings:
+# key_bindings:
   # (Windows, Linux, and BSD only)
   #- { key: V,        mods: Control|Shift, action: Paste            }
   #- { key: C,        mods: Control|Shift, action: Copy             }
@@ -531,7 +531,8 @@ key_bindings:
   #- { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
   #- { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
   # Fullscreen without macOS fullscreen nonsense
-  - { key: Return,  mods: Command,  action: ToggleSimpleFullscreen }
+  # - { key: Return,  mods: Command,  action: ToggleSimpleFullscreen }
+  # - { key: Return,  mods: Control,  action: ToggleFullscreen }
   # Use command + [ - to go to previous tmux window
   # - { key: LBracket, mods: Command, chars: "\x5c\x70" }
   # Use command + ] - to go to previous tmux window
