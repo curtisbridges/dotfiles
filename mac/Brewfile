@@ -59,6 +59,7 @@ brew 'zsh-you-should-use'
 
 # Casks (Note: Only works on macOS)
 cask '1password'              # password manager
+cask 'alacritty'
 # cask 'temurin'                # java jdk
 # cask 'aerial'                 # picturesque screensaver
 cask 'alfred'                 # application launcher and more
@@ -73,7 +74,7 @@ cask 'firefox'                # open source web browser
 cask 'github'                 # github client
 # cask 'hammerspoon'            # programmable mac automation
 cask 'iterm2'                 # a more feature-rich terminal
-cask 'kaleidoscope'           # Rich diffs
+# cask 'kaleidoscope'           # Rich diffs
 # cask 'karabiner-elements'     # low-level keyboard and mouse control
 cask 'krita'                  # open source paint app
 # cask 'maestral'               # open source dropbox replacement
