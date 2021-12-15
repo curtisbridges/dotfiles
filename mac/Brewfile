@@ -64,6 +64,7 @@ cask 'alacritty'
 # cask 'aerial'                 # picturesque screensaver
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
+cask 'balenaetcher'           # USB ISO creator
 # cask 'boop'                   # Scriptable text engine
 # cask 'calibre'                # ebook utilities
 cask 'dash'                   # developer docks
