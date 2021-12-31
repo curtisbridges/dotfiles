@@ -1,6 +1,4 @@
-# setup linux specific config here
-
-# TODO: convert to using $(brew --prefix)
+# Since I use both Macs (Darwin) and Linux handle Linux platform specific setup here.
 
 if [[ `uname` == 'Linux' ]]; then
   # Make 'open' work in Linux (I love it on macOS)

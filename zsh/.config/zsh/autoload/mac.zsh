@@ -1,6 +1,4 @@
-# Since I use both Macs (Darwin), Arch Linux (sometimes), and Debian based Linux (servers, etc.) handle
-# platform specific setup here.
-
+# Since I use both Macs (Darwin) and Linux handle macOS platform specific setup here.
 if [[ `uname` == 'Darwin' ]]; then
     # Enable Colors in Terminal.app
     export CLICOLOR=1
@@ -14,10 +12,6 @@ if [[ `uname` == 'Darwin' ]]; then
     if [ -f "$HB_CNF_HANDLER" ]; then
         source "$HB_CNF_HANDLER";
     fi
-
-    # Homebrew sbin
-    export PATH="$(brew --prefix)/bin:$PATH"
-    export PATH="$(brew --prefix)/sbin:$PATH"
 
     alias localip="ipconfig getifaddr en0"
     alias nq=networkQuality

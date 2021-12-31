@@ -11,4 +11,10 @@ if [ -d "${HOME}/.ssh" ] ; then
   ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
 fi
 
+if [ -d "$(brew --prefix)" ] ; then
+  # Homebrew
+  PATH=$(brew --prefix)/bin:${PATH}
+  PATH=$(brew --prefix)/sbin:${PATH}
+fi
+
 export PATH

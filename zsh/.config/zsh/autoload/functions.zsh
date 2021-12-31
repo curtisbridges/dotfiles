@@ -48,7 +48,7 @@ function update() {
         fup
     elif [[ `lsb_release -i -s` == 'Fedora' ]]; then
         echo "Updating via dnf..."
-        sudo dnf check-update
+        # sudo dnf check-update
         sudo dnf upgrade -y
         fup
     else
