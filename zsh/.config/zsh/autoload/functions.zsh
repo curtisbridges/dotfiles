@@ -46,6 +46,11 @@ function update() {
         echo "Updating via yay..."
         yay -Syu
         fup
+    elif [[ `lsb_release -i -s` == 'Fedora' ]]; then
+        echo "Updating via dnf..."
+        sudo dnf check-update
+        sudo dnf upgrade -y
+        fup
     else
         echo "Updating via apt..."
         sudo apt update && sudo apt upgrade
