@@ -1,13 +1,13 @@
 BROWSER = 'Safari'             -- Google Chrome
 COMMS = 'Slack'
-EDITOR = 'Visual Studio Code'  -- TextEdit
-FILES = 'Finder'               -- ???
+EDITOR = 'Visual Studio Code'
+FILES = 'Finder'
 MAIL = 'Mail'                  -- Outlook
 MUSIC = 'Spotify'              -- Apple Music
 NOTES = 'Notes'
 PODCASTS = 'Pocket Casts'      -- Apple Podcasts
 REMINDERS = 'Reminders'
-TERMINAL = 'iTerm'            -- Terminal
+TERMINAL = 'iTerm'             -- Terminal
 VISUAL = 'Visual Studio Code'
 
 local MODAL_ID = 'AppSwitcher'

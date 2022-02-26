@@ -13,12 +13,12 @@ Install = spoon.SpoonInstall
 spoon.SpoonInstall.use_syncinstall = true
 
 -- Clipboard manager
-Install:andUse('ClipboardTool')
-spoon.ClipboardTool.paste_on_select = true
-spoon.ClipboardTool.show_in_menubar = false
-spoon.ClipboardTool.show_copied_alert = false
-spoon.ClipboardTool:start()
-hs.hotkey.bind(hyper, 'v', function() spoon.ClipboardTool:toggleClipboard() end)
+-- Install:andUse('ClipboardTool')
+-- spoon.ClipboardTool.paste_on_select = true
+-- spoon.ClipboardTool.show_in_menubar = false
+-- spoon.ClipboardTool.show_copied_alert = false
+-- spoon.ClipboardTool:start()
+-- hs.hotkey.bind(hyper, 'v', function() spoon.ClipboardTool:toggleClipboard() end)
 
 -- Window Management
 Install:andUse('ModalMgr')
