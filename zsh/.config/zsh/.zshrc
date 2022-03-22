@@ -56,7 +56,8 @@ done
 
 # Node related
 export VOLTA_HOME="$HOME/.volta"
-export PATH=$VOLTA_HOME/bin:$PATH
+export PYTHON_HOME="${HOME}/.pyenv/shims"
+export PATH=$VOLTA_HOME/bin:$PYTHON_HOME:$PATH
 
 # options
 # -------
