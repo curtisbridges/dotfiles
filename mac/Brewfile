@@ -82,7 +82,6 @@ cask 'krita'                  # open source paint app
 # cask 'maestral'               # open source dropbox replacement
 cask 'microsoft-outlook'      # Microsoft Outlook (for work)
 cask 'netnewswire'            # RSS feed reader
-cask 'nvm'                    # node version manager
 # cask 'openaudible'            # download / process audible content
 # cask 'pocket-casts'           # podcast player
 cask 'postman'                # work with REST APIs
