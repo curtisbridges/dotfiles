@@ -55,9 +55,13 @@ do
 done
 
 # Node related
-export VOLTA_HOME="$HOME/.volta"
+# export VOLTA_HOME="$HOME/.volta"
+# export PATH=$VOLTA_HOME/bin:$PATH
 export PYTHON_HOME="${HOME}/.pyenv/shims"
-export PATH=$VOLTA_HOME/bin:$PYTHON_HOME:$PATH
+export PATH=$PATH:$PYTHON_HOME
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 
 # options
 # -------

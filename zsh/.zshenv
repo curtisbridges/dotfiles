@@ -10,6 +10,6 @@ export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
 # Default Apps
 export EDITOR="code -n"
 export VISUAL="code -n"
-export TERMINAL="alacritty"
+export TERMINAL="iTerm.app"
 export BROWSER="google-chrome"
 export PAGER="less"

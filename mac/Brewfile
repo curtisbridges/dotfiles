@@ -81,6 +81,7 @@ cask 'krita'                  # open source paint app
 # cask 'maestral'               # open source dropbox replacement
 cask 'microsoft-outlook'      # Microsoft Outlook (for work)
 cask 'netnewswire'            # RSS feed reader
+cask 'nvm'                    # node version manager
 # cask 'openaudible'            # download / process audible content
 # cask 'pocket-casts'           # podcast player
 cask 'postman'                # work with REST APIs
@@ -89,9 +90,10 @@ cask 'slack'                  # workplace comms
 cask 'spotify'                # music streaming
 cask 'transmit'               # ftp/sftp/etc app
 # cask 'twitch'                 # live coding!
-# cask 'utm'                    # Virtual machines UI using QEMU
 cask 'typora'                 # markdown editor
+# cask 'utm'                    # Virtual machines UI using QEMU
 cask 'visual-studio-code'     # Microsoft cross-platform editor
+cask 'yarn'                   # yarn package manager
 
 # Fonts
 # Patched with nerd font support are good for Terminal but iTerm2 has built-in glyphs.
