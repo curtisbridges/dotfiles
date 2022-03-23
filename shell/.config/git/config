@@ -1,10 +1,10 @@
 [user]
-	name = Curtis Bridges
-	email = curtis@curtisbridges.com
+ 	name = Curtis Bridges
+# 	email = curtis@curtisbridges.com
 [includeIf "gitdir:~/Developer/Work/Skillsoft/"]
-  path = skillsoft
-[includeIf "gitdir:~/Developer/"]
-  path = github
+	path = ~/.config/git/skillsoft
+[includeIf "gitdir:~/Developer/Personal/"]
+	path = ~/.config/git/github
 [core]
 	editor = nvim
 	fileMode = false
