@@ -80,14 +80,14 @@ cask 'iterm2'                 # a more feature-rich terminal
 cask 'karabiner-elements'     # low-level keyboard and mouse control
 cask 'krita'                  # open source paint app
 # cask 'maestral'               # open source dropbox replacement
-cask 'microsoft-outlook'      # Microsoft Outlook (for work)
+# cask 'microsoft-outlook'      # Microsoft Outlook (for work)
 cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
 # cask 'pocket-casts'           # podcast player
 cask 'postman'                # work with REST APIs
 cask 'rectangle'              # window management
 cask 'slack'                  # workplace comms
-cask 'spotify'                # music streaming
+# cask 'spotify'                # music streaming
 cask 'transmit'               # ftp/sftp/etc app
 # cask 'twitch'                 # live coding!
 cask 'typora'                 # markdown editor
