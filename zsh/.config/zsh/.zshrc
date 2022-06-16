@@ -65,7 +65,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # options
 # -------
-setopt hist_ignore_all_dups  # remove older duplicate entries from history
+# setopt hist_ignore_all_dups  # remove older duplicate entries from history
 setopt hist_find_no_dups     # ignore duplicates when searching
 setopt hist_reduce_blanks    # remove superfluous blanks from history items
 setopt share_history         # share history between different instances of the shell
