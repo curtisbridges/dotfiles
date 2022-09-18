@@ -8,8 +8,8 @@ export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
 
 # Default Apps
-export EDITOR="code -n"
-export VISUAL="code -n"
-export TERMINAL="iTerm.app"
+export EDITOR="vim"
+export VISUAL="vim"
+export TERMINAL="Alacritty.app"
 export BROWSER="google-chrome"
 export PAGER="less"

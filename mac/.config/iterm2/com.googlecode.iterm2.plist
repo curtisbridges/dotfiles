@@ -2366,7 +2366,7 @@
 			<key>HotKey Modifier Activation</key>
 			<integer>3</integer>
 			<key>HotKey Modifier Flags</key>
-			<integer>1966080</integer>
+			<integer>1835008</integer>
 			<key>HotKey Window Animates</key>
 			<false/>
 			<key>HotKey Window AutoHides</key>
@@ -2751,7 +2751,7 @@
 			<key>Title Components</key>
 			<integer>512</integer>
 			<key>Transparency</key>
-			<real>0.10000000000000001</real>
+			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
