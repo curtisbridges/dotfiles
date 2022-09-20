@@ -3,7 +3,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/command-not-found'
 tap 'homebrew/cask'              # Only works on macOS
 tap 'homebrew/cask-fonts'        # Only works on macOS
-tap 'koekeishiya/formulae'       # for yabai+skhd, only on macOS
+# tap 'koekeishiya/formulae'       # for yabai+skhd, only on macOS
 
 # Brews
 brew 'ack'                  # code search tool
@@ -88,7 +88,7 @@ cask 'krita'                  # open source paint app
 # cask 'openaudible'            # download / process audible content
 # cask 'pocket-casts'           # podcast player
 cask 'postman'                # work with REST APIs
-# cask 'rectangle'              # window management
+cask 'rectangle'              # window management
 cask 'slack'                  # workplace comms
 # cask 'spotify'                # music streaming
 cask 'transmit'               # ftp/sftp/etc app
