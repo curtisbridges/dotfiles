@@ -9,7 +9,7 @@ export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
 
 # Default Apps
 export EDITOR="vim"
-export VISUAL="vim"
-export TERMINAL="Alacritty.app"
+export VISUAL="code"
+export TERMINAL="iTerm2"
 export BROWSER="google-chrome"
 export PAGER="less"
