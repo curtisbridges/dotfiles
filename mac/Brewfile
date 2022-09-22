@@ -26,6 +26,7 @@ brew 'git-flow'             # standard git workflows
 brew 'gpg'                  # encryption utils
 brew 'htop'                 # system stats
 brew 'httpie'               # curl replacement
+brew 'jq'                   # json formatter
 brew 'lua'                  # Scripting language, extraordinaire!
 brew 'macos-trash'          # utility to leverage the trashcan from the shell
 # brew 'trash-cli'            # linux equivalent of macos-trash
@@ -63,7 +64,7 @@ brew 'zsh-you-should-use'
 
 # Casks (Note: Only works on macOS)
 cask '1password'              # password manager
-cask 'alacritty'
+cask 'alacritty'              # gpu accelerated terminal
 # cask 'temurin'                # java jdk
 # cask 'aerial'                 # picturesque screensaver
 cask 'alfred'                 # application launcher and more
@@ -71,7 +72,7 @@ cask 'appcleaner'             # clean uninstalls
 cask 'balenaetcher'           # USB ISO creator
 # cask 'boop'                   # Scriptable text engine
 # cask 'calibre'                # ebook utilities
-cask 'dash'                   # developer docks
+# cask 'dash'                   # developer docks
 cask 'discord'                # alternate comms
 cask 'docker'                 # container software
 cask 'figma'                  # design software

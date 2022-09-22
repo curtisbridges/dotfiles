@@ -3012,7 +3012,7 @@
 			<key>Columns</key>
 			<integer>120</integer>
 			<key>Command</key>
-			<string></string>
+			<string>/opt/homebrew/bin/fish</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -3051,7 +3051,7 @@
 			<key>Cursor Type</key>
 			<integer>0</integer>
 			<key>Custom Command</key>
-			<string>No</string>
+			<string>Custom Shell</string>
 			<key>Custom Directory</key>
 			<string>Recycle</string>
 			<key>Default Bookmark</key>
@@ -3725,7 +3725,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>132</integer>
+			<integer>120</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -3798,6 +3798,8 @@
 			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Use Transparency</key>
+			<false/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -4115,6 +4117,8 @@
 			<true/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
+			<key>Prevent Opening in a Tab</key>
+			<true/>
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
@@ -4164,7 +4168,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.10394212271357138</real>
+			<real>0.053942122713571398</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
@@ -7989,6 +7993,10 @@
 	<integer>1</integer>
 	<key>StretchTabsToFillBar</key>
 	<true/>
+	<key>SwitchTabModifier</key>
+	<integer>4</integer>
+	<key>SwitchWindowModifier</key>
+	<integer>9</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>4</integer>
 	<key>TabViewType</key>
