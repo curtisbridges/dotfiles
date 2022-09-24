@@ -8,6 +8,7 @@ tap 'homebrew/cask-fonts'        # Only works on macOS
 # Brews
 brew 'ack'                  # code search tool
 brew 'ag'                   # another code search tool
+brew 'asdf'                 # toolchain versioner
 brew 'autojump'             # jump to directories fast!
 brew 'awscli'               # AWS cli client
 brew 'bat'                  # a 'cat' replacement with syntax highlighting and paging
@@ -35,12 +36,12 @@ brew 'neofetch'             # graphical system summary
 brew 'neovim'               # preferred vim
 brew 'nmap'                 # port scanning util
 brew 'noti'                 # macOS command line notification hook
-brew 'nvm'                  # node version manager
+# brew 'nvm'                  # node version manager
 brew 'openssl'              # ssl utilities
 brew 'prettyping'           # a better ping
 brew 'readline'             # dunno
 brew 'ripgrep'              # a faster grep
-brew 'skhd'                 # keyboard shortcuts
+# brew 'skhd'                 # keyboard shortcuts
 brew 'starship'             # The best prompt for any shell
 brew 'stow'                 # dotfile installation utility
 brew 'thefuck'              # command correction utility
@@ -50,7 +51,7 @@ brew 'tmuxinator'           # tmux projects
 brew 'tree'                 # directory tree
 brew 'volta'                # node version manager
 brew 'wget'                 # alternative shell web download util
-brew 'yabai'                # tiling window manager
+# brew 'yabai'                # tiling window manager
 brew 'yarn'                 # alternative to npm
 brew 'youtube-dl'           # download youtube videos
 
@@ -65,7 +66,7 @@ brew 'zsh-you-should-use'
 # Casks (Note: Only works on macOS)
 cask '1password'              # password manager
 cask 'alacritty'              # gpu accelerated terminal
-# cask 'temurin'                # java jdk
+# cask 'temurin'                # java jdk for m1+
 # cask 'aerial'                 # picturesque screensaver
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
@@ -92,9 +93,9 @@ cask 'postman'                # work with REST APIs
 cask 'rectangle'              # window management
 cask 'slack'                  # workplace comms
 # cask 'spotify'                # music streaming
-cask 'transmit'               # ftp/sftp/etc app
+# cask 'transmit'               # ftp/sftp/etc app
 # cask 'twitch'                 # live coding!
-cask 'typora'                 # markdown editor
+# cask 'typora'                 # markdown editor
 # cask 'utm'                    # Virtual machines UI using QEMU
 cask 'visual-studio-code'     # Microsoft cross-platform editor
 

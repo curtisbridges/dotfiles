@@ -5,7 +5,7 @@ abbr mv "mv -i"
 abbr mkdir "mkdir -p"
 abbr h "history"
 abbr fd "fd -H"
-abbr cat bat
+abbr cat "bat"
 
 # Changing "ls" to "exa"
 abbr ls 'exa --color=always --group-directories-first'     # my preferred listing
