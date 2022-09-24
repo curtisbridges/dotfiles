@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export --path TMUX_PLUGIN_MANAGER_PATH:\x7e/\x2econfig/tmux/plugins
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/Users/cmb/\x2elocal/share/z/data
@@ -165,7 +166,8 @@ SETUVAR _fish_abbr_gwtpr:git\x20worktree\x20prune
 SETUVAR _fish_abbr_gwtrm:git\x20worktree\x20remove
 SETUVAR _fish_abbr_gwtulo:git\x20worktree\x20unlock
 SETUVAR _fish_abbr_h:history
-SETUVAR _fish_abbr_l_2E_:exa\x20\x2da\x20\x7c\x20egrep\x20\x22\x5e\x5c\x2e\x22
+SETUVAR _fish_abbr_ip:dig\x20\x2bshort\x20myip\x2eopendns\x2ecom\x20\x40resolver1\x2eopendns\x2ecom
+SETUVAR _fish_abbr_l_2E_:exa\x20\x2da\x20\x7c\x20egrep\x20\x5e\x2e
 SETUVAR _fish_abbr_la:exa\x20\x2dal\x20\x2d\x2dcolor\x3dalways\x20\x2d\x2dgroup\x2ddirectories\x2dfirst
 SETUVAR _fish_abbr_li:exa\x20\x2d\x2dicons
 SETUVAR _fish_abbr_ll:exa\x20\x2dl\x20\x2d\x2dcolor\x3dalways\x20\x2d\x2dgroup\x2ddirectories\x2dfirst
@@ -173,13 +175,27 @@ SETUVAR _fish_abbr_ls:exa\x20\x2d\x2dcolor\x3dalways\x20\x2d\x2dgroup\x2ddirecto
 SETUVAR _fish_abbr_lt:exa\x20\x2daT\x20\x2d\x2dcolor\x3dalways\x20\x2d\x2dgroup\x2ddirectories\x2dfirst
 SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dp
 SETUVAR _fish_abbr_mv:mv\x20\x2di
+SETUVAR _fish_abbr_nf:neofetch
+SETUVAR _fish_abbr_ping:prettyping\x20\x2d\x2dnolegend
 SETUVAR _fish_abbr_rm:rm\x20\x2di
+SETUVAR _fish_abbr_ta:tmux\x20attach\x20\x2dt
+SETUVAR _fish_abbr_tad:tmux\x20attach\x20\x2dd\x20\x2dt
+SETUVAR _fish_abbr_tkss:tmux\x20kill\x2dsession\x20\x2dt
+SETUVAR _fish_abbr_tksv:tmux\x20kill\x2dserver
+SETUVAR _fish_abbr_tl:tmux\x20list\x2dsessions
+SETUVAR _fish_abbr_top:htop
+SETUVAR _fish_abbr_ts:tmux\x20new\x2dsession\x20\x2ds
+SETUVAR _fish_abbr_up:uptime
+SETUVAR _fish_abbr_vim:nvim
+SETUVAR _fish_abbr_yt:youtube\x2ddl
+SETUVAR _fish_abbr_yt4:youtube\x2ddl\x20\x2d\x2dformat\x20mp4
+SETUVAR _fisher_budimanjojo_2F_tmux_2E_fish_files:\x7e/\x2econfig/fish/conf\x2ed/tmux\x2eextra\x2econf\x1e\x7e/\x2econfig/fish/conf\x2ed/tmux\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/tmux\x2eonly\x2econf\x1e\x7e/\x2econfig/fish/conf\x2ed/tmux_abbrs\x2efish
 SETUVAR _fisher_jethrokuan_2F_z_files:\x7e/\x2econfig/fish/functions/__z\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_add\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_clean\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_complete\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_jhillyerd_2F_plugin_2D_git_files:\x7e/\x2econfig/fish/functions/__git\x2ebranch_has_wip\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2ecurrent_branch\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2edefault_branch\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2edestroy\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2einit\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2ereset\x2efish\x1e\x7e/\x2econfig/fish/functions/gbage\x2efish\x1e\x7e/\x2econfig/fish/functions/gbda\x2efish\x1e\x7e/\x2econfig/fish/functions/gdt\x2efish\x1e\x7e/\x2econfig/fish/functions/gdv\x2efish\x1e\x7e/\x2econfig/fish/functions/ggl\x2efish\x1e\x7e/\x2econfig/fish/functions/ggp\x2efish\x1e\x7e/\x2econfig/fish/functions/ggpnp\x2efish\x1e\x7e/\x2econfig/fish/functions/ggsup\x2efish\x1e\x7e/\x2econfig/fish/functions/ggu\x2efish\x1e\x7e/\x2econfig/fish/functions/gignored\x2efish\x1e\x7e/\x2econfig/fish/functions/glp\x2efish\x1e\x7e/\x2econfig/fish/functions/gpoat\x2efish\x1e\x7e/\x2econfig/fish/functions/grename\x2efish\x1e\x7e/\x2econfig/fish/functions/grt\x2efish\x1e\x7e/\x2econfig/fish/functions/gtl\x2efish\x1e\x7e/\x2econfig/fish/functions/gunwip\x2efish\x1e\x7e/\x2econfig/fish/functions/gwip\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/git\x2efish
 SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_patrickf1_2F_fzf_2E_fish_files:\x7e/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_changed_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_diff_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_processes\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_wrapper\x2efish\x1e\x7e/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e\x7e/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1epatrickf1/fzf\x2efish\x1ejhillyerd/plugin\x2dgit\x1ejorgebucaran/autopair\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1epatrickf1/fzf\x2efish\x1ejhillyerd/plugin\x2dgit\x1ejorgebucaran/autopair\x2efish\x1ebudimanjojo/tmux\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
@@ -209,4 +225,5 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR --export fish_tmux_config:\x7e/\x2econfig/tmux/tmux\x2econf
 SETUVAR fish_user_paths:/opt/homebrew/bin\x1e/Users/cmb/bin

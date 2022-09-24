@@ -9,7 +9,7 @@
 	<key>CloseBookmarksWindowAfterOpening</key>
 	<true/>
 	<key>Command</key>
-	<string></string>
+	<string>/opt/homebrew/bin/fish</string>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Dark+</key>
@@ -3051,7 +3051,7 @@
 			<key>Cursor Type</key>
 			<integer>0</integer>
 			<key>Custom Command</key>
-			<string>Custom Shell</string>
+			<string>No</string>
 			<key>Custom Directory</key>
 			<string>Recycle</string>
 			<key>Default Bookmark</key>
