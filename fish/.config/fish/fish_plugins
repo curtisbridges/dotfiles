@@ -1,7 +1,5 @@
 jorgebucaran/fisher
-PatrickF1/fzf.fish
-jorgebucaran/nvm.fish
-gazorby/fish-abbreviation-tips
-laughedelic/brew-completions
-sijad/gitignore
+jethrokuan/z
+patrickf1/fzf.fish
 jhillyerd/plugin-git
+jorgebucaran/autopair.fish
