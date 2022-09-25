@@ -16,7 +16,7 @@ set fish_greeting                         # Supresses fish's intro message
 set TERM "xterm-256color"                 # Sets the terminal type
 set EDITOR "vim"                          # $EDITOR use vim in terminal
 set VISUAL "code -nw"                     # $VISUAL use VS Code in GUI mode
-set -x XDG_DATA_HOME "~/.config"
+set -Ux XDG_DATA_HOME $HOME/.config
 
 ### SET MANPAGER
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
@@ -35,13 +35,14 @@ set fzf_fd_opts --hidden --exclude=.git
 
 ### TMUX integration ###
 # required so tmux plugin will function with XDG_CONFIG_HOME
-set -Ux fish_tmux_config $XDG_DATA_HOME/tmux/tmux.conf
-# set fish_tmux_iterm2 true
 set -Ux TMUX_PLUGIN_MANAGER_PATH $XDG_DATA_HOME/tmux/plugins
+set -Ux fish_tmux_config $XDG_DATA_HOME/tmux/tmux.conf
+set -Ux fish_tmux_autostart false
+# set fish_tmux_iterm2 true
 ### END TMUX ###
 
 function sudo!!
-    eval sudo $history[1]
+  eval sudo $history[1]
 end
 
 # Functions needed for !! and !$

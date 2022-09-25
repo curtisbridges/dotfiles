@@ -100,7 +100,7 @@ selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: true
+  save_to_clipboard: false
 
 cursor:
   # Cursor style
@@ -153,9 +153,10 @@ key_bindings:
   - { key: Key7, mods: Command, chars: "\x00\x37" }
   - { key: Key8, mods: Command, chars: "\x00\x38" }
   - { key: Key9, mods: Command, chars: "\x00\x39" }
+  - { key: Key0, mods: Command, chars: "\x00\x40" }
 
 # shell:
-#   program: /usr/local/bin/zsh
+#   program: /opt/homebrew/bin/fish
 #   args:
 #     - -l
 #     - -c
