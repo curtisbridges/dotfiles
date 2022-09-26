@@ -13,6 +13,7 @@ o.smartindent = true
 o.hlsearch = true
 o.incsearch = true
 
+o.syntax = "ON"
 o.termguicolors = true
 
 o.swapfile = false

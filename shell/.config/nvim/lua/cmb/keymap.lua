@@ -17,4 +17,11 @@ M.vnoremap = bind("v")
 M.xnoremap = bind("x")
 M.inoremap = bind("i")
 
+local map = vim.api.nvim_set_keymap
+
+-- Toggle more plugins
+map('n', 'l', [[:IndentLinesToggle]], {})
+map('n', 't', [[:TagbarToggle]], {})
+map('n', 'ff', [[:Telescope find_files]], {})
+
 return M
