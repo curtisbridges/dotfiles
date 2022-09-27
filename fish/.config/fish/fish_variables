@@ -19,7 +19,7 @@ SETUVAR _fish_abbr_gaa:git\x20add\x20\x2d\x2dall
 SETUVAR _fish_abbr_gap:git\x20apply
 SETUVAR _fish_abbr_gapa:git\x20add\x20\x2d\x2dpatch
 SETUVAR _fish_abbr_gau:git\x20add\x20\x2d\x2dupdate
-SETUVAR _fish_abbr_gb:git\x20branch\x20\x2dvv
+SETUVAR _fish_abbr_gb:git\x20branch
 SETUVAR _fish_abbr_gbD:git\x20branch\x20\x2dD
 SETUVAR _fish_abbr_gba:git\x20branch\x20\x2da\x20\x2dv
 SETUVAR _fish_abbr_gban:git\x20branch\x20\x2da\x20\x2dv\x20\x2d\x2dno\x2dmerged

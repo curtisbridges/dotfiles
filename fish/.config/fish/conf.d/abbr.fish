@@ -14,3 +14,6 @@ abbr vim 'nvim'
 abbr yt 'youtube-dl'
 abbr yt4 'youtube-dl --format mp4'
 abbr ip 'dig +short myip.opendns.com @resolver1.opendns.com'
+
+## override git plugin's `gb` because I don't like the verbosity.
+abbr gb 'git branch'
