@@ -28,6 +28,7 @@ brew 'gpg'                  # encryption utils
 brew 'htop'                 # system stats
 brew 'httpie'               # curl replacement
 brew 'jq'                   # json formatter
+brew 'jump'                 # directory jumper (see also autojump)
 brew 'lua'                  # Scripting language, extraordinaire!
 brew 'macos-trash'          # utility to leverage the trashcan from the shell
 # brew 'trash-cli'            # linux equivalent of macos-trash
