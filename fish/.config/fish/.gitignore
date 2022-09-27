@@ -1,7 +1,9 @@
+*
+!/**/
+!*.*
+
 completions/
 generated_completions/
-
-fish_history
 
 conf.d/asdf_direnv.fish
 conf.d/autopair.fish

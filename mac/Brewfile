@@ -23,6 +23,7 @@ brew 'fortune'              # words of wisdom
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
 brew 'gh'                   # GitHub
 brew 'git'                  # source control
+brew 'go'                   # Go lang
 brew 'git-flow'             # standard git workflows
 brew 'gpg'                  # encryption utils
 brew 'htop'                 # system stats
@@ -42,6 +43,7 @@ brew 'openssl'              # ssl utilities
 brew 'prettyping'           # a better ping
 brew 'readline'             # dunno
 brew 'ripgrep'              # a faster grep
+brew 'rust'                 # Rust lang
 # brew 'skhd'                 # keyboard shortcuts
 brew 'starship'             # The best prompt for any shell
 brew 'stow'                 # dotfile installation utility
