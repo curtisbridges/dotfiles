@@ -1,7 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export --path TMUX_PLUGIN_MANAGER_PATH:/Users/csbridges/\x2econfig/tmux/plugins
-SETUVAR --export XDG_DATA_HOME:/Users/csbridges/\x2econfig
+SETUVAR --export --path TMUX_PLUGIN_MANAGER_PATH:/Users/cmb/\x2econfig/tmux/plugins
+SETUVAR --export XDG_DATA_HOME:/Users/cmb/\x2econfig
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/Users/cmb/\x2elocal/share/z/data
@@ -229,5 +229,5 @@ SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR --export fish_tmux_autostart:false
-SETUVAR --export fish_tmux_config:/Users/csbridges/\x2econfig/tmux/tmux\x2econf
-SETUVAR fish_user_paths:/usr/local/bin\x1e/Users/csbridges/bin
+SETUVAR --export fish_tmux_config:/Users/cmb/\x2econfig/tmux/tmux\x2econf
+SETUVAR fish_user_paths:/opt/homebrew/bin\x1e/Users/cmb/bin

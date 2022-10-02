@@ -35,14 +35,13 @@ export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border --ansi'
 # oh-my-zsh plugins
 plugins=(
   aliases common-aliases
-  autojump brew
+  autojump
   command-not-found
-  docker docker-compose
-  frontend-search
-  gh git git-auto-fetch git-extras git-flow
+  gh git git-extras git-flow
   macos
-  tmux
-  web-search history-substring-search
+  vi-mode tmux
+  fzf
+  web-search
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
@@ -79,10 +78,8 @@ unsetopt menu_complete       # insert first suggestion while autocompleting
 
 # vi keybinds
 # NOTE: using vi bindings breaks fzf keybinds
+# handled by plugin order above
 #bindkey -v
-
-# zmv
-autoload -U zmv
 
 # completions
 autoload -Uz compinit && compinit
