@@ -1,3 +1,4 @@
+.zhistory
 .zsh_history
 .zcompinit*
 .zcompcache
@@ -5,3 +6,4 @@
 
 zinit
 
+plugins/zsh-*

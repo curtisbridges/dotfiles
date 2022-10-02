@@ -1,2 +1,3 @@
-# Just show some machine info mostly for vanity reasons.
-# neofetch
+##
+## .zprofile -- executed before .zshrc
+##
