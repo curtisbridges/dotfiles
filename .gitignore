@@ -2,3 +2,4 @@
 Brewfile.lock.json
 
 .DS_Store
+.tool-versions
