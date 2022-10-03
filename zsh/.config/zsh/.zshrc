@@ -60,9 +60,10 @@ done
 # oh-my-zsh plugins
 plugins=(
   aliases common-aliases
+  asdf
   autojump
   command-not-found
-  gh git git-extras git-flow
+  git git-extras git-flow
   macos
   vi-mode tmux
   fzf
