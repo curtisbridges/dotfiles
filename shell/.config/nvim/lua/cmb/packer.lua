@@ -14,12 +14,15 @@ return require('packer').startup(function(use)
     use 'navarasu/onedark.nvim'
 
     use {
-        'nvim-telescope/telescope.nvim',                 -- fuzzy finder
-        requires = { {'nvim-lua/plenary.nvim'} }
+        'nvim-telescope/telescope.nvim', -- fuzzy finder
+        requires = { { 'nvim-lua/plenary.nvim' } }
+
     }
+
     -- use { 'majutsushi/tagbar' }               -- code structure
     use { 'Yggdroot/indentLine' }                -- see indentation
-    use { 'windwp/nvim-autopairs' }
+    use { 'windwp/nvim-autopairs' } -- auto close brackets, etc.
+
     -- use { 'tpope/vim-fugitive' }                 -- git integration
     -- use { 'junegunn/gv.vim' }                    -- commit history
     -- use 'neovim/nvim-lspconfig'                  -- Collection of configurations for built-in LSP client

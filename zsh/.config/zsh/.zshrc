@@ -41,7 +41,6 @@ export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux/plugins"
 
 # FZF
 export FZF_BASE=$(brew --prefix)/bin/fzf
-#export FZF_DEFAULT_COMMAND=fzf
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border --ansi'
 export FZF_CTRL_T_COMMAND="fd --type f --hidden --follow --exclude '{....}'"
@@ -59,10 +58,11 @@ done
 # zsh_plugin "hlissner/zsh-autopair"
 # oh-my-zsh plugins
 plugins=(
-  aliases common-aliases
+  aliases
   asdf
   autojump
   command-not-found
+  common-aliases
   git git-extras git-flow
   macos
   vi-mode tmux
