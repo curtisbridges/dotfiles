@@ -8,7 +8,7 @@ tap 'homebrew/cask-fonts'        # Only works on macOS
 # Brews
 brew 'ack'                  # code search tool
 brew 'ag'                   # another code search tool
-brew 'asdf'                 # toolchain versioner
+# brew 'asdf'                 # toolchain versioner
 brew 'autojump'             # jump to directories fast!
 brew 'awscli'               # AWS cli client
 brew 'bat'                  # a 'cat' replacement with syntax highlighting and paging
@@ -38,7 +38,7 @@ brew 'neofetch'             # graphical system summary
 brew 'neovim'               # preferred vim
 brew 'nmap'                 # port scanning util
 brew 'noti'                 # macOS command line notification hook
-# brew 'nvm'                  # node version manager
+brew 'nvm'                  # node version manager
 brew 'openssl'              # ssl utilities
 brew 'prettyping'           # a better ping
 brew 'readline'             # dunno
@@ -52,7 +52,7 @@ brew 'tldr'                 # a more concise man replacement
 brew 'tmux'                 # terminal multiplexer (not yet used)
 brew 'tmuxinator'           # tmux projects
 brew 'tree'                 # directory tree
-brew 'volta'                # node version manager
+# brew 'volta'                # node version manager
 brew 'wget'                 # alternative shell web download util
 # brew 'yabai'                # tiling window manager
 brew 'yarn'                 # alternative to npm
