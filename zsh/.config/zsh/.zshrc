@@ -59,12 +59,12 @@ done
 # oh-my-zsh plugins
 plugins=(
   aliases
-  asdf
   autojump
   command-not-found
   common-aliases
   git git-extras git-flow
   macos
+  nvm
   vi-mode tmux
   fzf
   web-search
@@ -81,7 +81,8 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 # Node related
 export PYTHON_HOME="${HOME}/.pyenv/shims"
 export PATH=$PATH:$PYTHON_HOME
-# export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$HOME/.nvm"
+# don't need to install from homebrew or source this script thanks to omz
 # [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
 
 # completions
