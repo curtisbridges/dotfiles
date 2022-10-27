@@ -113,6 +113,7 @@ cask 'font-cascadia-code'     # nerdfont: font-caskaydia-cove-nerd-font
 cask 'font-dejavu'            # nerdfont: font-dejavu-sans-mono-nerd-font
 cask 'font-fira-code'         # nerdfont: font-fira-code-nerd-font
 cask 'font-fira-code-nerd-font'
+cask 'font-jetbrains-mono'    # nerdfont: font-jetbrains-mono-nerd-font
 cask 'font-hack'
 cask 'font-hasklig'
 # cask 'font-source-code-pro' # will always update if installed...
