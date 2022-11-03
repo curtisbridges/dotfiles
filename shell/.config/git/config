@@ -19,6 +19,8 @@
 	rebase = merges
 [push]
 	default = simple
+	default = current
+	autoSetupRemote = true
 [branch]
 	autosetuprebase = always
 [rebase]
