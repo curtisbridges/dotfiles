@@ -68,6 +68,7 @@ plugins=(
   vi-mode tmux
   fzf
   web-search
+  zoxide
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh

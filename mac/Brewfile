@@ -57,6 +57,7 @@ brew 'wget'                 # alternative shell web download util
 # brew 'yabai'                # tiling window manager
 brew 'yarn'                 # alternative to npm
 brew 'youtube-dl'           # download youtube videos
+brew 'zoxide'               # a better autojump & cd combined
 
 # zsh
 brew 'zsh'
