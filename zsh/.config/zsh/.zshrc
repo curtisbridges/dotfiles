@@ -33,29 +33,16 @@ export ZSH="$HOME/.local/share/oh-my-zsh"
 DISABLE_MAGIC_FUNCTIONS="true"
 COMPLETION_WAITING_DOTS="true"
 
+# important source files
+source ${ZDOTDIR:-$HOME}/before/path.zsh
+source ${ZDOTDIR:-$HOME}/before/exports.zsh
+
 # required so tmux plugin will function with XDG_CONFIG_HOME
 ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
 ZSH_TMUX_UNICODE=true
 ZSH_TMUX_FIXTERM=true
 export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux/plugins"
 
-# FZF
-export FZF_BASE=$(brew --prefix)/bin/fzf
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
-export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border --ansi'
-export FZF_CTRL_T_COMMAND="fd --type f --hidden --follow --exclude '{....}'"
-
-# automatic loading code
-for config_file (${ZDOTDIR:-$HOME}/autoload/*.zsh)
-do
-  source $config_file
-done
-
-# Plugins
-# zsh_plugin "zsh-users/zsh-autosuggestions"
-# zsh_plugin "zsh-users/zsh-syntax-highlighting"
-# zsh_plugin "zsh-users/zsh-history-substring-search"
-# zsh_plugin "hlissner/zsh-autopair"
 # oh-my-zsh plugins
 plugins=(
   aliases
@@ -74,27 +61,23 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 ZSH_THEME=""  # disable because I handle my own themes
 
+# TODO Make this directory loader a function
+# automatic loading code
+for config_file (${ZDOTDIR:-$HOME}/autoload/*.zsh)
+do
+  source $config_file
+done
+
 # Recent directory stack
 # TODO: Needs work, seems to be off-by-one
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
-
-# Node related
-export PYTHON_HOME="${HOME}/.pyenv/shims"
-export PATH=$PATH:$PYTHON_HOME
-export NVM_DIR="$HOME/.nvm"
-# don't need to install from homebrew or source this script thanks to omz
-# [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
 
 # completions
 autoload -Uz compinit && compinit
 
 # Use homebrew installed starship prompt
 eval "$(starship init zsh)"
-
-# Pure Prompt (alternative prompt)
-# autoload -U promptinit; promptinit
-# prompt pure
 
 # Prevent duplicate entries in PATH
 typeset -U PATH

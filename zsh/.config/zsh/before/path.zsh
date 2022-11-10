@@ -11,6 +11,12 @@ if [ -d "${HOME}/.ssh" ] ; then
   ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
 fi
 
+if [[ `uname` == 'Linux' ]]; then
+  if [[ -f "/home/linuxbrew/.linuxbrew/bin/brew" ]]; then
+    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+  fi
+fi
+
 if [ -d "$(brew --prefix)" ] ; then
   # Homebrew
   PATH=$(brew --prefix)/bin:${PATH}

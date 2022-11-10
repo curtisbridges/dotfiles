@@ -1,5 +1,6 @@
 [user]
 	name = Curtis Bridges
+	email = curtis@curtisbridges.com
 # 	email = curtis@curtisbridges.com
 [includeIf "gitdir:~/Developer/Work/Skillsoft/"]
 	path = ~/.config/git/skillsoft

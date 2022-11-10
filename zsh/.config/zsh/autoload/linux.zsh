@@ -12,15 +12,9 @@ if [[ `uname` == 'Linux' ]]; then
   alias trrs=trash-restore
   alias trrm=trash-rm
 
-  # make homebrew (on linux!) function
-  set -o extendedglob
-  if [[ -f "~/.linuxbrew/bin/brew" ]]; then
-    eval $(~/.linuxbrew/bin/brew shellenv)
-    source ~/.linuxbrew/share/zsh-you-should-use/you-should-use.plugin.zsh
-  elif [[ -f "/home/linuxbrew/.linuxbrew/bin/brew" ]]; then
-    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-    source /home/linuxbrew/.linuxbrew/share/zsh-you-should-use/you-should-use.plugin.zsh
-  fi
+  # Requires `export NVM_DIR="$HOME/.nvm` prior to this line
+  [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
+
   # source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   # alias bat=batcat
 

@@ -4,9 +4,6 @@ if [[ `uname` == 'Darwin' ]]; then
     export CLICOLOR=1
     export LSCOLORS=ExFxBxDxCxegedabagacad
 
-    source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-    source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
     # Command not found handler -- tell me which brew package to install
     HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
     if [ -f "$HB_CNF_HANDLER" ]; then
