@@ -121,13 +121,15 @@ cask 'font-hasklig'
 cask 'font-sauce-code-pro-nerd-font' # source code pro nerd font
 
 # Mac App Store Apps (macOS only, obviously)
+# No longer supported? At least in macOS 10.13
+
 # mas 'AdGuard for Safari', id: 1440147259            # Ad Blocker / Privacy
 # mas 'Apple Developer', id: 640199958
 # mas 'Keynote', id: 409183694
 # mas 'Moom', id: 419330170                           # Window Manager
 # mas 'Numbers', id: 409203825
-mas 'Pocket', id: 568494494                         # Read Later service
-mas 'Pixelmator Pro', id: 1289583905                # Pro image editing
+# mas 'Pocket', id: 568494494                         # Read Later service
+# mas 'Pixelmator Pro', id: 1289583905                # Pro image editing
 # mas 'Pages', id: 409201541
-mas 'Tweetbot', id: 1384080005                      # Twitter client
+# mas 'Tweetbot', id: 1384080005                      # Twitter client
 # mas 'Xcode', id: 497799835                          # Removed so new installs don't take 100 years
