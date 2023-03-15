@@ -45,3 +45,5 @@
 	pretty = oneline
 [commit]
 	gpgsign = false
+[merge]
+	conflictstyle = diff3
