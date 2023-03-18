@@ -31,8 +31,8 @@ local grid = {
   bottomRight = '6,6 6x6',
   bottomLeft = '0,6 6x6',
   fullScreen = '0,0 12x12',
-  centeredBig = '3,0 6x12',
-  centeredSmall = '4,0 4x6',
+  centeredBig = '3,0 6x9',
+  centeredSmall = '4,0 5x8',
 }
 
 -- Chain the specified movement commands.
@@ -45,7 +45,7 @@ local grid = {
 --    window to another.
 --
 local function chain(movements)
-  local chainResetInterval = 2   -- seconds
+  local chainResetInterval = 2 -- seconds
   local cycleLength = #movements
   local sequenceNumber = 1
 
@@ -83,12 +83,7 @@ hs.hotkey.bind(meh, 'right', chain { grid.rightHalf, grid.rightThird, grid.right
 hs.hotkey.bind(meh, 'down', chain { grid.bottomHalf, grid.bottomThird, grid.bottomTwoThirds, })
 hs.hotkey.bind(meh, 'left', chain { grid.leftHalf, grid.leftThird, grid.leftTwoThirds, })
 
-hs.hotkey.bind(meh, '|', chain { grid.centeredBig, grid.centeredSmall, })
-hs.hotkey.bind(meh, 'f',
-  function()
-    local win = hs.window.frontmostWindow()
-    win:setFullscreen(not win:isFullscreen())
-  end)
+hs.hotkey.bind(meh, 't', chain { grid.centeredBig, grid.centeredSmall, })
 
 -- half of screen
 -- hs.hotkey.bind(meh, 'left', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 0.5, 1 }) end)
@@ -104,20 +99,28 @@ hs.hotkey.bind(meh, '4', function() hs.window.focusedWindow():moveToUnit({ 0, 0.
 
 -- full screen
 hs.hotkey.bind(meh, 'return', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 1, 1 }) end)
+hs.hotkey.bind(meh, 'f', function() hs.window.focusedWindow():toggleFullScreen() end)
+hs.hotkey.bind(meh, 'z', function() hs.window.focusedWindow():toggleZoom() end)
 
 -- center screen
 hs.hotkey.bind(meh, 'c', function() hs.window.focusedWindow():centerOnScreen() end)
 
 -- move between displays
-hs.hotkey.bind(meh, '.', function()
-  local win = hs.window.focusedWindow()
-  win:moveOneScreenEast(true, true)
-end)
-hs.hotkey.bind(meh, ',', function()
-  local win = hs.window.focusedWindow()
-  win:moveOneScreenWest(true, true)
-end)
+hs.hotkey.bind(meh, '.', function() hs.window.focusedWindow():moveOneScreenEast(true, true) end)
+hs.hotkey.bind(meh, ',', function() hs.window.focusedWindow():moveOneScreenWest(true, true) end)
 
 -- grid gui
 -- hs.grid.setMargins({ w = 0, h = 0 })
 -- hs.hotkey.bind(meh, 'g', hs.grid.show)
+
+-- Move Window
+hs.hotkey.bind(meh, 'j', hs.grid.pushWindowDown)
+hs.hotkey.bind(meh, 'k', hs.grid.pushWindowUp)
+hs.hotkey.bind(meh, 'h', hs.grid.pushWindowLeft)
+hs.hotkey.bind(meh, 'l', hs.grid.pushWindowRight)
+
+-- Resize Window
+hs.hotkey.bind(meh, 'pagedown', hs.grid.resizeWindowShorter)
+hs.hotkey.bind(meh, 'pageup', hs.grid.resizeWindowTaller)
+hs.hotkey.bind(meh, '=', hs.grid.resizeWindowWider)
+hs.hotkey.bind(meh, '-', hs.grid.resizeWindowThinner)

@@ -11,8 +11,6 @@ require 'utils'
 require 'quake' -- Alacritty kept bugging out the frame size
 require 'windows'
 
-
-
 -- Spoons!
 -- Download and install this _one_ spoon to autoload all the others
 -- hs.loadSpoon('SpoonInstall')

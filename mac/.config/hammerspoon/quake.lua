@@ -28,7 +28,7 @@ hs.hotkey.bind({ 'shift', 'command' }, 'return', function()
     -- print("space = ", space)
     -- print("win:screen() = ", win:screen())
 
-    local fullScreen = not win:isStandard()
+    local fullScreen = win:isFullScreen()
     if fullScreen then
       hs.eventtap.keyStroke('cmd', 'return', 0, alacritty)
     end
@@ -47,7 +47,7 @@ hs.hotkey.bind({ 'shift', 'command' }, 'return', function()
     -- print(win:frame())
 
     spaces.moveWindowToSpace(win, space)
-    local fullScreen = not win:isStandard()
+    local fullScreen = win:isFullScreen()
     if fullScreen then
       hs.eventtap.keyStroke('cmd', 'return', 0, alacritty)
     end
