@@ -108,6 +108,18 @@ hs.hotkey.bind(meh, 'c', function() hs.window.focusedWindow():centerOnScreen() e
 -- move between displays
 hs.hotkey.bind(meh, '.', function() hs.window.focusedWindow():moveOneScreenEast(true, true) end)
 hs.hotkey.bind(meh, ',', function() hs.window.focusedWindow():moveOneScreenWest(true, true) end)
+hs.hotkey.bind(meh, 'n',
+  function()
+    local win = hs.window.focusedWindow()
+    local screen = win:screen():next()
+    win:moveToScreen(screen, true, true)
+  end)
+hs.hotkey.bind(meh, 'p',
+  function()
+    local win = hs.window.focusedWindow()
+    local screen = win:screen():previous()
+    win:moveToScreen(screen, true, true)
+  end)
 
 -- grid gui
 -- hs.grid.setMargins({ w = 0, h = 0 })

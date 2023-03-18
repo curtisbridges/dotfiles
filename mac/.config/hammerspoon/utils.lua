@@ -21,28 +21,28 @@ function fancyNotify(t,m)
   hs.notify.new({title=t, informativeText=m}):send():release()
 end
 
--- function file_exists(path)
---     local f=io.open(path,"r")
---     if f~=nil then io.close(f) return true else return false end
---     -- ~= is != in other languages
--- end
--- function launchApp(name)
---     -- .. is concat string operator
---     return function()
---         path = "/Applications/" .. name .. ".app"
---         if file_exists(path) then
---             hs.application.launchOrFocus(path)
---             return
---         end
---         path = "/System/Library/CoreServices/" .. name .. ".app"
---         if file_exists(path) then
---             hs.application.launchOrFocus(path)
---             return
---         end
---         path = "/System/Applications/" .. name .. ".app"
---         if file_exists(path) then
---             hs.application.launchOrFocus(path)
---             return
---         end
---     end
--- end
+-- move any window to a given space
+function moveWindowToSpace(app, space)
+  -- move to main space
+  local win = nil
+  while win == nil do
+    win = app:mainWindow()
+  end
+
+  hs.spaces.moveWindowToSpace(win, space)
+  local fullScreen = win:isFullScreen()
+  if fullScreen then
+    hs.eventtap.keyStroke('cmd', 'return', 0, app)
+  end
+  win:focus()
+end
+-- move current window to the space sp
+function moveFocusedWindowToSpace(sp)
+  local win = hs.window.focusedWindow()   -- current window
+  local cur_screen = hs.screen.mainScreen()
+  local cur_screen_id = cur_screen:getUUID()
+  local all_spaces = hs.spaces.allSpaces()
+  local spaceID = all_spaces[cur_screen_id][sp]
+  hs.spaces.moveWindowToSpace(win:id(), spaceID)
+  hs.spaces.gotoSpace(spaceID)   -- follow window to new space
+end
