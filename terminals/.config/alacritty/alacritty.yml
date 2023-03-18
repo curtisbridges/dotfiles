@@ -34,11 +34,11 @@ window:
   #
   # Values for `decorations`:
   #     - full: Borders and title bar
-  #     - none: Neither borders nor title bar. Square corners. Can't mouse move!
+  #     - none: Neither borders nor title bar. Square corners.
   #
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
-  #     - buttonless: Title bar, transparent background, but no title bar buttons, round corners
+  #     - buttonless: Neither borders nor title bar. Square corners.
   decorations: buttonless
 
   # Startup Mode (changes require restart)
@@ -50,7 +50,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  startup_mode: Windowed
+  startup_mode: Maximized
 
   # Window title
   #title: Alacritty
@@ -141,9 +141,20 @@ key_bindings:
 
   ## MacOS friendly keybinds for tmux
   # New (tmux) Window
-  - { key: T, mods: Command, chars: "\x00\x63" }
+  #- { key: Comma,     mods: Command, command:
+  #    {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}     }
+  # Disabled the above since the open command uses default file association, which is Xcode!
+  - { key: N,         mods: Command, action: SpawnNewInstance             }
+  - { key: M,         mods: Command, action: ToggleMaximized              }
+  - { key: Space,     mods: Alt,     chars: " "                           }
+  - { key: Back,      mods: Super,   chars: "\x15"                        } # delete word/line
+  - { key: Left,      mods: Alt,     chars: "\x1bb"                       } # one word left
+  - { key: Right,     mods: Alt,     chars: "\x1bf"                       } # one word right
+  - { key: Left,      mods: Command, chars: "\x1bOH",   mode: AppCursor   } # Home
+  - { key: Right,     mods: Command, chars: "\x1bOF",   mode: AppCursor   } # End
+  - { key: T,         mods: Command, chars: "\x00\x63" }
 
-  # Select window 1-9, macOS style
+  # Select window 1-9, macOS style (for tmux, assumes ctrl-space tmux key)
   - { key: Key1, mods: Command, chars: "\x00\x31" }
   - { key: Key2, mods: Command, chars: "\x00\x32" }
   - { key: Key3, mods: Command, chars: "\x00\x33" }
