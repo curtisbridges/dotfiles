@@ -145,7 +145,7 @@ key_bindings:
   #    {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}     }
   # Disabled the above since the open command uses default file association, which is Xcode!
   - { key: N,         mods: Command, action: SpawnNewInstance             }
-  - { key: M,         mods: Command, action: ToggleMaximized              }
+  - { key: Return,    mods: Command, action: ToggleMaximized              }
   - { key: Space,     mods: Alt,     chars: " "                           }
   - { key: Back,      mods: Super,   chars: "\x15"                        } # delete word/line
   - { key: Left,      mods: Alt,     chars: "\x1bb"                       } # one word left
