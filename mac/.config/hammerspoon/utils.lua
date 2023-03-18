@@ -17,12 +17,12 @@ function toggleApplication(name)
   end
 end
 
-function fancyNotify(t,m)
-  hs.notify.new({title=t, informativeText=m}):send():release()
+function fancyNotify(t, m)
+  hs.notify.new({ title = t, informativeText = m }):send():release()
 end
 
 -- move any window to a given space
-function moveWindowToSpace(app, space)
+function moveAppToSpace(app, space)
   -- move to main space
   local win = nil
   while win == nil do
@@ -30,19 +30,18 @@ function moveWindowToSpace(app, space)
   end
 
   hs.spaces.moveWindowToSpace(win, space)
-  local fullScreen = win:isFullScreen()
-  if fullScreen then
-    hs.eventtap.keyStroke('cmd', 'return', 0, app)
-  end
   win:focus()
 end
+
 -- move current window to the space sp
 function moveFocusedWindowToSpace(sp)
-  local win = hs.window.focusedWindow()   -- current window
+  local win = hs.window.focusedWindow() -- current window
   local cur_screen = hs.screen.mainScreen()
   local cur_screen_id = cur_screen:getUUID()
   local all_spaces = hs.spaces.allSpaces()
   local spaceID = all_spaces[cur_screen_id][sp]
+
   hs.spaces.moveWindowToSpace(win:id(), spaceID)
-  hs.spaces.gotoSpace(spaceID)   -- follow window to new space
+  hs.spaces.gotoSpace(spaceID) -- follow window to new space
+  win:focus()
 end

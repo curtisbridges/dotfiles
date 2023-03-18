@@ -1,14 +1,9 @@
 --
 -- Hammerspoon configuration file
 --
-
--- Global Defines
-meh = {'⌘', '⌥', '⌃'} -- bottom row modifiers
-hyper = {'⌘', '⌥', '⇧', '⌃'} -- caps lock held down (karabiner hyper)
-
--- my modules
+require 'config'
 require 'utils'
-require 'quake' -- Alacritty kept bugging out the frame size
+require 'quake'
 require 'windows'
 
 -- Spoons!

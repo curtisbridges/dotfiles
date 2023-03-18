@@ -12,16 +12,16 @@ local function alacrittyQuake()
       appWatcher = hs.application.watcher.new(function(name, event, app)
         if event == hs.application.watcher.launched and name == APP_NAME then
           app:hide()
-          moveWindowToSpace(app, space)
+          moveAppToSpace(app, space)
           appWatcher:stop()
         end
       end)
       appWatcher:start()
     end
     if alacritty ~= nil then
-      moveWindowToSpace(alacritty, space)
+      moveAppToSpace(alacritty, space)
     end
   end
 end
 
-hs.hotkey.bind({ "shift", "command" }, "return", function() alacrittyQuake() end)
+hs.hotkey.bind(mod_app, "return", function() alacrittyQuake() end)

@@ -1,10 +1,11 @@
 # Hammerspoon Setup
 
 Hammerspoon automates your Mac using the scripting language lua.
+mod = (ctrl-opt)
 meh = (ctrl-opt-command)
 hyper = (shift-ctrl-opt-command)
 
-- [r] Reload Hammerspoon config
+- [meh-r] Reload Hammerspoon config
 - [cmd-shift-return] Quake-style Alacritty
 
 ## Window Management (12x12 grid)
@@ -20,6 +21,8 @@ hyper = (shift-ctrl-opt-command)
   - [hjkl] Push window left, down, up, right
   - [pgup,pgdown] Resize taller or shorter
   - [=,-] Resize wider, thinner
+- Move to a different space
+  -
 - Move to different screens
   - [n,p] Move to next or previous screen
   - [,.] Move to to right or left screen
