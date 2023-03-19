@@ -1,8 +1,8 @@
 -- Spoons!
 -- Download and install this _one_ spoon to autoload all the others
--- hs.loadSpoon('SpoonInstall')
--- Install = spoon.SpoonInstall
--- spoon.SpoonInstall.use_syncinstall = true
+hs.loadSpoon('SpoonInstall')
+Install = spoon.SpoonInstall
+spoon.SpoonInstall.use_syncinstall = true
 
 -- -- Window Management
 -- Install:andUse("WindowHalfsAndThirds", { config = {} })
@@ -32,5 +32,38 @@
 --   screen_left = { { "ctrl", "alt", "cmd" }, "Left" },
 --   screen_right = { { "ctrl", "alt", "cmd" }, "Right" },
 -- }
--- Install:andUse("WindowScreenLeftAndRight", {})
+-- Install:andUse("WindowScre[[enLeftAndRight", {})
 -- spoon.WindowScreenLeftAndRight:bindHotkeys(screenHotkeys)
+
+Install:andUse("URLDispatcher",
+  {
+    config = {
+      url_patterns = {
+        { "https://github.skillsoft.com/",                  WorkBrowser },
+        { "https://skillsoftartisan.slack.com/",  WorkBrowser },
+        { "https://skillsoftdev.atlassian.net/",   WorkBrowser },
+        { "https://percipio.front.develop.squads-dev.com/", WorkBrowser },
+        { "https://percipio.front.release.squads-dev.com/", WorkBrowser },
+        { "https://jenkins.rocs.io/",                       WorkBrowser },
+        { "https://percipion.qa.rocs.io/",                  WorkBrowser },
+        { "https://kubernetes.develop.squads-dev.com/",     WorkBrowser },
+        { "https://skillsoft-my.sharepoint.com/", WorkBrowser },
+        { "https://jenkins.paris-squad.com",      WorkBrowser },
+        { "msteams:",                   "com.microsoft.teams" },
+      },
+      url_redir_decoders = {
+        -- Send MS Teams URLs directly to the app
+        { "MS Teams URLs",
+          "(https://teams.microsoft.com.*)", "msteams:%1", true },
+        -- Preview incorrectly encodes the anchor
+        -- character in URLs as %23, we fix it
+        { "Fix broken Preview anchor URLs",
+          "%%23", "#", false, "Preview" },
+      },
+      default_handler = DefaultBrowser
+    },
+    start = true,
+    -- Enable debug logging if you get unexpected behavior
+    -- loglevel = 'debug'
+  }
+)

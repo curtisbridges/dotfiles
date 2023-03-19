@@ -28,3 +28,7 @@ function moveAppToSpace(app, space)
   hs.spaces.moveWindowToSpace(win, space)
   win:focus()
 end
+
+function getAppID(app)
+  return hs.application.infoForBundlePath(app)['CFBundleIdentifier']
+end
