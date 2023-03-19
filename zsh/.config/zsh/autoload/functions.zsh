@@ -57,6 +57,15 @@ function extract() {     # Handy Extract Program
     fi
 }
 
+function take {
+    mkdir -p $1
+    cd $1
+}
+
+hs () {
+ curl https://httpstat.us/$1
+}
+
 function fup() {
     echo "Updating flatpak..."
     flatpak update

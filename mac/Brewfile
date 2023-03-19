@@ -60,6 +60,7 @@ brew 'wget'                 # alternative shell web download util
 brew 'yarn'                 # alternative to npm
 brew 'youtube-dl'           # download youtube videos
 brew 'zoxide'               # a better autojump & cd combined
+brew 'zx'                   # javascript shell scripts
 
 # zsh
 brew 'zsh'

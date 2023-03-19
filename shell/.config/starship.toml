@@ -1,14 +1,27 @@
+# I want a right side prompt for typical dev envs
+format = '$all'
+right_format = '$aws$docker_context$package$java$golang$gradle$nodejs$python$ruby$rust'
+
 command_timeout = 2000
 
-add_newline = false
-# [line_break]
-# disabled = true
+add_newline = true
 
-[cmd_duration]
-min_time = 1000
+[line_break]
+disabled = false
 
 [aws]
-disabled = true
+# disabled = true
 
 [battery]
 disabled = true
+
+[jobs]
+style = "bold red"
+number_threshold = 1
+# format = "[$symbol]($style)"
+
+[git_metrics]
+disabled = false
+
+[nodejs]
+# format = "[$symbol($version)]($style)"
