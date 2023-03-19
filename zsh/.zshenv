@@ -8,7 +8,7 @@ export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
 
 # Default Apps
-export EDITOR="vim"
+export EDITOR="nvim"
 export VISUAL="code"
 export TERMINAL="alacritty"
 export BROWSER="google-chrome"
