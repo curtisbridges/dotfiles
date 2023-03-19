@@ -2,6 +2,7 @@
 -- Hammerspoon configuration file
 --
 require 'config'
+require 'app'
 require 'utils'
 require 'quake'
 require 'windows'

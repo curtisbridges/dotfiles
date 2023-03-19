@@ -1,17 +1,17 @@
 -- -------------------------------------------------------------------
 -- Window managment & Grid
 -- -------------------------------------------------------------------
-
--- https://github.com/wincent/wincent/blob/a33430e43464842c067016e507ab91abd6569948/roles/dotfiles/files/.hammerspoon/init.lua
-local lastSeenChain = nil
-local lastSeenWindow = nil
-local lastSeenAt = nil
-
+-- faster animations, default value = 0.2
 hs.window.animationDuration = .1
 
 hs.grid.setGrid '12x12'
 hs.grid.MARGINX = 0
 hs.grid.MARGINY = 0
+
+-- https://github.com/wincent/wincent/blob/a33430e43464842c067016e507ab91abd6569948/roles/dotfiles/files/.hammerspoon/init.lua
+local lastSeenChain = nil
+local lastSeenWindow = nil
+local lastSeenAt = nil
 
 local grid = {
   topHalf = '0,0 12x6',
@@ -45,44 +45,67 @@ local grid = {
 --    window to another.
 --
 local function chain(movements)
-  local chainResetInterval = 2 -- seconds
-  local cycleLength = #movements
-  local sequenceNumber = 1
+    local chainResetInterval = 2 -- seconds
+    local cycleLength = #movements
+    local sequenceNumber = 1
 
-  return function()
-    local win = hs.window.frontmostWindow()
-    local id = win:id()
-    local now = hs.timer.secondsSinceEpoch()
-    local screen = win:screen()
+    return function()
+        local win = hs.window.frontmostWindow()
+        local id = win:id()
+        local now = hs.timer.secondsSinceEpoch()
+        local screen = win:screen()
 
-    if
-        lastSeenChain ~= movements
-        or lastSeenAt < now - chainResetInterval
-        or lastSeenWindow ~= id
-    then
-      sequenceNumber = 1
-      lastSeenChain = movements
-    elseif sequenceNumber == 1 then
-      -- At end of chain, restart chain on next screen.
-      -- screen = screen:next()
+        if
+            lastSeenChain ~= movements
+            or lastSeenAt < now - chainResetInterval
+            or lastSeenWindow ~= id
+        then
+            sequenceNumber = 1
+            lastSeenChain = movements
+        -- elseif sequenceNumber == 1 then
+            -- At end of chain, restart chain on next screen.
+            -- screen = screen:next()
+        end
+        lastSeenAt = now
+        lastSeenWindow = id
+
+        hs.grid.set(win, movements[sequenceNumber], screen)
+        sequenceNumber = sequenceNumber % cycleLength + 1
     end
-    lastSeenAt = now
-    lastSeenWindow = id
+end
 
-    hs.grid.set(win, movements[sequenceNumber], screen)
-    sequenceNumber = sequenceNumber % cycleLength + 1
-  end
+-- move current window to the space sp
+function moveFocusToSpace(sp)
+  local win = hs.window.focusedWindow() -- current window
+  local cur_screen = hs.screen.mainScreen()
+  local cur_screen_id = cur_screen:getUUID()
+  local all_spaces = hs.spaces.allSpaces()
+  local spaceID = all_spaces[cur_screen_id][sp]
+
+  hs.spaces.moveWindowToSpace(win:id(), spaceID)
+  hs.spaces.gotoSpace(spaceID) -- follow window to new space
+  win:focus()
+end
+
+function moveToNextScreen()
+  local app = hs.window.focusedWindow()
+  app:moveToScreen(app:screen():next())
+  app:maximize()
+end
+
+function moveToPrevScreen()
+  local app = hs.window.focusedWindow()
+  app:moveToScreen(app:screen():previous())
+  app:maximize()
 end
 
 --
 -- Key bindings.
 --
-hs.hotkey.bind(mod_move, 'up', chain { grid.topHalf, grid.topThird, grid.topTwoThirds, })
-hs.hotkey.bind(mod_move, 'right', chain { grid.rightHalf, grid.rightThird, grid.rightTwoThirds, })
-hs.hotkey.bind(mod_move, 'down', chain { grid.bottomHalf, grid.bottomThird, grid.bottomTwoThirds, })
-hs.hotkey.bind(mod_move, 'left', chain { grid.leftHalf, grid.leftThird, grid.leftTwoThirds, })
-
-hs.hotkey.bind(mod_move, 't', chain { grid.centeredBig, grid.centeredSmall, })
+hs.hotkey.bind(mod_resize, 'up', chain { grid.topHalf, grid.topThird, grid.topTwoThirds, })
+hs.hotkey.bind(mod_resize, 'right', chain { grid.rightHalf, grid.rightThird, grid.rightTwoThirds, })
+hs.hotkey.bind(mod_resize, 'down', chain { grid.bottomHalf, grid.bottomThird, grid.bottomTwoThirds, })
+hs.hotkey.bind(mod_resize, 'left', chain { grid.leftHalf, grid.leftThird, grid.leftTwoThirds, })
 
 -- half of screen
 -- hs.hotkey.bind(meh, 'left', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 0.5, 1 }) end)
@@ -91,40 +114,39 @@ hs.hotkey.bind(mod_move, 't', chain { grid.centeredBig, grid.centeredSmall, })
 -- hs.hotkey.bind(meh, 'down', function() hs.window.focusedWindow():moveToUnit({ 0, 0.5, 1, 0.5 }) end)
 
 -- quarter of screen
-hs.hotkey.bind(mod_move, '1', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 0.5, 0.5 }) end)
-hs.hotkey.bind(mod_move, '2', function() hs.window.focusedWindow():moveToUnit({ 0.5, 0, 0.5, 0.5 }) end)
-hs.hotkey.bind(mod_move, '3', function() hs.window.focusedWindow():moveToUnit({ 0.5, 0.5, 0.5, 0.5 }) end)
-hs.hotkey.bind(mod_move, '4', function() hs.window.focusedWindow():moveToUnit({ 0, 0.5, 0.5, 0.5 }) end)
+hs.hotkey.bind(mod_resize, '1', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 0.5, 0.5 }) end)
+hs.hotkey.bind(mod_resize, '2', function() hs.window.focusedWindow():moveToUnit({ 0.5, 0, 0.5, 0.5 }) end)
+hs.hotkey.bind(mod_resize, '3', function() hs.window.focusedWindow():moveToUnit({ 0.5, 0.5, 0.5, 0.5 }) end)
+hs.hotkey.bind(mod_resize, '4', function() hs.window.focusedWindow():moveToUnit({ 0, 0.5, 0.5, 0.5 }) end)
 
 -- full screen
-hs.hotkey.bind(mod_move, 'return', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 1, 1 }) end)
-hs.hotkey.bind(mod_move, 'f', function() hs.window.focusedWindow():toggleFullScreen() end)
--- hs.hotkey.bind(mod_move, 'f', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 1, 1 }) end)
-hs.hotkey.bind(mod_move, 'z', function() hs.window.focusedWindow():toggleZoom() end)
+hs.hotkey.bind(mod_resize, 'home', chain { grid.fullScreen, grid.centeredBig, grid.centeredSmall })
+hs.hotkey.bind(mod_resize, 'f', function() hs.window.focusedWindow():toggleFullScreen() end)
+hs.hotkey.bind(mod_resize, 'z', function() hs.window.focusedWindow():toggleZoom() end)
 
 -- center screen
-hs.hotkey.bind(mod_move, 'c', function() hs.window.focusedWindow():centerOnScreen() end)
+hs.hotkey.bind(mod_resize, 'c', function() hs.window.focusedWindow():centerOnScreen() end)
 
 -- move between displays or spaces
-hs.hotkey.bind(mod_space, '.', function() hs.window.focusedWindow():moveOneScreenEast(true, true) end)
-hs.hotkey.bind(mod_space, ',', function() hs.window.focusedWindow():moveOneScreenWest(true, true) end)
-hs.hotkey.bind(mod_space, 'n', moveToNextScreen)
-hs.hotkey.bind(mod_space, 'p', moveToPrevScreen)
--- hs.hotkey.bind(mod_space, 'home', function() moveFocusedWindowToSpace(1) end)
--- hs.hotkey.bind(mod_space, 'end', function() moveFocusedWindowToSpace(4) end)
+hs.hotkey.bind(mod_move, '.', function() hs.window.focusedWindow():moveOneScreenEast(true, true) end)
+hs.hotkey.bind(mod_move, ',', function() hs.window.focusedWindow():moveOneScreenWest(true, true) end)
+hs.hotkey.bind(mod_move, 'n', moveToNextScreen)
+hs.hotkey.bind(mod_move, 'p', moveToPrevScreen)
+-- hs.hotkey.bind(mod_move, 'home', function() moveFocusToSpace(1) end)
+-- hs.hotkey.bind(mod_move, 'end', function() moveFocusToSpace(4) end)
 
 -- grid gui
 -- hs.grid.setMargins({ w = 0, h = 0 })
 -- hs.hotkey.bind(meh, 'g', hs.grid.show)
 
 -- Move Window
-hs.hotkey.bind(mod_space, 'down', hs.grid.pushWindowDown)
-hs.hotkey.bind(mod_space, 'up', hs.grid.pushWindowUp)
-hs.hotkey.bind(mod_space, 'left', hs.grid.pushWindowLeft)
-hs.hotkey.bind(mod_space, 'right', hs.grid.pushWindowRight)
+hs.hotkey.bind(mod_move, 'down', hs.grid.pushWindowDown)
+hs.hotkey.bind(mod_move, 'up', hs.grid.pushWindowUp)
+hs.hotkey.bind(mod_move, 'left', hs.grid.pushWindowLeft)
+hs.hotkey.bind(mod_move, 'right', hs.grid.pushWindowRight)
 
 -- Resize Window
-hs.hotkey.bind(mod_move, 'pagedown', hs.grid.resizeWindowShorter)
-hs.hotkey.bind(mod_move, 'pageup', hs.grid.resizeWindowTaller)
-hs.hotkey.bind(mod_move, '=', hs.grid.resizeWindowWider)
-hs.hotkey.bind(mod_move, '-', hs.grid.resizeWindowThinner)
+hs.hotkey.bind(mod_resize, 'pagedown', hs.grid.resizeWindowShorter)
+hs.hotkey.bind(mod_resize, 'pageup', hs.grid.resizeWindowTaller)
+hs.hotkey.bind(mod_resize, '=', hs.grid.resizeWindowWider)
+hs.hotkey.bind(mod_resize, '-', hs.grid.resizeWindowThinner)

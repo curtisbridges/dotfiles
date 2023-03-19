@@ -1,4 +1,4 @@
-local function alacrittyQuake()
+function alacrittyQuake()
   local APP_NAME = 'Alacritty'
   local alacritty = hs.application.get(APP_NAME)
 
@@ -23,5 +23,3 @@ local function alacrittyQuake()
     end
   end
 end
-
-hs.hotkey.bind(mod_app, "return", function() alacrittyQuake() end)
