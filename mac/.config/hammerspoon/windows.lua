@@ -1,10 +1,7 @@
 -- -------------------------------------------------------------------
 -- Window managment & Grid
 -- -------------------------------------------------------------------
--- faster animations, default value = 0.2
-hs.window.animationDuration = .1
-
-hs.grid.setGrid '12x12'
+hs.grid.setGrid '24x24'
 hs.grid.MARGINX = 0
 hs.grid.MARGINY = 0
 
@@ -14,25 +11,25 @@ local lastSeenWindow = nil
 local lastSeenAt = nil
 
 local grid = {
-  topHalf = '0,0 12x6',
-  topThird = '0,0 12x4',
-  topTwoThirds = '0,0 12x8',
-  rightHalf = '6,0 6x12',
-  rightThird = '8,0 4x12',
-  rightTwoThirds = '4,0 8x12',
-  bottomHalf = '0,6 12x6',
-  bottomThird = '0,8 12x4',
-  bottomTwoThirds = '0,4 12x8',
-  leftHalf = '0,0 6x12',
-  leftThird = '0,0 4x12',
-  leftTwoThirds = '0,0 8x12',
-  topLeft = '0,0 6x6',
-  topRight = '6,0 6x6',
-  bottomRight = '6,6 6x6',
-  bottomLeft = '0,6 6x6',
-  fullScreen = '0,0 12x12',
-  centeredBig = '3,0 6x9',
-  centeredSmall = '4,0 5x8',
+  topHalf = '0,0 24x12',
+  topThird = '0,0 24x8',
+  topTwoThirds = '0,0 24x16',
+  rightHalf = '12,0 12x24',
+  rightThird = '16,0 8x24',
+  rightTwoThirds = '8,0 18x24',
+  bottomHalf = '0,12 24x12',
+  bottomThird = '0,16 24x8',
+  bottomTwoThirds = '0,8 24x18',
+  leftHalf = '0,0 12x24',
+  leftThird = '0,0 8x24',
+  leftTwoThirds = '0,0 16x24',
+  topLeft = '0,0 12x12',
+  topRight = '12,0 12x12',
+  bottomRight = '12,12 12x12',
+  bottomLeft = '0,12 12x12',
+  fullScreen = '0,0 24x24',
+  centeredBig = '6,0 12x18',
+  centeredSmall = '7,0 11x16',
 }
 
 -- Chain the specified movement commands.
@@ -102,10 +99,10 @@ end
 --
 -- Key bindings.
 --
-hs.hotkey.bind(mod_resize, 'up', chain { grid.topHalf, grid.topThird, grid.topTwoThirds, })
-hs.hotkey.bind(mod_resize, 'right', chain { grid.rightHalf, grid.rightThird, grid.rightTwoThirds, })
-hs.hotkey.bind(mod_resize, 'down', chain { grid.bottomHalf, grid.bottomThird, grid.bottomTwoThirds, })
-hs.hotkey.bind(mod_resize, 'left', chain { grid.leftHalf, grid.leftThird, grid.leftTwoThirds, })
+hs.hotkey.bind(meh, 'up', chain { grid.topHalf, grid.topThird, grid.topTwoThirds, })
+hs.hotkey.bind(meh, 'right', chain { grid.rightHalf, grid.rightThird, grid.rightTwoThirds, })
+hs.hotkey.bind(meh, 'down', chain { grid.bottomHalf, grid.bottomThird, grid.bottomTwoThirds, })
+hs.hotkey.bind(meh, 'left', chain { grid.leftHalf, grid.leftThird, grid.leftTwoThirds, })
 
 -- half of screen
 -- hs.hotkey.bind(meh, 'left', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 0.5, 1 }) end)
@@ -114,26 +111,31 @@ hs.hotkey.bind(mod_resize, 'left', chain { grid.leftHalf, grid.leftThird, grid.l
 -- hs.hotkey.bind(meh, 'down', function() hs.window.focusedWindow():moveToUnit({ 0, 0.5, 1, 0.5 }) end)
 
 -- quarter of screen
-hs.hotkey.bind(mod_resize, '1', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 0.5, 0.5 }) end)
-hs.hotkey.bind(mod_resize, '2', function() hs.window.focusedWindow():moveToUnit({ 0.5, 0, 0.5, 0.5 }) end)
-hs.hotkey.bind(mod_resize, '3', function() hs.window.focusedWindow():moveToUnit({ 0.5, 0.5, 0.5, 0.5 }) end)
-hs.hotkey.bind(mod_resize, '4', function() hs.window.focusedWindow():moveToUnit({ 0, 0.5, 0.5, 0.5 }) end)
+hs.hotkey.bind(meh, '1', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 0.5, 0.5 }) end)
+hs.hotkey.bind(meh, '2', function() hs.window.focusedWindow():moveToUnit({ 0.5, 0, 0.5, 0.5 }) end)
+hs.hotkey.bind(meh, '3', function() hs.window.focusedWindow():moveToUnit({ 0.5, 0.5, 0.5, 0.5 }) end)
+hs.hotkey.bind(meh, '4', function() hs.window.focusedWindow():moveToUnit({ 0, 0.5, 0.5, 0.5 }) end)
 
 -- full screen
-hs.hotkey.bind(mod_resize, 'home', chain { grid.fullScreen, grid.centeredBig, grid.centeredSmall })
-hs.hotkey.bind(mod_resize, 'f', function() hs.window.focusedWindow():toggleFullScreen() end)
-hs.hotkey.bind(mod_resize, 'z', function() hs.window.focusedWindow():toggleZoom() end)
+hs.hotkey.bind(meh, '\\', chain { grid.fullScreen, grid.centeredBig, grid.centeredSmall })
+hs.hotkey.bind(meh, 'f', function() hs.window.focusedWindow():toggleFullScreen() end)
+hs.hotkey.bind(meh, 'z', function() hs.window.focusedWindow():toggleZoom() end)
 
 -- center screen
-hs.hotkey.bind(mod_resize, 'c', function() hs.window.focusedWindow():centerOnScreen() end)
+hs.hotkey.bind(meh, 'home', function() hs.window.focusedWindow():moveToUnit({ 0.3, 0.0, 0.45, 0.65 }) end)
+hs.hotkey.bind(meh, 'c', function() hs.window.focusedWindow():centerOnScreen() end)
 
--- move between displays or spaces
+-- move between displays
 hs.hotkey.bind(mod_move, '.', function() hs.window.focusedWindow():moveOneScreenEast(true, true) end)
 hs.hotkey.bind(mod_move, ',', function() hs.window.focusedWindow():moveOneScreenWest(true, true) end)
 hs.hotkey.bind(mod_move, 'n', moveToNextScreen)
 hs.hotkey.bind(mod_move, 'p', moveToPrevScreen)
--- hs.hotkey.bind(mod_move, 'home', function() moveFocusToSpace(1) end)
--- hs.hotkey.bind(mod_move, 'end', function() moveFocusToSpace(4) end)
+
+-- move between spaces
+hs.hotkey.bind(hyper, '1', function() moveFocusToSpace(1) end)
+hs.hotkey.bind(hyper, '2', function() moveFocusToSpace(2) end)
+hs.hotkey.bind(hyper, '3', function() moveFocusToSpace(3) end)
+hs.hotkey.bind(hyper, '4', function() moveFocusToSpace(4) end)
 
 -- grid gui
 -- hs.grid.setMargins({ w = 0, h = 0 })
@@ -146,7 +148,7 @@ hs.hotkey.bind(mod_move, 'left', hs.grid.pushWindowLeft)
 hs.hotkey.bind(mod_move, 'right', hs.grid.pushWindowRight)
 
 -- Resize Window
-hs.hotkey.bind(mod_resize, 'pagedown', hs.grid.resizeWindowShorter)
-hs.hotkey.bind(mod_resize, 'pageup', hs.grid.resizeWindowTaller)
-hs.hotkey.bind(mod_resize, '=', hs.grid.resizeWindowWider)
-hs.hotkey.bind(mod_resize, '-', hs.grid.resizeWindowThinner)
+hs.hotkey.bind(meh, 'pagedown', hs.grid.resizeWindowShorter)
+hs.hotkey.bind(meh, 'pageup', hs.grid.resizeWindowTaller)
+hs.hotkey.bind(meh, '=', hs.grid.resizeWindowWider)
+hs.hotkey.bind(meh, '-', hs.grid.resizeWindowThinner)

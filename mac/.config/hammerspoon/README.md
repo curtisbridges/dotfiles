@@ -7,11 +7,11 @@ meh = (ctrl-opt-command)
 hyper = (shift-ctrl-opt-command)
 
 ## Global Hotkeys
-- [meh-r] Reload Hammerspoon config
-- [meh-c] Show Hammerspoon console
-- [mod_move-return] Quake-style Alacritty
+- [hyper-r] Reload Hammerspoon config
+- [hyper-c] Show Hammerspoon console
+- [meh-return] Quake-style Alacritty
 
-## Window Management (12x12 grid)
+## Window Management (24x24 grid)
 - [mod_resize] Resize
 - [mod_move] Move on current space & screen:
   - [f] Toggle full screen
@@ -34,3 +34,36 @@ hyper = (shift-ctrl-opt-command)
 - Close (cmd-w) and Hide Windows (cmd-h)
 - Screenshot (cmd-shift-3,4,5) (`/Applications/Utilities/Screenshot.app`)
 - 1Password (cmd-\)
+
+
+## ~~Window Management - WindowHalfsAndThirds~~
+```json
+{
+  left_half    = { { "ctrl", "cmd" }, "Left" },
+  right_half   = { { "ctrl", "cmd" }, "Right" },
+  top_half     = { { "ctrl", "cmd" }, "Up" },
+  bottom_half  = { { "ctrl", "cmd" }, "Down" },
+  third_left   = { { "ctrl", "alt" }, "Left" },
+  third_right  = { { "ctrl", "alt" }, "Right" },
+  third_up     = { { "ctrl", "alt" }, "Up" },
+  third_down   = { { "ctrl", "alt" }, "Down" },
+  top_left     = { { "ctrl", "cmd" }, "1" },
+  top_right    = { { "ctrl", "cmd" }, "2" },
+  bottom_left  = { { "ctrl", "cmd" }, "3" },
+  bottom_right = { { "ctrl", "cmd" }, "4" },
+  max_toggle   = { { "ctrl", "cmd" }, "f" },
+  max          = { { "ctrl", "alt", "cmd" }, "Up" },
+  undo         = { { "ctrl", "cmd" }, "forwarddelete" },
+  center       = { { "ctrl", "cmd" }, "c" },
+  larger       = { { "ctrl", "alt", "cmd" }, "=" },
+  smaller      = { { "ctrl", "alt", "cmd" }, "-" },
+}
+ ```
+
+## ~~Screen Management - WindowScreenLeftAndRight~~
+```json
+{
+  screen_left = { { "ctrl", "alt", "cmd" }, "Left" },
+  screen_right = { { "ctrl", "alt", "cmd" }, "Right" },
+}
+```

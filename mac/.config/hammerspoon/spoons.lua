@@ -1,0 +1,36 @@
+-- Spoons!
+-- Download and install this _one_ spoon to autoload all the others
+-- hs.loadSpoon('SpoonInstall')
+-- Install = spoon.SpoonInstall
+-- spoon.SpoonInstall.use_syncinstall = true
+
+-- -- Window Management
+-- Install:andUse("WindowHalfsAndThirds", { config = {} })
+-- local windowHotkeys = {
+--   left_half    = { { "ctrl", "cmd" }, "Left" },
+--   right_half   = { { "ctrl", "cmd" }, "Right" },
+--   top_half     = { { "ctrl", "cmd" }, "Up" },
+--   bottom_half  = { { "ctrl", "cmd" }, "Down" },
+--   third_left   = { { "ctrl", "alt" }, "Left" },
+--   third_right  = { { "ctrl", "alt" }, "Right" },
+--   third_up     = { { "ctrl", "alt" }, "Up" },
+--   third_down   = { { "ctrl", "alt" }, "Down" },
+--   top_left     = { { "ctrl", "cmd" }, "1" },
+--   top_right    = { { "ctrl", "cmd" }, "2" },
+--   bottom_left  = { { "ctrl", "cmd" }, "3" },
+--   bottom_right = { { "ctrl", "cmd" }, "4" },
+--   max_toggle   = { { "ctrl", "cmd" }, "f" },
+--   max          = { { "ctrl", "alt", "cmd" }, "Up" },
+--   undo         = { { "ctrl", "cmd" }, "forwarddelete" },
+--   center       = { { "ctrl", "cmd" }, "c" },
+--   larger       = { { "ctrl", "alt", "cmd" }, "=" },
+--   smaller      = { { "ctrl", "alt", "cmd" }, "-" },
+-- }
+-- spoon.WindowHalfsAndThirds:bindHotkeys(windowHotkeys)
+
+-- local screenHotkeys = {
+--   screen_left = { { "ctrl", "alt", "cmd" }, "Left" },
+--   screen_right = { { "ctrl", "alt", "cmd" }, "Right" },
+-- }
+-- Install:andUse("WindowScreenLeftAndRight", {})
+-- spoon.WindowScreenLeftAndRight:bindHotkeys(screenHotkeys)
