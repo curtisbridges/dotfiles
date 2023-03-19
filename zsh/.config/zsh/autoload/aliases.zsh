@@ -10,7 +10,6 @@ alias up=uptime
 alias vim=nvim
 alias yt=youtube-dl
 alias yt4=youtube-dl --format mp4
-alias nv=volta
 
 # post-pended aliases
 alias -g F='| fzf'
@@ -43,3 +42,8 @@ alias gupd='git stash && git fetch && git rebase $(git_develop_branch) && git st
 alias gupm='git stash && git fetch && git rebase $(git_main_branch) && git stash pop'
 
 alias todo='git grep -l TODO | xargs -n1 git blame -f -n -w | grep "$(git config user.name)" | grep TODO | sed "s/.\{9\}//" | sed "s/(.*)[[:space:]]*//"'
+
+## Visual Studio Code
+alias vsc='code .'
+alias vscn='code --new-window'
+alias vscw='code --wait'
