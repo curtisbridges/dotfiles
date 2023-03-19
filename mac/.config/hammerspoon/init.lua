@@ -18,4 +18,5 @@ require 'windows'
 
 -- show Hammerspoon loaded
 hs.hotkey.bind(meh, 'r', function() hs.reload() end)
+hs.hotkey.bind(meh, 'c', hs.toggleConsole)
 hs.alert('Hammerspoon loaded')

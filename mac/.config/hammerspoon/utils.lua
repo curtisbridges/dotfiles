@@ -45,3 +45,15 @@ function moveFocusedWindowToSpace(sp)
   hs.spaces.gotoSpace(spaceID) -- follow window to new space
   win:focus()
 end
+
+function moveToNextScreen()
+  local app = hs.window.focusedWindow()
+  app:moveToScreen(app:screen():next())
+  app:maximize()
+end
+
+function moveToPrevScreen()
+  local app = hs.window.focusedWindow()
+  app:moveToScreen(app:screen():previous())
+  app:maximize()
+end

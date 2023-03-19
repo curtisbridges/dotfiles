@@ -77,7 +77,6 @@ end
 --
 -- Key bindings.
 --
-
 hs.hotkey.bind(mod_move, 'up', chain { grid.topHalf, grid.topThird, grid.topTwoThirds, })
 hs.hotkey.bind(mod_move, 'right', chain { grid.rightHalf, grid.rightThird, grid.rightTwoThirds, })
 hs.hotkey.bind(mod_move, 'down', chain { grid.bottomHalf, grid.bottomThird, grid.bottomTwoThirds, })
@@ -109,18 +108,8 @@ hs.hotkey.bind(mod_move, 'c', function() hs.window.focusedWindow():centerOnScree
 -- move between displays or spaces
 hs.hotkey.bind(mod_space, '.', function() hs.window.focusedWindow():moveOneScreenEast(true, true) end)
 hs.hotkey.bind(mod_space, ',', function() hs.window.focusedWindow():moveOneScreenWest(true, true) end)
--- hs.hotkey.bind(mod_space, 'n',
---   function()
---     local win = hs.window.focusedWindow()
---     local screen = win:screen():next()
---     win:moveToScreen(screen, true, true)
---   end)
--- hs.hotkey.bind(mod_space, 'p',
---   function()
---     local win = hs.window.focusedWindow()
---     local screen = win:screen():previous()
---     win:moveToScreen(screen, true, true)
---   end)
+hs.hotkey.bind(mod_space, 'n', moveToNextScreen)
+hs.hotkey.bind(mod_space, 'p', moveToPrevScreen)
 -- hs.hotkey.bind(mod_space, 'home', function() moveFocusedWindowToSpace(1) end)
 -- hs.hotkey.bind(mod_space, 'end', function() moveFocusedWindowToSpace(4) end)
 

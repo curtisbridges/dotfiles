@@ -1,7 +1,9 @@
 # Hammerspoon Setup
 
 Hammerspoon automates your Mac using the scripting language lua.
-mod = (ctrl-opt)
+mod_app = (cmd-shift)
+mod_move = (ctrl-opt)
+mod_space = (ctrl-cmd)
 meh = (ctrl-opt-command)
 hyper = (shift-ctrl-opt-command)
 
