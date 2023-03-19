@@ -4,6 +4,7 @@ tap 'homebrew/command-not-found'
 tap 'homebrew/cask'              # Only works on macOS
 tap 'homebrew/cask-fonts'        # Only works on macOS
 # tap 'koekeishiya/formulae'       # for yabai+skhd, only on macOS
+tap jakehilborn/jakehilborn
 
 # Brews
 brew 'ack'                  # code search tool
@@ -21,6 +22,7 @@ brew 'ffmpeg'               # audio/visual conversion tool
 brew 'fish'                 # alternative shell (not POSIX compliant)
 brew 'fortune'              # words of wisdom
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
+brew 'displayplacer'        # xrandr for Mac
 brew 'gh'                   # GitHub
 brew 'git'                  # source control
 brew 'go'                   # Go lang
