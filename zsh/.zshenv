@@ -1,6 +1,6 @@
 # this is the bare bones setup to move everything to XDG dir
 ZDOTDIR=$HOME/.config/zsh
-export TERM=xterm-256color
+export TERM=screen-256color
 
 # Other XDG paths
 export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}

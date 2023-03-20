@@ -33,6 +33,7 @@ brew 'httpie'               # curl replacement
 brew 'jq'                   # json formatter
 brew 'jump'                 # directory jumper (see also autojump)
 brew 'lua'                  # Scripting language, extraordinaire!
+brew 'luarocks'             # Lua package manager
 brew 'macos-trash'          # utility to leverage the trashcan from the shell
 # brew 'trash-cli'            # linux equivalent of macos-trash
 brew 'neofetch'             # graphical system summary

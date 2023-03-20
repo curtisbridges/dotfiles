@@ -20,6 +20,8 @@ vim.opt.smartindent = true
 
 vim.cmd [[ set noswapfile ]]
 
+vim.opt.clipboard = 'unnamed'
+
 --Line numbers
 vim.wo.number = true
 vim.opt.relativenumber = true

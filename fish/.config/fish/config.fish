@@ -13,7 +13,7 @@ source $(brew --prefix)/opt/asdf/asdf.fish
 
 ### EXPORT ###
 set fish_greeting                         # Supresses fish's intro message
-set TERM "xterm-256color"                 # Sets the terminal type
+set TERM "screen-256color"                 # Sets the terminal type
 set EDITOR "nvim"                         # $EDITOR use vim in terminal
 set VISUAL "code -nw"                     # $VISUAL use VS Code in GUI mode
 set -Ux XDG_DATA_HOME $HOME/.config
