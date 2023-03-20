@@ -25,3 +25,4 @@ WorkBrowser = chromeBrowser
 
 -- Binds
 hs.hotkey.bind(meh, "return", function() alacrittyQuake() end)
+hs.hotkey.bind(meh, "space", function() alacrittyQuake() end)
