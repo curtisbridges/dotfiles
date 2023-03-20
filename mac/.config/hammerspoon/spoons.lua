@@ -39,26 +39,17 @@ Install:andUse("URLDispatcher",
   {
     config = {
       url_patterns = {
+        { "https://*.skillsoft.com/",                       WorkBrowser },
         { "https://github.skillsoft.com/",                  WorkBrowser },
-        { "https://skillsoftartisan.slack.com/",  WorkBrowser },
-        { "https://skillsoftdev.atlassian.net/",   WorkBrowser },
+        { "https://skillsoftartisan.slack.com/",            WorkBrowser },
+        { "https://skillsoftdev.atlassian.net/",            WorkBrowser },
         { "https://percipio.front.develop.squads-dev.com/", WorkBrowser },
         { "https://percipio.front.release.squads-dev.com/", WorkBrowser },
         { "https://jenkins.rocs.io/",                       WorkBrowser },
         { "https://percipion.qa.rocs.io/",                  WorkBrowser },
         { "https://kubernetes.develop.squads-dev.com/",     WorkBrowser },
-        { "https://skillsoft-my.sharepoint.com/", WorkBrowser },
-        { "https://jenkins.paris-squad.com",      WorkBrowser },
-        { "msteams:",                   "com.microsoft.teams" },
-      },
-      url_redir_decoders = {
-        -- Send MS Teams URLs directly to the app
-        { "MS Teams URLs",
-          "(https://teams.microsoft.com.*)", "msteams:%1", true },
-        -- Preview incorrectly encodes the anchor
-        -- character in URLs as %23, we fix it
-        { "Fix broken Preview anchor URLs",
-          "%%23", "#", false, "Preview" },
+        { "https://skillsoft-my.sharepoint.com/",           WorkBrowser },
+        { "https://jenkins.paris-squad.com",                WorkBrowser },
       },
       default_handler = DefaultBrowser
     },

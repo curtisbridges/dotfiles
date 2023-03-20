@@ -108,7 +108,3 @@ function javahome() {
   export JAVA_HOME=$(/usr/libexec/java_home -v "$1");
   java -version
 }
-
-function fixdisplays() {
-  displayplacer "id:C0578CB1-69BC-4BF2-8AC9-9CB77A53922F res:2560x1440 hz:60 color_depth:8 scaling:on origin:(0,0) degree:0" "id:EE1EACBC-71DD-4752-82F2-653E163EDA1E res:1080x1920 hz:60 color_depth:8 scaling:on origin:(2560,-142) degree:90" "id:BACB7C4B-0DD2-44CB-A8B8-4C30E5DF7240 res:1080x1920 hz:60 color_depth:8 scaling:on origin:(-1080,-93) degree:270"
-}
