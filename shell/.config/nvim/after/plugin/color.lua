@@ -1,4 +1,5 @@
 vim.opt.background = 'dark'
+vim.opt.termguicolors = true
 
 require('onedark').setup  {
   -- Main options --
