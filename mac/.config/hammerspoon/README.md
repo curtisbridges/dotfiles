@@ -28,6 +28,10 @@ hyper = (shift-ctrl-opt-command)
   - [n,p] Move to next or previous screen
   - [,.] Move to to right or left screen
 
+### Target Behavoir
+Some keys will use absolute positioning.
+Arrow keys move windows. When a window's side is on a screen edge, the window position should be sticky. The arrow keys will grow/shrink from there.
+
 ## Other important macOS shortcuts
 - Expose (ctrl-esc)
 - Spaces (ctrl 1-4), (ctrl-left, ctrl-right)
