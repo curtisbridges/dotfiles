@@ -15,12 +15,16 @@ local grid = {
   topThird = '0,0 24x8',
   topTwoThirds = '0,0 24x16',
   rightHalf = '12,0 12x24',
+  rightHalfMedium = '13,1 9x20',
+  rightHalfSmall = '13,1 8x16',
   rightThird = '16,0 8x24',
   rightTwoThirds = '8,0 18x24',
   bottomHalf = '0,12 24x12',
   bottomThird = '0,16 24x8',
   bottomTwoThirds = '0,8 24x18',
   leftHalf = '0,0 12x24',
+  leftHalfMedium = '3,1 9x20',
+  leftHalfSmall = '4,1 8x16',
   leftThird = '0,0 8x24',
   leftTwoThirds = '0,0 16x24',
   topLeft = '0,0 12x12',
@@ -29,7 +33,8 @@ local grid = {
   bottomLeft = '0,12 12x12',
   fullScreen = '0,0 24x24',
   centeredBig = '6,0 12x18',
-  centeredSmall = '7,0 11x16',
+  centeredMedium = '7,0 10x15',
+  centeredSmall = '8,0 8x12',
 }
 
 -- Chain the specified movement commands.
@@ -105,6 +110,8 @@ hs.hotkey.bind(meh, 'down', chain { grid.bottomHalf, grid.bottomThird, grid.bott
 hs.hotkey.bind(meh, 'left', chain { grid.leftHalf, grid.leftThird, grid.leftTwoThirds, })
 
 -- half of screen
+hs.hotkey.bind(meh, '[', chain { grid.leftHalf, grid.leftHalfMedium, grid.leftHalfSmall, })
+hs.hotkey.bind(meh, ']', chain { grid.rightHalf, grid.rightHalfMedium, grid.rightHalfSmall, })
 -- hs.hotkey.bind(meh, 'left', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 0.5, 1 }) end)
 -- hs.hotkey.bind(meh, 'right', function() hs.window.focusedWindow():moveToUnit({ 0.5, 0, 0.5, 1 }) end)
 -- hs.hotkey.bind(meh, 'up', function() hs.window.focusedWindow():moveToUnit({ 0, 0, 1, 0.5 }) end)
@@ -117,7 +124,7 @@ hs.hotkey.bind(meh, '3', function() hs.window.focusedWindow():moveToUnit({ 0.5, 
 hs.hotkey.bind(meh, '4', function() hs.window.focusedWindow():moveToUnit({ 0, 0.5, 0.5, 0.5 }) end)
 
 -- full screen
-hs.hotkey.bind(meh, '\\', chain { grid.fullScreen, grid.centeredBig, grid.centeredSmall })
+hs.hotkey.bind(meh, '\\', chain { grid.centeredBig, grid.centeredMedium, grid.centeredSmall })
 hs.hotkey.bind(meh, 'f', function() hs.window.focusedWindow():toggleFullScreen() end)
 hs.hotkey.bind(meh, 'z', function() hs.window.focusedWindow():toggleZoom() end)
 
@@ -148,7 +155,7 @@ hs.hotkey.bind(mod_move, 'left', hs.grid.pushWindowLeft)
 hs.hotkey.bind(mod_move, 'right', hs.grid.pushWindowRight)
 
 -- Resize Window
-hs.hotkey.bind(meh, 'pagedown', hs.grid.resizeWindowShorter)
-hs.hotkey.bind(meh, 'pageup', hs.grid.resizeWindowTaller)
+hs.hotkey.bind(meh, 'pageup', hs.grid.resizeWindowShorter)
+hs.hotkey.bind(meh, 'pagedown', hs.grid.resizeWindowTaller)
 hs.hotkey.bind(meh, '=', hs.grid.resizeWindowWider)
 hs.hotkey.bind(meh, '-', hs.grid.resizeWindowThinner)
