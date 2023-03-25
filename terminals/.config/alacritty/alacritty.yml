@@ -41,6 +41,8 @@ window:
   #     - buttonless: Neither borders nor title bar. Square corners.
   decorations: buttonless
 
+  # decorations_theme_variant: Light/Dark/None
+
   # Startup Mode (changes require restart)
   #
   # Values for `startup_mode`:
@@ -144,7 +146,7 @@ key_bindings:
   #- { key: Comma,     mods: Command, command:
   #    {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}     }
   # Disabled the above since the open command uses default file association, which is Xcode!
-  - { key: N,         mods: Command, action: SpawnNewInstance             }
+  # - { key: N,         mods: Command, action: SpawnNewInstance             }
   - { key: Return,    mods: Command, action: ToggleMaximized              }
   - { key: Space,     mods: Alt,     chars: " "                           }
   - { key: Back,      mods: Super,   chars: "\x15"                        } # delete word/line
