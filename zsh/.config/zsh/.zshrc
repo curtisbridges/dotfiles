@@ -29,7 +29,7 @@ SAVEHIST=1000
 # Configure OMZ
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.local/share/oh-my-zsh"
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 DISABLE_MAGIC_FUNCTIONS="true"
 COMPLETION_WAITING_DOTS="true"
 
@@ -77,6 +77,7 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 autoload -Uz compinit && compinit
 
 # Use homebrew installed starship prompt
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 # Prevent duplicate entries in PATH
