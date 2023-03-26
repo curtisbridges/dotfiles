@@ -15,16 +15,16 @@ local grid = {
   topThird = '0,0 24x8',
   topTwoThirds = '0,0 24x16',
   rightHalf = '12,0 12x24',
-  rightHalfMedium = '13,1 9x20',
-  rightHalfSmall = '13,1 8x16',
+  rightHalfMedium = '13,2 9x20',
+  rightHalfSmall = '13,2 8x16',
   rightThird = '16,0 8x24',
   rightTwoThirds = '8,0 18x24',
   bottomHalf = '0,12 24x12',
   bottomThird = '0,16 24x8',
   bottomTwoThirds = '0,8 24x18',
   leftHalf = '0,0 12x24',
-  leftHalfMedium = '3,1 9x20',
-  leftHalfSmall = '4,1 8x16',
+  leftHalfMedium = '3,2 9x20',
+  leftHalfSmall = '3,2 8x16',
   leftThird = '0,0 8x24',
   leftTwoThirds = '0,0 16x24',
   topLeft = '0,0 12x12',
@@ -126,6 +126,7 @@ hs.hotkey.bind(meh, '4', function() hs.window.focusedWindow():moveToUnit({ 0, 0.
 -- full screen
 hs.hotkey.bind(meh, '\\', chain { grid.centeredBig, grid.centeredMedium, grid.centeredSmall })
 hs.hotkey.bind(meh, 'f', function() hs.window.focusedWindow():toggleFullScreen() end)
+hs.hotkey.bind(meh, 'm', chain { grid.fullScreen })
 hs.hotkey.bind(meh, 'z', function() hs.window.focusedWindow():toggleZoom() end)
 
 -- center screen
