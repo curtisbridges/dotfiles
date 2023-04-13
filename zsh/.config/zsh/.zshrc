@@ -82,3 +82,8 @@ eval "$(starship init zsh)"
 
 # Prevent duplicate entries in PATH
 typeset -U PATH
+
+# for config_file (${ZDOTDIR:-$HOME}/after/*.zsh)
+# do
+#   source $config_file
+# done
