@@ -125,6 +125,7 @@ hs.hotkey.bind(meh, '4', function() hs.window.focusedWindow():moveToUnit({ 0, 0.
 
 -- full screen
 hs.hotkey.bind(meh, '\\', chain { grid.centeredBig, grid.centeredMedium, grid.centeredSmall })
+hs.hotkey.bind(meh, 'return', function() hs.window.focusedWindow():toggleFullScreen() end)
 hs.hotkey.bind(meh, 'f', function() hs.window.focusedWindow():toggleFullScreen() end)
 hs.hotkey.bind(meh, 'm', chain { grid.fullScreen })
 hs.hotkey.bind(meh, 'z', function() hs.window.focusedWindow():toggleZoom() end)
@@ -134,16 +135,16 @@ hs.hotkey.bind(meh, 'home', function() hs.window.focusedWindow():moveToUnit({ 0.
 hs.hotkey.bind(meh, 'c', function() hs.window.focusedWindow():centerOnScreen() end)
 
 -- move between displays
-hs.hotkey.bind(mod_move, '.', function() hs.window.focusedWindow():moveOneScreenEast(true, true) end)
-hs.hotkey.bind(mod_move, ',', function() hs.window.focusedWindow():moveOneScreenWest(true, true) end)
-hs.hotkey.bind(mod_move, 'n', moveToNextScreen)
-hs.hotkey.bind(mod_move, 'p', moveToPrevScreen)
+hs.hotkey.bind(meh, '.', function() hs.window.focusedWindow():moveOneScreenEast(true, true) end)
+hs.hotkey.bind(meh, ',', function() hs.window.focusedWindow():moveOneScreenWest(true, true) end)
+hs.hotkey.bind(meh, 'n', moveToNextScreen)
+hs.hotkey.bind(meh, 'p', moveToPrevScreen)
 
 -- move between spaces
-hs.hotkey.bind(hyper, '1', function() moveFocusToSpace(1) end)
-hs.hotkey.bind(hyper, '2', function() moveFocusToSpace(2) end)
-hs.hotkey.bind(hyper, '3', function() moveFocusToSpace(3) end)
-hs.hotkey.bind(hyper, '4', function() moveFocusToSpace(4) end)
+hs.hotkey.bind(mod_move, '1', function() moveFocusToSpace(1) end)
+hs.hotkey.bind(mod_move, '2', function() moveFocusToSpace(2) end)
+hs.hotkey.bind(mod_move, '3', function() moveFocusToSpace(3) end)
+hs.hotkey.bind(mod_move, '4', function() moveFocusToSpace(4) end)
 
 -- grid gui
 -- hs.grid.setMargins({ w = 0, h = 0 })
@@ -160,3 +161,9 @@ hs.hotkey.bind(meh, 'pageup', hs.grid.resizeWindowShorter)
 hs.hotkey.bind(meh, 'pagedown', hs.grid.resizeWindowTaller)
 hs.hotkey.bind(meh, '=', hs.grid.resizeWindowWider)
 hs.hotkey.bind(meh, '-', hs.grid.resizeWindowThinner)
+
+-- Change Focus
+hs.hotkey.bind(mod_focus, 'left', function() hs.window.focusWindowWest() end)
+hs.hotkey.bind(mod_focus, 'up', function() hs.window.focusWindowNorth() end)
+hs.hotkey.bind(mod_focus, 'down', function() hs.window.focusWindowSouth() end)
+hs.hotkey.bind(mod_focus, 'right', function() hs.window.focusWindowEast() end)

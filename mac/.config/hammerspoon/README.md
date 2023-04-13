@@ -1,7 +1,7 @@
 # Hammerspoon Setup
 
 Hammerspoon automates your Mac using the scripting language lua.
-mod_resize = (ctrl-opt)
+mod_focus = (ctrl-opt)
 mod_move = (ctrl-cmd)
 meh = (ctrl-opt-command)
 hyper = (shift-ctrl-opt-command)
@@ -12,6 +12,7 @@ hyper = (shift-ctrl-opt-command)
 - [meh-return] Quake-style Alacritty
 
 ## Window Management (24x24 grid)
+- [mod_focus] Focus (TBD)
 - [mod_resize] Resize
 - [mod_move] Move on current space & screen:
   - [f] Toggle full screen

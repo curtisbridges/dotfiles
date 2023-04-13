@@ -4,9 +4,9 @@ hyper = { '⌘', '⌥', '⇧', '⌃' } -- caps lock held down (karabiner hyper)
 
 -- universal modifiers
 mod = { '⌥' }
-mod_resize = { '⌘', '⌃' }
+mod_focus = { '⌘', '⌃' }
 mod_move = { '⌥', '⌃' }
-mod_focus = { '⌥', '⌘' }
+mod_resize = { '⌥', '⌘' }
 
 MACBOOK_MONITOR = 'Built-in Retina Display'
 MAIN_MONITOR = 'DELL U3219Q'
@@ -24,5 +24,4 @@ DefaultBrowser = safariBrowser
 WorkBrowser = chromeBrowser
 
 -- Binds
-hs.hotkey.bind(meh, "return", function() alacrittyQuake() end)
 hs.hotkey.bind(meh, "space", function() alacrittyQuake() end)
