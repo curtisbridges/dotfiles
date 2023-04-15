@@ -4,6 +4,7 @@
   ],
   "Lua.diagnostics.globals": [
     "hs",
-    "spoon"
+    "spoon",
+    "vim"
   ]
 }
