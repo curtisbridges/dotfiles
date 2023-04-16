@@ -97,7 +97,7 @@ cask 'hammerspoon'            # programmable mac automation
 # cask 'openaudible'            # download / process audible content
 # cask 'pocket-casts'           # podcast player
 cask 'postman'                # work with REST APIs
-# cask 'rectangle'              # window management
+cask 'rectangle'              # window management
 cask 'slack'                  # workplace comms
 # cask 'spotify'                # music streaming
 # cask 'transmit'               # ftp/sftp/etc app

@@ -3,9 +3,9 @@
 --
 require 'app'
 require 'config'
-require 'utils'
+-- require 'utils'
 require 'quake'
-require 'windows'
+-- require 'windows'
 -- require 'spoons'
 
 -- show Hammerspoon loaded

@@ -104,6 +104,7 @@ end
 --
 -- Key bindings.
 --
+-- hs.hotkey.bind(meh, 'up', chain { grid.topHalf, grid.topThird, grid.topTwoThirds, })
 hs.hotkey.bind(meh, 'up', chain { grid.topHalf, grid.topThird, grid.topTwoThirds, })
 hs.hotkey.bind(meh, 'right', chain { grid.rightHalf, grid.rightThird, grid.rightTwoThirds, })
 hs.hotkey.bind(meh, 'down', chain { grid.bottomHalf, grid.bottomThird, grid.bottomTwoThirds, })
