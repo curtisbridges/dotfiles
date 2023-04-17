@@ -4,7 +4,6 @@ tap 'homebrew/command-not-found'
 tap 'homebrew/cask'              # Only works on macOS
 tap 'homebrew/cask-fonts'        # Only works on macOS
 # tap 'koekeishiya/formulae'       # for yabai+skhd, only on macOS
-tap jakehilborn/jakehilborn
 
 # Brews
 brew 'ack'                  # code search tool
@@ -73,14 +72,10 @@ brew 'zsh-you-should-use'
 # Casks (Note: Only works on macOS)
 cask '1password'              # password manager
 cask 'alacritty'              # gpu accelerated terminal
-# cask 'temurin'                # java jdk for m1+
-# cask 'aerial'                 # picturesque screensaver
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
 cask 'balenaetcher'           # USB ISO creator
-# cask 'boop'                   # Scriptable text engine
 # cask 'calibre'                # ebook utilities
-# cask 'dash'                   # developer docks
 cask 'discord'                # alternate comms
 cask 'docker'                 # container software
 cask 'figma'                  # design software
@@ -91,19 +86,12 @@ cask 'hammerspoon'            # programmable mac automation
 # cask 'kaleidoscope'           # Rich diffs
 # cask 'karabiner-elements'     # low-level keyboard and mouse control
 # cask 'krita'                  # open source paint app
-# cask 'maestral'               # open source dropbox replacement
-# cask 'microsoft-outlook'      # Microsoft Outlook (for work)
 # cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
-# cask 'pocket-casts'           # podcast player
 cask 'postman'                # work with REST APIs
 cask 'rectangle'              # window management
 cask 'slack'                  # workplace comms
-# cask 'spotify'                # music streaming
-# cask 'transmit'               # ftp/sftp/etc app
-# cask 'twitch'                 # live coding!
 # cask 'typora'                 # markdown editor
-# cask 'utm'                    # Virtual machines UI using QEMU
 cask 'visual-studio-code'     # Microsoft cross-platform editor
 
 # Fonts
