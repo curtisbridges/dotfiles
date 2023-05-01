@@ -21,7 +21,6 @@ brew 'ffmpeg'               # audio/visual conversion tool
 brew 'fish'                 # alternative shell (not POSIX compliant)
 brew 'fortune'              # words of wisdom
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
-brew 'displayplacer'        # xrandr for Mac
 brew 'gh'                   # GitHub
 brew 'git'                  # source control
 brew 'go'                   # Go lang
@@ -53,7 +52,6 @@ brew 'tldr'                 # a more concise man replacement
 brew 'tmux'                 # terminal multiplexer (not yet used)
 brew 'tmuxinator'           # tmux projects
 brew 'tree'                 # directory tree
-# brew 'volta'                # node version manager
 brew 'wget'                 # alternative shell web download util
 # brew 'yabai'                # tiling window manager
 brew 'yarn'                 # alternative to npm
