@@ -1,7 +1,0 @@
-require("cmb.plugin_config.colorscheme")
-require("cmb.plugin_config.completions")
-require("cmb.plugin_config.lsp_config")
-require("cmb.plugin_config.mason")
-require("cmb.plugin_config.telescope")
-require("cmb.plugin_config.treesitter")
-require("cmb.plugin_config.vim-test")
