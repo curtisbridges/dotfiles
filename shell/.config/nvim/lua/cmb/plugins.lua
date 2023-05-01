@@ -15,6 +15,7 @@ local plugins = {
   -- 'wbthomason/packer.nvim',
   'ellisonleao/gruvbox.nvim',
   'navarasu/onedark.nvim',
+  'folke/tokyonight.nvim',
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
   'nvim-treesitter/nvim-treesitter',

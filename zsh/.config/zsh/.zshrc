@@ -67,7 +67,7 @@ plugins=(
 )
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
-ZSH_THEME=""  # disable because I handle my own themes
+# ZSH_THEME=""  # disable because I handle my own themes
 
 # TODO Make this directory loader a function
 # automatic loading code

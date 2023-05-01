@@ -14,9 +14,10 @@ require('onedark').setup  {
 }
 require('lualine').setup {
   options = {
-    theme = 'onedark'
+    -- theme = 'onedark'
+    theme = 'tokyonight'
     -- ... your lualine config
   }
 }
 
-vim.cmd('colorscheme onedark')
+vim.cmd('colorscheme tokyonight')
