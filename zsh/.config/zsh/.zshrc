@@ -1,6 +1,11 @@
 # Curtis Bridges (curtis@curtisbridges.com)
 # ZSH config
 
+if [ -n "$TMUX" ]; then
+  PATH=""
+  source /etc/zprofile
+fi
+
 export KEYTIMEOUT=1
 
 # options
@@ -42,6 +47,8 @@ ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
 ZSH_TMUX_UNICODE=true
 ZSH_TMUX_FIXTERM=true
 export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux/plugins"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+NVM_HOMEBREW=$(brew --prefix nvm)
 
 # oh-my-zsh plugins
 plugins=(
@@ -54,6 +61,7 @@ plugins=(
   nvm
   vi-mode tmux
   fzf
+  starship
   web-search
   zoxide
 )
@@ -77,8 +85,7 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 autoload -Uz compinit && compinit
 
 # Use homebrew installed starship prompt
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # Prevent duplicate entries in PATH
 typeset -U PATH
