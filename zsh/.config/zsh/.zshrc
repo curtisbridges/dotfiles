@@ -56,15 +56,16 @@ plugins=(
   autojump
   command-not-found
   common-aliases
+  fzf
   git git-extras git-flow
   macos
   nvm
   vi-mode tmux
-  fzf
   starship
   web-search
   zoxide
 )
+
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
 # ZSH_THEME=""  # disable because I handle my own themes
