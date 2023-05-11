@@ -73,6 +73,7 @@ cask 'alacritty'              # gpu accelerated terminal
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
 # cask 'balenaetcher'           # USB ISO creator
+# cask 'caldigit-docking-utility' # dock app
 # cask 'calibre'                # ebook utilities
 cask 'discord'                # alternate comms
 cask 'docker'                 # container software
