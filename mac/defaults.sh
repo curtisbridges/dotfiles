@@ -108,6 +108,9 @@ defaults write com.apple.finder EmptyTrashSecurely -bool true
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
+# Disable play buttons on file icons
+defaults write com.apple.finder QLInlinePreviewMinimumSupportedSize -int 512
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################

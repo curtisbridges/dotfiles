@@ -33,10 +33,17 @@ function zsh_completion() {
     if [ "$2" = true ] && compinit "${completion_file:1}"
 }
 
+function clean() {
+    filter="${1:-snapshot}"
+    git status --porcelain | awk '($1 != "??") {print $2}' | grep "$filter" | xargs git checkout --
+}
+
 #
 # Handy command line utilities
 #
-function extract() {     # Handy Extract Program
+
+# Handy Extract Program
+function extract() {
     if [ -f $1 ] ; then
         case $1 in
             *.tar.bz2)   tar xvjf $1     ;;
@@ -62,8 +69,9 @@ function take {
     cd $1
 }
 
+# HTTP Status lookup
 hs () {
- curl https://httpstat.us/$1
+    curl https://httpstat.us/$1
 }
 
 function fup() {
