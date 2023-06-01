@@ -8,7 +8,6 @@ tap 'homebrew/cask-fonts'        # Only works on macOS
 # Brews
 brew 'ack'                  # code search tool
 brew 'ag'                   # another code search tool
-# brew 'asdf'                 # toolchain versioner
 brew 'autojump'             # jump to directories fast!
 brew 'awscli'               # AWS cli client
 brew 'bat'                  # a 'cat' replacement with syntax highlighting and paging
@@ -21,7 +20,6 @@ brew 'ffmpeg'               # audio/visual conversion tool
 brew 'fish'                 # alternative shell (not POSIX compliant)
 brew 'fortune'              # words of wisdom
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
-# brew 'gh'                   # GitHub
 brew 'git'                  # source control
 brew 'go'                   # Go lang
 brew 'git-flow'             # standard git workflows
