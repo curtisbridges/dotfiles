@@ -1,0 +1,13 @@
+# Lines starting with # are comments
+
+# Always extract audio
+-x
+
+# Do not copy the mtime
+--no-mtime
+
+# Use this proxy
+# --proxy 127.0.0.1:3128
+
+# Save all videos under Downloads directory in your home directory
+-o ~/Downloads/%(title)s.%(ext)s

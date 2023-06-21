@@ -79,6 +79,7 @@ cask 'docker'                 # container software
 cask 'firefox'                # open source web browser
 # cask 'github'                 # github client
 cask 'hammerspoon'            # programmable mac automation
+cask 'handbrake'              # video encoder
 # cask 'iterm2'                 # a more feature-rich terminal
 # cask 'kaleidoscope'           # Rich diffs
 # cask 'karabiner-elements'     # low-level keyboard and mouse control

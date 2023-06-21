@@ -8,8 +8,8 @@ alias nf=neofetch
 alias ping='prettyping --nolegend'
 alias up=uptime
 alias vim=nvim
-alias yt=youtube-dl
-alias yt4=youtube-dl --format mp4
+alias yt=yt-dlp
+alias yt4=yt-dlp --format mp4
 
 # post-pended aliases
 alias -g F='| fzf'
