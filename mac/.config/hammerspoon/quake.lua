@@ -1,5 +1,5 @@
 function alacrittyQuake()
-  local APP_NAME = 'kitty'
+  local APP_NAME = 'Alacritty'
   local alacritty = hs.application.get(APP_NAME)
 
   if alacritty ~= nil and alacritty:isFrontmost() then
