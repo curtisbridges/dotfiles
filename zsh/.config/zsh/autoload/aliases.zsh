@@ -27,7 +27,7 @@ alias lS='exa -1'                                                    # one colum
 alias lt='exa --tree --level=2'                                      # tree
 
 # might as well go all in
-alias cd='z'
+# alias cd='z'
 alias zz='z -'
 
 # Debug PATH
