@@ -168,6 +168,13 @@ key_bindings:
   - { key: Key9, mods: Command, chars: "\x00\x39" }
   - { key: Key0, mods: Command, chars: "\x00\x40" }
 
+  # Tmux switch pane
+  #  Default: alt-arrow to move, cmd-arrow to resize
+  - { key: Left,     mods: Command,     chars: "\x00\x1b[1;3D" }
+  - { key: Right,    mods: Command,     chars: "\x00\x1b[1;3C" }
+  - { key: Up,       mods: Command,     chars: "\x00\x1b[1;3A" }
+  - { key: Down,     mods: Command,     chars: "\x00\x1b[1;3B" }
+
 # shell:
 #   program: /opt/homebrew/bin/fish
 #   args:
