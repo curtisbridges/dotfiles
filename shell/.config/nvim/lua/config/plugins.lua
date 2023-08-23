@@ -69,6 +69,14 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     run = ":TSUpdate",
   },
-  'p00f/nvim-ts-rainbow',
   'nvim-treesitter/playground',
+  'HiPhish/rainbow-delimiters.nvim',
+  'windwp/nvim-autopairs', -- Autopairs, integrates with both cmp and treesitter
+
+  -- Comments
+  'numToStr/Comment.nvim', -- Easily comment stuff
+  'JoosepAlviste/nvim-ts-context-commentstring',
+
+  -- Git
+  'lewis6991/gitsigns.nvim',
 })
