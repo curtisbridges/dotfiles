@@ -3,5 +3,5 @@ if not status_ok then
   return
 end
 
-require "cmb.lsp.mason"
-require("cmb.lsp.handlers").setup()
+require "cmb.plugins.lsp.mason"
+require("cmb.plugins.lsp.handlers").setup()
