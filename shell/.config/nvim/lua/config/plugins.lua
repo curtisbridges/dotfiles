@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = ' ' -- Make sure to set `mapleader` before lazy so your mappings are correct
 
 require('lazy').setup({
+  -- Colorschemes
   {
     'folke/tokyonight.nvim',
     lazy = false,
@@ -27,8 +28,8 @@ require('lazy').setup({
     },
   },
   'folke/which-key.nvim',
-  -- { 'folke/neoconf.nvim', cmd = 'Neoconf' },
-  -- 'folke/neodev.nvim',
+
+  -- UI (bufferlines and statuslines)
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons', opt = true },
@@ -37,7 +38,19 @@ require('lazy').setup({
       theme = 'auto',
     }
   },
+  {
+    'akinsho/bufferline.nvim',
+    version = "*",
+    dependencies = 'nvim-tree/nvim-web-devicons'
+  },
   'christoomey/vim-tmux-navigator',
+
+  -- Tree
+  {
+    'kyazdani42/nvim-web-devicons',
+    name = 'kyazdani42-nvim-web-devicons'
+  },
+  'kyazdani42/nvim-tree.lua',
 
   -- nvim-lua
   'nvim-lua/popup.nvim', -- An implementation of the Popup API from vim in Neovim
@@ -48,9 +61,9 @@ require('lazy').setup({
   'hrsh7th/cmp-buffer', -- buffer completions
   'hrsh7th/cmp-path', -- path completions
   'hrsh7th/cmp-cmdline', -- cmdline completions
-  'saadparwaiz1/cmp_luasnip', -- snippet completions
   'hrsh7th/cmp-nvim-lsp',
   'hrsh7th/cmp-nvim-lua',
+  'saadparwaiz1/cmp_luasnip', -- snippet completions
 
   -- snippets
   'L3MON4D3/LuaSnip', --snippet engine
