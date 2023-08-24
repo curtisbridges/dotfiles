@@ -8,21 +8,37 @@ vim.opt.termguicolors = true
 -- empty setup using defaults
 require("nvim-tree").setup()
 
+-- configure global height and width for float size
+local gwidth = vim.api.nvim_list_uis()[1].width
+local gheight = vim.api.nvim_list_uis()[1].height
+local width = math.floor(gwidth * 0.6)
+local height = math.floor(gheight * 0.8)
+
 -- OR setup with some options
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
-    width = 30,
+    width = width,
+    height = height,
+    float = {
+      enable = true,
+      open_win_config = {
+        relative = "editor",
+        width = width,
+        height = height,
+        row = (gheight - height) / 2,
+        col = (gwidth - width) / 2,
+      }
+    }
   },
   renderer = {
     group_empty = true,
   },
   filters = {
-    dotfiles = true,
+    -- dotfiles = false,
+    git_ignored = true,
   },
 })
-
-
 
 -- following options are the default
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`

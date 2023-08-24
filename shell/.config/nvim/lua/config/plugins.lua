@@ -52,6 +52,8 @@ require('lazy').setup({
   },
   'kyazdani42/nvim-tree.lua',
 
+  'akinsho/toggleterm.nvim',
+
   -- nvim-lua
   'nvim-lua/popup.nvim', -- An implementation of the Popup API from vim in Neovim
   'nvim-lua/plenary.nvim', -- Useful lua functions used ny lots of plugins
