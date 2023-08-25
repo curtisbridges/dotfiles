@@ -6,17 +6,5 @@ fish_variables
 
 completions/
 generated_completions/
-
-conf.d/asdf_direnv.fish
-conf.d/autopair.fish
-conf.d/fzf.fish
-conf.d/git.fish
-conf.d/tmux*
-conf.d/z.fish
-
-functions/fisher.fish
-functions/_autopair*
-functions/*fzf*
-functions/*z*
-functions/*git*
-functions/g*
+conf.d/
+functions/
