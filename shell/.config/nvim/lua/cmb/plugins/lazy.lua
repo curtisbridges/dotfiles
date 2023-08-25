@@ -27,6 +27,7 @@ require('lazy').setup({
       terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
     },
   },
+  'folke/todo-comments.nvim',
   'folke/trouble.nvim',
   'folke/which-key.nvim',
   'folke/zen-mode.nvim',

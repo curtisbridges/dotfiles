@@ -101,5 +101,12 @@ vim.keymap.set("n", "<leader>xq", function() require("trouble").open("quickfix")
 vim.keymap.set("n", "<leader>xl", function() require("trouble").open("loclist") end)
 vim.keymap.set("n", "gR", function() require("trouble").open("lsp_references") end)
 
+-- todo
+vim.keymap.set("n", "]t", function() require("todo-comments").jump_next() end, { desc = "Next todo comment" })
+vim.keymap.set("n", "[t", function() require("todo-comments").jump_prev() end, { desc = "Previous todo comment" })
+vim.keymap.set("n", "<leader>xt", "<cmd>TodoTrouble<cr>", { desc = "Todo (Trouble)" })
+vim.keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Telescope TODOs" })
+vim.keymap.set("n", "<leader>tq", "<cmd>TodoQuickFix<cr>", { desc = "QuickFix TODOs" })
+
 -- zenmode
 vim.keymap.set('n', '<leader>zm', '<cmd>ZenMode<cr>', { silent = true })
