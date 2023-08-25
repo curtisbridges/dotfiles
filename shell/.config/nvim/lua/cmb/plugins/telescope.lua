@@ -13,6 +13,9 @@ telescope.setup {
     prompt_prefix = ' ',
     selection_caret = ' ',
     path_display = { 'smart' },
+    file_ignore_patterns = {
+      '.git/'
+    },
 
     mappings = {
       i = {
@@ -48,6 +51,8 @@ telescope.setup {
 
       n = {
         ['<esc>'] = actions.close,
+        ['q'] = actions.close,
+
         ['<CR>'] = actions.select_default,
         ['<C-x>'] = actions.select_horizontal,
         ['<C-v>'] = actions.select_vertical,
