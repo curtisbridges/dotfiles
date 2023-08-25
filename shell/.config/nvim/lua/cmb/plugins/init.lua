@@ -15,3 +15,4 @@ require 'cmb.plugins.bufferline'
 require 'cmb.plugins.toggleterm'
 
 require 'cmb.plugins.dashboard'
+require 'cmb.plugins.zenmode'
