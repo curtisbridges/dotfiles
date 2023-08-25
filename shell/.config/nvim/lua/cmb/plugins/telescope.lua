@@ -18,6 +18,13 @@ telescope.setup {
       '.DS_STORE',
     },
 
+    --[[ find_command = { ]]
+    --[[   "rg", ]]
+    --[[   "--no-ignore-vcs", ]]
+    --[[   "--hidden", ]]
+    --[[   "--smart-case", ]]
+    --[[ }, ]]
+
     mappings = {
       i = {
         ['<Esc>'] = actions.close,
@@ -86,7 +93,7 @@ telescope.setup {
       },
     },
   },
-  -- pickers = {
+  pickers = {
     -- Default configuration for builtin pickers goes here:
     -- picker_name = {
     --   picker_config_key = value,
@@ -94,7 +101,12 @@ telescope.setup {
     -- }
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
-  -- },
+    live_grep = {
+      additional_args = function(opts)
+        return {'--hidden', '--no-ignore-vcs'}
+      end
+    },
+  },
   extensions = {
     -- Your extension configuration goes here:
     -- extension_name = {
