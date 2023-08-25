@@ -28,6 +28,7 @@ require('lazy').setup({
     },
   },
   'folke/which-key.nvim',
+  'folke/zen-mode.nvim',
 
   -- UI (bufferlines and statuslines)
   {
