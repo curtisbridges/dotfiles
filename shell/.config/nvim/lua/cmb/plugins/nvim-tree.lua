@@ -16,28 +16,28 @@ local height = math.floor(gheight * 0.8)
 
 -- OR setup with some options
 require("nvim-tree").setup({
-  sort_by = "case_sensitive",
-  view = {
-    width = width,
-    height = height,
-    float = {
-      enable = true,
-      open_win_config = {
-        relative = "editor",
+    sort_by = "case_sensitive",
+    view = {
         width = width,
         height = height,
-        row = (gheight - height) / 2,
-        col = (gwidth - width) / 2,
-      }
-    }
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    -- dotfiles = false,
-    git_ignored = true,
-  },
+        float = {
+            enable = true,
+            open_win_config = {
+                relative = "editor",
+                width = width,
+                height = height,
+                row = (gheight - height) / 2,
+                col = (gwidth - width) / 2,
+            }
+        }
+    },
+    renderer = {
+        group_empty = true,
+    },
+    filters = {
+        -- dotfiles = false,
+        git_ignored = true,
+    },
 })
 
 -- following options are the default
@@ -99,9 +99,9 @@ nvim_tree.setup {
         mappings = {
             custom_only = false,
             list = {
-            { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
-            { key = "h", cb = tree_cb "close_node" },
-            { key = "v", cb = tree_cb "vsplit" },
+                { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
+                { key = "h", cb = tree_cb "close_node" },
+                { key = "v", cb = tree_cb "vsplit" },
             },
         },
         number = false,
@@ -144,3 +144,18 @@ nvim_tree.setup {
         }
     }
 }
+
+
+--[[ vim.api.nvim_create_autocmd({ "VimResized" }, { ]]
+--[[     desc = "Resize nvim-tree if nvim window got resized", ]]
+--[[]]
+--[[     group = vim.api.nvim_create_augroup("NvimTreeResize", { clear = true }), ]]
+--[[     callback = function() ]]
+--[[         local percentage = 15 ]]
+--[[]]
+--[[         local ratio = percentage / 100 ]]
+--[[         local width = math.floor(vim.go.columns * ratio) ]]
+--[[         vim.cmd("tabdo NvimTreeResize " .. width) ]]
+--[[     end, ]]
+--[[ }) ]]
+

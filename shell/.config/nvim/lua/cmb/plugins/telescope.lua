@@ -14,11 +14,14 @@ telescope.setup {
     selection_caret = ' ',
     path_display = { 'smart' },
     file_ignore_patterns = {
-      '.git/'
+      '.git/',
+      'node_modules/',
+      '.DS_STORE',
     },
 
     mappings = {
       i = {
+        ['<Esc>'] = actions.close,
         ['<C-n>'] = actions.cycle_history_next,
         ['<C-p>'] = actions.cycle_history_prev,
 
@@ -50,7 +53,7 @@ telescope.setup {
       },
 
       n = {
-        ['<esc>'] = actions.close,
+        ['<Esc>'] = actions.close,
         ['q'] = actions.close,
 
         ['<CR>'] = actions.select_default,

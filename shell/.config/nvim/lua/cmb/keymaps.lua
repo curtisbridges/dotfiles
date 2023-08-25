@@ -53,6 +53,9 @@ keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 -- don't replace yanked text with visual selection on paste
 keymap("v", "p", '"_dP', opts)
 
+-- clear highlight search manually
+vim.keymap.set('n', '<Esc><Esc>', function() vim.cmd('noh') end, opts)
+
 -- Visual Block --
 -- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
@@ -82,3 +85,10 @@ keymap("n", "<leader>gs", "<cmd>Telescope git_status<cr>", { desc = "Show curren
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- Comments
+vim.keymap.set("n", "<C-/>", function() require('Comment.api').toggle.linewise.current() end, { noremap = true, silent = true })
+vim.keymap.set('n', '<C-/>', 'gcc', { remap = true })
+vim.keymap.set('v', '<C-/>', 'gc',  { remap = true })
+
+

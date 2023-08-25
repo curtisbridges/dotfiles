@@ -93,8 +93,6 @@ font:
   # Font size
   size: 14.0
 
-  AppleFontSmoothing: true
-
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
@@ -139,7 +137,10 @@ hints:
   modifiers: Command
 
 key_bindings:
+  # These are mostly macOS hacks to resolve key binds that don't work.
   - { key: Space, mods: Control, chars: "\x00" }
+  - { key: Slash, mods: Control, chars: "\x1f" }
+  - { key: Q, mods: Control, chars: "\x11" }
 
   ## MacOS friendly keybinds for tmux
   # New (tmux) Window
