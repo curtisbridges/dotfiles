@@ -6,6 +6,7 @@ end
 telescope.load_extension('media_files')
 
 local actions = require('telescope.actions')
+local trouble = require("trouble.providers.telescope")
 
 telescope.setup {
   defaults = {
@@ -56,6 +57,7 @@ telescope.setup {
         ['<M-q>'] = actions.send_selected_to_qflist + actions.open_qflist,
         ['<C-l>'] = actions.complete_tag,
         ['<C-_>'] = actions.which_key, -- keys from pressing <C-/>
+        ["<c-t>"] = trouble.open_with_trouble,
       },
 
       n = {
@@ -89,6 +91,8 @@ telescope.setup {
         ['<PageUp>'] = actions.results_scrolling_up,
         ['<PageDown>'] = actions.results_scrolling_down,
 
+        ["<c-t>"] = trouble.open_with_trouble,
+
         ['?'] = actions.which_key,
       },
     },
@@ -102,7 +106,7 @@ telescope.setup {
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
     live_grep = {
-      additional_args = function(opts)
+      additional_args = function()
         return {'--hidden', '--no-ignore-vcs'}
       end
     },
