@@ -13,3 +13,5 @@ require 'cmb.plugins.gitsigns'
 require 'cmb.plugins.nvim-tree'
 require 'cmb.plugins.bufferline'
 require 'cmb.plugins.toggleterm'
+
+require 'cmb.plugins.dashboard'

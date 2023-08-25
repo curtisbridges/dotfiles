@@ -29,6 +29,7 @@ require('lazy').setup({
   },
   'folke/which-key.nvim',
   'folke/zen-mode.nvim',
+  'tpope/vim-surround', -- allow you to change surround ('cs')
 
   -- UI (bufferlines and statuslines)
   {
@@ -44,7 +45,18 @@ require('lazy').setup({
     version = "*",
     dependencies = 'nvim-tree/nvim-web-devicons'
   },
-  'christoomey/vim-tmux-navigator',
+  {
+    'glepnir/dashboard-nvim',
+    event = 'VimEnter',
+    -- config = function()
+    --   require('dashboard').setup {
+    --     -- config
+    --   }
+    -- end,
+    dependencies = { {'nvim-tree/nvim-web-devicons'}}
+  },
+  -- TODO configure this to use alt key instread of ctrl for macOS compatibility
+  'christoomey/vim-tmux-navigator', -- keybinds for tmux and vim integration
 
   -- Tree
   {
@@ -75,6 +87,8 @@ require('lazy').setup({
   'neovim/nvim-lspconfig', -- enable LSP
   'williamboman/mason.nvim', -- simple to use language server installer
   'williamboman/mason-lspconfig.nvim', -- simple to use language server installer
+
+  'prettier/vim-prettier', -- formatting
 
   -- Telescope
   'nvim-telescope/telescope.nvim',

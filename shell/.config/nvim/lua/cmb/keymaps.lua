@@ -91,4 +91,5 @@ vim.keymap.set("n", "<C-/>", function() require('Comment.api').toggle.linewise.c
 vim.keymap.set('n', '<C-/>', 'gcc', { remap = true })
 vim.keymap.set('v', '<C-/>', 'gc',  { remap = true })
 
-
+-- zenmode
+vim.keymap.set('n', '<leader>zm', '<cmd>ZenMode<cr>', { silent = true })
