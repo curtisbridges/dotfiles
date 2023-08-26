@@ -15,6 +15,7 @@ telescope.setup {
     path_display = { 'smart' },
     file_ignore_patterns = {
       '.git/',
+      'yarn.lock',
       'node_modules/',
       '.DS_STORE',
     },
@@ -105,6 +106,9 @@ telescope.setup {
     -- }
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
+    find_files = {
+      hidden = true
+    },
     live_grep = {
       additional_args = function()
         return {'--hidden', '--no-ignore-vcs'}

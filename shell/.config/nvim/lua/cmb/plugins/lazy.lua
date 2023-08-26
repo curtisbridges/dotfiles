@@ -44,7 +44,7 @@ require('lazy').setup({
   },
   {
     'akinsho/bufferline.nvim',
-    version = "*",
+    version = '*',
     dependencies = 'nvim-tree/nvim-web-devicons'
   },
   {
@@ -94,16 +94,28 @@ require('lazy').setup({
   -- Treesitter
   {
     'nvim-treesitter/nvim-treesitter',
-    run = ":TSUpdate",
+    run = ':TSUpdate',
   },
+  'nvim-treesitter/nvim-treesitter-context',
   'nvim-treesitter/playground',
   'HiPhish/rainbow-delimiters.nvim',
   'windwp/nvim-autopairs', -- Autopairs, integrates with both cmp and treesitter
+  'axelvc/template-string.nvim',
 
   -- Comments
   'numToStr/Comment.nvim', -- Easily comment stuff
-  'JoosepAlviste/nvim-ts-context-commentstring',
 
   -- Git
   'lewis6991/gitsigns.nvim',
+
+  -- coding
+  'jose-elias-alvarez/typescript.nvim',
+  'jose-elias-alvarez/null-ls.nvim',
+  {
+    'nvim-treesitter/nvim-treesitter',
+    dependencies = {
+      'JoosepAlviste/nvim-ts-context-commentstring',
+    },
+  },
+  'JoosepAlviste/nvim-ts-context-commentstring',
 })

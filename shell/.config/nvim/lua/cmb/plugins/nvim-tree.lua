@@ -38,6 +38,9 @@ require("nvim-tree").setup({
         -- dotfiles = false,
         git_ignored = true,
     },
+    git = {
+        enable = true,
+    },
 })
 
 -- following options are the default
@@ -158,4 +161,3 @@ nvim_tree.setup {
 --[[         vim.cmd("tabdo NvimTreeResize " .. width) ]]
 --[[     end, ]]
 --[[ }) ]]
-
