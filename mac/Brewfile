@@ -8,7 +8,6 @@ tap 'homebrew/cask-fonts'        # Only works on macOS
 # Brews
 brew 'ack'                  # code search tool
 brew 'ag'                   # another code search tool
-brew 'autojump'             # jump to directories fast!
 brew 'awscli'               # AWS cli client
 brew 'bat'                  # a 'cat' replacement with syntax highlighting and paging
 brew 'diff-so-fancy'        # a better diff
@@ -21,13 +20,12 @@ brew 'fish'                 # alternative shell (not POSIX compliant)
 brew 'fortune'              # words of wisdom
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
 brew 'git'                  # source control
-brew 'go'                   # Go lang
-brew 'git-flow'             # standard git workflows
+# brew 'go'                   # Go lang
+# brew 'git-flow'             # standard git workflows
 brew 'gpg'                  # encryption utils
 brew 'htop'                 # system stats
 brew 'httpie'               # curl replacement
 brew 'jq'                   # json formatter
-brew 'jump'                 # directory jumper (see also autojump)
 brew 'lua'                  # Scripting language, extraordinaire!
 brew 'luarocks'             # Lua package manager
 brew 'macos-trash'          # utility to leverage the trashcan from the shell
@@ -41,7 +39,7 @@ brew 'openssl'              # ssl utilities
 brew 'prettyping'           # a better ping
 brew 'readline'             # dunno
 brew 'ripgrep'              # a faster grep
-brew 'rust'                 # Rust lang
+# brew 'rust'                 # Rust lang
 # brew 'skhd'                 # keyboard shortcuts
 brew 'starship'             # The best prompt for any shell
 brew 'stow'                 # dotfile installation utility
