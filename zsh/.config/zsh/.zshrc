@@ -53,14 +53,14 @@ NVM_HOMEBREW=$(brew --prefix nvm)
 # oh-my-zsh plugins
 plugins=(
   aliases
-  autojump
   command-not-found
   common-aliases
   fzf
   git git-extras git-flow
   macos
   nvm
-  vi-mode tmux
+  vi-mode
+  tmux
   starship
   web-search
   zoxide

@@ -69,6 +69,11 @@ function take {
     cd $1
 }
 
+# find shorthand
+function f() {
+	find . -name "$1" 2>&1 | grep -v 'Permission denied'
+}
+
 # HTTP Status lookup
 hs () {
     curl https://httpstat.us/$1
