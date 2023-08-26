@@ -17,9 +17,9 @@ window:
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
-  dimensions:
-    columns: 120
-    lines: 50
+  # dimensions:
+  #   columns: 120
+  #   lines: 50
 
   padding:
     x: 5
@@ -52,7 +52,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  startup_mode: Maximized
+  startup_mode: Windowed
 
   # Window title
   #title: Alacritty
@@ -149,12 +149,23 @@ key_bindings:
   # Disabled the above since the open command uses default file association, which is Xcode!
   # - { key: N,         mods: Command, action: SpawnNewInstance             }
   - { key: Return,    mods: Command, action: ToggleMaximized              }
-  - { key: Space,     mods: Alt,     chars: " "                           }
+  # - { key: Space,     mods: Alt,     chars: " "                           }
+
+  # Does't work? (not compatible with vi-mode)
   # - { key: Back,      mods: Super,   chars: "\x15"                        } # delete word/line
   # - { key: Left,      mods: Alt,     chars: "\x1bb"                       } # one word left
   # - { key: Right,     mods: Alt,     chars: "\x1bf"                       } # one word right
   # - { key: Left,      mods: Command, chars: "\x1bOH",   mode: AppCursor   } # Home
   # - { key: Right,     mods: Command, chars: "\x1bOF",   mode: AppCursor   } # End
+
+  # Does't work? (not compatible with vi-mode)
+  # - { key: Left,     mods: Alt,     chars: "\x1bb"                       } # Skip word left
+  # - { key: Right,    mods: Alt,     chars: "\x1bf"                       } # Skip word right
+  # - { key: Left,     mods: Command, chars: "\x1bOH",   mode: AppCursor   } # Home
+  # - { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   } # End
+  # - { key: Back,     mods: Command, chars: "\x15"                        } # Delete line
+  # - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                    } # Delete word
+
   - { key: T,         mods: Command, chars: "\x00\x63" }
 
   # Select window 1-9, macOS style (for tmux, assumes ctrl-space tmux key)
@@ -171,10 +182,10 @@ key_bindings:
 
   # Tmux switch pane
   #  Default: alt-arrow to move, cmd-arrow to resize
-  - { key: Left,     mods: Command,     chars: "\x00\x1b[1;3D" }
-  - { key: Right,    mods: Command,     chars: "\x00\x1b[1;3C" }
-  - { key: Up,       mods: Command,     chars: "\x00\x1b[1;3A" }
-  - { key: Down,     mods: Command,     chars: "\x00\x1b[1;3B" }
+  # - { key: Left,     mods: Command,     chars: "\x00\x1b[1;3D" }
+  # - { key: Right,    mods: Command,     chars: "\x00\x1b[1;3C" }
+  # - { key: Up,       mods: Command,     chars: "\x00\x1b[1;3A" }
+  # - { key: Down,     mods: Command,     chars: "\x00\x1b[1;3B" }
 
 # shell:
 #   program: /opt/homebrew/bin/fish
