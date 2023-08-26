@@ -79,8 +79,8 @@ done
 
 # Recent directory stack
 # TODO: Needs work, seems to be off-by-one
-alias d='dirs -v'
-for index ({1..9}) alias "$index"="cd +${index}"; unset index
+# alias d='dirs -v'
+# for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
 # completions
 autoload -Uz compinit && compinit
