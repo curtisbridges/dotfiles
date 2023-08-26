@@ -1,9 +1,0 @@
-pane	dev	1	1	:*	1	front	:/Users/csbridges/Developer/Skillsoft/front	1	fish	:/usr/local/bin/fish
-pane	dev	2	0	:-	1	ui	:/Users/csbridges/Developer/Skillsoft/ui	1	fish	:/usr/local/bin/fish
-pane	home	1	0	:-	1	csbridges	:/Users/csbridges	1	fish	:/usr/local/bin/fish
-pane	home	2	1	:*	1	dotfiles	:/Users/csbridges/dotfiles	1	fish	:/usr/local/bin/fish
-window	dev	1	:front	1	:*	cefe,120x49,0,0,1	:
-window	dev	2	:ui	0	:-	ceff,120x49,0,0,2	:
-window	home	1	:~	0	:-	cf00,120x49,0,0,3	off
-window	home	2	:dotfiles	1	:*	cf01,120x49,0,0,4	off
-state	home	dev
