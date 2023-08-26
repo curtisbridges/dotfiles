@@ -46,10 +46,10 @@ alias todo='git grep -l TODO | xargs -n1 git blame -f -n -w | grep "$(git config
 ## Vim (Neovim)
 alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
 
-## Visual Studio Code
-alias vsc='code .'
-alias vscn='code --new-window'
-alias vscw='code --wait'
+## Visual Studio Code - replaced by omz plugin
+# alias vsc='code .'
+# alias vscn='code --new-window'
+# alias vscw='code --wait'
 
 # Unalias the common-aliases for these commends (from omz plugin common-aliases)
 unalias rm

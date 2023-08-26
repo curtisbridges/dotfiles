@@ -55,13 +55,17 @@ plugins=(
   aliases
   command-not-found
   common-aliases
+  docker
   fzf
-  git git-extras git-flow
+  git
+  jira # o lord
   macos
+  node
   nvm
-  vi-mode
-  tmux
   starship
+  tmux
+  vi-mode
+  vscode
   web-search
   zoxide
 )
