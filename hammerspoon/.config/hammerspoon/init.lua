@@ -7,7 +7,6 @@ require 'config'
 require 'quake'
 -- require 'windows'
 -- require 'spoons'
-require 'keyboard'
 
 -- show Hammerspoon loaded
 -- hs.hotkey.bind(hyper, 'r', function() hs.reload() end)
