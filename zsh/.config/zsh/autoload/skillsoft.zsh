@@ -4,5 +4,6 @@ export AWS_PROFILE=dre
 
 # front build script
 alias do='node ./scripts/do'
+alias rmowner='git checkout -- .github/CODEOWNERS ownership/codeowners.yaml'
 
 export USER_TERMINAL=Alacritty
