@@ -50,6 +50,13 @@ export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux/plugins"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 NVM_HOMEBREW=$(brew --prefix nvm)
 
+# Bun!
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/Users/cmb/.bun/_bun" ] && source "/Users/cmb/.bun/_bun"
+
 # oh-my-zsh plugins
 plugins=(
   aliases
