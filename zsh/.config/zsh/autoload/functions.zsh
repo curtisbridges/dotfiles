@@ -87,6 +87,7 @@ function fup() {
 function nup() {
     echo "Updating global npm packages..."
     npm i -g npm && npm update -g
+    bun upgrade
 }
 
 function bup() {

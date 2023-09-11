@@ -15,3 +15,6 @@ export VISUAL="code"
 export TERMINAL="alacritty"
 export BROWSER="google-chrome"
 export PAGER="less"
+
+# bun completions
+[ -s "/Users/cmb/.bun/_bun" ] && source "/Users/cmb/.bun/_bun"
