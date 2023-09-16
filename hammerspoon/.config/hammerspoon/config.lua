@@ -16,12 +16,8 @@ THIRD_MONITOR = 'DELL U2723QE (2)'
 -- faster animations, default value = 0.2
 hs.window.animationDuration = .1
 
--- browsers
--- chromeBrowser = getAppID('/Applications/Google Chrome.app')
--- safariBrowser = getAppID('/Applications/Safari.app')
-
--- DefaultBrowser = safariBrowser
--- WorkBrowser = chromeBrowser
-
 -- Binds
-hs.hotkey.bind(meh, "space", function() alacrittyQuake() end)
+hs.hotkey.bind(meh, "space", function() quakeTerminal() end)
+
+-- Apps
+TERMINAL_APP = 'Alacritty'

@@ -1,13 +1,17 @@
-function alacrittyQuake()
-  local APP_NAME = 'Alacritty'
-  local alacritty = hs.application.get(APP_NAME)
+---@diagnostic disable: need-check-nil
+function quakeTerminal()
+  local APP_NAME = TERMINAL_APP
+  if APP_NAME == nil then
+    APP_NAME = 'Alacritty'
+  end
 
-  if alacritty ~= nil and alacritty:isFrontmost() then
-    alacritty:hide()
+  local terminal = hs.application.get(APP_NAME)
+
+  if terminal ~= nil and terminal:isFrontmost() then
+    terminal:hide()
   else
-
     local space = hs.spaces.activeSpaceOnScreen()
-    if alacritty == nil and hs.application.launchOrFocus(APP_NAME) then
+    if terminal == nil and hs.application.launchOrFocus(APP_NAME) then
       local appWatcher = nil
       appWatcher = hs.application.watcher.new(function(name, event, app)
         if event == hs.application.watcher.launched and name == APP_NAME then
@@ -18,8 +22,8 @@ function alacrittyQuake()
       end)
       appWatcher:start()
     end
-    if alacritty ~= nil then
-      moveAppToSpace(alacritty, space)
+    if terminal ~= nil then
+      moveAppToSpace(terminal, space)
     end
   end
 end
