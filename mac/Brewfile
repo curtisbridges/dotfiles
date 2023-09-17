@@ -68,7 +68,7 @@ cask '1password'              # password manager
 cask 'alacritty'              # gpu accelerated terminal
 cask 'alfred'                 # application launcher and more
 cask 'appcleaner'             # clean uninstalls
-# cask 'balenaetcher'           # USB ISO creator
+cask 'balenaetcher'           # USB ISO creator
 # cask 'caldigit-docking-utility' # dock app
 # cask 'calibre'                # ebook utilities
 cask 'discord'                # alternate comms
@@ -80,7 +80,7 @@ cask 'hammerspoon'            # programmable mac automation
 cask 'handbrake'              # video encoder
 # cask 'iterm2'                 # a more feature-rich terminal
 # cask 'kaleidoscope'           # Rich diffs
-# cask 'karabiner-elements'     # low-level keyboard and mouse control
+cask 'karabiner-elements'     # low-level keyboard and mouse control
 # cask 'krita'                  # open source paint app
 # cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
