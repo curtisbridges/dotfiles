@@ -85,14 +85,19 @@ function fup() {
 }
 
 function nup() {
+    bun upgrade
     echo "Updating global npm packages..."
     npm i -g npm && npm update -g
-    bun upgrade
 }
 
 function bup() {
     echo "Updating homebrew..."
     brew update && brew upgrade && brew upgrade --cask --greedy
+}
+
+function omzup() {
+    echo "Updating zsh..."
+    omz update
 }
 
 function update() {
@@ -115,6 +120,7 @@ function update() {
     fi
 
     nup
+    omzup
 }
 
 function javahome() {
