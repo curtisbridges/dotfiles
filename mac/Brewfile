@@ -67,7 +67,7 @@ brew 'zsh-you-should-use'
 cask '1password'              # password manager
 cask 'alacritty'              # gpu accelerated terminal
 cask 'alfred'                 # application launcher and more
-cask 'amethyst'               # tiling window manager
+# cask 'amethyst'               # tiling window manager
 cask 'appcleaner'             # clean uninstalls
 cask 'balenaetcher'           # USB ISO creator
 # cask 'caldigit-docking-utility' # dock app
@@ -88,7 +88,7 @@ cask 'hyperkey'               # enables capslock hyperkey replacement
 # cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
 cask 'postman'                # work with REST APIs
-cask 'rectangle'              # window management
+cask 'rectangle-pro'          # window management
 cask 'slack'                  # workplace comms
 # cask 'typora'                 # markdown editor
 cask 'visual-studio-code'     # Microsoft cross-platform editor
