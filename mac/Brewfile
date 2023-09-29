@@ -3,7 +3,6 @@ tap 'homebrew/bundle'
 tap 'homebrew/command-not-found'
 tap 'homebrew/cask'              # Only works on macOS
 tap 'homebrew/cask-fonts'        # Only works on macOS
-# tap 'koekeishiya/formulae'       # for yabai+skhd, only on macOS
 
 # Brews
 brew 'ack'                  # code search tool
@@ -40,7 +39,6 @@ brew 'prettyping'           # a better ping
 brew 'readline'             # dunno
 brew 'ripgrep'              # a faster grep
 # brew 'rust'                 # Rust lang
-# brew 'skhd'                 # keyboard shortcuts
 brew 'starship'             # The best prompt for any shell
 brew 'stow'                 # dotfile installation utility
 brew 'thefuck'              # command correction utility
@@ -49,7 +47,6 @@ brew 'tmux'                 # terminal multiplexer (not yet used)
 brew 'tmuxinator'           # tmux projects
 brew 'tree'                 # directory tree
 brew 'wget'                 # alternative shell web download util
-# brew 'yabai'                # tiling window manager
 brew 'yarn'                 # alternative to npm
 brew 'youtube-dl'           # download youtube videos
 brew 'zoxide'               # a better autojump & cd combined
@@ -64,7 +61,6 @@ brew 'zsh-syntax-highlighting'
 brew 'zsh-you-should-use'
 
 # Casks (Note: Only works on macOS)
-cask '1password'              # password manager
 cask 'alacritty'              # gpu accelerated terminal
 cask 'alfred'                 # application launcher and more
 # cask 'amethyst'               # tiling window manager
@@ -81,11 +77,10 @@ cask 'firefox'                # open source web browser
 cask 'hammerspoon'            # programmable mac automation
 cask 'handbrake'              # video encoder
 cask 'hyperkey'               # enables capslock hyperkey replacement
-# cask 'iterm2'                 # a more feature-rich terminal
 # cask 'kaleidoscope'           # Rich diffs
 # cask 'karabiner-elements'     # low-level keyboard and mouse control
 # cask 'krita'                  # open source paint app
-# cask 'netnewswire'            # RSS feed reader
+cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
 cask 'postman'                # work with REST APIs
 cask 'rectangle-pro'          # window management
