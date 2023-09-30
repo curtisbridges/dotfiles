@@ -83,7 +83,7 @@ cask 'hyperkey'               # enables capslock hyperkey replacement
 cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
 cask 'postman'                # work with REST APIs
-cask 'rectangle-pro'          # window management
+cask 'rectangle'              # window management
 cask 'slack'                  # workplace comms
 # cask 'typora'                 # markdown editor
 cask 'visual-studio-code'     # Microsoft cross-platform editor
