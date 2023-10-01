@@ -15,7 +15,8 @@ brew 'exa'                  # a replacement ls supporting git and tree
 brew 'fasd'                 # a better find
 brew 'fd'                   # a better find too
 brew 'ffmpeg'               # audio/visual conversion tool
-brew 'fish'                 # alternative shell (not POSIX compliant)
+brew 'fish'                 # fish shell (not POSIX compliant)
+brew 'fisher'               # fish shell plugin manager
 brew 'fortune'              # words of wisdom
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
 brew 'git'                  # source control
@@ -80,12 +81,11 @@ cask 'hyperkey'               # enables capslock hyperkey replacement
 # cask 'kaleidoscope'           # Rich diffs
 # cask 'karabiner-elements'     # low-level keyboard and mouse control
 # cask 'krita'                  # open source paint app
-cask 'netnewswire'            # RSS feed reader
+# cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
 cask 'postman'                # work with REST APIs
 cask 'rectangle'              # window management
 cask 'slack'                  # workplace comms
-# cask 'typora'                 # markdown editor
 cask 'visual-studio-code'     # Microsoft cross-platform editor
 
 # Fonts
