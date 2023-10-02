@@ -128,3 +128,8 @@ function javahome() {
   export JAVA_HOME=$(/usr/libexec/java_home -v "$1");
   java -version
 }
+
+# See all your top commands
+function topc() {
+    history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $5}' | sort | uniq -c | sort -nr | head -20
+}
