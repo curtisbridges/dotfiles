@@ -16,4 +16,6 @@ $ git pull
 
 If there are local changes, you'll have to stash them first before pulling from my remote.
 
-
+```bash
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
+```
