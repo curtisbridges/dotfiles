@@ -178,7 +178,7 @@ key_bindings:
   - { key: Key7, mods: Command, chars: "\x00\x37" }
   - { key: Key8, mods: Command, chars: "\x00\x38" }
   - { key: Key9, mods: Command, chars: "\x00\x39" }
-  - { key: Key0, mods: Command, chars: "\x00\x40" }
+  # - { key: Key0, mods: Command, chars: "\x00\x40" }
 
   # Tmux switch pane
   #  Default: alt-arrow to move, cmd-arrow to resize
