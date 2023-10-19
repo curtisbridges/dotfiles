@@ -52,6 +52,6 @@ alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvi
 # alias vscw='code --wait'
 
 # Unalias the common-aliases for these commends (from omz plugin common-aliases)
-unalias rm
-unalias cp
-unalias mv
+# unalias rm
+# unalias cp
+# unalias mv

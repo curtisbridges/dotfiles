@@ -6,80 +6,16 @@ if [ -n "$TMUX" ]; then
   source /etc/zprofile
 fi
 
-export KEYTIMEOUT=1
-
-# options
-# -------
-setopt hist_ignore_all_dups  # remove older duplicate entries from history
-setopt hist_find_no_dups     # ignore duplicates when searching
-setopt hist_reduce_blanks    # remove superfluous blanks from history items
-setopt share_history         # share history between different instances of the shell
-setopt prompt_subst          # allow command, param and arithmetic expansion in the prompt
-setopt always_to_end         # move cursor to end if word had one match
-setopt auto_cd               # auto cd when writing dir in the shell
-setopt AUTO_PUSHD            # automatically add directories to a recent dir stack
-setopt PUSHD_IGNORE_DUPS     # Do not store duplicates in the stack.
-setopt PUSHD_SILENT          # Do not print the directory stack after pushd or popd.
-setopt auto_list             # automatically list choices on ambiguous completion
-setopt auto_menu             # automatically use menu completion
-unsetopt correctall          # don't correct typo(ed) commands
-unsetopt menu_complete       # insert first suggestion while autocompleting
-
-# History
-HISTFILE=${ZDOTDIR:-$HOME}/.zhistory
-HIST_STAMPS="yyyy-mm-dd"
-HISTSIZE=1000
-SAVEHIST=1000
-
-# Configure OMZ
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.local/share/oh-my-zsh"
-DISABLE_AUTO_TITLE="true"
-DISABLE_MAGIC_FUNCTIONS="true"
-COMPLETION_WAITING_DOTS="true"
-
 # important source files
+source ${ZDOTDIR:-$HOME}/before/omz.zsh
+source ${ZDOTDIR:-$HOME}/before/options.zsh
 source ${ZDOTDIR:-$HOME}/before/path.zsh
 source ${ZDOTDIR:-$HOME}/before/exports.zsh
+source ${ZDOTDIR:-$HOME}/before/tmux.zsh
+source ${ZDOTDIR:-$HOME}/before/bun.zsh
 
-# required so tmux plugin will function with XDG_CONFIG_HOME
-ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
-ZSH_TMUX_UNICODE=true
-ZSH_TMUX_FIXTERM=true
-export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux/plugins"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 NVM_HOMEBREW=$(brew --prefix nvm)
-
-# Bun!
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# bun completions
-[ -s "/Users/cmb/.bun/_bun" ] && source "/Users/cmb/.bun/_bun"
-
-# oh-my-zsh plugins
-plugins=(
-  aliases
-  command-not-found
-  common-aliases
-  docker
-  fzf
-  git
-  jira # o lord
-  macos
-  node
-  nvm
-  starship
-  tmux
-  vi-mode
-  vscode
-  web-search
-  zoxide
-)
-
-# oh-my-zsh loading
-source $ZSH/oh-my-zsh.sh
-# ZSH_THEME=""  # disable because I handle my own themes
 
 # TODO Make this directory loader a function
 # automatic loading code
@@ -101,8 +37,3 @@ autoload -Uz compinit && compinit
 
 # Prevent duplicate entries in PATH
 typeset -U PATH
-
-# for config_file (${ZDOTDIR:-$HOME}/after/*.zsh)
-# do
-#   source $config_file
-# done
