@@ -77,9 +77,8 @@ cask 'firefox'                # open source web browser
 # cask 'github'                 # github client
 cask 'hammerspoon'            # programmable mac automation
 cask 'handbrake'              # video encoder
-cask 'hyperkey'               # enables capslock hyperkey replacement
 # cask 'kaleidoscope'           # Rich diffs
-# cask 'karabiner-elements'     # low-level keyboard and mouse control
+cask 'karabiner-elements'     # low-level keyboard and mouse control
 # cask 'krita'                  # open source paint app
 # cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
