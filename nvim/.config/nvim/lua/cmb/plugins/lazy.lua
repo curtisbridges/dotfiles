@@ -16,28 +16,6 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = ' ' -- Make sure to set `mapleader` before lazy so your mappings are correct
 
 require('lazy').setup({
-  --[[ spec = { ]]
-  --[[   -- add LazyVim and import its plugins ]]
-  --[[   { "LazyVim/LazyVim", import = "lazyvim.plugins" }, ]]
-  --[[   -- import/override with your plugins ]]
-  --[[   { import = "plugins" }, -- TODO move to a pure plugin directory like this? ]]
-  --[[   -- import any extras modules here ]]
-  --[[   { import = "lazyvim.plugins.extras.lang.json" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.lang.typescript" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.lang.tailwind" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.linting.eslint" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.formatting.prettier" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.coding.copilot" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.test.core" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.dap.core" }, ]]
-  --[[   -- { import = "lazyvim.plugins.extras.ui.edgy" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.ui.mini-animate" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.ui.mini-starter" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.util.mini-hipatterns" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.coding.yanky" }, ]]
-  --[[   { import = "lazyvim.plugins.extras.editor.mini-files" }, ]]
-  --[[ }, ]]
-
   -- Colorschemes
   {
     'folke/tokyonight.nvim',
@@ -76,18 +54,18 @@ require('lazy').setup({
   },
   -- lazy.nvim
   {
-    "folke/noice.nvim",
-    event = "VeryLazy",
+    'folke/noice.nvim',
+    event = 'VeryLazy',
     opts = {
       -- add any options here
     },
     dependencies = {
-      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-      "MunifTanjim/nui.nvim",
+      -- if you lazy-load any plugin below, make sure to add proper `module='...'` entries
+      'MunifTanjim/nui.nvim',
       -- OPTIONAL:
       --   `nvim-notify` is only needed, if you want to use the notification view.
       --   If not available, we use `mini` as the fallback
-      "rcarriga/nvim-notify",
+      'rcarriga/nvim-notify',
     }
   },
   'christoomey/vim-tmux-navigator', -- keybinds for tmux and vim integration
