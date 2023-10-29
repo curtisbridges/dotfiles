@@ -166,7 +166,8 @@ key_bindings:
   # - { key: Back,     mods: Command, chars: "\x15"                        } # Delete line
   # - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                    } # Delete word
 
-  - { key: T,         mods: Command, chars: "\x00\x63" }
+  - { key: T,    mods: Command, chars: "\x00\x63" }
+  - { key: W,    mods: Command, chars: "\x00x" }
 
   # Select window 1-9, macOS style (for tmux, assumes ctrl-space tmux key)
   - { key: Key1, mods: Command, chars: "\x00\x31" }
