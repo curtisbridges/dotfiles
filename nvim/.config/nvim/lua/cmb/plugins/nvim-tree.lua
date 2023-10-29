@@ -18,14 +18,14 @@ local height = math.floor(gheight * 0.8)
 require("nvim-tree").setup({
     sort_by = "case_sensitive",
     view = {
-        width = width,
-        height = height,
+        --[[ width = width, ]]
+        --[[ height = height, ]]
         float = {
             enable = true,
             open_win_config = {
                 relative = "editor",
-                width = width,
-                height = height,
+                --[[ width = width, ]]
+                --[[ height = height, ]]
                 row = (gheight - height) / 2,
                 col = (gwidth - width) / 2,
             }

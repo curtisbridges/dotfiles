@@ -90,8 +90,8 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Comments
 vim.keymap.set("n", "<C-/>", function() require('Comment.api').toggle.linewise.current() end, { noremap = true, silent = true })
-vim.keymap.set('n', '<C-/>', 'gcc', { remap = true })
-vim.keymap.set('v', '<C-/>', 'gc',  { remap = true })
+--[[ vim.keymap.set('n', '<C-/>', 'gcc', { remap = true }) ]]
+--[[ vim.keymap.set('v', '<C-/>', 'gc',  { remap = true }) ]]
 
 -- trouble
 vim.keymap.set("n", "<leader>xx", function() require("trouble").open() end)
