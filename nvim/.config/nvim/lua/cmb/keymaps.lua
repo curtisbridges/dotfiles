@@ -89,7 +89,7 @@ keymap("n", "<leader>gs", "<cmd>Telescope git_status<cr>", { desc = "Show curren
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Comments
-vim.keymap.set("n", "<C-/>", function() require('Comment.api').toggle.linewise.current() end, { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>/", function() require('Comment.api').toggle.linewise.current() end, opts)
 --[[ vim.keymap.set('n', '<C-/>', 'gcc', { remap = true }) ]]
 --[[ vim.keymap.set('v', '<C-/>', 'gc',  { remap = true }) ]]
 
@@ -109,4 +109,4 @@ vim.keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Telescope 
 vim.keymap.set("n", "<leader>tq", "<cmd>TodoQuickFix<cr>", { desc = "QuickFix TODOs" })
 
 -- zenmode
-vim.keymap.set('n', '<leader>zm', '<cmd>ZenMode<cr>', { silent = true })
+vim.keymap.set('n', '<leader>zm', '<cmd>ZenMode<cr>', term_opts)
