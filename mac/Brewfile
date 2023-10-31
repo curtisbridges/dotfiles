@@ -103,3 +103,6 @@ cask 'font-hack'
 cask 'font-hasklig'
 # cask 'font-source-code-pro' # will always update if installed...
 cask 'font-sauce-code-pro-nerd-font' # source code pro nerd font
+cask 'font-geist'             # Vercel created font
+cask 'font-geist-mono'        # and its mono version
+
