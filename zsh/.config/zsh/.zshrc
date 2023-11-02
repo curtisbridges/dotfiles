@@ -12,6 +12,7 @@ source ${ZDOTDIR:-$HOME}/before/options.zsh
 source ${ZDOTDIR:-$HOME}/before/path.zsh
 source ${ZDOTDIR:-$HOME}/before/exports.zsh
 source ${ZDOTDIR:-$HOME}/before/tmux.zsh
+source ${ZDOTDIR:-$HOME}/before/fzf.zsh
 source ${ZDOTDIR:-$HOME}/before/bun.zsh
 
 export STARSHIP_CONFIG=~/.config/starship/starship.toml

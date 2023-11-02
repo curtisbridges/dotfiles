@@ -59,7 +59,6 @@ brew 'zsh-autosuggestions'
 brew 'zsh-completions'
 brew 'zsh-history-substring-search'
 brew 'zsh-syntax-highlighting'
-brew 'zsh-you-should-use'
 
 # Casks (Note: Only works on macOS)
 cask 'alacritty'              # gpu accelerated terminal
