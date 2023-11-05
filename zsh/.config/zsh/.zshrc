@@ -6,29 +6,28 @@ if [ -n "$TMUX" ]; then
   source /etc/zprofile
 fi
 
+function zsh_load() {
+  local directory="$1"
+
+  if [[ -d "$directory" ]]; then
+    for file in "$directory"/*.zsh; do
+      if [[ -f "$file" ]]; then
+        source "$file"
+      fi
+    done
+  else
+    echo "Directory not found: $directory"
+  fi
+}
+
 # important source files
-source ${ZDOTDIR:-$HOME}/before/omz.zsh
-source ${ZDOTDIR:-$HOME}/before/options.zsh
-source ${ZDOTDIR:-$HOME}/before/path.zsh
-source ${ZDOTDIR:-$HOME}/before/exports.zsh
-source ${ZDOTDIR:-$HOME}/before/tmux.zsh
-source ${ZDOTDIR:-$HOME}/before/fzf.zsh
-source ${ZDOTDIR:-$HOME}/before/bun.zsh
+zsh_load ${ZDOTDIR:-$HOME}/before
 
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 NVM_HOMEBREW=$(brew --prefix nvm)
 
-# TODO Make this directory loader a function
 # automatic loading code
-for config_file (${ZDOTDIR:-$HOME}/autoload/*.zsh)
-do
-  source $config_file
-done
-
-# Recent directory stack
-# TODO: Needs work, seems to be off-by-one
-# alias d='dirs -v'
-# for index ({1..9}) alias "$index"="cd +${index}"; unset index
+zsh_load ${ZDOTDIR:-$HOME}/autoload
 
 # completions
 autoload -Uz compinit && compinit
