@@ -1,18 +1,18 @@
 # oh-my-zsh plugins
 plugins=(
-  aliases
-  command-not-found
-  common-aliases
-  docker
-  fzf
+  aliases common-aliases
+  aws
+  docker docker-compose
+  dotenv
+  fd fzf
   git
   macos
-  node
-  nvm
+  node nvm
+  rust
   starship
   tmux
   vi-mode
-  web-search
+  web-search frontend-search
   zoxide
 )
 

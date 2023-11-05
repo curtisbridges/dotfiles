@@ -13,7 +13,7 @@ export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
 export EDITOR="nvim"
 export VISUAL="code"
 export TERMINAL="alacritty"
-export BROWSER="google-chrome"
+# export BROWSER="/Applications/Safari.app"
 export PAGER="less"
 
 # bun completions
