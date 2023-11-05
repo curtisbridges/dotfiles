@@ -6,14 +6,12 @@ plugins=(
   docker
   fzf
   git
-  jira # o lord
   macos
   node
   nvm
   starship
   tmux
   vi-mode
-  vscode
   web-search
   zoxide
 )
