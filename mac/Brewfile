@@ -24,7 +24,6 @@ brew 'git'                  # source control
 # brew 'git-flow'             # standard git workflows
 brew 'gpg'                  # encryption utils
 brew 'htop'                 # system stats
-brew 'httpie'               # curl replacement
 brew 'jq'                   # json formatter
 brew 'lua'                  # Scripting language, extraordinaire!
 brew 'luarocks'             # Lua package manager
@@ -33,7 +32,6 @@ brew 'macos-trash'          # utility to leverage the trashcan from the shell
 brew 'neofetch'             # graphical system summary
 brew 'neovim'               # preferred vim
 brew 'nmap'                 # port scanning util
-brew 'noti'                 # macOS command line notification hook
 brew 'nvm'                  # node version manager
 brew 'openssl'              # ssl utilities
 brew 'prettyping'           # a better ping
@@ -42,14 +40,12 @@ brew 'ripgrep'              # a faster grep
 # brew 'rust'                 # Rust lang
 brew 'starship'             # The best prompt for any shell
 brew 'stow'                 # dotfile installation utility
-brew 'thefuck'              # command correction utility
 brew 'tldr'                 # a more concise man replacement
 brew 'tmux'                 # terminal multiplexer (not yet used)
-brew 'tmuxinator'           # tmux projects
 brew 'tree'                 # directory tree
 brew 'wget'                 # alternative shell web download util
 brew 'yarn'                 # alternative to npm
-brew 'youtube-dl'           # download youtube videos
+brew 'yt-dlp'               # download youtube videos
 brew 'zoxide'               # a better autojump & cd combined
 brew 'zx'                   # javascript shell scripts
 
@@ -104,4 +100,3 @@ cask 'font-hasklig'
 cask 'font-sauce-code-pro-nerd-font' # source code pro nerd font
 cask 'font-geist'             # Vercel created font
 cask 'font-geist-mono'        # and its mono version
-
