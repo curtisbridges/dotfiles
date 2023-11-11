@@ -89,6 +89,7 @@ cask 'visual-studio-code'     # Microsoft cross-platform editor
 cask 'font-sf-pro'
 cask 'font-sf-mono'
 # cask 'font-sf-mono-for-powerline' # ligatures for SF Mono
+cask 'font-monaspace'         # GitHub monospace fonts
 cask 'font-cascadia-code'     # nerdfont: font-caskaydia-cove-nerd-font
 cask 'font-dejavu'            # nerdfont: font-dejavu-sans-mono-nerd-font
 cask 'font-fira-code'         # nerdfont: font-fira-code-nerd-font
