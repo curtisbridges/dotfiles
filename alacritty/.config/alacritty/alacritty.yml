@@ -17,9 +17,9 @@ window:
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
-  # dimensions:
-  #   columns: 120
-  #   lines: 50
+  dimensions:
+    columns: 120
+    lines: 50
 
   padding:
     x: 5
@@ -39,7 +39,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Neither borders nor title bar. Square corners.
-  decorations: buttonless
+  decorations: none # buttonless
 
   # decorations_theme_variant: Light/Dark/None
 
