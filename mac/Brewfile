@@ -81,6 +81,7 @@ cask 'postman'                # work with REST APIs
 cask 'rectangle'              # window management
 cask 'slack'                  # workplace comms
 cask 'visual-studio-code'     # Microsoft cross-platform editor
+cask 'Whisky'                 # Stronger than WINE
 
 # Fonts
 # Patched with nerd font support are good for Terminal but iTerm2 has built-in glyphs.
