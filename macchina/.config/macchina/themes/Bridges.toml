@@ -1,0 +1,49 @@
+# Bridges
+
+separator=""
+separator_color = "white"
+key_color = "Cyan"
+prefer_small_ascii = true
+
+[palette]
+type="Dark"
+visible=true
+glyph=" ⬤ "
+
+[box]
+title=""
+border = "single"
+visible = true
+
+[bar]
+glyph           = "■"
+symbol_open     = '['
+symbol_close    = ']'
+hide_delimiters = true
+visible         = true
+
+[randomize]
+key_color = false
+separator_color = false
+
+[custom_ascii]
+
+[keys]
+host            = "Host"
+kernel          = "Kernel"
+battery         = "Battery"
+os              = "OS"
+de              = "DE"
+wm              = "WM"
+distro          = "Distro"
+terminal        = "Terminal"
+shell           = "Shell"
+packages        = "Packages"
+uptime          = "Uptime"
+memory          = "Memory"
+machine         = "Machine"
+local_ip        = "Local IP"
+backlight       = "Brightness"
+resolution      = "Resolution"
+cpu_load        = "CPU Load"
+cpu             = "CPU"
