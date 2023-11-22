@@ -90,8 +90,8 @@ cask 'Whisky'                 # Stronger than WINE
 cask 'font-sf-pro'
 cask 'font-sf-mono'
 # cask 'font-sf-mono-for-powerline' # ligatures for SF Mono
-cask 'font-monaspace'         # GitHub monospace fonts
 cask 'font-cascadia-code'     # nerdfont: font-caskaydia-cove-nerd-font
+cask 'font-caskaydia-mono-nerd-font'
 cask 'font-dejavu'            # nerdfont: font-dejavu-sans-mono-nerd-font
 cask 'font-fira-code'         # nerdfont: font-fira-code-nerd-font
 cask 'font-fira-code-nerd-font'
@@ -102,3 +102,6 @@ cask 'font-hasklig'
 cask 'font-sauce-code-pro-nerd-font' # source code pro nerd font
 cask 'font-geist'             # Vercel created font
 cask 'font-geist-mono'        # and its mono version
+cask 'font-geist-mono-nerd-font' # nerd font version
+cask 'font-monaspace'         # GitHub monospace fonts
+cask 'font-monaspace-nerd-font'
