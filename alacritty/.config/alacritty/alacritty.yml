@@ -74,7 +74,9 @@ scrolling:
 font:
   # The normal (roman) font face to use.
   normal:
+    # family: CommitMono Nerd Font
     family: FiraCode Nerd Font
+    # family: SF Mono Powerline
     # Style can be specified to pick a specific face.
     style: Regular
 
