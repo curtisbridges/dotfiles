@@ -192,3 +192,9 @@ defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/i
 defaults write com.knollsoft.Rectangle gapSize -float 10
 defaults write com.knollsoft.Rectangle almostMaximizeHeight -float .90
 defaults write com.knollsoft.Rectangle almostMaximizeWidth -float .90
+defaults write com.knollsoft.Rectangle applyGapsToMaximize -int 2
+defaults write com.knollsoft.Rectangle applyGapsToMaximizeHeight -int 2
+defaults write com.knollsoft.Rectangle missionControlDragging -int 2 # disable dragging apps to mission control
+defaults write com.knollsoft.Rectangle doubleClickTitleBar -int 3 # regular maximize on double click
+#defaults write com.knollsoft.Rectangle cascadeActiveApp -dict-add keyCode -float 2 modifierFlags -float 1966379
+defaults write com.knollsoft.Rectangle centerProminently -dict-add keyCode -float 8 modifierFlags -float 1966379 # center prominently
