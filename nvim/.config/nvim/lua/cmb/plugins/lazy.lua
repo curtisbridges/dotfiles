@@ -97,7 +97,6 @@ require('lazy').setup({
   },
   'nvim-treesitter/nvim-treesitter-context',
   'nvim-treesitter/playground',
-  'HiPhish/rainbow-delimiters.nvim',
   'windwp/nvim-autopairs', -- Autopairs, integrates with both cmp and treesitter
   'axelvc/template-string.nvim',
 
