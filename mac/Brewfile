@@ -76,9 +76,11 @@ cask 'hyperkey'               # map caps to hyper
 # cask 'kaleidoscope'           # Rich diffs
 # cask 'karabiner-elements'     # low-level keyboard and mouse control
 # cask 'krita'                  # open source paint app
+# cask 'mos'                    # Mouse smooth scrolling
 # cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
 cask 'postman'                # work with REST APIs
+cask 'raycast'                # app launcher and more
 cask 'rectangle'              # window management
 cask 'slack'                  # workplace comms
 cask 'visual-studio-code'     # Microsoft cross-platform editor
