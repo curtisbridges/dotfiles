@@ -1,4 +1,5 @@
 require 'cmb.plugins.lazy'
+require 'cmb.plugins.lualine'
 
 require 'cmb.plugins.cmp'
 require 'cmb.plugins.lsp'
