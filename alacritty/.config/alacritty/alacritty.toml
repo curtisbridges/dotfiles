@@ -111,8 +111,8 @@ chars = "\u00009"
 key = "Key9"
 mods = "Command"
 
-[mouse]
-hide_when_typing = true
+# [mouse]
+# hide_when_typing = true
 # bindings = []
 
 [scrolling]
