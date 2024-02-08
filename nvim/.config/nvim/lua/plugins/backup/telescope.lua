@@ -1,14 +1,18 @@
-local status_ok, telescope = pcall(require, 'telescope')
-if not status_ok then
-  return
-end
-
-telescope.load_extension('media_files')
+-- local status_ok, telescope = pcall(require, 'telescope')
+-- if not status_ok then
+--   return
+-- end
 
 local actions = require('telescope.actions')
 local trouble = require("trouble.providers.telescope")
 
-telescope.setup {
+-- telescope.load_extension('media_files')
+
+return {
+  'nvim-telescope/telescope.nvim',
+  tag = '0.1.5',
+  -- or                              , branch = '0.1.x',
+  dependencies = { 'nvim-lua/plenary.nvim' },
   defaults = {
     prompt_prefix = ' ',
     selection_caret = ' ',
@@ -111,7 +115,7 @@ telescope.setup {
     },
     live_grep = {
       additional_args = function()
-        return {'--hidden', '--no-ignore-vcs'}
+        return { '--hidden', '--no-ignore-vcs' }
       end
     },
   },
@@ -122,10 +126,10 @@ telescope.setup {
     -- }
     -- please take a look at the readme of the extension you want to configure
     media_files = {
-        -- filetypes whitelist
-        -- defaults to {'png', 'jpg', 'mp4', 'webm', 'pdf'}
-        filetypes = {'png', 'webp', 'webm', 'jpg', 'jpeg', 'mp4', 'pdf'},
-        find_cmd = 'rg' -- find command (defaults to `fd`)
-      }
+      -- filetypes whitelist
+      -- defaults to {'png', 'jpg', 'mp4', 'webm', 'pdf'}
+      filetypes = { 'png', 'webp', 'webm', 'jpg', 'jpeg', 'mp4', 'pdf' },
+      find_cmd = 'rg' -- find command (defaults to `fd`)
+    }
   },
 }
