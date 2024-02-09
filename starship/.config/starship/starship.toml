@@ -1,15 +1,38 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+# format = """
+# [](surface0)\
+# $os\
+# $username\
+# [](bg:peach fg:surface0)\
+# $directory\
+# [](fg:peach bg:green)\
+# $git_branch\
+# $git_status\
+# [](fg:green bg:teal)\
+# $c\
+# $rust\
+# $golang\
+# $nodejs\
+# $php\
+# $java\
+# $kotlin\
+# $haskell\
+# $python\
+# [](fg:teal bg:blue)\
+# $docker_context\
+# [](fg:blue bg:purple)\
+# $time\
+# [ ](fg:purple)\
+# $line_break$character"""
+
 format = """
-[](surface0)\
-$os\
-$username\
-[](bg:peach fg:surface0)\
+[](bg:surface0 fg:peach)\
 $directory\
-[](fg:peach bg:green)\
+[█](fg:peach bg:green)\
 $git_branch\
 $git_status\
-[](fg:green bg:teal)\
+[█](fg:green bg:teal)\
 $c\
 $rust\
 $golang\
@@ -19,9 +42,9 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:teal bg:blue)\
+[█](fg:teal bg:blue)\
 $docker_context\
-[](fg:blue bg:purple)\
+[█](fg:blue bg:purple)\
 $time\
 [ ](fg:purple)\
 $line_break$character"""
@@ -102,7 +125,7 @@ format = '[ $user ]($style)'
 [directory]
 style = "fg:mantle bg:peach"
 format = "[ $path ]($style)"
-truncation_length = 3
+truncation_length = 2
 truncation_symbol = "…/"
 
 [directory.substitutions]
