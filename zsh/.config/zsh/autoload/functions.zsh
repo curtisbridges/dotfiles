@@ -102,7 +102,7 @@ function omzup() {
 
 function update() {
     if [[ `uname` == 'Darwin' ]]; then
-        # bup
+        bup
         # mas upgrade # hasn't worked since 10.13; No ability to login via cmd line
     elif [[ `lsb_release -i -s` == 'Arch' ]]; then
         echo "Updating via yay..."
