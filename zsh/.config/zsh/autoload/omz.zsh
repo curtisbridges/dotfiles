@@ -13,7 +13,6 @@ plugins=(
   tmux
   vi-mode
   web-search frontend-search
-  zoxide
 )
 
 # oh-my-zsh loading

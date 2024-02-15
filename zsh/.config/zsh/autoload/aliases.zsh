@@ -26,10 +26,6 @@ alias lx='exa -lbhHgUmua@ --time-style=long-iso --git --color-scale' # all + ext
 alias lS='exa -1'                                                    # one column, just names
 alias lt='exa --tree --level=2'                                      # tree
 
-# might as well go all in
-# alias cd='z'
-alias zz='z -'
-
 # Debug PATH
 # NOTE: This double quote gets evaluated greedily and needs to be replaced with something else.
 alias pp="echo $PATH | sed 's/:/\n/g'"
