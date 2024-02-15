@@ -1,14 +1,15 @@
 live_config_reload = true
 
+import = ["~/.config/alacritty/themes/one-dark.toml"]
 # import = ["~/.config/alacritty/themes/tokyo-night-night.toml"]
-import = ["~/.config/alacritty/themes/catppuccin-mocha.toml"]
+# import = ["~/.config/alacritty/themes/catppuccin-mocha.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = true
 
-[colors.primary]
-background = "0x1a1b26"
-foreground = "0xc0caf5"
+# [colors.primary]
+# background = "0x1a1b26"
+# foreground = "0xc0caf5"
 
 [cursor]
 # shape = "Block"
