@@ -17,6 +17,12 @@ vim.g.mapleader = ' ' -- Make sure to set `mapleader` before lazy so your mappin
 
 require('lazy').setup({
   -- Colorschemes
+  -- Lazy
+  {
+    "olimorris/onedarkpro.nvim",
+    priority = 1000, -- Ensure it loads first
+  },
+  -- somewhere in your config:
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {
     'folke/tokyonight.nvim',
