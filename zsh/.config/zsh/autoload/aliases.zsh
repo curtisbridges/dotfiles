@@ -36,8 +36,12 @@ alias gdn='git diff --name-status'
 alias gdsc='git diff --stat --color'
 alias gupd='git stash && git fetch && git rebase $(git_develop_branch) && git stash pop'
 alias gupm='git stash && git fetch && git rebase $(git_main_branch) && git stash pop'
+alias gcoa='git checkout -- .'
 
 alias todo='git grep -l TODO | xargs -n1 git blame -f -n -w | grep "$(git config user.name)" | grep TODO | sed "s/.\{9\}//" | sed "s/(.*)[[:space:]]*//"'
+
+# developer specific aliases
+alias yi='yarn install'
 
 ## Vim (Neovim)
 alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
