@@ -37,7 +37,13 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>bd", ":bdelete<CR>", opts)
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
+
+-- Terminal --
+-- Better terminal navigation
+keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
+keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
+keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
+keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Insert --
 -- Press jj fast to exit insert mode
@@ -49,14 +55,12 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Move text up and down
+-- Note: This won't work because I've setup tmux to move panes with these keybinds
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 
 -- don't replace yanked text with visual selection on paste
 keymap("v", "p", '"_dP', opts)
-
--- clear highlight search manually
-vim.keymap.set('n', '<Esc><Esc>', function() vim.cmd('noh') end, opts)
 
 -- Visual Block --
 -- Move text up and down
@@ -65,12 +69,8 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- Terminal --
--- Better terminal navigation
-keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
-keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
-keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
-keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+-- clear highlight search manually
+vim.keymap.set('n', '<Esc><Esc>', function() vim.cmd('noh') end, opts)
 
 -- Telescope
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
@@ -89,6 +89,7 @@ keymap("n", "<leader>gs", "<cmd>Telescope git_status<cr>", { desc = "Show curren
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Comments
+-- Comment: https://github.com/numToStr/Comment.nvim
 vim.keymap.set("n", "<leader>/", function() require('Comment.api').toggle.linewise.current() end, opts)
 --[[ vim.keymap.set('n', '<C-/>', 'gcc', { remap = true }) ]]
 --[[ vim.keymap.set('v', '<C-/>', 'gc',  { remap = true }) ]]
@@ -110,3 +111,4 @@ vim.keymap.set("n", "<leader>tq", "<cmd>TodoQuickFix<cr>", { desc = "QuickFix TO
 
 -- zenmode
 vim.keymap.set('n', '<leader>zm', '<cmd>ZenMode<cr>', term_opts)
+
