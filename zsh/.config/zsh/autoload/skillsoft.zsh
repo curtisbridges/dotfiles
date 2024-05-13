@@ -7,3 +7,7 @@ alias do='node ./scripts/do'
 alias rmowner='git checkout -- .github/CODEOWNERS ownership/codeowners.yaml'
 
 export USER_TERMINAL=Alacritty
+
+alias pg_start='brew services start postgresql@14'
+alias pg_stop='brew services stop postgresql@14'
+
