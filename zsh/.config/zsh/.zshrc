@@ -6,34 +6,83 @@ if [ -n "$TMUX" ]; then
   source /etc/zprofile
 fi
 
-function zsh_load() {
-  local directory="$1"
+export KEYTIMEOUT=1
 
-  if [[ -d "$directory" ]]; then
-    for file in "$directory"/*.zsh; do
-      if [[ -f "$file" ]]; then
-        source "$file"
-      fi
-    done
-  else
-    echo "Directory not found: $directory"
-  fi
-}
+# History
+HISTFILE=${ZDOTDIR:-$HOME}/.zhistory
+HIST_STAMPS="yyyy-mm-dd"
+HISTSIZE=1000
+SAVEHIST=1000
 
-# important source files
-zsh_load ${ZDOTDIR:-$HOME}/before
+# options
+setopt hist_ignore_all_dups  # remove older duplicate entries from history
+setopt hist_find_no_dups     # ignore duplicates when searching
+setopt hist_reduce_blanks    # remove superfluous blanks from history items
+setopt share_history         # share history between different instances of the shell
+setopt prompt_subst          # allow command, param and arithmetic expansion in the prompt
+setopt always_to_end         # move cursor to end if word had one match
+setopt auto_cd               # auto cd when writing dir in the shell
+setopt AUTO_PUSHD            # automatically add directories to a recent dir stack
+setopt PUSHD_IGNORE_DUPS     # Do not store duplicates in the stack.
+setopt PUSHD_SILENT          # Do not print the directory stack after pushd or popd.
+setopt auto_list             # automatically list choices on ambiguous completion
+setopt auto_menu             # automatically use menu completion
+unsetopt correctall          # don't correct typo(ed) commands
+unsetopt menu_complete       # insert first suggestion while autocompleting
 
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-NVM_HOMEBREW=$(brew --prefix nvm)
+# config
+source $ZDOTDIR/path.zsh
+source $ZDOTDIR/aliases.zsh
+source $ZDOTDIR/functions.zsh
 
-# automatic loading code
-zsh_load ${ZDOTDIR:-$HOME}/autoload
+# Configure OMZ
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.local/share/oh-my-zsh"
+
+DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_UPDATE="true"
+DISABLE_MAGIC_FUNCTIONS="true"
+COMPLETION_WAITING_DOTS="true"
+
+# oh-my-zsh plugins
+plugins=(
+  aliases common-aliases
+  aws
+  docker docker-compose
+  dotenv
+  fzf fd ripgrep
+  git
+  macos
+  node nvm
+  rust
+  starship
+  tmux
+  vi-mode
+  web-search frontend-search
+)
+
+# oh-my-zsh loading
+source $ZSH/oh-my-zsh.sh
+# ZSH_THEME=""  # disable because I handle my own themes
+
+source $ZDOTDIR/linux.zsh
+source $ZDOTDIR/mac.zsh
+source $ZDOTDIR/skillsoft.zsh
+
+# Homebrew plugin setups
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
+
+eval "$(zoxide init --cmd cd zsh)"
 
 # completions
 autoload -Uz compinit && compinit
 
 # Use homebrew installed starship prompt
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # Prevent duplicate entries in PATH
 typeset -U PATH
+
+source $ZDOTDIR/nvm.zsh

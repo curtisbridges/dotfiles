@@ -12,6 +12,8 @@
 	bD = branch --delete --force
 	bm = branch --move
 	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+	dd = !git diff $(git_develop_branch)
+	dm = !git diff $(git_main_branch)
 	cam = commit --all --message
 	cl = clone --recurse-submodules
 	co = checkout
@@ -25,17 +27,18 @@
 	resh = !git reset --hard
 	rb=rebase
 	rbi=rebase --interactive
-	s = status
-	st = status
+	s = status -s
+	st = status -s
 	save = !git add -A && git commit -m 'chore: savepoint'
+	se = !git rev-list --all | xargs git grep -F
 	stc = stash clear
 	std = stash drop
 	stl = stash list
 	stp = stash pop
 	sw = switch
 	swc = switch --create
-	swd = switch $(git_develop_branch)
-	swm = switch $(git_main_branch)
+	swd = !git switch $(git_develop_branch)
+	swm = !git switch $(git_main_branch)
 	undo = reset HEAD~1 --mixed
 [core]
 	editor = nvim

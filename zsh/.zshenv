@@ -16,5 +16,18 @@ export TERMINAL="alacritty"
 # export BROWSER="/Applications/Safari.app"
 export PAGER="less"
 
-# bun completions
-# [ -s "/Users/cmb/.bun/_bun" ] && source "/Users/cmb/.bun/_bun"
+# required so tmux plugin will function with XDG_CONFIG_HOME
+ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
+ZSH_TMUX_UNICODE=true
+ZSH_TMUX_FIXTERM=true
+export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME:-$HOME/tmux/plugins"
+
+# Exported variables
+# Node related
+export NVM_DIR="$HOME/.nvm"
+
+# Python
+export PYTHON_HOME="${HOME}/.pyenv/shims"
+export PATH=$PATH:$PYTHON_HOME
+
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
