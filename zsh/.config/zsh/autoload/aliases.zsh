@@ -15,16 +15,16 @@ alias yt4=yt-dlp --format mp4
 alias -g F='| fzf'
 
 # general use
-alias ls='exa -F'                                                    # ls
-alias l='exa -lbF --git  --group-directories-first'                  # list, size, type, git
-alias ll='exa -lbGF --git  --group-directories-first'                # long list
-alias llm='exa -lbGd --git --sort=modified'                          # long list, modified date sort
-alias la='exa -lbhHgUmua --git --color-scale'                        # all list
-alias lx='exa -lbhHgUmua@ --time-style=long-iso --git --color-scale' # all + extended list
+alias ls='eza -F'                                                    # ls
+alias l='eza -lbF --git  --group-directories-first'                  # list, size, type, git
+alias ll='eza -lbGF --git  --group-directories-first'                # long list
+alias llm='eza -lbGd --git --sort=modified'                          # long list, modified date sort
+alias la='eza -lbhHgUmua --git --color-scale'                        # all list
+alias lx='eza -lbhHgUmua@ --time-style=long-iso --git --color-scale' # all + extended list
 
 # specialty views
-alias lS='exa -1'                                                    # one column, just names
-alias lt='exa --tree --level=2'                                      # tree
+alias lS='eza -1'                                                    # one column, just names
+alias lt='eza --tree --level=2'                                      # tree
 
 # Debug PATH
 # NOTE: This double quote gets evaluated greedily and needs to be replaced with something else.
@@ -44,6 +44,8 @@ alias todo='git grep -l TODO | xargs -n1 git blame -f -n -w | grep "$(git config
 alias yi='yarn install'
 
 ## Vim (Neovim)
+# fzf + nvim
+alias nf='fzf -m --preview="bat --color=always" --bind "enter:become(nvim {})"'
 alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
 
 ## Visual Studio Code - replaced by omz plugin
