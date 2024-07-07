@@ -1,0 +1,82 @@
+[user]
+	name = Curtis Bridges
+	email = curtis@curtisbridges.com
+[includeIf "gitdir:~/Developer/Work/Skillsoft/"]
+	path = ~/.config/git/skillsoft
+[includeIf "gitdir:~/Developer/Personal/"]
+	path = ~/.config/git/github
+[alias]
+  a = add
+	aa = add --all
+	bd = branch --delete
+	bD = branch --delete --force
+	bm = branch --move
+	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+	cam = commit --all --message
+	cl = clone --recurse-submodules
+	co = checkout
+	cob = checkout -b
+	del = branch -D
+	last = log -1 HEAD --stat
+	lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+	ll = log --oneline
+	p = !git push
+	pf = !git push --force-with-lease --force-if-includes
+	resh = !git reset --hard
+	rb=rebase
+	rbi=rebase --interactive
+	s = status
+	st = status
+	save = !git add -A && git commit -m 'chore: savepoint'
+	stc = stash clear
+	std = stash drop
+	stl = stash list
+	stp = stash pop
+	sw = switch
+	swc = switch --create
+	swd = switch $(git_develop_branch)
+	swm = switch $(git_main_branch)
+	undo = reset HEAD~1 --mixed
+[core]
+	editor = nvim
+	fileMode = false
+	safecrlf = false
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[fetch]
+	prune = true
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
+[pull]
+	rebase = merges
+[push]
+	default = simple
+	default = current
+	autoSetupRemote = true
+[branch]
+	autosetuprebase = always
+[rebase]
+	autosquash = true
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[gpg]
+	program = /usr/local/bin/gpg
+[color]
+	ui = true
+[init]
+	defaultBranch = main
+[format]
+	pretty = oneline
+[commit]
+	gpgsign = false
+[merge]
+	conflictstyle = diff3
+[rerere]
+ enabled = true
