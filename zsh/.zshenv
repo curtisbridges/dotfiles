@@ -17,4 +17,4 @@ export TERMINAL="alacritty"
 export PAGER="less"
 
 # bun completions
-[ -s "/Users/cmb/.bun/_bun" ] && source "/Users/cmb/.bun/_bun"
+# [ -s "/Users/cmb/.bun/_bun" ] && source "/Users/cmb/.bun/_bun"
