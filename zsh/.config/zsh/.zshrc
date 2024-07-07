@@ -67,7 +67,6 @@ source $ZSH/oh-my-zsh.sh
 
 source $ZDOTDIR/linux.zsh
 source $ZDOTDIR/mac.zsh
-source $ZDOTDIR/skillsoft.zsh
 
 # Homebrew plugin setups
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -84,5 +83,3 @@ eval "$(starship init zsh)"
 
 # Prevent duplicate entries in PATH
 typeset -U PATH
-
-source $ZDOTDIR/nvm.zsh

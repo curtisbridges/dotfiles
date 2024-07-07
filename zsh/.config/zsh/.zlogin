@@ -27,8 +27,8 @@ bindkey -rM emacs '\ec'
 bindkey -rM vicmd '\ec'
 bindkey -rM viins '\ec'
 
-# And a "motivational" message.
-# echo "Work hard. Get shit done."
+source $ZDOTDIR/nvm.zsh
+source $ZDOTDIR/skillsoft.zsh
 
 # Just show some machine info mostly for vanity reasons.
 # neofetch

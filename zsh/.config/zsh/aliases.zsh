@@ -57,3 +57,6 @@ alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvi
 # unalias rm
 # unalias cp
 # unalias mv
+
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
