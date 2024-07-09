@@ -1,14 +1,3 @@
---
--- ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
--- ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
--- ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
--- ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
--- ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
--- ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
---
--- File: plugins/neoterm.lua
--- Description: Floating terminal configs
--- Author: Kien Nguyen-Tuan <kiennt2609@gmail.com>
 return {{
     -- Floating terminal
     "itmecho/neoterm.nvim",
@@ -21,3 +10,4 @@ return {{
         require("neoterm").setup(opts)
     end
 }}
+

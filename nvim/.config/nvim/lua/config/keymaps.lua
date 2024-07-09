@@ -35,7 +35,6 @@ vim.keymap.set("n", "<leader>wl", "<C-w>l", {})
 vim.keymap.set("n", "<leader>r", ":so %<CR>", {})
 
 -- Telescope
--- <leader> is a space now
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
@@ -49,7 +48,7 @@ vim.keymap.set("n", "<leader>nf", ":NvimTreeFindFile<CR>", {}) -- search file
 
 -- Terminal
 vim.keymap.set("n", "<leader>tt", ":NeotermToggle<CR>", {})
--- vim.keymap.set("n", "<leader>tx", ":NeotermExit<CR>", {})
+vim.keymap.set("n", "<leader>tx", ":NeotermExit<CR>", {})
 
 -- Insert --
 -- Press jj fast to exit insert mode
