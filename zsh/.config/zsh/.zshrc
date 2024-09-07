@@ -50,7 +50,7 @@ plugins=(
   aws
   docker docker-compose
   dotenv
-  fzf fd ripgrep
+  fzf
   git
   macos
   node nvm
