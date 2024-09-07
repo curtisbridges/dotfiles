@@ -1,4 +1,12 @@
 # this is the bare bones setup to move everything to XDG dir
+# This is the first user zsh file loaded
+# .zshenv
+# .zshprofile
+# .zshrc
+# .zshlogin
+# ...
+# .zshlogout
+#
 ZDOTDIR=$HOME/.config/zsh
 export TERM=screen-256color
 

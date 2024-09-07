@@ -24,6 +24,7 @@ brew 'git'                  # source control
 # brew 'git-flow'             # standard git workflows
 brew 'gpg'                  # encryption utils
 brew 'htop'                 # system stats
+brew 'hugo'                 # static blog generator
 brew 'jq'                   # json formatter
 brew 'lua'                  # Scripting language, extraordinaire!
 brew 'luarocks'             # Lua package manager
@@ -32,6 +33,7 @@ brew 'macos-trash'          # utility to leverage the trashcan from the shell
 brew 'neofetch'             # graphical system summary
 brew 'neovim'               # preferred vim
 brew 'nmap'                 # port scanning util
+brew 'node'                 # system-wide node
 brew 'nvm'                  # node version manager
 brew 'openssl'              # ssl utilities
 brew 'prettyping'           # a better ping
@@ -43,6 +45,7 @@ brew 'stow'                 # dotfile installation utility
 brew 'tldr'                 # a more concise man replacement
 brew 'tmux'                 # terminal multiplexer (not yet used)
 brew 'tree'                 # directory tree
+brew 'vite'                 # next gen node tooling
 brew 'wget'                 # alternative shell web download util
 brew 'yarn'                 # alternative to npm
 brew 'yt-dlp'               # download youtube videos
@@ -59,6 +62,7 @@ brew 'zsh-syntax-highlighting'
 # Casks (Note: Only works on macOS)
 cask 'alacritty'              # gpu accelerated terminal
 # cask 'alfred'                 # application launcher and more
+# cask 'aerospace'              # tiling window manager
 # cask 'amethyst'               # tiling window manager
 cask 'appcleaner'             # clean uninstalls
 cask 'balenaetcher'           # USB ISO creator
@@ -79,8 +83,8 @@ cask 'hyperkey'               # map caps to hyper
 # cask 'mos'                    # Mouse smooth scrolling
 # cask 'netnewswire'            # RSS feed reader
 # cask 'openaudible'            # download / process audible content
-cask 'postman'                # work with REST APIs
-cask 'raycast'                # app launcher and more
+# cask 'postman'                # work with REST APIs
+# cask 'raycast'                # app launcher and more
 # cask 'rectangle'              # window management
 cask 'slack'                  # workplace comms
 cask 'visual-studio-code'     # Microsoft cross-platform editor
