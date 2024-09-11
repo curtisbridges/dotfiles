@@ -85,7 +85,7 @@ cask 'hyperkey'               # map caps to hyper
 # cask 'openaudible'            # download / process audible content
 # cask 'postman'                # work with REST APIs
 # cask 'raycast'                # app launcher and more
-# cask 'rectangle'              # window management
+cask 'rectangle'              # window management
 cask 'slack'                  # workplace comms
 cask 'visual-studio-code'     # Microsoft cross-platform editor
 cask 'Whisky'                 # Stronger than WINE
