@@ -1,10 +1,12 @@
-# Curtis Bridges (curtis@curtisbridges.com)
+
 # ZSH config
 
 if [ -n "$TMUX" ]; then
   PATH=""
   source /etc/zprofile
 fi
+
+# zmodload zsh/zprof
 
 export KEYTIMEOUT=1
 
@@ -53,8 +55,7 @@ plugins=(
   fzf
   git
   macos
-  node nvm
-  rust
+  node # nvm
   starship
   tmux
   vi-mode
@@ -76,10 +77,13 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 eval "$(zoxide init --cmd cd zsh)"
 
 # completions
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -C
 
 # Use homebrew installed starship prompt
 eval "$(starship init zsh)"
 
 # Prevent duplicate entries in PATH
 typeset -U PATH
+
+# zprof
+
