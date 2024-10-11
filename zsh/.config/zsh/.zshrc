@@ -51,15 +51,15 @@ plugins=(
   aliases common-aliases
   aws
   docker docker-compose
-  dotenv
+  # dotenv
   fzf
   git
   macos
-  node # nvm
+  # node nvm
   starship
   tmux
   vi-mode
-  web-search frontend-search
+  # web-search frontend-search
 )
 
 # oh-my-zsh loading
