@@ -33,6 +33,9 @@ unsetopt correctall          # don't correct typo(ed) commands
 unsetopt menu_complete       # insert first suggestion while autocompleting
 
 # config
+source $ZDOTDIR/linux.zsh
+source $ZDOTDIR/mac.zsh
+
 source $ZDOTDIR/path.zsh
 source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/functions.zsh
@@ -65,9 +68,6 @@ plugins=(
 # oh-my-zsh loading
 source $ZSH/oh-my-zsh.sh
 # ZSH_THEME=""  # disable because I handle my own themes
-
-source $ZDOTDIR/linux.zsh
-source $ZDOTDIR/mac.zsh
 
 # Homebrew plugin setups
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
