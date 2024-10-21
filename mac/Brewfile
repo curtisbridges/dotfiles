@@ -11,7 +11,7 @@ brew 'awscli'               # AWS cli client
 brew 'bat'                  # a 'cat' replacement with syntax highlighting and paging
 brew 'diff-so-fancy'        # a better diff
 brew 'dos2unix'             # convert dos files to unix line endings
-brew 'exa'                  # a replacement ls supporting git and tree
+brew 'eza'                  # a replacement ls supporting git and tree
 brew 'fasd'                 # a better find
 brew 'fd'                   # a better find too
 brew 'ffmpeg'               # audio/visual conversion tool
