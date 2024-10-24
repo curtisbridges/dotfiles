@@ -1,6 +1,3 @@
-live_config_reload = true
-
-import = ["~/.config/alacritty/themes/one-dark.toml"]
 # import = ["~/.config/alacritty/themes/tokyo-night-night.toml"]
 # import = ["~/.config/alacritty/themes/catppuccin-mocha.toml"]
 
@@ -136,3 +133,8 @@ lines = 50
 [window.padding]
 x = 5
 y = 5
+
+[general]
+live_config_reload = true
+
+import = ["~/.config/alacritty/themes/one-dark.toml"]
