@@ -27,11 +27,10 @@ bindkey -rM emacs '\ec'
 bindkey -rM vicmd '\ec'
 bindkey -rM viins '\ec'
 
-source $ZDOTDIR/nvm.zsh
 source $ZDOTDIR/skillsoft.zsh
 
 # Just show some machine info mostly for vanity reasons.
-# neofetch
+fastfetch
 
 # Provide some (short) words of wisdom
 fortune -s

@@ -14,6 +14,7 @@ brew 'dos2unix'             # convert dos files to unix line endings
 brew 'eza'                  # a replacement ls supporting git and tree
 brew 'fasd'                 # a better find
 brew 'fd'                   # a better find too
+brew 'fastfetch'             # graphical system summary
 brew 'ffmpeg'               # audio/visual conversion tool
 brew 'fish'                 # fish shell (not POSIX compliant)
 brew 'fisher'               # fish shell plugin manager
@@ -30,7 +31,6 @@ brew 'lua'                  # Scripting language, extraordinaire!
 brew 'luarocks'             # Lua package manager
 brew 'macos-trash'          # utility to leverage the trashcan from the shell
 # brew 'trash-cli'            # linux equivalent of macos-trash
-brew 'neofetch'             # graphical system summary
 brew 'neovim'               # preferred vim
 brew 'nmap'                 # port scanning util
 brew 'node'                 # system-wide node
@@ -54,10 +54,10 @@ brew 'zx'                   # javascript shell scripts
 
 # zsh
 brew 'zsh'
-brew 'zsh-autosuggestions'
-brew 'zsh-completions'
-brew 'zsh-history-substring-search'
-brew 'zsh-syntax-highlighting'
+# brew 'zsh-autosuggestions'
+# brew 'zsh-completions'
+# brew 'zsh-history-substring-search'
+# brew 'zsh-syntax-highlighting'
 
 # Casks (Note: Only works on macOS)
 cask 'alacritty'              # gpu accelerated terminal
@@ -86,7 +86,7 @@ cask 'hyperkey'               # map caps to hyper
 # cask 'postman'                # work with REST APIs
 # cask 'raycast'                # app launcher and more
 cask 'rectangle'              # window management
-cask 'slack'                  # workplace comms
+# cask 'slack'                  # workplace comms
 cask 'visual-studio-code'     # Microsoft cross-platform editor
 cask 'Whisky'                 # Stronger than WINE
 
