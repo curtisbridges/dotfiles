@@ -50,14 +50,8 @@ brew 'wget'                 # alternative shell web download util
 brew 'yarn'                 # alternative to npm
 brew 'yt-dlp'               # download youtube videos
 brew 'zoxide'               # a better autojump & cd combined
+brew 'zsh'                  # homebrew much newer than native platform
 brew 'zx'                   # javascript shell scripts
-
-# zsh
-brew 'zsh'
-# brew 'zsh-autosuggestions'
-# brew 'zsh-completions'
-# brew 'zsh-history-substring-search'
-# brew 'zsh-syntax-highlighting'
 
 # Casks (Note: Only works on macOS)
 cask 'alacritty'              # gpu accelerated terminal
