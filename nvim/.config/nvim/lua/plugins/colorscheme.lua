@@ -6,6 +6,7 @@ return { {
     -- Tokyonight- A clean, dark Neovim theme written in Lua, with support for lsp,
     -- treesitter and lots of plugins. Includes additional themes for Kitty, Alacritty, iTerm and Fish.
     "folke/tokyonight.nvim",
+    name = "tokyonight",
     lazy = true,
     priority = 1000,
     opts = {
@@ -15,5 +16,6 @@ return { {
     },
 }, {
     "olimorris/onedarkpro.nvim",
+    name = "onedarkpro",
     priority = 1000, -- Ensure it loads first
 }, }
