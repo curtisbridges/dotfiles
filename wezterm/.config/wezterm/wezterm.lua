@@ -11,14 +11,15 @@ local function color_scheme_for_appearance(appearance)
     -- return "Tokyo Night"
     return "Catppuccin Mocha"
   else
-    return "Tokyo Night Day"
+    -- return "Tokyo Night Day"
+    return "Catppuccin Latte"
   end
 end
 
 -- Fonts
 config.font = wezterm.font_with_fallback {
+  'FiraCode Nerd Font',
   'SF Mono',
-  'Fira Code Nerd Font',
   'Hack Nerd Font'
 }
 config.font_size = 14
@@ -37,9 +38,19 @@ config.window_padding = {
 config.hide_tab_bar_if_only_one_tab = true
 config.native_macos_fullscreen_mode = false
 
+-- Keybindings
+config.keys = {
+  -- Default QuickSelect keybind (CTRL-SHIFT-Space)
+  -- close pane with confirmation if active process
+  {
+    key = 'w',
+    mods = 'SUPER',
+    action = wezterm.action.CloseCurrentPane { confirm = true },
+  },
+}
+
 -- Misc
-config.check_for_updates = false
+config.check_for_updates = false -- I update via package managers
 
 -- and finally, return the configuration to wezterm
 return config
-
