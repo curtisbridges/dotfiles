@@ -64,11 +64,6 @@ function bup() {
     brew update && brew upgrade && brew upgrade --cask --greedy
 }
 
-function omzup() {
-    echo "Updating zsh..."
-    omz update
-}
-
 function update() {
     if [[ `uname` == 'Darwin' ]]; then
         bup
@@ -89,7 +84,6 @@ function update() {
     fi
 
     nup
-    omzup
 }
 
 function javahome() {
