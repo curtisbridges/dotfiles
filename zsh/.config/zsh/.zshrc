@@ -125,6 +125,9 @@ zinit light ajeetdsouza/zoxide
 # Git aliases and functionality
 zinit snippet OMZP::git
 
+# Tmux aliases and functionality
+zinit snippet OMZP::tmux
+
 # Completion settings
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'  # Case insensitive completion
