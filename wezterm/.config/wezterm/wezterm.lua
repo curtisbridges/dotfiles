@@ -1,5 +1,6 @@
 -- Pull in the wezterm API
 local wezterm = require 'wezterm'
+local act = wezterm.action
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
@@ -14,6 +15,16 @@ local function color_scheme_for_appearance(appearance)
     -- return "Tokyo Night Day"
     return "Catppuccin Latte"
   end
+end
+
+-- Function to create tmux command sequence
+local function tmux_cmd(key)
+  return act.Multiple {
+    -- Send tmux prefix (Ctrl-Space)
+    act.SendKey { key = ' ', mods = 'CTRL' },
+    -- Send the window number
+    act.SendKey { key = key },
+  }
 end
 
 -- Fonts
@@ -47,6 +58,16 @@ config.keys = {
     mods = 'SUPER',
     action = wezterm.action.CloseCurrentPane { confirm = true },
   },
+  -- Map Super+1 through Super+9 to tmux windows 1-9
+  { key = '1', mods = 'SUPER', action = tmux_cmd('1') },
+  { key = '2', mods = 'SUPER', action = tmux_cmd('2') },
+  { key = '3', mods = 'SUPER', action = tmux_cmd('3') },
+  { key = '4', mods = 'SUPER', action = tmux_cmd('4') },
+  { key = '5', mods = 'SUPER', action = tmux_cmd('5') },
+  { key = '6', mods = 'SUPER', action = tmux_cmd('6') },
+  { key = '7', mods = 'SUPER', action = tmux_cmd('7') },
+  { key = '8', mods = 'SUPER', action = tmux_cmd('8') },
+  { key = '9', mods = 'SUPER', action = tmux_cmd('9') },
 }
 
 -- Misc
