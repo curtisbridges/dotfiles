@@ -96,14 +96,14 @@ if command -v fzf &> /dev/null; then
     bindkey "^[c" fzf-cd-widget
 fi
 
-# Load NVM with performance optimizations
-zinit ice wait"0" lucid
-zinit light lukechilds/zsh-nvm
-
 # NVM configuration
 export NVM_DIR="$HOME/.nvm"
 export NVM_LAZY_LOAD=true
 export NVM_AUTO_USE=true
+
+# Load NVM with performance optimizations
+zinit ice wait"0" lucid
+zinit light lukechilds/zsh-nvm
 
 # Load fzf
 zinit ice from"gh-r" as"command"
