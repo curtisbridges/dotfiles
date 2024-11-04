@@ -2,6 +2,6 @@ Brewfile.lock.json
 
 .DS_Store
 .tool-versions
-.lazy-lock.json
+lazy-lock.json
 
 linux/.fonts/.uuid
