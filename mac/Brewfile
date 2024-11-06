@@ -9,6 +9,7 @@ brew 'ack'                  # code search tool
 brew 'ag'                   # another code search tool
 brew 'awscli'               # AWS cli client
 brew 'bat'                  # a 'cat' replacement with syntax highlighting and paging
+brew 'bat-extras'           # a few extra used by bat -- like manpage syntax highlighting
 brew 'diff-so-fancy'        # a better diff
 brew 'dos2unix'             # convert dos files to unix line endings
 brew 'eza'                  # a replacement ls supporting git and tree
@@ -42,7 +43,7 @@ brew 'ripgrep'              # a faster grep
 # brew 'rust'                 # Rust lang
 brew 'starship'             # The best prompt for any shell
 brew 'stow'                 # dotfile installation utility
-brew 'tldr'                 # a more concise man replacement
+brew 'tealdeer'             # a more concise man replacement
 brew 'tmux'                 # terminal multiplexer (not yet used)
 brew 'tree'                 # directory tree
 brew 'vite'                 # next gen node tooling

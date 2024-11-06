@@ -159,3 +159,7 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey -M vicmd 'H' beginning-of-line
 bindkey -M vicmd 'L' end-of-line
+
+# bat highlighted man pages
+eval "$(batman --export-env)"
+
