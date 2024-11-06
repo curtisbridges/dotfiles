@@ -160,6 +160,6 @@ bindkey "^[[1;5D" backward-word
 bindkey -M vicmd 'H' beginning-of-line
 bindkey -M vicmd 'L' end-of-line
 
-# bat highlighted man pages
-eval "$(batman --export-env)"
+# Use less for man syntax highlighting:
+export MANPAGER="less -R --use-color -Dd+r -Du+b"
 
