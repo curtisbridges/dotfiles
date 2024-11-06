@@ -49,6 +49,7 @@ config.window_padding = {
 }
 config.hide_tab_bar_if_only_one_tab = true
 config.native_macos_fullscreen_mode = false
+config.max_fps = 120
 
 -- Keybindings
 config.keys = {
