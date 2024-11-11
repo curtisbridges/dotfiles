@@ -30,7 +30,7 @@ bindkey -rM viins '\ec'
 source $ZDOTDIR/skillsoft.zsh
 
 # Just show some machine info mostly for vanity reasons.
-fastfetch
+# fastfetch
 
 # Provide some (short) words of wisdom
-fortune -s
+# fortune -s

@@ -1,3 +1,6 @@
+[env]
+TERM = "xterm-256color"
+
 [colors]
 draw_bold_text_with_bright_colors = true
 
@@ -10,7 +13,7 @@ draw_bold_text_with_bright_colors = true
 unfocused_hollow = true
 
 [font]
-size = 14.0
+size = 13.0
 builtin_box_drawing = true
 
 [font.bold]
@@ -25,91 +28,6 @@ style = "Italic"
 family = "FiraCode Nerd Font"
 style = "Regular"
 
-# [hints]
-# modifiers = "Command"
-
-# [hints.launcher]
-# program = "open"
-
-[[keyboard.bindings]]
-chars = "\u0000"
-key = "Space"
-mods = "Control"
-
-[[keyboard.bindings]]
-chars = "\u001F"
-key = "Slash"
-mods = "Control"
-
-[[keyboard.bindings]]
-chars = "\u0011"
-key = "Q"
-mods = "Control"
-
-[[keyboard.bindings]]
-action = "ToggleMaximized"
-key = "Return"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0000c"
-key = "T"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0000x"
-key = "W"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u00001"
-key = "Key1"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u00002"
-key = "Key2"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u00003"
-key = "Key3"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u00004"
-key = "Key4"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u00005"
-key = "Key5"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u00006"
-key = "Key6"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u00007"
-key = "Key7"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u00008"
-key = "Key8"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u00009"
-key = "Key9"
-mods = "Command"
-
-# [mouse]
-# hide_when_typing = true
-# bindings = []
-
 [scrolling]
 history = 10000
 
@@ -118,18 +36,12 @@ save_to_clipboard = false
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 
 [window]
-decorations = "buttonless"
+decorations = "full"
 dynamic_title = true
-opacity = 0.98
+dynamic_padding = true
+opacity = 0.95
+blur = true
 startup_mode = "Windowed"
-
-[window.dimensions]
-columns = 120
-lines = 50
-
-[window.padding]
-x = 5
-y = 5
 
 [general]
 live_config_reload = true

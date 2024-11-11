@@ -8,12 +8,12 @@ local config = wezterm.config_builder()
 -- Helper function:
 -- returns color scheme dependant on operating system theme setting (dark/light)
 local function color_scheme_for_appearance(appearance)
-  if appearance:find "Dark" then
+  if appearance:find "Light" then
     -- return "Tokyo Night"
-    return "Catppuccin Mocha"
+    return "Catppuccin Latte"
   else
     -- return "Tokyo Night Day"
-    return "Catppuccin Latte"
+    return "Catppuccin Mocha"
   end
 end
 
@@ -36,8 +36,7 @@ config.font = wezterm.font_with_fallback {
 config.font_size = 14
 
 -- Appearance
--- config.color_scheme = color_scheme_for_appearance(wezterm.gui.get_appearance())
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = color_scheme_for_appearance(wezterm.gui.get_appearance())
 config.window_decorations = 'RESIZE'
 config.window_background_opacity = 0.95
 config.macos_window_background_blur = 10

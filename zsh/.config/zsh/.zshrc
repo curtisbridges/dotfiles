@@ -163,3 +163,13 @@ bindkey -M vicmd 'L' end-of-line
 # Use less for man syntax highlighting:
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 
+# Set terminal title dynamically
+precmd() {
+  # Set the terminal title to current command or directory
+  # if [[ "$TERM" == *"xterm"* ]] || [[ "$TERM" == *"screen"* ]] || [[ "$TERM_PROGRAM" == "WezTerm" ]]; then
+  if [[ "$TERM" == *"xterm"* ]] || [[ "$TERM" == *"screen"* ]]; then
+    # print -Pn "\e]2;%n@%m: %~\a"  # Shows user@host: current directory
+    print -Pn "\e]2;%~\a"  # Shows current directory
+  fi
+}
+

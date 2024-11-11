@@ -43,7 +43,7 @@ yabai -m config right_padding                12
 yabai -m config window_gap                   06
 
 # Override default layout for space 5 only
-yabai -m config --space 5 layout float
+# yabai -m config --space 5 layout float
 
 # mission-control desktop labels
 yabai -m space 1 --label General
@@ -52,16 +52,20 @@ yabai -m space 3 --label WebDev
 yabai -m space 4 --label Coding
 yabai -m space 5 --label Games
 
+# Ignore my side monitors
+yabai -m rule --add display=5 float=on
+
 # apps to not manage (ignore)
+yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 yabai -m rule --add app="^Alfred Preferences$" manage=off
 yabai -m rule --add app="^balenaEtcher$" manage=off
 yabai -m rule --add app="^Battle.net$" manage=off
 yabai -m rule --add app="^Ivory$" manage=off
-yabai -m rule --add app="^Logi Options$" manage=off
 yabai -m rule --add app="^Overcast$" manage=off
-# yabai -m rule --add app="^Reminders$" manage=off
-yabai -m rule --add app="^Steam$" manage=off
-yabai -m rule --add app="^Stickies$" manage=off
-yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Logi Options$" manage=off
+# float system preferences
+yabai -m rule --add app="(Preferences|Install|Steam)" manage=off
+yabai -m rule --add app='^Stickies$' manage=off
+yabai -m rule --add label="Safari" app='^Safari$' manage=on
 
 echo "yabai configuration loaded.."
