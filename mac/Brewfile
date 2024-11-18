@@ -60,18 +60,18 @@ cask 'alacritty'              # gpu accelerated terminal
 # cask 'aerospace'              # tiling window manager
 # cask 'amethyst'               # tiling window manager
 cask 'appcleaner'             # clean uninstalls
-cask 'balenaetcher'           # USB ISO creator
+# cask 'balenaetcher'           # USB ISO creator
 # cask 'caldigit-docking-utility' # dock app
 # cask 'calibre'                # ebook utilities
-cask 'devtoys'                # convenience app for handy developer tools
-cask 'discord'                # alternate comms
-cask 'docker'                 # container software
+# cask 'devtoys'                # convenience app for handy developer tools
+# cask 'discord'                # alternate comms
+# cask 'docker'                 # container software
 # cask 'figma'                  # design software
-cask 'firefox'                # open source web browser
+# cask 'firefox'                # open source web browser
 # cask 'github'                 # github client
 # cask 'hammerspoon'            # programmable mac automation
-cask 'handbrake'              # video encoder
-cask 'hyperkey'               # map caps to hyper
+# cask 'handbrake'              # video encoder
+# cask 'hyperkey'               # map caps to hyper
 # cask 'kaleidoscope'           # Rich diffs
 # cask 'karabiner-elements'     # low-level keyboard and mouse control
 # cask 'krita'                  # open source paint app
@@ -80,10 +80,10 @@ cask 'hyperkey'               # map caps to hyper
 # cask 'openaudible'            # download / process audible content
 # cask 'postman'                # work with REST APIs
 # cask 'raycast'                # app launcher and more
-cask 'rectangle'              # window management
+# cask 'rectangle'              # window management
 # cask 'slack'                  # workplace comms
-cask 'visual-studio-code'     # Microsoft cross-platform editor
-cask 'Whisky'                 # Stronger than WINE
+# cask 'visual-studio-code'     # Microsoft cross-platform editor
+# cask 'Whisky'                 # Stronger than WINE
 
 # Fonts
 # Patched with nerd font support are good for Terminal but iTerm2 has built-in glyphs.
