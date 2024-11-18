@@ -173,3 +173,6 @@ precmd() {
   fi
 }
 
+autoload -Uz compinit
+compinit
+
