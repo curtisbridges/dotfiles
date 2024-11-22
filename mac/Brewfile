@@ -70,8 +70,16 @@ cask 'appcleaner'             # clean uninstalls
 # cask 'firefox'                # open source web browser
 # cask 'github'                 # github client
 # cask 'hammerspoon'            # programmable mac automation
+<<<<<<< Updated upstream
 # cask 'handbrake'              # video encoder
 # cask 'hyperkey'               # map caps to hyper
+||||||| Stash base
+cask 'handbrake'              # video encoder
+cask 'hyperkey'               # map caps to hyper
+=======
+cask 'handbrake'              # video encoder
+# cask 'hyperkey'               # map caps to hyper
+>>>>>>> Stashed changes
 # cask 'kaleidoscope'           # Rich diffs
 # cask 'karabiner-elements'     # low-level keyboard and mouse control
 # cask 'krita'                  # open source paint app
