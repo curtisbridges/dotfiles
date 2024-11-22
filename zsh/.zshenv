@@ -31,10 +31,10 @@ export VISUAL="code"
 export PAGER="less"
 
 # required so tmux plugin will function with XDG_CONFIG_HOME
-ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
-ZSH_TMUX_UNICODE=true
-ZSH_TMUX_FIXTERM=true
-export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME:-$HOME/tmux/plugins"
+# ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
+# ZSH_TMUX_UNICODE=true
+# ZSH_TMUX_FIXTERM=true
+# export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux/plugins"
 
 # Exported variables
 export TERM=screen-256color
@@ -49,3 +49,4 @@ export PATH=$PATH:$PYTHON_HOME
 
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
+eval $(/opt/homebrew/bin/brew shellenv)
