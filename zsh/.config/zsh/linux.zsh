@@ -1,9 +1,7 @@
 # Since I use both Macs (Darwin) and Linux handle Linux platform specific setup here.
 
 if [[ `uname` == 'Linux' ]]; then
-  if [[ -f "/home/linuxbrew/.linuxbrew/bin/brew" ]]; then
-    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-  fi
+  eval "$(brew shellenv)"
 
   # Make 'open' work in Linux (I love it on macOS)
   alias open="xdg-open"

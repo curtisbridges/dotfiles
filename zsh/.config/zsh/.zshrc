@@ -1,6 +1,9 @@
 # Curtis Bridges (curtis@curtisbridges.com)
 # ZSH config
 
+# To display profiling info
+# zmodload zsh/zprof
+
 # if [ -n "$TMUX" ]; then
 #   PATH=""
 #   source /etc/zprofile
@@ -47,13 +50,13 @@ COMPLETION_WAITING_DOTS="true"
 # oh-my-zsh plugins
 plugins=(
   aliases common-aliases
-  aws
-  docker docker-compose
+  # aws
+  # docker docker-compose
   dotenv
   fzf
   git
   macos
-  node nvm
+  node # nvm
   starship
   tmux
   vi-mode
@@ -71,11 +74,15 @@ source $ZDOTDIR/skillsoft.zsh
 # source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
+source $(brew --prefix)/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 eval "$(zoxide init --cmd cd zsh)"
 
 # completions
-autoload -Uz compinit && compinit
+if [[ -o interactive ]]; then
+  autoload -Uz compinit
+  compinit
+fi
 
 # Use homebrew installed starship prompt
 eval "$(starship init zsh)"
@@ -84,3 +91,6 @@ eval "$(starship init zsh)"
 typeset -U PATH
 
 # source $ZDOTDIR/nvm.zsh
+
+# To display profiling info
+# zprof

@@ -19,7 +19,7 @@ for dir in "${xdg_dirs[@]}"; do
   fi
 done
 
-# Set $ZTODDIR here. All other Zsh related configuration happens there.
+# Set $ZDOTDIR here. All other Zsh related configuration happens there.
 # ------------------------------------------------------------------------------
 export ZDOTDIR=${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}
 
@@ -29,12 +29,6 @@ export VISUAL="code"
 # export TERMINAL="alacritty"
 # export BROWSER="/Applications/Safari.app"
 export PAGER="less"
-
-# required so tmux plugin will function with XDG_CONFIG_HOME
-# ZSH_TMUX_CONFIG=$XDG_CONFIG_HOME/tmux/tmux.conf
-# ZSH_TMUX_UNICODE=true
-# ZSH_TMUX_FIXTERM=true
-# export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux/plugins"
 
 # Exported variables
 export TERM=screen-256color
@@ -47,6 +41,4 @@ export NVM_DIR="$HOME/.nvm"
 export PYTHON_HOME="${HOME}/.pyenv/shims"
 export PATH=$PATH:$PYTHON_HOME
 
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-
-eval $(/opt/homebrew/bin/brew shellenv)
+export STARSHIP_CONFIG="${XDG_CONFIG_HOME}/starship/starship.toml"
