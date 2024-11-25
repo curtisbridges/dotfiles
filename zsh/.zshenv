@@ -35,7 +35,8 @@ export TERM=screen-256color
 export MOZ_ENABLE_WAYLAND=1
 
 # Node
-export NVM_DIR="$HOME/.nvm"
+export NVM_DIR=~/.nvm
+ [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Python
 export PYTHON_HOME="${HOME}/.pyenv/shims"
