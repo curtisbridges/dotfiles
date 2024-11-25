@@ -56,7 +56,7 @@ plugins=(
   fzf
   git
   macos
-  node # nvm
+  node nvm
   starship
   tmux
   vi-mode
