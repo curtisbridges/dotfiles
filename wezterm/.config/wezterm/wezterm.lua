@@ -69,6 +69,20 @@ config.keys = {
   { key = '7', mods = 'SUPER', action = tmux_cmd('7') },
   { key = '8', mods = 'SUPER', action = tmux_cmd('8') },
   { key = '9', mods = 'SUPER', action = tmux_cmd('9') },
+
+  -- This will create a new split and run the `top` program inside it
+  {
+    key = '-',
+    mods = 'SUPER|SHIFT',
+    action = wezterm.action.SplitVertical,
+  },
+  {
+    key = '|',
+    mods = 'SUPER|SHIFT',
+    action = wezterm.action.SplitHorizontal {
+      -- args = { 'top' },
+    }
+  },
 }
 
 -- Misc
