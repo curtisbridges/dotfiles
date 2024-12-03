@@ -39,13 +39,12 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 decorations = "full"
 dynamic_title = true
 dynamic_padding = true
-opacity = 0.95
+opacity = 1.0
 blur = true
 startup_mode = "Windowed"
 
 [general]
 live_config_reload = true
-import = ["~/.config/alacritty/themes/catppuccin-mocha.toml"]
-# import = ["~/.config/alacritty/themes/tokyo-night-night.toml"]
+# import = ["~/.config/alacritty/themes/catppuccin-mocha.toml"]
+import = ["~/.config/alacritty/themes/tokyo-night-night.toml"]
 # import = ["~/.config/alacritty/themes/one-dark.toml"]
-
