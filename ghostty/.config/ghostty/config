@@ -1,0 +1,15 @@
+font-family = "FiraCode Nerd Font"
+theme = catppuccin-mocha
+
+window-theme = auto
+window-save-state = always
+window-decoration = true
+
+quick-terminal-animation-duration = 0
+clipboard-trim-trailing-spaces = true
+
+# macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+
+auto-update = off
+
