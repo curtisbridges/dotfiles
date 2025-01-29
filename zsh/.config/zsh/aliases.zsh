@@ -49,9 +49,9 @@ alias nf='fzf -m --preview="bat --color=always" --bind "enter:become(nvim {})"'
 alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
 
 ## Visual Studio Code - replaced by omz plugin
-# alias vsc='code .'
-# alias vscn='code --new-window'
-# alias vscw='code --wait'
+alias vsc='code .'
+alias vscn='code --new-window'
+alias vscw='code --wait'
 
 # Unalias the common-aliases for these commends (from omz plugin common-aliases)
 # unalias rm

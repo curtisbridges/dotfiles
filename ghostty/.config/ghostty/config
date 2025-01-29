@@ -5,6 +5,7 @@ window-theme = auto
 window-save-state = always
 window-decoration = true
 
+mouse-hide-while-typing = true
 quick-terminal-animation-duration = 0
 clipboard-trim-trailing-spaces = true
 
