@@ -56,7 +56,7 @@ brew 'zsh'                  # homebrew much newer than native platform
 brew 'zx'                   # javascript shell scripts
 
 # Casks (Note: Only works on macOS)
-cask 'alacritty'              # gpu accelerated terminal
+# cask 'alacritty'              # gpu accelerated terminal
 # cask 'alfred'                 # application launcher and more
 # cask 'aerospace'              # tiling window manager
 # cask 'amethyst'               # tiling window manager
@@ -70,6 +70,7 @@ cask 'appcleaner'             # clean uninstalls
 # cask 'figma'                  # design software
 # cask 'firefox'                # open source web browser
 # cask 'github'                 # github client
+cask 'ghostty'                # the best terminal on any platform
 # cask 'hammerspoon'            # programmable mac automation
 # cask 'handbrake'              # video encoder
 # cask 'hyperkey'               # map caps to hyper
@@ -78,7 +79,6 @@ cask 'appcleaner'             # clean uninstalls
 # cask 'krita'                  # open source paint app
 # cask 'mos'                    # Mouse smooth scrolling
 # cask 'netnewswire'            # RSS feed reader
-# cask 'openaudible'            # download / process audible content
 # cask 'postman'                # work with REST APIs
 # cask 'raycast'                # app launcher and more
 # cask 'rectangle'              # window management
