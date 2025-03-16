@@ -11,6 +11,12 @@ vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
 vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
 vim.keymap.set("n", "<C-l>", "<C-w>l", opts)
 
+-- Move around splits
+vim.keymap.set("n", "<leader>wh", "<C-w>h", {})
+vim.keymap.set("n", "<leader>wj", "<C-w>j", {})
+vim.keymap.set("n", "<leader>wk", "<C-w>k", {})
+vim.keymap.set("n", "<leader>wl", "<C-w>l", {})
+
 -- Resize with arrows
 vim.keymap.set("n", "<C-Up>", ":resize +2<CR>", opts)
 vim.keymap.set("n", "<C-Down>", ":resize -2<CR>", opts)
@@ -25,11 +31,6 @@ vim.keymap.set("n", "<leader>bd", ":bdelete<CR>", opts)
 vim.keymap.set("n", "<leader>q", ":qa!<CR>", {})
 -- Fast saving with <leader> and s
 vim.keymap.set("n", "<leader>s", ":w<CR>", {})
--- Move around splits
-vim.keymap.set("n", "<leader>wh", "<C-w>h", {})
-vim.keymap.set("n", "<leader>wj", "<C-w>j", {})
-vim.keymap.set("n", "<leader>wk", "<C-w>k", {})
-vim.keymap.set("n", "<leader>wl", "<C-w>l", {})
 
 -- Reload configuration without restart nvim
 vim.keymap.set("n", "<leader>r", ":so %<CR>", {})
