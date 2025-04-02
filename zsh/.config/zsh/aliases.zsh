@@ -37,6 +37,8 @@ alias gdsc='git diff --stat --color'
 alias gupd='git stash && git fetch && git rebase $(git_develop_branch) && git stash pop'
 alias gupm='git stash && git fetch && git rebase $(git_main_branch) && git stash pop'
 alias gcoa='git checkout -- .'
+alias gdbd='git diff $(git merge-base develop HEAD)'
+alias gdbm='git diff $(git merge-base main HEAD)'
 
 alias todo='git grep -l TODO | xargs -n1 git blame -f -n -w | grep "$(git config user.name)" | grep TODO | sed "s/.\{9\}//" | sed "s/(.*)[[:space:]]*//"'
 
