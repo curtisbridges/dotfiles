@@ -52,7 +52,6 @@ plugins=(
   aliases common-aliases
   # aws
   # docker docker-compose
-  dotenv
   fzf
   git
   macos
