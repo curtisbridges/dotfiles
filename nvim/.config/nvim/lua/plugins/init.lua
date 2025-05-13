@@ -1,7 +1,15 @@
 -- ~/.config/nvim/lua/plugins/init.lua
 require("lazy").setup({
+  -- install = {
+  --   -- install missing plugins on startup
+  --   missing = true,
+  --   -- try to load one of these colorschemes when starting an installation during startup
+  --   colorscheme = { "catppuccin", "tokyonight", "onedarkpro" }
+  -- },
   { "catppuccin/nvim",                      name = "catppuccin", priority = 1000 },
   { "nvim-lua/plenary.nvim" },
+  -- { import = "plugins" },
+  { import = "plugins.colorscheme" },
   { import = "plugins.telescope" },
   { import = "plugins.nvim-tree" },
   { import = "plugins.lualine" },

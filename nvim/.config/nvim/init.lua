@@ -35,5 +35,3 @@ require("plugins")
 -- - `<leader>fa` — toggle autoformat on save
 -- - `<leader>mm` — toggle statusline mode
 -- - `<leader>qs/ql/qd` — session load/save/stopped
-
-vim.cmd.colorscheme "catppuccin"
