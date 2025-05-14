@@ -1,5 +1,5 @@
 font-family = "FiraCode Nerd Font"
-theme = catppuccin-mocha
+theme = dark:catppuccin-mocha,light:catppuccin-latte
 
 window-theme = auto
 window-save-state = always
