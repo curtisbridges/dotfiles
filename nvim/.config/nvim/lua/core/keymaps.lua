@@ -61,6 +61,9 @@ vim.keymap.set("n", "<leader>r", ":so %<CR>", {})
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
 vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+vim.keymap.set('n', '<leader>gs', function()
+  require('telescope.builtin').grep_string({ search = vim.fn.expand("<cword>") })
+end, { desc = 'Grep string under cursor' })
 
 -- NvimTree
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
