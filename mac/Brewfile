@@ -65,7 +65,7 @@ cask 'appcleaner'             # clean uninstalls
 # cask 'caldigit-docking-utility' # dock app
 # cask 'calibre'                # ebook utilities
 # cask 'devtoys'                # convenience app for handy developer tools
-# cask 'discord'                # alternate comms
+# cask 'legcord'                # alternate comms, discord native for mac
 # cask 'docker'                 # container software
 # cask 'figma'                  # design software
 # cask 'firefox'                # open source web browser
