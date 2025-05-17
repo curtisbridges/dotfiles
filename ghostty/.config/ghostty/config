@@ -13,3 +13,7 @@ clipboard-trim-trailing-spaces = true
 macos-titlebar-proxy-icon = hidden
 
 auto-update = off
+
+background-opacity = 0.90
+background-blur = true
+
