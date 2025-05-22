@@ -33,37 +33,30 @@ setopt auto_menu             # automatically use menu completion
 unsetopt correctall          # don't correct typo(ed) commands
 unsetopt menu_complete       # insert first suggestion while autocompleting
 
-# config
-source $ZDOTDIR/path.zsh
-source $ZDOTDIR/aliases.zsh
-source $ZDOTDIR/functions.zsh
-
-# Configure OMZ
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.local/share/oh-my-zsh"
-
 DISABLE_AUTO_TITLE="true"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_MAGIC_FUNCTIONS="true"
 COMPLETION_WAITING_DOTS="true"
 
-# oh-my-zsh plugins
-plugins=(
-  aliases common-aliases
-  # aws
-  # docker docker-compose
-  fzf
-  git
-  macos
-  node
-  starship
-  tmux
-  vi-mode
-)
+# Custom config settings split out into separate files.
+source $ZDOTDIR/path.zsh
+source $ZDOTDIR/aliases.zsh
+source $ZDOTDIR/functions.zsh
 
-# oh-my-zsh loading
-source $ZSH/oh-my-zsh.sh
-# ZSH_THEME=""  # disable because I handle my own themes
+# ---------- Completion System ----------
+# Skip compaudit (faster startup)
+ZSH_DISABLE_COMPFIX=true
+
+# Enable caching of completions
+zstyle ':completion::complete:*' use-cache on
+zstyle ':completion::complete:*' cache-path ~/.zcompcache
+
+autoload -Uz compinit
+compinit -C
+
+# ---------- Plugin Manager: Antidote ----------
+source /opt/homebrew/share/antidote/antidote.zsh
+antidote load
 
 source $ZDOTDIR/linux.zsh
 source $ZDOTDIR/mac.zsh
@@ -75,13 +68,8 @@ source $ZDOTDIR/skillsoft.zsh
 # source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
 source $(brew --prefix)/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
+# intelligent cd
 eval "$(zoxide init --cmd cd zsh)"
-
-# completions
-if [[ -o interactive ]]; then
-  autoload -Uz compinit
-  compinit
-fi
 
 # Use homebrew installed starship prompt
 eval "$(starship init zsh)"
@@ -89,7 +77,8 @@ eval "$(starship init zsh)"
 # Prevent duplicate entries in PATH
 typeset -U PATH
 
-# source $ZDOTDIR/nvm.zsh
+# Enable aliases to work with sudo
+alias sudo='sudo '
 
 # To display profiling info
 # zprof
