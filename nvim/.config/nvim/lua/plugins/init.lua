@@ -27,4 +27,5 @@ require("lazy").setup({
   { import = "plugins.toggleterm" },
   { import = "plugins.persistence" },
   { import = "plugins.telescope-extensions" },
+  { import = "plugins.snacks" },
 })
