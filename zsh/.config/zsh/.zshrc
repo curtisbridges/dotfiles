@@ -62,16 +62,10 @@ source $ZDOTDIR/linux.zsh
 source $ZDOTDIR/mac.zsh
 source $ZDOTDIR/skillsoft.zsh
 
-# Homebrew plugin setups
-# source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
-source $(brew --prefix)/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-
 # intelligent cd
 eval "$(zoxide init --cmd cd zsh)"
 
-# Use homebrew installed starship prompt
+# Use starship prompt
 eval "$(starship init zsh)"
 
 # Prevent duplicate entries in PATH
