@@ -10,8 +10,8 @@ require("lazy").setup({
   { "nvim-lua/plenary.nvim" },
   -- { import = "plugins" },
   { import = "plugins.colorscheme" },
-  { import = "plugins.telescope" },
-  { import = "plugins.nvim-tree" },
+--  { import = "plugins.telescope" },
+--  { import = "plugins.nvim-tree" },
   { import = "plugins.lualine" },
   { import = "plugins.lsp" },
   { import = "plugins.mason" },
@@ -26,6 +26,6 @@ require("lazy").setup({
   { import = "plugins.gitsigns" },
   { import = "plugins.toggleterm" },
   { import = "plugins.persistence" },
-  { import = "plugins.telescope-extensions" },
+--  { import = "plugins.telescope-extensions" },
   { import = "plugins.snacks" },
 })

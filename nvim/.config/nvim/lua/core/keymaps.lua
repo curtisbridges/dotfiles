@@ -58,18 +58,18 @@ vim.keymap.set("n", "<leader>r", ":so %<CR>", {})
 -- vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 -- vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 -- vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
-vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", opts)
-vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
-vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", opts)
-vim.keymap.set('n', '<leader>gs', function()
-  require('telescope.builtin').grep_string({ search = vim.fn.expand("<cword>") })
-end, { desc = 'Grep string under cursor' })
+-- vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+-- vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
+-- vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+-- vim.keymap.set('n', '<leader>gs', function()
+  -- require('telescope.builtin').grep_string({ search = vim.fn.expand("<cword>") })
+-- end, { desc = 'Grep string under cursor' })
 
 -- NvimTree
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
-vim.keymap.set("n", "<leader>n", ":NvimTreeToggle<CR>", {})    -- open/close
-vim.keymap.set("n", "<leader>nr", ":NvimTreeRefresh<CR>", {})  -- refresh
-vim.keymap.set("n", "<leader>nf", ":NvimTreeFindFile<CR>", {}) -- search file
+-- vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+-- vim.keymap.set("n", "<leader>n", ":NvimTreeToggle<CR>", {})    -- open/close
+-- vim.keymap.set("n", "<leader>nr", ":NvimTreeRefresh<CR>", {})  -- refresh
+-- vim.keymap.set("n", "<leader>nf", ":NvimTreeFindFile<CR>", {}) -- search file
 
 -- Insert --
 -- Press jj fast to exit insert mode
@@ -87,8 +87,19 @@ vim.keymap.set("x", "K", ":move '<-2<CR>gv-gv", opts)
 vim.keymap.set("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- Nvimtree
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+-- Snacks --
+-- local opts = { noremap = true, silent = true }
+-- local picker = require("snacks.picker")
+
+-- Snacks Picker
+-- vim.keymap.set("n", "<leader>ff", function() picker.files() end, opts)
+-- vim.keymap.set("n", "<leader>fb", function() picker.buffers() end, opts)
+-- vim.keymap.set("n", "<leader>fg", function() picker.live_grep() end, opts)
+-- vim.keymap.set("n", "<leader>gs", function() picker.grep_string({ search = vim.fn.expand("<cword>") }) end, opts)
+
+-- vim.keymap.set("n", "<leader>e", function()
+  -- picker.open("files")
+-- end, { desc = "Open file picker (snacks)", noremap = true, silent = true })
 
 -- Comments
 -- Comment: https://github.com/numToStr/Comment.nvim
