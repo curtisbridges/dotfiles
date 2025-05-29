@@ -1,7 +1,7 @@
 font-family = "FiraCode Nerd Font"
 theme = dark:catppuccin-mocha,light:catppuccin-latte
 
-window-theme = dark
+window-theme = auto
 window-decoration = auto
 window-save-state = always
 
