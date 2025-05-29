@@ -1,3 +1,5 @@
+auto-update = off
+
 font-family = "FiraCode Nerd Font"
 theme = dark:catppuccin-mocha,light:catppuccin-latte
 
@@ -5,25 +7,33 @@ window-theme = auto
 window-decoration = auto
 window-save-state = always
 
-mouse-hide-while-typing = true
-
-quick-terminal-animation-duration = 0
-clipboard-trim-trailing-spaces = true
-
-# macos-titlebar-style = tabs
+# Mac specific settings
+# Available values are: "native", "transparent", "tabs", and "hidden".
+macos-titlebar-style = tabs
 macos-titlebar-proxy-icon = hidden
+macos-icon = custom-style
+macos-icon-ghost-color = #a6e3a1
+macos-icon-screen-color = #1e1e2e
+macos-icon-frame = plastic
 
-auto-update = off
-
+mouse-hide-while-typing = true
 background-opacity = 0.90
 background-blur = true
 
-# Leader key
-# keyboard.leader = ctrl+space
+clipboard-trim-trailing-spaces = true
+shell-integration=detect
+
+# quick terminal
+keybind = global:cmd+enter=toggle_quick_terminal
+quick-terminal-position = right
+quick-terminal-screen = main
+quick-terminal-space-behavior = move
+quick-terminal-autohide = false
+quick-terminal-animation-duration = 0
 
 # keybindings
 
-# split
+# splits
 keybind = ctrl+space>\=new_split:right
 keybind = ctrl+space>-=new_split:down
 
