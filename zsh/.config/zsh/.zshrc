@@ -38,11 +38,6 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_MAGIC_FUNCTIONS="true"
 COMPLETION_WAITING_DOTS="true"
 
-# Custom config settings split out into separate files.
-source $ZDOTDIR/path.zsh
-source $ZDOTDIR/aliases.zsh
-source $ZDOTDIR/functions.zsh
-
 # ---------- Completion System ----------
 # Skip compaudit (faster startup)
 ZSH_DISABLE_COMPFIX=true
@@ -57,6 +52,11 @@ compinit -C
 # ---------- Plugin Manager: Antidote ----------
 source /opt/homebrew/share/antidote/antidote.zsh
 antidote load
+
+# Custom config settings split out into separate files.
+source $ZDOTDIR/path.zsh
+source $ZDOTDIR/aliases.zsh
+source $ZDOTDIR/functions.zsh
 
 source $ZDOTDIR/linux.zsh
 source $ZDOTDIR/mac.zsh
