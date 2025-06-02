@@ -30,7 +30,7 @@ clipboard-trim-trailing-spaces = true
 shell-integration=detect
 
 # quick terminal
-keybind = global:cmd+enter=toggle_quick_terminal
+keybind = global:cmd+escape=toggle_quick_terminal
 quick-terminal-position = right
 quick-terminal-screen = main
 quick-terminal-space-behavior = remain
