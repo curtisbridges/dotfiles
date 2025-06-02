@@ -2,37 +2,24 @@ export default {
   defaultBrowser: 'Safari',
   handlers: [
     {
-      match: /github\.skillsoft\.com/,
-      browser: {
-        name: 'Google Chrome',
-        openUrl: (url) => [
-          '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-          '--profile-directory=Profile 2', // replace with your profile name
-          url,
-        ],
-      },
+      match: (url) => url.host.endsWith('github.skillsoft.com'),
+      browser: 'Google Chrome:Skillsoft',
     },
     {
-      match: /skillsoftdev\.atlassian\.net/,
-      browser: {
-        name: 'Google Chrome',
-        openUrl: (url) => [
-          '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-          '--profile-directory=Profile 2', // replace with your profile name
-          url,
-        ],
-      },
+      match: (url) => url.host.endsWith('skillsoftdev.atlassian.net'),
+      browser: 'Google Chrome:Skillsoft',
     },
     {
-      match: /squads-dev\.com/,
-      browser: {
-        name: 'Google Chrome',
-        openUrl: (url) => [
-          '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-          '--profile-directory=Profile 2', // replace with your profile name
-          url,
-        ],
-      },
+      match: (url) => url.host.endsWith('squads-dev.com'),
+      browser: 'Google Chrome:Skillsoft',
+    },
+    {
+      match: (url) => url.host.endsWith('google.com'),
+      browser: 'Google Chrome:Personal',
+    },
+    {
+      match: (url) => url.host.endsWith('youtube.com'),
+      browser: 'Google Chrome:Personal',
     },
   ],
 }
