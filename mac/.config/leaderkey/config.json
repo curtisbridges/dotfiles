@@ -137,32 +137,38 @@
         {
           "key" : "f",
           "label" : "Front",
-          "type" : "command",
-          "value" : "/opt/homebrew/bin/code ~/z_teams/front"
+          "type" : "url",
+          "value" : "vscode://file/Users/cmb/z_teams/front"
         },
         {
           "key" : "j",
           "label" : "JRA",
-          "type" : "command",
-          "value" : "/opt/homebrew/bin/code ~/z_teams/job-role-app"
+          "type" : "url",
+          "value" : "vscode://file/Users/cmb/z_teams/job-role-app"
         },
         {
           "key" : "s",
           "label" : "Skilz",
-          "type" : "command",
-          "value" : "/opt/homebrew/bin/code ~/z_teams/skilz"
-        },
-        {
-          "key" : "w",
-          "label" : "Website",
-          "type" : "command",
-          "value" : "/opt/homebrew/bin/code ~/Developer/Personal/curtisbridges.com"
+          "type" : "url",
+          "value" : "vscode://file/Users/cmb/z_teams/skilz"
         },
         {
           "key" : "c",
           "label" : "CMS",
-          "type" : "command",
-          "value" : "/opt/homebrew/bin/code ~/Developer/Personal/cmb-cms/"
+          "type" : "url",
+          "value" : "vscode://file/Users/cmb/Developer/Personal/cmb-cms/"
+        },
+        {
+          "key" : "d",
+          "label" : "dotfiles",
+          "type" : "url",
+          "value" : "vscode://file/Users/cmb/dotfiles/"
+        },
+        {
+          "key" : "w",
+          "label" : "Website",
+          "type" : "url",
+          "value" : "vscode://file/Users/cmb/Developer/Personal/curtisbridges.com"
         }
       ],
       "key" : "v",
