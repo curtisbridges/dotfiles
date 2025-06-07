@@ -1,14 +1,9 @@
 {
   "actions" : [
     {
-      "key" : "t",
-      "type" : "application",
-      "value" : "/Applications/Ghostty.app"
-    },
-    {
       "actions" : [
         {
-          "key" : "s",
+          "key" : "b",
           "type" : "application",
           "value" : "/Applications/Safari.app"
         },
@@ -56,10 +51,63 @@
           "key" : "c",
           "type" : "application",
           "value" : "/Applications/Google Chrome.app"
+        },
+        {
+          "key" : "s",
+          "label" : "Slack",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
+        },
+        {
+          "key" : "q",
+          "type" : "application",
+          "value" : "/System/Applications/Stickies.app"
+        },
+        {
+          "key" : "a",
+          "type" : "application",
+          "value" : "/Applications/ChatGPT.app"
+        },
+        {
+          "key" : "l",
+          "type" : "application",
+          "value" : "/Applications/Leader Key.app"
         }
       ],
       "key" : "a",
       "label" : "Apps",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "h",
+          "type" : "folder",
+          "value" : "/Users/cmb"
+        },
+        {
+          "key" : "d",
+          "type" : "folder",
+          "value" : "/Users/cmb/Documents"
+        },
+        {
+          "key" : "n",
+          "type" : "folder",
+          "value" : "/Users/cmb/Downloads"
+        },
+        {
+          "key" : "e",
+          "type" : "folder",
+          "value" : "/Users/cmb/Desktop"
+        },
+        {
+          "key" : "a",
+          "type" : "folder",
+          "value" : "/Applications"
+        }
+      ],
+      "key" : "f",
+      "label" : "Finder",
       "type" : "group"
     },
     {
@@ -87,6 +135,53 @@
     {
       "actions" : [
         {
+          "key" : "f",
+          "label" : "Front",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/code ~/z_teams/front"
+        },
+        {
+          "key" : "j",
+          "label" : "JRA",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/code ~/z_teams/job-role-app"
+        },
+        {
+          "key" : "s",
+          "label" : "Skilz",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/code ~/z_teams/skilz"
+        },
+        {
+          "key" : "w",
+          "label" : "Website",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/code ~/Developer/Personal/curtisbridges.com"
+        },
+        {
+          "key" : "c",
+          "label" : "CMS",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/code ~/Developer/Personal/cmb-cms/"
+        }
+      ],
+      "key" : "v",
+      "label" : "VS Code",
+      "type" : "group"
+    },
+    {
+      "key" : "s",
+      "type" : "application",
+      "value" : "/Applications/Safari.app"
+    },
+    {
+      "key" : "t",
+      "type" : "application",
+      "value" : "/Applications/Ghostty.app"
+    },
+    {
+      "actions" : [
+        {
           "key" : "d",
           "label" : "Right Half",
           "type" : "url",
@@ -103,6 +198,18 @@
           "label" : "Restore",
           "type" : "url",
           "value" : "rectangle://execute-action?name=restore"
+        },
+        {
+          "key" : "f",
+          "label" : "Maximize",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=maximize"
+        },
+        {
+          "key" : "x",
+          "label" : "Almost Maximize",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=almost-maximize"
         },
         {
           "key" : "c",
@@ -135,30 +242,6 @@
           "value" : "rectangle://execute-action?name=first-third"
         },
         {
-          "key" : "f",
-          "label" : "Maximize",
-          "type" : "url",
-          "value" : "rectangle://execute-action?name=maximize"
-        },
-        {
-          "key" : "n",
-          "label" : "Next Display",
-          "type" : "url",
-          "value" : "rectangle://execute-action?name=nextt-display"
-        },
-        {
-          "key" : "p",
-          "label" : "Previous Display",
-          "type" : "url",
-          "value" : "rectangle://execute-action?name=previous-display"
-        },
-        {
-          "key" : "x",
-          "label" : "Almost Maximize",
-          "type" : "url",
-          "value" : "rectangle://execute-action?name=almost-maximize"
-        },
-        {
           "key" : "1",
           "label" : "Top Left",
           "type" : "url",
@@ -181,52 +264,22 @@
           "label" : "Bottom Right",
           "type" : "url",
           "value" : "rectangle://execute-action?name=bottom-right"
+        },
+        {
+          "key" : "n",
+          "label" : "Next Display",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=next-display"
+        },
+        {
+          "key" : "p",
+          "label" : "Previous Display",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=previous-display"
         }
       ],
       "key" : "w",
       "label" : "Window",
-      "type" : "group"
-    },
-    {
-      "key" : "s",
-      "type" : "application",
-      "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
-    },
-    {
-      "key" : "v",
-      "type" : "application",
-      "value" : "/Applications/Visual Studio Code.app"
-    },
-    {
-      "actions" : [
-        {
-          "key" : "h",
-          "type" : "folder",
-          "value" : "/Users/cmb"
-        },
-        {
-          "key" : "d",
-          "type" : "folder",
-          "value" : "/Users/cmb/Documents"
-        },
-        {
-          "key" : "n",
-          "type" : "folder",
-          "value" : "/Users/cmb/Downloads"
-        },
-        {
-          "key" : "a",
-          "type" : "folder",
-          "value" : "/Applications"
-        },
-        {
-          "key" : "e",
-          "type" : "folder",
-          "value" : "/Users/cmb/Desktop"
-        }
-      ],
-      "key" : "f",
-      "label" : "Media",
       "type" : "group"
     }
   ],
