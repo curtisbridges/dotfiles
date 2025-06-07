@@ -74,8 +74,8 @@
           "value" : "/Applications/Leader Key.app"
         }
       ],
-      "key" : "a",
-      "label" : "Apps",
+      "key" : "e",
+      "label" : "Exec (Apps)",
       "type" : "group"
     },
     {
