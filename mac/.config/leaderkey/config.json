@@ -1,0 +1,185 @@
+{
+  "actions" : [
+    {
+      "key" : "t",
+      "type" : "application",
+      "value" : "/Applications/Ghostty.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Safari.app"
+        },
+        {
+          "key" : "e",
+          "type" : "application",
+          "value" : "/System/Applications/Mail.app"
+        },
+        {
+          "key" : "u",
+          "type" : "application",
+          "value" : "/System/Applications/Music.app"
+        },
+        {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/System/Applications/Messages.app"
+        },
+        {
+          "key" : "r",
+          "type" : "application",
+          "value" : "/System/Applications/Reminders.app"
+        },
+        {
+          "key" : "i",
+          "type" : "application",
+          "value" : "/Applications/Ivory.app"
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Visual Studio Code.app"
+        },
+        {
+          "key" : "g",
+          "type" : "application",
+          "value" : "/Applications/Ghostty.app"
+        },
+        {
+          "key" : "n",
+          "type" : "application",
+          "value" : "/System/Applications/Notes.app"
+        }
+      ],
+      "key" : "o",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "e",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+        },
+        {
+          "key" : "p",
+          "type" : "url",
+          "value" : "raycast://confetti"
+        },
+        {
+          "key" : "c",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/open-camera"
+        }
+      ],
+      "key" : "r",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "d",
+          "label" : "Right Half",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=right-half"
+        },
+        {
+          "key" : "a",
+          "label" : "Left Half",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=left-half"
+        },
+        {
+          "key" : "r",
+          "label" : "Restore",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=restore"
+        },
+        {
+          "key" : "c",
+          "label" : "Center",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=center-half"
+        },
+        {
+          "key" : "w",
+          "label" : "Top Half",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=top-half"
+        },
+        {
+          "key" : "s",
+          "label" : "Bottom Half",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=bottom-half"
+        },
+        {
+          "key" : "e",
+          "label" : "Last Two Thirds",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=last-two-thirds"
+        },
+        {
+          "key" : "q",
+          "label" : "First Third",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=first-third"
+        },
+        {
+          "key" : "f",
+          "label" : "Maximize",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=maximize"
+        },
+        {
+          "key" : "n",
+          "label" : "Next Display",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=nextt-display"
+        },
+        {
+          "key" : "p",
+          "label" : "Previous Display",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=previous-display"
+        },
+        {
+          "key" : "x",
+          "label" : "Almost Maximize",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=almost-maximize"
+        },
+        {
+          "key" : "1",
+          "label" : "Top Left",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=top-left"
+        },
+        {
+          "key" : "2",
+          "label" : "Top Right",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=top-right"
+        },
+        {
+          "key" : "3",
+          "label" : "Bottom Left",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=bottom-left"
+        },
+        {
+          "key" : "4",
+          "label" : "Bottom Right",
+          "type" : "url",
+          "value" : "rectangle://execute-action?name=bottom-right"
+        }
+      ],
+      "key" : "w",
+      "label" : "Window",
+      "type" : "group"
+    }
+  ],
+  "type" : "group"
+}
