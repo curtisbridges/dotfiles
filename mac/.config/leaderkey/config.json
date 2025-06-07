@@ -138,19 +138,19 @@
           "key" : "f",
           "label" : "Front",
           "type" : "url",
-          "value" : "vscode://file/Users/cmb/z_teams/front"
+          "value" : "vscode://file/Users/cmb/z_team/front"
         },
         {
           "key" : "j",
           "label" : "JRA",
           "type" : "url",
-          "value" : "vscode://file/Users/cmb/z_teams/job-role-app"
+          "value" : "vscode://file/Users/cmb/z_team/job-role-app"
         },
         {
           "key" : "s",
           "label" : "Skilz",
           "type" : "url",
-          "value" : "vscode://file/Users/cmb/z_teams/skilz"
+          "value" : "vscode://file/Users/cmb/z_team/skilz"
         },
         {
           "key" : "c",
@@ -169,6 +169,12 @@
           "label" : "Website",
           "type" : "url",
           "value" : "vscode://file/Users/cmb/Developer/Personal/curtisbridges.com"
+        },
+        {
+          "key" : "t",
+          "label" : "Status",
+          "type" : "url",
+          "value" : "vscode://file/Users/cmb/Developer/Work/Skillsoft/status/"
         }
       ],
       "key" : "v",
