@@ -38,7 +38,7 @@
           "value" : "/Applications/Ivory.app"
         },
         {
-          "key" : "c",
+          "key" : "v",
           "type" : "application",
           "value" : "/Applications/Visual Studio Code.app"
         },
@@ -51,9 +51,15 @@
           "key" : "n",
           "type" : "application",
           "value" : "/System/Applications/Notes.app"
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Google Chrome.app"
         }
       ],
-      "key" : "o",
+      "key" : "a",
+      "label" : "Apps",
       "type" : "group"
     },
     {
@@ -75,6 +81,7 @@
         }
       ],
       "key" : "r",
+      "label" : "Raycast",
       "type" : "group"
     },
     {
@@ -178,6 +185,48 @@
       ],
       "key" : "w",
       "label" : "Window",
+      "type" : "group"
+    },
+    {
+      "key" : "s",
+      "type" : "application",
+      "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+    },
+    {
+      "key" : "v",
+      "type" : "application",
+      "value" : "/Applications/Visual Studio Code.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "h",
+          "type" : "folder",
+          "value" : "/Users/cmb"
+        },
+        {
+          "key" : "d",
+          "type" : "folder",
+          "value" : "/Users/cmb/Documents"
+        },
+        {
+          "key" : "n",
+          "type" : "folder",
+          "value" : "/Users/cmb/Downloads"
+        },
+        {
+          "key" : "a",
+          "type" : "folder",
+          "value" : "/Applications"
+        },
+        {
+          "key" : "e",
+          "type" : "folder",
+          "value" : "/Users/cmb/Desktop"
+        }
+      ],
+      "key" : "f",
+      "label" : "Media",
       "type" : "group"
     }
   ],
