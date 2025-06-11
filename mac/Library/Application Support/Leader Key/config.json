@@ -141,6 +141,12 @@
           "value" : "vscode://file/Users/cmb/z_team/front"
         },
         {
+          "key" : "b",
+          "label" : "Front-BFF",
+          "type" : "url",
+          "value" : "vscode://file/Users/cmb/z_team/federated-front-bff"
+        },
+        {
           "key" : "j",
           "label" : "JRA",
           "type" : "url",
@@ -177,7 +183,7 @@
           "value" : "vscode://file/Users/cmb/Developer/Work/Skillsoft/status/"
         }
       ],
-      "key" : "c",
+      "key" : "v",
       "label" : "VS Code",
       "type" : "group"
     },

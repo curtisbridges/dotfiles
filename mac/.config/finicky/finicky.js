@@ -6,11 +6,23 @@ export default {
       browser: 'Google Chrome:Skillsoft',
     },
     {
+      match: (url) => url.host.endsWith('localhost'),
+      browser: 'Google Chrome:Skillsoft',
+    },
+    {
       match: (url) => url.host.endsWith('skillsoftdev.atlassian.net'),
       browser: 'Google Chrome:Skillsoft',
     },
     {
       match: (url) => url.host.endsWith('squads-dev.com'),
+      browser: 'Google Chrome:Skillsoft',
+    },
+    {
+      match: (url) => url.host.endsWith('snyk.io'),
+      browser: 'Google Chrome:Skillsoft',
+    },
+    {
+      match: (url) => url.host.endsWith('myworkday.com'),
       browser: 'Google Chrome:Skillsoft',
     },
     {
