@@ -72,6 +72,11 @@
           "key" : "l",
           "type" : "application",
           "value" : "/Applications/Leader Key.app"
+        },
+        {
+          "key" : "f",
+          "type" : "application",
+          "value" : "/System/Applications/FindMy.app"
         }
       ],
       "key" : "e",
