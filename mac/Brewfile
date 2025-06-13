@@ -1,8 +1,6 @@
 # Taps
 tap 'homebrew/bundle'
 tap 'homebrew/command-not-found'
-tap 'homebrew/cask'              # Only works on macOS
-tap 'homebrew/cask-fonts'        # Only works on macOS
 
 # Brews
 brew 'ack'                  # code search tool
