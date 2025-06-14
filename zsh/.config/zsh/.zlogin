@@ -1,7 +1,9 @@
 ##
 ## .zlogin -- executed after .zshrc
 ##
-NVM_HOMEBREW=$(brew --prefix nvm)
+
+# This is only needed for the omz nvm plugin. I can probably safely remove.
+#NVM_HOMEBREW=$(brew --prefix nvm)
 
 # FZF
 export FZF_BASE=$(brew --prefix)/bin/fzf
