@@ -6,6 +6,7 @@ tap 'homebrew/command-not-found'
 brew 'ack'                  # code search tool
 brew 'ag'                   # another code search tool
 brew 'antidote'             # a fast zsh plugin manager
+brew 'atuin'                # shell history on steroids
 brew 'awscli'               # AWS cli client
 brew 'bat'                  # a 'cat' replacement with syntax highlighting and paging
 brew 'bat-extras'           # a few extra used by bat -- like manpage syntax highlighting
@@ -21,8 +22,9 @@ brew 'fisher'               # fish shell plugin manager
 brew 'fortune'              # words of wisdom
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
 brew 'git'                  # source control
-# brew 'go'                   # Go lang
+brew 'git-extras'           # git quality of life commands
 # brew 'git-flow'             # standard git workflows
+# brew 'go'                   # Go lang
 brew 'gpg'                  # encryption utils
 brew 'htop'                 # system stats
 brew 'hugo'                 # static blog generator
@@ -82,7 +84,7 @@ cask 'hyperkey'               # map caps to hyper
 cask 'raycast'                # app launcher and more
 # cask 'rectangle'              # window management
 # cask 'slack'                  # workplace comms
-# cask 'visual-studio-code'     # Microsoft cross-platform editor
+cask 'visual-studio-code'     # Microsoft cross-platform editor
 # cask 'Whisky'                 # Stronger than WINE
 
 # Fonts

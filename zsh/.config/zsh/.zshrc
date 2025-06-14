@@ -12,10 +12,14 @@
 export KEYTIMEOUT=1
 
 # History
-HISTFILE=${ZDOTDIR:-$HOME}/.zhistory
-HIST_STAMPS="yyyy-mm-dd"
-HISTSIZE=1000
-SAVEHIST=1000
+# HISTFILE=${ZDOTDIR:-$HOME}/.zhistory
+# HIST_STAMPS="yyyy-mm-dd"
+# HISTSIZE=1000
+# SAVEHIST=1000
+# Now that Atuin handles history, get rid of zsh's history clutter
+HISTFILE=
+HISTSIZE=0
+SAVEHIST=0
 
 # options
 setopt hist_ignore_all_dups  # remove older duplicate entries from history
@@ -39,23 +43,17 @@ DISABLE_MAGIC_FUNCTIONS="true"
 COMPLETION_WAITING_DOTS="true"
 
 # ---------- Completion System ----------
-# Skip compaudit (faster startup)
-ZSH_DISABLE_COMPFIX=true
-
-# Enable caching of completions
-zstyle ':completion::complete:*' use-cache on
-zstyle ':completion::complete:*' cache-path ~/.zcompcache
-
-autoload -Uz compinit
-compinit -C
+source $ZDOTDIR/completions.zsh
 
 # ---------- Plugin Manager: Antidote ----------
-source /opt/homebrew/share/antidote/antidote.zsh
+source "$(brew --prefix)"/share/antidote/antidote.zsh
 antidote load
+compinit -C
 
 # Custom config settings split out into separate files.
 source $ZDOTDIR/path.zsh
 source $ZDOTDIR/aliases.zsh
+source $ZDOTDIR/alias-expand.zsh
 source $ZDOTDIR/functions.zsh
 
 source $ZDOTDIR/linux.zsh
@@ -67,6 +65,9 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Use starship prompt
 eval "$(starship init zsh)"
+
+# Atuin intelligent history
+eval "$(atuin init zsh)"
 
 # Prevent duplicate entries in PATH
 typeset -U PATH

@@ -28,9 +28,3 @@ bindkey -rM vicmd '\ec'
 bindkey -rM viins '\ec'
 
 source $ZDOTDIR/skillsoft.zsh
-
-# Just show some machine info mostly for vanity reasons.
-# fastfetch
-
-# Provide some (short) words of wisdom
-# fortune -s
