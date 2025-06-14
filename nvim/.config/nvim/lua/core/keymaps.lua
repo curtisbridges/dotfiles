@@ -58,12 +58,12 @@ vim.keymap.set("n", "<leader>r", ":so %<CR>", {})
 -- vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 -- vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 -- vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
--- vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", opts)
--- vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
--- vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", opts)
--- vim.keymap.set('n', '<leader>gs', function()
-  -- require('telescope.builtin').grep_string({ search = vim.fn.expand("<cword>") })
--- end, { desc = 'Grep string under cursor' })
+vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
+vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+vim.keymap.set('n', '<leader>gs', function()
+  require('telescope.builtin').grep_string({ search = vim.fn.expand("<cword>") })
+end, { desc = 'Grep string under cursor' })
 
 -- NvimTree
 -- vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
@@ -98,7 +98,7 @@ vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- vim.keymap.set("n", "<leader>gs", function() picker.grep_string({ search = vim.fn.expand("<cword>") }) end, opts)
 
 -- vim.keymap.set("n", "<leader>e", function()
-  -- picker.open("files")
+-- picker.open("files")
 -- end, { desc = "Open file picker (snacks)", noremap = true, silent = true })
 
 -- Comments

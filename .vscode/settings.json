@@ -1,5 +1,5 @@
 {
   "Lua.diagnostics.disable": ["lowercase-global"],
-  "Lua.diagnostics.globals": ["hs", "spoon", "vim"],
+  "Lua.diagnostics.globals": ["hs", "spoon", "vim", "Snacks"],
   "cSpell.words": ["setw"]
 }
