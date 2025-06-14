@@ -64,6 +64,11 @@ function bup() {
     brew update && brew upgrade && brew upgrade --cask --greedy
 }
 
+function gup() {
+    echo "Updating git repos..."
+    antidote update
+}
+
 function update() {
     if [[ `uname` == 'Darwin' ]]; then
         bup
@@ -83,7 +88,7 @@ function update() {
         fup
     fi
 
-    nup
+    gup
 }
 
 function javahome() {
