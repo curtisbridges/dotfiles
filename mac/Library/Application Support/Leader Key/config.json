@@ -72,11 +72,6 @@
           "key" : "l",
           "type" : "application",
           "value" : "/Applications/Leader Key.app"
-        },
-        {
-          "key" : "f",
-          "type" : "application",
-          "value" : "/System/Applications/FindMy.app"
         }
       ],
       "key" : "e",
@@ -205,100 +200,106 @@
     {
       "actions" : [
         {
-          "key" : "d",
-          "label" : "Right Half",
-          "type" : "url",
-          "value" : "rectangle://execute-action?name=right-half"
-        },
-        {
-          "key" : "a",
+          "key" : "h",
           "label" : "Left Half",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=left-half"
+          "value" : "raycast://extensions/raycast/window-management/left-half"
         },
         {
-          "key" : "r",
-          "label" : "Restore",
+          "key" : "l",
+          "label" : "Right Half",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=restore"
+          "value" : "raycast://extensions/raycast/window-management/right-half"
         },
         {
-          "key" : "f",
-          "label" : "Maximize",
+          "key" : "k",
+          "label" : "Top Half",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=maximize"
+          "value" : "raycast://extensions/raycast/window-management/top-half"
         },
         {
-          "key" : "x",
-          "label" : "Almost Maximize",
+          "key" : "j",
+          "label" : "Bottom Half",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=almost-maximize"
+          "value" : "raycast://extensions/raycast/window-management/bottom-half"
+        },
+        {
+          "key" : "C",
+          "label" : "Center Half",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/center-half"
         },
         {
           "key" : "c",
           "label" : "Center",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=center-half"
+          "value" : "raycast://extensions/raycast/window-management/center"
         },
         {
-          "key" : "w",
-          "label" : "Top Half",
+          "key" : "m",
+          "label" : "Maximize",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=top-half"
+          "value" : "raycast://extensions/raycast/window-management/maximize"
         },
         {
-          "key" : "s",
-          "label" : "Bottom Half",
+          "key" : "a",
+          "label" : "Almost Maximize",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=bottom-half"
-        },
-        {
-          "key" : "e",
-          "label" : "Last Two Thirds",
-          "type" : "url",
-          "value" : "rectangle://execute-action?name=last-two-thirds"
-        },
-        {
-          "key" : "q",
-          "label" : "First Third",
-          "type" : "url",
-          "value" : "rectangle://execute-action?name=first-third"
+          "value" : "raycast://extensions/raycast/window-management/almost-maximize"
         },
         {
           "key" : "1",
           "label" : "Top Left",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=top-left"
+          "value" : "raycast://extensions/raycast/window-management/top-left-quarter"
         },
         {
           "key" : "2",
           "label" : "Top Right",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=top-right"
+          "value" : "raycast://extensions/raycast/window-management/top-right-quarter"
         },
         {
           "key" : "3",
           "label" : "Bottom Left",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=bottom-left"
+          "value" : "raycast://extensions/raycast/window-management/bottom-left-quarter"
         },
         {
           "key" : "4",
           "label" : "Bottom Right",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=bottom-right"
+          "value" : "raycast://extensions/raycast/window-management/bottom-right-quarter"
+        },
+        {
+          "key" : "q",
+          "label" : "First Third",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/first-third"
+        },
+        {
+          "key" : "e",
+          "label" : "Last Two Thirds",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/last-two-thirds"
         },
         {
           "key" : "n",
           "label" : "Next Display",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=next-display"
+          "value" : "raycast://extensions/raycast/window-management/next-display"
         },
         {
           "key" : "p",
           "label" : "Previous Display",
           "type" : "url",
-          "value" : "rectangle://execute-action?name=previous-display"
+          "value" : "raycast://extensions/raycast/window-management/previous-display"
+        },
+        {
+          "key" : "r",
+          "label" : "Restore Position",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/restore"
         }
       ],
       "key" : "w",
