@@ -84,7 +84,7 @@ cask 'hyperkey'               # map caps to hyper
 cask 'raycast'                # app launcher and more
 # cask 'rectangle'              # window management
 # cask 'slack'                  # workplace comms
-cask 'visual-studio-code'     # Microsoft cross-platform editor
+# cask 'visual-studio-code'     # Microsoft cross-platform editor
 # cask 'Whisky'                 # Stronger than WINE
 
 # Fonts
