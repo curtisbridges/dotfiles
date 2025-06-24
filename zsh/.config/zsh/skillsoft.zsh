@@ -9,3 +9,6 @@ alias pg_stop="brew services stop postgresql@16"
 
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
+# Force everything to install to user Applications so we don't have to deal with
+# MDM admin restricted installs.
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
