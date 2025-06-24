@@ -31,16 +31,6 @@ alias lt='eza --tree --level=2'                                      # tree
 alias pp="echo $PATH | sed 's/:/\n/g'"
 alias ppu="echo $PATH | sed 's/:/\n/g' | sort | uniq -c"
 
-# Git aliases (in addition to plugin)
-alias gdn='git diff --name-status'
-alias gdsc='git diff --stat --color'
-alias gupd='git stash && git fetch && git rebase $(git_develop_branch) && git stash pop'
-alias gupm='git stash && git fetch && git rebase $(git_main_branch) && git stash pop'
-alias gcoa='git checkout -- .'
-alias gdbd='git diff $(git merge-base develop HEAD)'
-alias gdbm='git diff $(git merge-base main HEAD)'
-unalias gup # deprecated git alias that conflicts with one of my functions
-
 alias todo='git grep -l TODO | xargs -n1 git blame -f -n -w | grep "$(git config user.name)" | grep TODO | sed "s/.\{9\}//" | sed "s/(.*)[[:space:]]*//"'
 
 # developer specific aliases
@@ -59,3 +49,47 @@ alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvi
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
+# Git aliases (in addition to plugin)
+alias gdn='git diff --name-status'
+alias gdsc='git diff --stat --color'
+alias gupd='git stash && git fetch && git rebase $(git_develop_branch) && git stash pop'
+alias gupm='git stash && git fetch && git rebase $(git_main_branch) && git stash pop'
+alias gcoa='git checkout -- .'
+alias gdbd='git diff $(git merge-base develop HEAD)'
+alias gdbm='git diff $(git merge-base main HEAD)'
+
+unalias gup # deprecated git alias that conflicts with one of my functions
+
+# Like oh-my-zsh git aliases for Git Flow branches
+# Diff current branch vs develop
+alias gdd='git diff develop...HEAD'
+
+# Diff current branch vs main
+alias gdm='git diff main...HEAD'
+
+# Diff current branch vs a release branch: usage: gdr 1.2.0 → compares to release/1.2.0
+gdr() {
+  if [[ -z $1 ]]; then
+    echo 'Usage: gdr <name> (e.g., gdr 1.2.0 → release/1.2.0)'
+    return 1
+  fi
+  git diff release/$1...HEAD
+}
+
+# Diff current branch vs a feature branch: usage: gdf my-feature
+gdf() {
+  if [[ -z $1 ]]; then
+    echo 'Usage: gdf <name> (e.g., gdf my-feature → feature/my-feature)'
+    return 1
+  fi
+  git diff feature/$1...HEAD
+}
+
+# Diff current branch vs a hotfix branch: usage: gdh urgent-fix
+gdh() {
+  if [[ -z $1 ]]; then
+    echo 'Usage: gdh <name> (e.g., gdh urgent-fix → hotfix/urgent-fix)'
+    return 1
+  fi
+  git diff hotfix/$1...HEAD
+}
