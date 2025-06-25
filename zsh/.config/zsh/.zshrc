@@ -75,5 +75,7 @@ typeset -U PATH
 # Enable aliases to work with sudo
 alias sudo='sudo '
 
+[ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"
+
 # To display profiling info
 # zprof
