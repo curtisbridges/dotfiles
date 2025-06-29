@@ -8,6 +8,7 @@ vim.opt.termguicolors = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.scrolloff = 8
+vim.opt.clipboard = "unnamedplus"
 vim.g.autoformat_enabled = false
 
 -- Disable builtin plugins
