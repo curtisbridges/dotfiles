@@ -10,9 +10,11 @@ alias up=uptime
 alias vim=nvim
 alias yt=yt-dlp
 alias yt4=yt-dlp --format mp4
+alias hl='rg --passthru'
 
 # post-pended aliases
 alias -g F='| fzf'
+alias -g H='| rg --passthru'
 
 # general use
 alias ls='eza -F'                                                    # ls
