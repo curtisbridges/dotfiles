@@ -28,7 +28,7 @@ setopt hist_reduce_blanks    # remove superfluous blanks from history items
 setopt share_history         # share history between different instances of the shell
 setopt prompt_subst          # allow command, param and arithmetic expansion in the prompt
 setopt always_to_end         # move cursor to end if word had one match
-setopt auto_cd               # auto cd when writing dir in the shell
+# setopt auto_cd               # auto cd when writing dir in the shell
 setopt AUTO_PUSHD            # automatically add directories to a recent dir stack
 setopt PUSHD_IGNORE_DUPS     # Do not store duplicates in the stack.
 setopt PUSHD_SILENT          # Do not print the directory stack after pushd or popd.

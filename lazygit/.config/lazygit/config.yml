@@ -1,0 +1,40 @@
+gui:
+  theme:
+    activeBorderColor:
+      - "#89b4fa"   # Blue
+      - bold
+    inactiveBorderColor:
+      - "#cdd6f4"   # Text
+    optionsTextColor:
+      - "#f9e2af"   # Yellow
+    selectedLineBgColor:
+      - "#313244"   # Surface0
+    cherryPickedCommitBgColor:
+      - "#cba6f7"   # Mauve
+    cherryPickedCommitFgColor:
+      - "#313244"   # Surface0
+    unstagedChangesColor:
+      - "#f38ba8"   # Red
+    defaultFgColor:
+      - "#cdd6f4"   # Text
+    searchingActiveBorderColor:
+      - "#a6e3a1"   # Green
+
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never --syntax-theme Catppuccin-mocha
+  autoFetch: true
+
+confirmOnQuit: false
+promptToReturnFromSubprocess: false
+disableStartupPopups: true
+notARepository: "quit"
+
+keybinding:
+  universal:
+    quit: q
+  commits:
+    moveDownCommit: j
+    moveUpCommit: k
+

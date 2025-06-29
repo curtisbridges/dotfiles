@@ -1,0 +1,15 @@
+# [include]
+#   path = ~/.config/delta/themes/catppuccin.gitconfig
+
+[core]
+    pager = delta
+
+[delta]
+    features = line-numbers decorations
+    # syntax-theme = Catppuccin-Mocha
+    syntax-theme = None
+    plus-style = auto
+    minus-style = auto
+    file-style = normal
+    hunk-header-style = normal
+    side-by-side = true

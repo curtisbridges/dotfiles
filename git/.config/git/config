@@ -4,7 +4,9 @@
 [includeIf "gitdir:~/z_team/"]
 	path = ~/.config/git/skillsoft
 [includeIf "gitdir:~/Developer/Personal/"]
-	path = ~/.config/git/github
+  path = ~/.config/git/github
+[include]
+  path = ~/.config/delta/delta.gitconfig
 [alias]
   a = add
 	aa = add --all
