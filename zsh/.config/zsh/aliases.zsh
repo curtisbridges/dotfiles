@@ -14,6 +14,7 @@ alias vim=nvim
 alias yt=yt-dlp
 alias yt4=yt-dlp --format mp4
 alias hl='rg --passthru'
+alias ff=fastfetch
 
 # post-pended aliases
 alias -g F='| fzf'
@@ -37,9 +38,6 @@ alias pp="echo $PATH | sed 's/:/\n/g'"
 alias ppu="echo $PATH | sed 's/:/\n/g' | sort | uniq -c"
 
 alias todo='git grep -l TODO | xargs -n1 git blame -f -n -w | grep "$(git config user.name)" | grep TODO | sed "s/.\{9\}//" | sed "s/(.*)[[:space:]]*//"'
-
-# developer specific aliases
-alias yi='yarn install'
 
 ## Vim (Neovim)
 # fzf + nvim
