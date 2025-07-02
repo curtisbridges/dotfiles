@@ -13,8 +13,8 @@ fi
 
 if [ -d "$(brew --prefix)" ] ; then
   # Homebrew
-  PATH=$(brew --prefix)/bin:${PATH}
-  PATH=$(brew --prefix)/sbin:${PATH}
+  PATH=${PATH}:$(brew --prefix)/bin
+  PATH=${PATH}:$(brew --prefix)/sbin
 fi
 
 export PATH

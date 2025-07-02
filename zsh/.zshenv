@@ -26,20 +26,10 @@ export ZDOTDIR=${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}
 # Default Apps
 export EDITOR="nvim"
 export VISUAL="code"
-# export TERMINAL="alacritty"
-# export BROWSER="/Applications/Safari.app"
 export PAGER="less"
 
 # Exported variables
 export TERM=screen-256color
 export MOZ_ENABLE_WAYLAND=1
-
-# Node
-export NVM_DIR=~/.nvm
- [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-# Python
-export PYTHON_HOME="${HOME}/.pyenv/shims"
-export PATH=$PATH:$PYTHON_HOME
 
 export STARSHIP_CONFIG="${XDG_CONFIG_HOME}/starship/starship.toml"

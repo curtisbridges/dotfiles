@@ -46,11 +46,12 @@ COMPLETION_WAITING_DOTS="true"
 source $ZDOTDIR/completions.zsh
 
 # ---------- Plugin Manager: Antidote ----------
-source "$(brew --prefix)"/share/antidote/antidote.zsh
+source "$(brew --prefix antidote)"/share/antidote/antidote.zsh
 antidote load
 compinit -C
 
 # Custom config settings split out into separate files.
+source $ZDOTDIR/development.zsh # must be before path.zsh so the proper node.js loads
 source $ZDOTDIR/path.zsh
 source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/alias-expand.zsh
@@ -74,8 +75,6 @@ typeset -U PATH
 
 # Enable aliases to work with sudo
 alias sudo='sudo '
-
-[ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"
 
 # To display profiling info
 # zprof
