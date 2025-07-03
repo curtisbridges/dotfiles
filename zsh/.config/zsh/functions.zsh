@@ -64,6 +64,7 @@ function bup() {
     brew update && brew upgrade && brew upgrade --cask --greedy
 }
 
+unalias gup &> /dev/null
 function gup() {
     echo "Updating git repos..."
     antidote update

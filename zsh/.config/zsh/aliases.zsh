@@ -61,8 +61,6 @@ alias gcoa='git checkout -- .'
 alias gdbd='git diff $(git merge-base develop HEAD)'
 alias gdbm='git diff $(git merge-base main HEAD)'
 
-unalias gup # deprecated git alias that conflicts with one of my functions
-
 # Like oh-my-zsh git aliases for Git Flow branches
 # Diff current branch vs develop
 alias gdd='git diff develop...HEAD'
