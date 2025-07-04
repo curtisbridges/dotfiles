@@ -66,10 +66,10 @@ vim.keymap.set('n', '<leader>gs', function()
 end, { desc = 'Grep string under cursor' })
 
 -- NvimTree
--- vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
--- vim.keymap.set("n", "<leader>n", ":NvimTreeToggle<CR>", {})    -- open/close
--- vim.keymap.set("n", "<leader>nr", ":NvimTreeRefresh<CR>", {})  -- refresh
--- vim.keymap.set("n", "<leader>nf", ":NvimTreeFindFile<CR>", {}) -- search file
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+vim.keymap.set("n", "<leader>n", ":NvimTreeToggle<CR>", {})    -- open/close
+vim.keymap.set("n", "<leader>nr", ":NvimTreeRefresh<CR>", {})  -- refresh
+vim.keymap.set("n", "<leader>nf", ":NvimTreeFindFile<CR>", {}) -- search file
 
 -- Insert --
 -- Press jj fast to exit insert mode
