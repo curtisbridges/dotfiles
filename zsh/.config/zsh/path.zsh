@@ -17,4 +17,7 @@ if [ -d "$(brew --prefix)" ] ; then
   PATH=${PATH}:$(brew --prefix)/sbin
 fi
 
+PATH="/usr/local/bin:$PATH"
+
 export PATH
+
