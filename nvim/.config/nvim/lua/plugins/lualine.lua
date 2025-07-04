@@ -8,6 +8,7 @@ return { {
       options = {
         theme = 'catppuccin',
         icons_enabled = true,
+        globalstatus = true,
         section_separators = { left = '', right = '' }, -- Rounded corners
         component_separators = { left = '', right = '' } -- Rounded separators
       }
