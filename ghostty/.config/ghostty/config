@@ -40,8 +40,8 @@ quick-terminal-animation-duration = 0
 # keybindings
 
 # splits - still using tmux, sorry
-keybind = cmd+ctrl+\=new_split:right
-keybind = cmd+ctrl+-=new_split:down
+keybind = cmd+\=new_split:right
+keybind = cmd+s=new_split:down
 
 keybind = alt+down=goto_split:bottom
 keybind = alt+up=goto_split:top
