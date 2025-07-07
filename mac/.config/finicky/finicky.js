@@ -2,11 +2,11 @@ export default {
   defaultBrowser: 'Safari',
   handlers: [
     {
-      match: (url) => url.host.endsWith('github.skillsoft.com'),
+      match: (url) => url.host.endsWith('localhost'),
       browser: 'Google Chrome:Skillsoft',
     },
     {
-      match: (url) => url.host.endsWith('localhost'),
+      match: (url) => url.host.endsWith('github.skillsoft.com'),
       browser: 'Google Chrome:Skillsoft',
     },
     {
@@ -23,6 +23,10 @@ export default {
     },
     {
       match: (url) => url.host.endsWith('myworkday.com'),
+      browser: 'Google Chrome:Skillsoft',
+    },
+    {
+      match: (url) => url.host.endsWith('cursor.com'),
       browser: 'Google Chrome:Skillsoft',
     },
     {
