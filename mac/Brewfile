@@ -13,7 +13,6 @@ brew 'bat-extras'           # a few extra used by bat -- like manpage syntax hig
 brew 'diff-so-fancy'        # a better diff
 brew 'dos2unix'             # convert dos files to unix line endings
 brew 'eza'                  # a replacement ls supporting git and tree
-brew 'fasd'                 # a better find
 brew 'fd'                   # a better find too
 brew 'fastfetch'             # graphical system summary
 brew 'ffmpeg'               # audio/visual conversion tool
