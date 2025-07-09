@@ -74,7 +74,7 @@ cask 'appcleaner'             # clean uninstalls
 cask 'ghostty'                # the best terminal on any platform
 # cask 'hammerspoon'            # programmable mac automation
 # cask 'handbrake'              # video encoder
-cask 'hyperkey'               # map caps to hyper
+# cask 'hyperkey'               # map caps to hyper
 # cask 'kaleidoscope'           # Rich diffs
 # cask 'karabiner-elements'     # low-level keyboard and mouse control
 # cask 'krita'                  # open source paint app
