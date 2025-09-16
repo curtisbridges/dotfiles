@@ -53,3 +53,5 @@
 	conflictstyle = diff3
 [rerere]
  enabled = true
+[diff]
+	tool = vscode
