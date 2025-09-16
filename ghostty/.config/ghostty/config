@@ -6,8 +6,8 @@
 
 auto-update = off
 
-font-family = "FiraCode Nerd Font"
-theme = dark:catppuccin-mocha,light:catppuccin-latte
+font-family = "FiraCode"
+theme = dark:Catppuccin Mocha,light:Catppuccin Latte
 
 window-theme = auto
 window-decoration = auto
@@ -32,6 +32,8 @@ shell-integration=detect
 # quick terminal
 keybind = global:cmd+escape=toggle_quick_terminal
 quick-terminal-position = right
+# Percentage, primary axis only
+quick-terminal-size = 50%
 quick-terminal-screen = macos-menu-bar
 quick-terminal-space-behavior = move
 quick-terminal-autohide = true
@@ -47,4 +49,3 @@ keybind = alt+down=goto_split:bottom
 keybind = alt+up=goto_split:top
 keybind = alt+left=goto_split:left
 keybind = alt+right=goto_split:right
-
