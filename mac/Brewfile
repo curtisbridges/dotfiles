@@ -80,7 +80,7 @@ cask 'ghostty'                # the best terminal on any platform
 # cask 'mos'                    # Mouse smooth scrolling
 # cask 'netnewswire'            # RSS feed reader
 # cask 'postman'                # work with REST APIs
-cask 'raycast'                # app launcher and more
+# cask 'raycast'                # app launcher and more
 # cask 'rectangle'              # window management
 # cask 'slack'                  # workplace comms
 # cask 'visual-studio-code'     # Microsoft cross-platform editor
