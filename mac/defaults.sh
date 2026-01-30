@@ -85,6 +85,9 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Finder: allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
+# Finder: dynamic column widths
+defaults write com.apple.finder _FXEnableColumnAutoSizing -bool YES
+
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
