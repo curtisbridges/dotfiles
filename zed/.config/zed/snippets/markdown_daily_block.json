@@ -1,0 +1,7 @@
+{
+  "Daily Markdown Block": {
+    "prefix": "today",
+    "description": "Insert daily block",
+    "body": ["### $1", "- Meetings", "- Reviews", "- Tasks", "", "$0"]
+  }
+}

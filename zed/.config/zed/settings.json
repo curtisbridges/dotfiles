@@ -1,18 +1,64 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "base_keymap": "VSCode",
+  "auto_update": false,
+
+  "buffer_font_family": "FiraCode Nerd Font Mono",
+  "ui_font_size": 14,
+  "buffer_font_size": 13,
   "icon_theme": "Catppuccin Mocha",
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
   "theme": {
     "mode": "system",
-    "light": "One Light",
+    "light": "Catppuccin Latte",
     "dark": "Tokyo Night"
+  },
+
+  // ------ prose-wide defaults ------
+  "preferred_line_length": 120, // <-- key: sets the wrap column
+  "show_wrap_guides": true,
+  "wrap_guides": [120],
+
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true
+  },
+
+  "languages": {
+    "JavaScript": { "tab_size": 2, "formatter": "language_server" },
+
+    "Markdown": {
+      "language_servers": ["marksman"],
+
+      // keep formatters from reflowing to 80
+      "formatter": "language_server", // LSP formatting only (no Prettier)
+      "format_on_save": "off", // or "on" if you trust your LSP settings
+
+      // visual wrapping behavior while typing
+      // use "preferred_line_length" to wrap at 120; or "none" to disable soft wrap
+      "soft_wrap": "preferred_line_length",
+
+      // preserve Markdown hard line breaks
+      "remove_trailing_whitespace_on_save": false
+    },
+
+    "TypeScript": {
+      "tab_size": 2,
+      "formatter": "language_server",
+      "format_on_save": "on"
+    }
+  },
+
+  "lsp": {
+    "markdownlint": {
+      "settings": { "MD022": { "lines_above": 1, "lines_below": 0 } }
+    },
+    "marksman": {
+      "settings": {
+        // formatting prefs (only used if you enable format_on_save)
+        "markdown.format.wrapWidth": 120,
+        "markdown.format.frontMatter": "preserve",
+        "markdown.format.insertNewlineAfterHeader": false
+      }
+    }
   }
 }

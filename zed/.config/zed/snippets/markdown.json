@@ -1,0 +1,29 @@
+{
+  // Daily note block: type "day" then Tab
+  "Sprint Markdown Block": {
+    "prefix": "nsprint",
+    "description": "Insert new sprint block",
+    "body": [
+      "# Sprint $0",
+      "",
+      "## Daily Log",
+      "",
+      "",
+      "## Notes",
+      ""
+    ]
+  },
+  // Daily note block: type "day" then Tab
+  "Daily Markdown Block": {
+    "prefix": "nday",
+    "description": "Insert daily meetings/reviews/tasks block",
+    "body": [
+      "### $0",
+      "- Meetings",
+      "  - [ ] [0930] Standup",
+      "- Reviews",
+      "- Tasks",
+      "  - [ ] $1"
+    ]
+  }
+}

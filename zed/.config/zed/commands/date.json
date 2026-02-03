@@ -1,0 +1,15 @@
+
+{
+  "name": "Insert Block with Date",
+  "when": "editor",
+  "cmd": {
+    "insert_text": {
+      "text": ""
+    }
+  },
+  "script": {
+    "language": "javascript",
+    "code": "const now = new Date(); const mm = String(now.getMonth() + 1).padStart(2, '0'); const dd = String(now.getDate()).padStart(2, '0'); const date = `${mm}-${dd}`; insert_text(`${date}`);"
+  }
+}
+
