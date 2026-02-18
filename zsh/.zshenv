@@ -33,3 +33,5 @@ export TERM=screen-256color
 export MOZ_ENABLE_WAYLAND=1
 
 export STARSHIP_CONFIG="${XDG_CONFIG_HOME}/starship/starship.toml"
+export BROWSE_COMPONENTS=false
+
