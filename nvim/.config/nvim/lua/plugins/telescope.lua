@@ -2,6 +2,12 @@ return {
   -- Telescope
   -- Find, Filter, Preview, Pick. All lua, all the time.
   "nvim-telescope/telescope.nvim",
+  cmd = "Telescope",
+  keys = {
+    { "<leader>ff", "<cmd>Telescope find_files<CR>" },
+    { "<leader>fg", "<cmd>Telescope live_grep<CR>" },
+    { "<leader>fb", "<cmd>Telescope buffers<CR>" },
+  }, 
   dependencies = { "nvim-lua/plenary.nvim", {
     "nvim-telescope/telescope-fzf-native.nvim",
     build = "make"

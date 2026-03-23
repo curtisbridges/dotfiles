@@ -16,7 +16,7 @@ require("core")
 require("plugins")
 
 -- ## Features
--- - Lazy.nvim plugin manager
+-- - Lazy.nvim plugin manager (most UI/tools defer to VeryLazy / buffer events)
 -- - Telescope + fzf-native for blazing fast search
 -- - LSP setup for JS/TS, HTML, CSS, React
 -- - Mini.nvim utilities

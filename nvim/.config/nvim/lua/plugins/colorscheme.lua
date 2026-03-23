@@ -1,6 +1,7 @@
 return { {
   "catppuccin/nvim",
   name = "catppuccin",
+  lazy = false,
   priority = 1000,
   config = function()
     vim.cmd.colorscheme("catppuccin")
@@ -20,5 +21,6 @@ return { {
 }, {
   "olimorris/onedarkpro.nvim",
   name = "onedarkpro",
-  priority = 1000, -- Ensure it loads first
+  lazy = true,
+  priority = 1000,
 }, }

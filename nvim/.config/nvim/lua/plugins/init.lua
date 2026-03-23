@@ -6,8 +6,6 @@ require("lazy").setup({
   --   -- try to load one of these colorschemes when starting an installation during startup
   --   colorscheme = { "catppuccin", "tokyonight", "onedarkpro" }
   -- },
-  { "catppuccin/nvim",                      name = "catppuccin", priority = 1000 },
-  { "nvim-lua/plenary.nvim" },
   { import = "plugins.colorscheme" },
   { import = "plugins.nvim-tree" },
   { import = "plugins.lualine" },
@@ -17,6 +15,7 @@ require("lazy").setup({
   { import = "plugins.trouble" },
   { import = "plugins.noice" },
   { import = "plugins.mini" },
+  { import = "plugins.mini-comment" },
   { import = "plugins.mini-statusline" },
   { import = "plugins.treesitter" },
   { import = "plugins.completion" },
@@ -25,6 +24,5 @@ require("lazy").setup({
   { import = "plugins.toggleterm" },
   { import = "plugins.persistence" },
   { import = "plugins.telescope" },
-  { import = "plugins.telescope-extensions" },
   -- { import = "plugins.snacks" },
 })

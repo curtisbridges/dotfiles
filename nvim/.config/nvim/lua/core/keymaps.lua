@@ -13,7 +13,7 @@ vim.keymap.set("n", "<leader>mm", function()
     require("mini.statusline").setup()
   else
     require("mini.statusline").setup({ use_icons = false })
-    require("lualine").setup({ options = { theme = "catppuccin" } })
+    require("lualine").setup({ options = { theme = require("catppuccin.utils.lualine")() } })
   end
   vim.g.use_mini_statusline = not use_mini
 end, opts)
@@ -52,21 +52,12 @@ vim.keymap.set("n", "<leader>s", ":w<CR>", {})
 -- Reload configuration without restart nvim
 vim.keymap.set("n", "<leader>r", ":so %<CR>", {})
 
--- Telescope
--- local builtin = require("telescope.builtin")
--- vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
--- vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
--- vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
--- vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
-vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", opts)
-vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
-vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", opts)
-vim.keymap.set('n', '<leader>gs', function()
-  require('telescope.builtin').grep_string({ search = vim.fn.expand("<cword>") })
-end, { desc = 'Grep string under cursor' })
+-- Telescope (ff / fg / fb / leader e: lazy.nvim plugin specs)
+vim.keymap.set("n", "<leader>gs", function()
+  require("telescope.builtin").grep_string({ search = vim.fn.expand("<cword>") })
+end, vim.tbl_extend("force", opts, { desc = "Grep string under cursor" }))
 
 -- NvimTree
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 vim.keymap.set("n", "<leader>n", ":NvimTreeToggle<CR>", {})    -- open/close
 vim.keymap.set("n", "<leader>nr", ":NvimTreeRefresh<CR>", {})  -- refresh
 vim.keymap.set("n", "<leader>nf", ":NvimTreeFindFile<CR>", {}) -- search file
@@ -101,8 +92,4 @@ vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- picker.open("files")
 -- end, { desc = "Open file picker (snacks)", noremap = true, silent = true })
 
--- Comments
--- Comment: https://github.com/numToStr/Comment.nvim
-vim.keymap.set("n", "<leader>/", function() require('Comment.api').toggle.linewise.current() end, opts)
---[[ vim.keymap.set('n', '<C-/>', 'gcc', { remap = true }) ]]
---[[ vim.keymap.set('v', '<C-/>', 'gc',  { remap = true }) ]]
+-- Comments: `<leader>/` is set in plugins/mini-comment.lua (gcc / gc)
