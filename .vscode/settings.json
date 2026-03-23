@@ -1,5 +1,6 @@
 {
   "Lua.diagnostics.disable": ["lowercase-global"],
   "Lua.diagnostics.globals": ["hs", "spoon", "vim", "Snacks"],
-  "cSpell.words": ["setw"]
+  "cSpell.words": ["setw"],
+  "snyk.advanced.autoSelectOrganization": true
 }
