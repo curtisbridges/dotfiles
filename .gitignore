@@ -5,3 +5,5 @@ Brewfile.lock.json
 lazy-lock.json
 
 linux/.fonts/.uuid
+
+zed/.config/zed/prompts/prompts-library-db.0.mdb/lock.mdb
