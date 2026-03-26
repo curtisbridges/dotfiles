@@ -16,8 +16,8 @@ brew 'eza'                  # a replacement ls supporting git and tree
 brew 'fd'                   # a better find too
 brew 'fastfetch'             # graphical system summary
 brew 'ffmpeg'               # audio/visual conversion tool
-brew 'fish'                 # fish shell (not POSIX compliant)
-brew 'fisher'               # fish shell plugin manager
+# brew 'fish'                 # fish shell (not POSIX compliant)
+# brew 'fisher'               # fish shell plugin manager
 brew 'fortune'              # words of wisdom
 brew 'fzf'                  # fuzzy file finder (shell and vim!)
 brew 'git'                  # source control
@@ -34,7 +34,7 @@ brew 'macos-trash'          # utility to leverage the trashcan from the shell
 # brew 'trash-cli'            # linux equivalent of macos-trash
 brew 'neovim'               # preferred vim
 brew 'nmap'                 # port scanning util
-brew 'node'                 # system-wide node
+# brew 'node'                 # system-wide node
 brew 'nvm'                  # node version manager
 brew 'openssl'              # ssl utilities
 brew 'prettyping'           # a better ping
@@ -46,7 +46,7 @@ brew 'stow'                 # dotfile installation utility
 brew 'tealdeer'             # a more concise man replacement
 brew 'tmux'                 # terminal multiplexer (not yet used)
 brew 'tree'                 # directory tree
-brew 'vite'                 # next gen node tooling
+# brew 'vite'                 # next gen node tooling
 brew 'wget'                 # alternative shell web download util
 brew 'yarn'                 # alternative to npm
 brew 'yq'                   # used for tmux plugin
