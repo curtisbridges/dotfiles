@@ -7,14 +7,10 @@ if [ -d "${HOME}/scripts" ] ; then
   PATH=${HOME}/scripts:${PATH}
 fi
 
-if [ -d "${HOME}/.ssh" ] ; then
-  ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
-fi
-
-if [ -d "$(brew --prefix)" ] ; then
+if [ -d "${HOMEBREW_PREFIX:-/opt/homebrew}" ] ; then
   # Homebrew
-  PATH=${PATH}:$(brew --prefix)/bin
-  PATH=${PATH}:$(brew --prefix)/sbin
+  PATH=${PATH}:${HOMEBREW_PREFIX:-/opt/homebrew}/bin
+  PATH=${PATH}:${HOMEBREW_PREFIX:-/opt/homebrew}/sbin
 fi
 
 PATH="/usr/local/bin:$PATH"

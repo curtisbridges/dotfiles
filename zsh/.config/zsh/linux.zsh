@@ -13,7 +13,7 @@ if [[ `uname` == 'Linux' ]]; then
   alias trrm=trash-rm
 
   # Requires `export NVM_DIR="$HOME/.nvm` prior to this line
-  [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "${HOMEBREW_PREFIX:-/home/linuxbrew/.linuxbrew}/opt/nvm/nvm.sh" ] && \. "${HOMEBREW_PREFIX:-/home/linuxbrew/.linuxbrew}/opt/nvm/nvm.sh"  # This loads nvm
 
   # source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   # alias bat=batcat

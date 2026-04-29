@@ -6,7 +6,7 @@
 export NVM_DIR=~/.nvm
 
 # FZF
-export FZF_BASE=$(brew --prefix)/bin/fzf
+export FZF_BASE="${HOMEBREW_PREFIX:-/opt/homebrew}/bin/fzf"
 
 # Make fzf smarter
 # export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,.DS_STORE}"'
@@ -29,4 +29,7 @@ bindkey -rM emacs '\ec'
 bindkey -rM vicmd '\ec'
 bindkey -rM viins '\ec'
 
-source $ZDOTDIR/skillsoft.zsh
+# Only do this once per login shell, not every new prompt shell.
+if [[ -n "$SSH_AUTH_SOCK" && -f "${HOME}/.ssh/id_rsa" ]]; then
+  ssh-add -l &> /dev/null || ssh-add "${HOME}/.ssh/id_rsa" &> /dev/null
+fi

@@ -46,9 +46,18 @@ COMPLETION_WAITING_DOTS="true"
 source $ZDOTDIR/completions.zsh
 
 # ---------- Plugin Manager: Antidote ----------
-source "$(brew --prefix antidote)"/share/antidote/antidote.zsh
-antidote load
-compinit -C
+if [[ -z "${HOMEBREW_PREFIX:-}" ]]; then
+  if [[ -d "/opt/homebrew" ]]; then
+    export HOMEBREW_PREFIX="/opt/homebrew"
+  elif [[ -d "/home/linuxbrew/.linuxbrew" ]]; then
+    export HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
+  fi
+fi
+
+if [[ -r "${HOMEBREW_PREFIX}/opt/antidote/share/antidote/antidote.zsh" ]]; then
+  source "${HOMEBREW_PREFIX}/opt/antidote/share/antidote/antidote.zsh"
+  antidote load
+fi
 
 # Custom config settings split out into separate files.
 source $ZDOTDIR/development.zsh # must be before path.zsh so the proper node.js loads
