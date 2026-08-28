@@ -85,6 +85,7 @@ cask 'ghostty'                # the best terminal on any platform
 # cask 'slack'                  # workplace comms
 # cask 'visual-studio-code'     # Microsoft cross-platform editor
 # cask 'Whisky'                 # Stronger than WINE
+cask openlogi                 # A better, non-intrusive Logitech mouse driver
 
 # Fonts
 # Patched with nerd font support are good for Terminal but iTerm2 has built-in glyphs.
