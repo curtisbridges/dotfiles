@@ -1,22 +1,9 @@
 -- ~/.config/nvim/init.lua
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
-end
-vim.opt.rtp:prepend(lazypath)
-
 require("core")
 require("plugins")
 
 -- ## Features
--- - Lazy.nvim plugin manager (most UI/tools defer to VeryLazy / buffer events)
+-- - Built-in vim.pack plugin manager (`:packupdate`, `:packdel`)
 -- - Telescope + fzf-native for blazing fast search
 -- - LSP setup for JS/TS, HTML, CSS, React
 -- - Mini.nvim utilities

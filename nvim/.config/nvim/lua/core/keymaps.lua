@@ -52,7 +52,7 @@ vim.keymap.set("n", "<leader>s", ":w<CR>", {})
 -- Reload configuration without restart nvim
 vim.keymap.set("n", "<leader>r", ":so %<CR>", {})
 
--- Telescope (ff / fg / fb / leader e: lazy.nvim plugin specs)
+-- Telescope find/grep/buffers: plugins/telescope.lua
 vim.keymap.set("n", "<leader>gs", function()
   require("telescope.builtin").grep_string({ search = vim.fn.expand("<cword>") })
 end, vim.tbl_extend("force", opts, { desc = "Grep string under cursor" }))

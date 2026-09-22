@@ -1,26 +1,9 @@
-return { {
-  "catppuccin/nvim",
-  name = "catppuccin",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    vim.cmd.colorscheme("catppuccin")
-  end,
-}, {
-  -- Tokyonight- A clean, dark Neovim theme written in Lua, with support for lsp,
-  -- treesitter and lots of plugins. Includes additional themes for Kitty, Alacritty, iTerm and Fish.
-  "folke/tokyonight.nvim",
-  name = "tokyonight",
-  lazy = true,
-  priority = 1000,
-  opts = {
-    style = 'night',        -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-    light_style = 'day',    -- The theme is used when the background is set to light
-    terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
-  },
-}, {
-  "olimorris/onedarkpro.nvim",
-  name = "onedarkpro",
-  lazy = true,
-  priority = 1000,
-}, }
+vim.cmd.colorscheme("catppuccin")
+
+-- Tokyonight — a clean, dark Neovim theme written in Lua, with support for lsp,
+-- treesitter and lots of plugins. Includes additional themes for Kitty, Alacritty, iTerm and Fish.
+require("tokyonight").setup({
+  style = "night",        -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
+  light_style = "day",    -- The theme is used when the background is set to light
+  terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
+})

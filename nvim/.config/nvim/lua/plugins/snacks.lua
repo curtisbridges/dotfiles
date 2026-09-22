@@ -1,3 +1,4 @@
+-- Not installed. Add it in plugins/init.lua before using this config.
 return {
   "folke/snacks.nvim",
   priority = 1000,
