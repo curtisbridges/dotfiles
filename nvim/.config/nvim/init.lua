@@ -3,7 +3,7 @@ require("core")
 require("plugins")
 
 -- ## Features
--- - Built-in vim.pack plugin manager (`:packupdate`, `:packdel`)
+-- - Built-in vim.pack plugin manager (`:lua vim.pack.update()`)
 -- - Telescope + fzf-native for blazing fast search
 -- - LSP setup for JS/TS, HTML, CSS, React
 -- - Mini.nvim utilities

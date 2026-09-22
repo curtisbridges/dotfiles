@@ -1,6 +1,6 @@
 -- ~/.config/nvim/lua/plugins/init.lua
 -- Plugins are installed with vim.pack and configured in the modules below.
--- Update with :packupdate. Remove unused plugins with :packdel.
+-- Update with :lua vim.pack.update(). Remove unused plugins with :lua vim.pack.del({ "name" }).
 
 -- Install hooks run before plugins are loaded. Defer command hooks until after setup.
 local startup = true
