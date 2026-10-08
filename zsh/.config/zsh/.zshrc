@@ -25,7 +25,7 @@ SAVEHIST=0
 setopt hist_ignore_all_dups  # remove older duplicate entries from history
 setopt hist_find_no_dups     # ignore duplicates when searching
 setopt hist_reduce_blanks    # remove superfluous blanks from history items
-setopt share_history         # share history between different instances of the shell
+unsetopt share_history       # keep each shell session's history separate
 setopt prompt_subst          # allow command, param and arithmetic expansion in the prompt
 setopt always_to_end         # move cursor to end if word had one match
 # setopt auto_cd               # auto cd when writing dir in the shell

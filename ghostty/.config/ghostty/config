@@ -7,7 +7,8 @@
 auto-update = off
 
 font-family = "FiraCode"
-theme = dark:Catppuccin Mocha,light:Catppuccin Latte
+#theme = dark:Catppuccin Mocha,light:Catppuccin Latte
+theme = Catppuccin Mocha
 
 window-theme = auto
 window-decoration = auto
