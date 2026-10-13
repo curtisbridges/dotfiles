@@ -7,20 +7,12 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 vim.keymap.set("n", "<leader>mm", function()
-  local use_mini = vim.g.use_mini_statusline
-  if use_mini then
-    require("lualine").hide({ unhide = true })
-    require("mini.statusline").setup()
-  else
-    require("mini.statusline").setup({ use_icons = false })
-    require("lualine").setup({ options = { theme = require("catppuccin.utils.lualine")() } })
-  end
-  vim.g.use_mini_statusline = not use_mini
-end, opts)
+  require("core.statusline").toggle()
+end, vim.tbl_extend("force", opts, { desc = "Toggle statusline style" }))
 vim.keymap.set("n", "<leader>fa", function()
   vim.g.autoformat_enabled = not vim.g.autoformat_enabled
   vim.notify("Autoformat on save: " .. (vim.g.autoformat_enabled and "enabled" or "disabled"))
-end, opts)
+end, vim.tbl_extend("force", opts, { desc = "Toggle autoformat on save" }))
 
 -- Better window navigation
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
@@ -57,14 +49,39 @@ vim.keymap.set("n", "<leader>gs", function()
   require("telescope.builtin").grep_string({ search = vim.fn.expand("<cword>") })
 end, vim.tbl_extend("force", opts, { desc = "Grep string under cursor" }))
 
--- NvimTree
-vim.keymap.set("n", "<leader>n", ":NvimTreeToggle<CR>", {})    -- open/close
-vim.keymap.set("n", "<leader>nr", ":NvimTreeRefresh<CR>", {})  -- refresh
-vim.keymap.set("n", "<leader>nf", ":NvimTreeFindFile<CR>", {}) -- search file
+-- Built-in netrw file explorer
+vim.keymap.set("n", "<leader>e", function() require("core.explorer").toggle() end,
+  { silent = true, desc = "Toggle file explorer" })
+vim.keymap.set("n", "<leader>n", function() require("core.explorer").toggle() end,
+  { silent = true, desc = "Toggle file explorer" })
+vim.keymap.set("n", "<leader>nr", function() require("core.explorer").refresh() end,
+  { silent = true, desc = "Refresh file explorer" })
+vim.keymap.set("n", "<leader>nf", function() require("core.explorer").find_file() end,
+  { silent = true, desc = "Find current file in explorer" })
+
+-- Built-in diagnostics list, terminal, and sessions
+vim.keymap.set("n", "<leader>xx", function()
+  vim.diagnostic.setqflist()
+  vim.cmd.copen()
+end, { silent = true, desc = "Workspace diagnostics" })
+vim.keymap.set("n", "<C-\\>", function() require("core.terminal").toggle() end,
+  { silent = true, desc = "Toggle terminal" })
+vim.keymap.set("n", "<leader>qs", function() require("core.session").load() end,
+  { silent = true, desc = "Load current directory session" })
+vim.keymap.set("n", "<leader>ql", function() require("core.session").load({ last = true }) end,
+  { silent = true, desc = "Load last session" })
+vim.keymap.set("n", "<leader>qd", function() require("core.session").stop() end,
+  { silent = true, desc = "Stop session saving" })
 
 -- Insert --
 -- Press jj fast to exit insert mode
 vim.keymap.set("i", "jj", "<ESC>", opts)
+vim.keymap.set("i", "<CR>", function()
+  if vim.fn.pumvisible() == 0 then
+    return "<CR>"
+  end
+  return vim.fn.complete_info().selected == -1 and "<C-n><C-y>" or "<C-y>"
+end, { expr = true, desc = "Accept completion or insert newline" })
 
 -- Visual --
 -- Stay in indent mode
@@ -92,4 +109,6 @@ vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- picker.open("files")
 -- end, { desc = "Open file picker (snacks)", noremap = true, silent = true })
 
--- Comments: `<leader>/` is set in plugins/mini-comment.lua (gcc / gc)
+-- Neovim's built-in commenting operator provides gc/gcc.
+vim.keymap.set("n", "<leader>/", "gcc", { remap = true, silent = true, desc = "Comment line" })
+vim.keymap.set("x", "<leader>/", "gc", { remap = true, silent = true, desc = "Comment selection" })

@@ -56,39 +56,16 @@ end
 
 vim.pack.add({
   { src = gh("catppuccin/nvim"), name = "catppuccin" },
-  gh("folke/tokyonight.nvim"),
-  gh("olimorris/onedarkpro.nvim"),
-
-  gh("nvim-tree/nvim-web-devicons"),
-  gh("nvim-tree/nvim-tree.lua"),
-  gh("nvim-lualine/lualine.nvim"),
-
-  gh("hrsh7th/nvim-cmp"),
-  gh("hrsh7th/cmp-nvim-lsp"),
-  gh("L3MON4D3/LuaSnip"),
-  gh("saadparwaiz1/cmp_luasnip"),
-  gh("neovim/nvim-lspconfig"),
 
   gh("mason-org/mason.nvim"),
-  gh("mason-org/mason-lspconfig.nvim"),
 
   gh("folke/which-key.nvim"),
-  gh("folke/trouble.nvim"),
-  gh("MunifTanjim/nui.nvim"),
-  gh("rcarriga/nvim-notify"),
-  gh("folke/noice.nvim"),
 
   gh("echasnovski/mini.nvim"),
-  gh("echasnovski/mini.comment"),
-  gh("echasnovski/mini.statusline"),
 
   { src = gh("nvim-treesitter/nvim-treesitter"), version = "main" },
 
-  gh("nvimtools/none-ls.nvim"),
   gh("lewis6991/gitsigns.nvim"),
-  -- Latest semver tag, same as the old lazy.nvim `version = "*"`.
-  { src = gh("akinsho/toggleterm.nvim"), version = vim.version.range("*") },
-  gh("folke/persistence.nvim"),
 
   gh("nvim-lua/plenary.nvim"),
   gh("nvim-telescope/telescope-fzf-native.nvim"),
@@ -96,22 +73,12 @@ vim.pack.add({
 }, { load = true, confirm = false })
 
 require("plugins.colorscheme")
-require("plugins.nvim-tree")
-require("plugins.lualine")
-require("plugins.lsp")
 require("plugins.mason")
+require("plugins.lsp")
 require("plugins.which-key")
-require("plugins.trouble")
-require("plugins.noice")
 require("plugins.mini")
-require("plugins.mini-comment")
-require("plugins.mini-statusline")
 require("plugins.treesitter")
-require("plugins.completion")
-require("plugins.null-ls")
 require("plugins.gitsigns")
-require("plugins.toggleterm")
-require("plugins.persistence")
 require("plugins.telescope")
 
 startup = false

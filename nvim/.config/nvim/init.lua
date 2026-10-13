@@ -5,14 +5,13 @@ require("plugins")
 -- ## Features
 -- - Built-in vim.pack plugin manager (`:lua vim.pack.update()`)
 -- - Telescope + fzf-native for blazing fast search
--- - LSP setup for JS/TS, HTML, CSS, React
--- - Mini.nvim utilities
--- - Toggleable autoformat on save (<leader>fa)
--- - Toggle between `lualine` and `mini.statusline` (<leader>mm)
--- - Integrated terminal with toggleterm
+-- - Built-in LSP completion and snippets for JS/TS, HTML, CSS, React, and Lua
+-- - Mini.nvim pairs and surround operators
+-- - Built-in comments, diagnostics list, file explorer, statusline, terminal, and sessions
+-- - Toggleable Prettier/LSP autoformat on save (<leader>fa)
+-- - Toggle between full and minimal built-in statuslines (<leader>mm)
 -- - Git status via gitsigns
--- - Session management via persistence.nvim
--- - Trouble, noice, and which-key integrations
+-- - Keymap discovery via which-key
 --
 -- ## Keybindings
 -- - `<leader>e` — toggle file explorer
@@ -21,4 +20,4 @@ require("plugins")
 -- - `<leader>fb` — switch buffers
 -- - `<leader>fa` — toggle autoformat on save
 -- - `<leader>mm` — toggle statusline mode
--- - `<leader>qs/ql/qd` — session load/save/stopped
+-- - `<leader>qs/ql/qd` — load current/load last/stop session saving

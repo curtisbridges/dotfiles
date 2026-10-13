@@ -46,6 +46,7 @@ brew 'stow'                 # dotfile installation utility
 brew 'tealdeer'             # a more concise man replacement
 brew 'tmux'                 # terminal multiplexer (not yet used)
 brew 'tree'                 # directory tree
+brew 'tree-sitter-cli'      # tree-sitter for neovim
 # brew 'vite'                 # next gen node tooling
 brew 'wget'                 # alternative shell web download util
 brew 'yarn'                 # alternative to npm
